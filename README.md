@@ -20,11 +20,11 @@ segmentation experiment extends **Auto-DeepLab** (Liu et al.).
 
 | Task | Folder | Metric | Our result | Params | Main log |
 | --- | --- | --- | ---: | ---: | --- |
-| CIFAR-10 | [`cifar10_2%_c=196/`](cifar10_2%25_c=196/Nao_v2_lora/) | test error | **2.00%** (best epoch) · 2.22% final · 2.20% SWA | 86.9M | `nao_train_44453.out` line 2186 |
-| CIFAR-10 (smaller) | [`cifar10_2.2%_c=128/`](cifar10_2.2%25_c=128/Nao_v2_final/) | test error | **2.14%** (SWA) · 2.20% best non-SWA | 39.2M | `nao_train_44736.out` (last line) |
+| CIFAR-10 | [`cifar10_2%_c=196/`](cifar10_2%25_c=196/Nao_v2_lora/) | test error | **2.00%** (best epoch) · 2.22% final · 2.20% SWA (test only) | 86.9M | `nao_train_44453.out` line 2186 |
+| CIFAR-10 (smaller) | [`cifar10_2.2%_c=128/`](cifar10_2.2%25_c=128/Nao_v2_final/) | test error | **2.20%** (best epoch) · 2.14% SWA (test only) | 39.2M | `nao_train_44736.out` (last line) |
 | CIFAR-100 | [`cifar100_14.5/`](cifar100_14.5/) | test error | **14.48%** (best epoch) · 14.66% final | 87.2M | `nao_test_c100_44989.out` |
 | ImageNet | [`Imagenet_24.3/`](Imagenet_24.3/Nao_test/) | top-1 / top-5 error | **24.29% / 7.85%** (final epoch 300) | 10.4M | `nao_test_imagenet_46117.out` |
-| Penn Treebank | [`ptb_rnn_56.81/`](ptb_rnn_56.81/rnn/) | test perplexity | **56.81** (static) · 52.11 dynamic eval* | 27.3M | `ptb_train47041.out` |
+| Penn Treebank | [`ptb_rnn_56.81/`](ptb_rnn_56.81/rnn/) | test perplexity | **56.81** (static) · 52.11 dynamic eval* (test only) | 27.3M | `ptb_train47041.out` |
 | Cityscapes segmentation | [`Segmentation/`](Segmentation/) | val mIoU | **74.29** single-scale · **76.32** multi-scale+flip | 10.1M | `posteval_49242_1.out` |
 
 Every number in this table can be found in the log named in its row. The
@@ -32,6 +32,13 @@ sections below give the exact lines.
 
 \* The dynamic-evaluation hyperparameters (lr, λ) were chosen by grid search
 on **test** perplexity. 52.11 is therefore test-tuned. **56.81** is the clean number.
+
+> **Note: the SWA and dynamic-evaluation numbers are exploratory tests only.**
+> Do **not** compare them with baseline or published results. The baselines
+> (NAO-V2, NAO-WS and the plain-NAO PTB run) were measured without SWA and
+> without dynamic evaluation, so a comparison would not be like for like. For
+> any comparison with a baseline, use the standard numbers instead: the CIFAR
+> best/final-epoch accuracy without SWA, and PTB static test perplexity 56.81.
 
 ---
 
@@ -128,7 +135,7 @@ The approach is the same as for the CNNs, applied to NAO-WS's recurrent cell:
 | Run | Architecture source | Test PPL | Log |
 | --- | --- | ---: | --- |
 | **LoRA + CVaR-PPO (headline)** | `[0,3,1,2,1,2,3,2,3,2,3,2,1,1,1,2,3,2,5,1,5,3]` | **56.81** | `ptb_train46616 → 46656 → 46710 → 47041.out`. The last line of `47041` reads `test ppl 56.81` (valid 59.20). |
-| Dynamic evaluation of the same model | n/a | 52.11* | `ptb_dyneval_48676.out` |
+| Dynamic evaluation of the same model (test only, not for comparison) | n/a | 52.11* | `ptb_dyneval_48676.out` |
 | Plain NAO-WS baseline (no LoRA/CVaR) | baseline search `logs/train.search_ptb.log` | 58.43 | `logs/train.log` |
 | LoRA + CVaR-PPO, search v2 | `logs/train.search_ptb_lora_cvar_v2.log` | 57.95 | `logs/train.best_lora_cvar_v2.log` |
 
