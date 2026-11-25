@@ -1,0 +1,1783 @@
+{
+  "host": "dgx1",
+  "python": "/scratch/ajin/Autodeeplab/modified/.venvs/retrain_cu118/bin/python",
+  "torch_version": "2.3.1+cu118",
+  "torch_path": "/scratch/ajin/Autodeeplab/modified/.venvs/retrain_cu118/lib/python3.11/site-packages/torch/__init__.py",
+  "cuda_build": "11.8",
+  "cuda_visible_devices": "0"
+}
+NVIDIA A100-SXM4-40GB, 470.161.03
+NVIDIA A100-SXM4-40GB, 470.161.03
+NVIDIA A100-SXM4-40GB, 470.161.03
+CUDA check passed on NVIDIA A100-SXM4-40GB. Training can now load its checkpoint.
+Resumed optimizer, AMP, progress and weights from retrain_selected_seed0_4000_bn001/latest.pth at update 667315
+{
+  "dataset": "cityscapes",
+  "dataset_root": "/scratch/ajin/Autodeeplab/autodeeplab/cityscapes/",
+  "data_dir": "retrain_selected_seed0_4000_bn001",
+  "max_steps": 740000,
+  "epochs": 4000,
+  "batch_size": 16,
+  "accumulation_steps": 1,
+  "crop_size": 769,
+  "filter_multiplier": 32,
+  "architecture_json": "architecture_seed0_halfres_reranked.json",
+  "base_lr": 0.05,
+  "weight_decay": 0.0001,
+  "warmup_steps": 1000,
+  "power": 0.9,
+  "drop_path_prob": 0.1,
+  "bn_momentum": 0.01,
+  "workers": 8,
+  "seed": 0,
+  "resume": "latest",
+  "val_every": 5000,
+  "save_every": 1000,
+  "snapshot_every": 50000,
+  "log_every": 50,
+  "no_amp": false,
+  "stop_after_steps": null,
+  "model_version": "autodeeplab_reference_v1",
+  "model_config": {
+    "filter_multiplier": 32,
+    "num_classes": 19,
+    "drop_path_prob": 0.1,
+    "bn_momentum": 0.01,
+    "cell": [
+      [
+        0,
+        "dil3"
+      ],
+      [
+        1,
+        "skip"
+      ],
+      [
+        0,
+        "max3"
+      ],
+      [
+        1,
+        "max3"
+      ],
+      [
+        0,
+        "skip"
+      ],
+      [
+        2,
+        "sep3"
+      ],
+      [
+        2,
+        "sep5"
+      ],
+      [
+        3,
+        "dil5"
+      ],
+      [
+        2,
+        "max3"
+      ],
+      [
+        1,
+        "dil5"
+      ]
+    ],
+    "backbone": [
+      0,
+      0,
+      0,
+      1,
+      2,
+      1,
+      2,
+      2,
+      3,
+      3,
+      2,
+      1
+    ]
+  },
+  "parameters": 19481587,
+  "train_images": 2975,
+  "validation_images": 500,
+  "effective_batch": 16,
+  "batches_per_epoch": 185,
+  "scheduled_data_epochs": 4000.0,
+  "runtime": {
+    "torch_version": "2.3.1+cu118",
+    "cuda_build": "11.8",
+    "cudnn_version": 8700
+  },
+  "resume_events": [
+    {
+      "step": 252064,
+      "event": "cuda_rng_format_conversion",
+      "devices": [
+        {
+          "device": 0,
+          "saved_bytes": 816,
+          "restored_bytes": 16
+        }
+      ],
+      "source_runtime": null,
+      "destination_runtime": {
+        "torch_version": "2.3.1+cu118",
+        "cuda_build": "11.8",
+        "cudnn_version": 8700
+      }
+    }
+  ]
+}
+Optimizer group 0: 19450944 parameters, weight_decay=0.0001
+Optimizer group 1: 30643 parameters, weight_decay=0.0
+update 667316/740000 epoch 3607.11 loss 0.0907 lr 0.0062014 sec/update 11.41 estimated days left 9.60
+update 667350/740000 epoch 3607.30 loss 0.0644 lr 0.0061988 sec/update 1.05 estimated days left 0.88
+update 667400/740000 epoch 3607.57 loss 0.0651 lr 0.0061950 sec/update 0.87 estimated days left 0.73
+update 667450/740000 epoch 3607.84 loss 0.0708 lr 0.0061911 sec/update 0.82 estimated days left 0.69
+update 667500/740000 epoch 3608.11 loss 0.0992 lr 0.0061873 sec/update 0.82 estimated days left 0.68
+update 667550/740000 epoch 3608.38 loss 0.0831 lr 0.0061834 sec/update 0.80 estimated days left 0.67
+update 667600/740000 epoch 3608.65 loss 0.0656 lr 0.0061796 sec/update 0.79 estimated days left 0.66
+update 667650/740000 epoch 3608.92 loss 0.0740 lr 0.0061758 sec/update 0.78 estimated days left 0.65
+update 667700/740000 epoch 3609.19 loss 0.0688 lr 0.0061719 sec/update 0.78 estimated days left 0.65
+update 667750/740000 epoch 3609.46 loss 0.0771 lr 0.0061681 sec/update 0.78 estimated days left 0.65
+update 667800/740000 epoch 3609.73 loss 0.0547 lr 0.0061642 sec/update 0.77 estimated days left 0.65
+update 667850/740000 epoch 3610.00 loss 0.0885 lr 0.0061604 sec/update 0.77 estimated days left 0.64
+update 667900/740000 epoch 3610.27 loss 0.1011 lr 0.0061565 sec/update 0.77 estimated days left 0.65
+update 667950/740000 epoch 3610.54 loss 0.1008 lr 0.0061527 sec/update 0.77 estimated days left 0.64
+update 668000/740000 epoch 3610.81 loss 0.0713 lr 0.0061489 sec/update 0.77 estimated days left 0.64
+update 668050/740000 epoch 3611.08 loss 0.0900 lr 0.0061450 sec/update 0.77 estimated days left 0.64
+AMP overflow: retry 1/16 on the same batch; scale 131072.0 -> 65536.0
+update 668100/740000 epoch 3611.35 loss 0.0513 lr 0.0061412 sec/update 0.77 estimated days left 0.64
+update 668150/740000 epoch 3611.62 loss 0.1135 lr 0.0061373 sec/update 0.77 estimated days left 0.64
+update 668200/740000 epoch 3611.89 loss 0.1000 lr 0.0061335 sec/update 0.77 estimated days left 0.64
+update 668250/740000 epoch 3612.16 loss 0.0803 lr 0.0061296 sec/update 0.77 estimated days left 0.64
+update 668300/740000 epoch 3612.43 loss 0.0822 lr 0.0061258 sec/update 0.77 estimated days left 0.64
+update 668350/740000 epoch 3612.70 loss 0.0711 lr 0.0061220 sec/update 0.76 estimated days left 0.63
+update 668400/740000 epoch 3612.97 loss 0.0502 lr 0.0061181 sec/update 0.76 estimated days left 0.63
+update 668450/740000 epoch 3613.24 loss 0.0762 lr 0.0061143 sec/update 0.76 estimated days left 0.63
+update 668500/740000 epoch 3613.51 loss 0.0791 lr 0.0061104 sec/update 0.76 estimated days left 0.63
+update 668550/740000 epoch 3613.78 loss 0.0710 lr 0.0061066 sec/update 0.76 estimated days left 0.63
+update 668600/740000 epoch 3614.05 loss 0.0521 lr 0.0061027 sec/update 0.76 estimated days left 0.63
+update 668650/740000 epoch 3614.32 loss 0.0733 lr 0.0060989 sec/update 0.76 estimated days left 0.63
+update 668700/740000 epoch 3614.59 loss 0.0792 lr 0.0060950 sec/update 0.76 estimated days left 0.63
+update 668750/740000 epoch 3614.86 loss 0.0720 lr 0.0060912 sec/update 0.76 estimated days left 0.63
+update 668800/740000 epoch 3615.14 loss 0.0698 lr 0.0060873 sec/update 0.76 estimated days left 0.63
+update 668850/740000 epoch 3615.41 loss 0.0848 lr 0.0060835 sec/update 0.76 estimated days left 0.63
+update 668900/740000 epoch 3615.68 loss 0.0869 lr 0.0060796 sec/update 0.76 estimated days left 0.63
+update 668950/740000 epoch 3615.95 loss 0.0767 lr 0.0060758 sec/update 0.76 estimated days left 0.62
+update 669000/740000 epoch 3616.22 loss 0.0895 lr 0.0060719 sec/update 0.76 estimated days left 0.63
+update 669050/740000 epoch 3616.49 loss 0.0693 lr 0.0060681 sec/update 0.76 estimated days left 0.62
+update 669100/740000 epoch 3616.76 loss 0.0934 lr 0.0060643 sec/update 0.76 estimated days left 0.62
+update 669150/740000 epoch 3617.03 loss 0.0790 lr 0.0060604 sec/update 0.76 estimated days left 0.62
+update 669200/740000 epoch 3617.30 loss 0.0922 lr 0.0060566 sec/update 0.76 estimated days left 0.62
+update 669250/740000 epoch 3617.57 loss 0.0901 lr 0.0060527 sec/update 0.76 estimated days left 0.62
+update 669300/740000 epoch 3617.84 loss 0.0805 lr 0.0060489 sec/update 0.76 estimated days left 0.62
+update 669350/740000 epoch 3618.11 loss 0.0613 lr 0.0060450 sec/update 0.76 estimated days left 0.62
+update 669400/740000 epoch 3618.38 loss 0.0831 lr 0.0060412 sec/update 0.76 estimated days left 0.62
+update 669450/740000 epoch 3618.65 loss 0.0630 lr 0.0060373 sec/update 0.76 estimated days left 0.62
+update 669500/740000 epoch 3618.92 loss 0.0759 lr 0.0060335 sec/update 0.76 estimated days left 0.62
+update 669550/740000 epoch 3619.19 loss 0.0586 lr 0.0060296 sec/update 0.76 estimated days left 0.62
+update 669600/740000 epoch 3619.46 loss 0.0688 lr 0.0060257 sec/update 0.76 estimated days left 0.62
+update 669650/740000 epoch 3619.73 loss 0.0664 lr 0.0060219 sec/update 0.76 estimated days left 0.62
+update 669700/740000 epoch 3620.00 loss 0.0730 lr 0.0060180 sec/update 0.76 estimated days left 0.62
+update 669750/740000 epoch 3620.27 loss 0.0634 lr 0.0060142 sec/update 0.76 estimated days left 0.62
+update 669800/740000 epoch 3620.54 loss 0.0663 lr 0.0060103 sec/update 0.76 estimated days left 0.62
+update 669850/740000 epoch 3620.81 loss 0.0823 lr 0.0060065 sec/update 0.76 estimated days left 0.62
+update 669900/740000 epoch 3621.08 loss 0.0864 lr 0.0060026 sec/update 0.76 estimated days left 0.62
+update 669950/740000 epoch 3621.35 loss 0.0577 lr 0.0059988 sec/update 0.76 estimated days left 0.61
+update 670000/740000 epoch 3621.62 loss 0.0808 lr 0.0059949 sec/update 0.76 estimated days left 0.61
+Validation 50/500
+Validation 100/500
+Validation 150/500
+Validation 200/500
+Validation 250/500
+Validation 300/500
+Validation 350/500
+Validation 400/500
+Validation 450/500
+Validation 500/500
+Validation update 670000: mIoU 74.470% (500 images)
+update 670050/740000 epoch 3621.89 loss 0.0806 lr 0.0059911 sec/update 0.76 estimated days left 0.62
+update 670100/740000 epoch 3622.16 loss 0.0782 lr 0.0059872 sec/update 0.76 estimated days left 0.62
+update 670150/740000 epoch 3622.43 loss 0.0708 lr 0.0059834 sec/update 0.76 estimated days left 0.62
+update 670200/740000 epoch 3622.70 loss 0.0737 lr 0.0059795 sec/update 0.76 estimated days left 0.62
+update 670250/740000 epoch 3622.97 loss 0.0705 lr 0.0059757 sec/update 0.76 estimated days left 0.62
+update 670300/740000 epoch 3623.24 loss 0.0869 lr 0.0059718 sec/update 0.76 estimated days left 0.62
+update 670350/740000 epoch 3623.51 loss 0.0680 lr 0.0059679 sec/update 0.76 estimated days left 0.62
+update 670400/740000 epoch 3623.78 loss 0.0605 lr 0.0059641 sec/update 0.76 estimated days left 0.61
+update 670450/740000 epoch 3624.05 loss 0.0780 lr 0.0059602 sec/update 0.76 estimated days left 0.61
+update 670500/740000 epoch 3624.32 loss 0.0745 lr 0.0059564 sec/update 0.76 estimated days left 0.61
+update 670550/740000 epoch 3624.59 loss 0.0691 lr 0.0059525 sec/update 0.76 estimated days left 0.61
+update 670600/740000 epoch 3624.86 loss 0.0803 lr 0.0059487 sec/update 0.76 estimated days left 0.61
+update 670650/740000 epoch 3625.14 loss 0.1147 lr 0.0059448 sec/update 0.76 estimated days left 0.61
+update 670700/740000 epoch 3625.41 loss 0.0720 lr 0.0059409 sec/update 0.76 estimated days left 0.61
+update 670750/740000 epoch 3625.68 loss 0.0943 lr 0.0059371 sec/update 0.76 estimated days left 0.61
+update 670800/740000 epoch 3625.95 loss 0.0607 lr 0.0059332 sec/update 0.76 estimated days left 0.61
+update 670850/740000 epoch 3626.22 loss 0.0905 lr 0.0059294 sec/update 0.76 estimated days left 0.61
+update 670900/740000 epoch 3626.49 loss 0.0715 lr 0.0059255 sec/update 0.76 estimated days left 0.61
+update 670950/740000 epoch 3626.76 loss 0.0600 lr 0.0059217 sec/update 0.76 estimated days left 0.61
+update 671000/740000 epoch 3627.03 loss 0.0642 lr 0.0059178 sec/update 0.76 estimated days left 0.61
+update 671050/740000 epoch 3627.30 loss 0.0840 lr 0.0059139 sec/update 0.76 estimated days left 0.61
+update 671100/740000 epoch 3627.57 loss 0.0742 lr 0.0059101 sec/update 0.76 estimated days left 0.61
+update 671150/740000 epoch 3627.84 loss 0.0807 lr 0.0059062 sec/update 0.76 estimated days left 0.61
+update 671200/740000 epoch 3628.11 loss 0.0748 lr 0.0059024 sec/update 0.76 estimated days left 0.61
+update 671250/740000 epoch 3628.38 loss 0.0822 lr 0.0058985 sec/update 0.76 estimated days left 0.61
+update 671300/740000 epoch 3628.65 loss 0.0696 lr 0.0058946 sec/update 0.76 estimated days left 0.61
+update 671350/740000 epoch 3628.92 loss 0.1041 lr 0.0058908 sec/update 0.76 estimated days left 0.60
+update 671400/740000 epoch 3629.19 loss 0.0774 lr 0.0058869 sec/update 0.76 estimated days left 0.60
+update 671450/740000 epoch 3629.46 loss 0.1342 lr 0.0058830 sec/update 0.76 estimated days left 0.60
+update 671500/740000 epoch 3629.73 loss 0.0630 lr 0.0058792 sec/update 0.76 estimated days left 0.60
+update 671550/740000 epoch 3630.00 loss 0.1005 lr 0.0058753 sec/update 0.76 estimated days left 0.60
+update 671600/740000 epoch 3630.27 loss 0.0759 lr 0.0058715 sec/update 0.76 estimated days left 0.60
+update 671650/740000 epoch 3630.54 loss 0.0729 lr 0.0058676 sec/update 0.76 estimated days left 0.60
+update 671700/740000 epoch 3630.81 loss 0.0772 lr 0.0058637 sec/update 0.76 estimated days left 0.60
+update 671750/740000 epoch 3631.08 loss 0.0622 lr 0.0058599 sec/update 0.76 estimated days left 0.60
+update 671800/740000 epoch 3631.35 loss 0.0738 lr 0.0058560 sec/update 0.76 estimated days left 0.60
+update 671850/740000 epoch 3631.62 loss 0.0686 lr 0.0058521 sec/update 0.76 estimated days left 0.60
+update 671900/740000 epoch 3631.89 loss 0.0819 lr 0.0058483 sec/update 0.76 estimated days left 0.60
+update 671950/740000 epoch 3632.16 loss 0.0850 lr 0.0058444 sec/update 0.76 estimated days left 0.60
+update 672000/740000 epoch 3632.43 loss 0.0759 lr 0.0058406 sec/update 0.76 estimated days left 0.60
+update 672050/740000 epoch 3632.70 loss 0.0818 lr 0.0058367 sec/update 0.76 estimated days left 0.60
+update 672100/740000 epoch 3632.97 loss 0.0733 lr 0.0058328 sec/update 0.76 estimated days left 0.60
+update 672150/740000 epoch 3633.24 loss 0.0657 lr 0.0058290 sec/update 0.76 estimated days left 0.60
+AMP overflow: retry 1/16 on the same batch; scale 262144.0 -> 131072.0
+update 672200/740000 epoch 3633.51 loss 0.0839 lr 0.0058251 sec/update 0.76 estimated days left 0.60
+update 672250/740000 epoch 3633.78 loss 0.0654 lr 0.0058212 sec/update 0.76 estimated days left 0.60
+update 672300/740000 epoch 3634.05 loss 0.0933 lr 0.0058174 sec/update 0.76 estimated days left 0.60
+update 672350/740000 epoch 3634.32 loss 0.0687 lr 0.0058135 sec/update 0.76 estimated days left 0.60
+update 672400/740000 epoch 3634.59 loss 0.0517 lr 0.0058096 sec/update 0.76 estimated days left 0.59
+update 672450/740000 epoch 3634.86 loss 0.0642 lr 0.0058058 sec/update 0.76 estimated days left 0.59
+update 672500/740000 epoch 3635.14 loss 0.0715 lr 0.0058019 sec/update 0.76 estimated days left 0.59
+update 672550/740000 epoch 3635.41 loss 0.0820 lr 0.0057980 sec/update 0.76 estimated days left 0.59
+AMP overflow: retry 1/16 on the same batch; scale 131072.0 -> 65536.0
+update 672600/740000 epoch 3635.68 loss 0.0617 lr 0.0057941 sec/update 0.76 estimated days left 0.59
+update 672650/740000 epoch 3635.95 loss 0.0741 lr 0.0057903 sec/update 0.76 estimated days left 0.59
+update 672700/740000 epoch 3636.22 loss 0.0891 lr 0.0057864 sec/update 0.76 estimated days left 0.59
+update 672750/740000 epoch 3636.49 loss 0.0802 lr 0.0057825 sec/update 0.76 estimated days left 0.59
+update 672800/740000 epoch 3636.76 loss 0.0513 lr 0.0057787 sec/update 0.76 estimated days left 0.59
+update 672850/740000 epoch 3637.03 loss 0.0892 lr 0.0057748 sec/update 0.76 estimated days left 0.59
+update 672900/740000 epoch 3637.30 loss 0.0724 lr 0.0057709 sec/update 0.76 estimated days left 0.59
+update 672950/740000 epoch 3637.57 loss 0.0661 lr 0.0057671 sec/update 0.76 estimated days left 0.59
+update 673000/740000 epoch 3637.84 loss 0.0644 lr 0.0057632 sec/update 0.76 estimated days left 0.59
+update 673050/740000 epoch 3638.11 loss 0.0904 lr 0.0057593 sec/update 0.76 estimated days left 0.59
+update 673100/740000 epoch 3638.38 loss 0.0661 lr 0.0057555 sec/update 0.76 estimated days left 0.59
+update 673150/740000 epoch 3638.65 loss 0.0901 lr 0.0057516 sec/update 0.76 estimated days left 0.59
+update 673200/740000 epoch 3638.92 loss 0.0872 lr 0.0057477 sec/update 0.76 estimated days left 0.59
+update 673250/740000 epoch 3639.19 loss 0.0872 lr 0.0057438 sec/update 0.76 estimated days left 0.59
+update 673300/740000 epoch 3639.46 loss 0.0768 lr 0.0057400 sec/update 0.76 estimated days left 0.59
+update 673350/740000 epoch 3639.73 loss 0.0836 lr 0.0057361 sec/update 0.76 estimated days left 0.59
+update 673400/740000 epoch 3640.00 loss 0.0835 lr 0.0057322 sec/update 0.76 estimated days left 0.58
+update 673450/740000 epoch 3640.27 loss 0.0658 lr 0.0057283 sec/update 0.76 estimated days left 0.58
+update 673500/740000 epoch 3640.54 loss 0.0649 lr 0.0057245 sec/update 0.76 estimated days left 0.58
+update 673550/740000 epoch 3640.81 loss 0.0755 lr 0.0057206 sec/update 0.76 estimated days left 0.58
+update 673600/740000 epoch 3641.08 loss 0.0870 lr 0.0057167 sec/update 0.76 estimated days left 0.58
+update 673650/740000 epoch 3641.35 loss 0.0789 lr 0.0057128 sec/update 0.76 estimated days left 0.58
+update 673700/740000 epoch 3641.62 loss 0.0718 lr 0.0057090 sec/update 0.76 estimated days left 0.58
+update 673750/740000 epoch 3641.89 loss 0.0859 lr 0.0057051 sec/update 0.76 estimated days left 0.58
+update 673800/740000 epoch 3642.16 loss 0.0631 lr 0.0057012 sec/update 0.76 estimated days left 0.58
+update 673850/740000 epoch 3642.43 loss 0.0728 lr 0.0056973 sec/update 0.76 estimated days left 0.58
+update 673900/740000 epoch 3642.70 loss 0.0673 lr 0.0056935 sec/update 0.76 estimated days left 0.58
+update 673950/740000 epoch 3642.97 loss 0.0780 lr 0.0056896 sec/update 0.76 estimated days left 0.58
+update 674000/740000 epoch 3643.24 loss 0.0933 lr 0.0056857 sec/update 0.76 estimated days left 0.58
+update 674050/740000 epoch 3643.51 loss 0.0684 lr 0.0056818 sec/update 0.76 estimated days left 0.58
+update 674100/740000 epoch 3643.78 loss 0.0770 lr 0.0056780 sec/update 0.76 estimated days left 0.58
+update 674150/740000 epoch 3644.05 loss 0.1031 lr 0.0056741 sec/update 0.76 estimated days left 0.58
+update 674200/740000 epoch 3644.32 loss 0.0646 lr 0.0056702 sec/update 0.76 estimated days left 0.58
+update 674250/740000 epoch 3644.59 loss 0.0686 lr 0.0056663 sec/update 0.76 estimated days left 0.58
+update 674300/740000 epoch 3644.86 loss 0.0722 lr 0.0056625 sec/update 0.76 estimated days left 0.58
+update 674350/740000 epoch 3645.14 loss 0.0739 lr 0.0056586 sec/update 0.76 estimated days left 0.58
+update 674400/740000 epoch 3645.41 loss 0.0985 lr 0.0056547 sec/update 0.76 estimated days left 0.58
+update 674450/740000 epoch 3645.68 loss 0.0762 lr 0.0056508 sec/update 0.76 estimated days left 0.58
+update 674500/740000 epoch 3645.95 loss 0.0635 lr 0.0056469 sec/update 0.76 estimated days left 0.57
+update 674550/740000 epoch 3646.22 loss 0.0553 lr 0.0056431 sec/update 0.76 estimated days left 0.57
+update 674600/740000 epoch 3646.49 loss 0.0639 lr 0.0056392 sec/update 0.76 estimated days left 0.57
+update 674650/740000 epoch 3646.76 loss 0.0674 lr 0.0056353 sec/update 0.76 estimated days left 0.57
+update 674700/740000 epoch 3647.03 loss 0.0884 lr 0.0056314 sec/update 0.76 estimated days left 0.57
+update 674750/740000 epoch 3647.30 loss 0.0734 lr 0.0056275 sec/update 0.76 estimated days left 0.57
+update 674800/740000 epoch 3647.57 loss 0.0725 lr 0.0056237 sec/update 0.76 estimated days left 0.57
+update 674850/740000 epoch 3647.84 loss 0.0570 lr 0.0056198 sec/update 0.76 estimated days left 0.57
+update 674900/740000 epoch 3648.11 loss 0.0692 lr 0.0056159 sec/update 0.76 estimated days left 0.57
+update 674950/740000 epoch 3648.38 loss 0.0899 lr 0.0056120 sec/update 0.76 estimated days left 0.57
+update 675000/740000 epoch 3648.65 loss 0.0698 lr 0.0056081 sec/update 0.76 estimated days left 0.57
+Validation 50/500
+Validation 100/500
+Validation 150/500
+Validation 200/500
+Validation 250/500
+Validation 300/500
+Validation 350/500
+Validation 400/500
+Validation 450/500
+Validation 500/500
+Validation update 675000: mIoU 73.610% (500 images)
+update 675050/740000 epoch 3648.92 loss 0.0562 lr 0.0056042 sec/update 0.76 estimated days left 0.57
+update 675100/740000 epoch 3649.19 loss 0.0566 lr 0.0056004 sec/update 0.76 estimated days left 0.57
+update 675150/740000 epoch 3649.46 loss 0.0892 lr 0.0055965 sec/update 0.76 estimated days left 0.57
+update 675200/740000 epoch 3649.73 loss 0.0933 lr 0.0055926 sec/update 0.76 estimated days left 0.57
+update 675250/740000 epoch 3650.00 loss 0.0905 lr 0.0055887 sec/update 0.76 estimated days left 0.57
+update 675300/740000 epoch 3650.27 loss 0.0853 lr 0.0055848 sec/update 0.76 estimated days left 0.57
+update 675350/740000 epoch 3650.54 loss 0.0839 lr 0.0055809 sec/update 0.76 estimated days left 0.57
+update 675400/740000 epoch 3650.81 loss 0.0644 lr 0.0055771 sec/update 0.76 estimated days left 0.57
+update 675450/740000 epoch 3651.08 loss 0.0814 lr 0.0055732 sec/update 0.76 estimated days left 0.57
+update 675500/740000 epoch 3651.35 loss 0.0879 lr 0.0055693 sec/update 0.76 estimated days left 0.57
+AMP overflow: retry 1/16 on the same batch; scale 131072.0 -> 65536.0
+update 675550/740000 epoch 3651.62 loss 0.0816 lr 0.0055654 sec/update 0.76 estimated days left 0.57
+update 675600/740000 epoch 3651.89 loss 0.0833 lr 0.0055615 sec/update 0.76 estimated days left 0.57
+update 675650/740000 epoch 3652.16 loss 0.1023 lr 0.0055576 sec/update 0.76 estimated days left 0.57
+update 675700/740000 epoch 3652.43 loss 0.0981 lr 0.0055537 sec/update 0.76 estimated days left 0.57
+update 675750/740000 epoch 3652.70 loss 0.0792 lr 0.0055499 sec/update 0.76 estimated days left 0.56
+update 675800/740000 epoch 3652.97 loss 0.0747 lr 0.0055460 sec/update 0.76 estimated days left 0.56
+update 675850/740000 epoch 3653.24 loss 0.0643 lr 0.0055421 sec/update 0.76 estimated days left 0.56
+update 675900/740000 epoch 3653.51 loss 0.0744 lr 0.0055382 sec/update 0.76 estimated days left 0.56
+update 675950/740000 epoch 3653.78 loss 0.0697 lr 0.0055343 sec/update 0.76 estimated days left 0.56
+update 676000/740000 epoch 3654.05 loss 0.0713 lr 0.0055304 sec/update 0.76 estimated days left 0.56
+update 676050/740000 epoch 3654.32 loss 0.0702 lr 0.0055265 sec/update 0.76 estimated days left 0.56
+update 676100/740000 epoch 3654.59 loss 0.0698 lr 0.0055226 sec/update 0.76 estimated days left 0.56
+update 676150/740000 epoch 3654.86 loss 0.0673 lr 0.0055188 sec/update 0.76 estimated days left 0.56
+update 676200/740000 epoch 3655.14 loss 0.0617 lr 0.0055149 sec/update 0.76 estimated days left 0.56
+update 676250/740000 epoch 3655.41 loss 0.0546 lr 0.0055110 sec/update 0.76 estimated days left 0.56
+update 676300/740000 epoch 3655.68 loss 0.0994 lr 0.0055071 sec/update 0.76 estimated days left 0.56
+update 676350/740000 epoch 3655.95 loss 0.0688 lr 0.0055032 sec/update 0.76 estimated days left 0.56
+update 676400/740000 epoch 3656.22 loss 0.0735 lr 0.0054993 sec/update 0.76 estimated days left 0.56
+update 676450/740000 epoch 3656.49 loss 0.0836 lr 0.0054954 sec/update 0.76 estimated days left 0.56
+update 676500/740000 epoch 3656.76 loss 0.0767 lr 0.0054915 sec/update 0.76 estimated days left 0.56
+update 676550/740000 epoch 3657.03 loss 0.0880 lr 0.0054876 sec/update 0.76 estimated days left 0.56
+update 676600/740000 epoch 3657.30 loss 0.0772 lr 0.0054837 sec/update 0.76 estimated days left 0.56
+update 676650/740000 epoch 3657.57 loss 0.0750 lr 0.0054798 sec/update 0.76 estimated days left 0.56
+update 676700/740000 epoch 3657.84 loss 0.0665 lr 0.0054760 sec/update 0.76 estimated days left 0.56
+update 676750/740000 epoch 3658.11 loss 0.0649 lr 0.0054721 sec/update 0.76 estimated days left 0.56
+update 676800/740000 epoch 3658.38 loss 0.0782 lr 0.0054682 sec/update 0.76 estimated days left 0.56
+update 676850/740000 epoch 3658.65 loss 0.0717 lr 0.0054643 sec/update 0.76 estimated days left 0.55
+update 676900/740000 epoch 3658.92 loss 0.0674 lr 0.0054604 sec/update 0.76 estimated days left 0.55
+update 676950/740000 epoch 3659.19 loss 0.0621 lr 0.0054565 sec/update 0.76 estimated days left 0.55
+update 677000/740000 epoch 3659.46 loss 0.0686 lr 0.0054526 sec/update 0.76 estimated days left 0.55
+update 677050/740000 epoch 3659.73 loss 0.0928 lr 0.0054487 sec/update 0.76 estimated days left 0.55
+update 677100/740000 epoch 3660.00 loss 0.0723 lr 0.0054448 sec/update 0.76 estimated days left 0.55
+update 677150/740000 epoch 3660.27 loss 0.0722 lr 0.0054409 sec/update 0.76 estimated days left 0.55
+update 677200/740000 epoch 3660.54 loss 0.0604 lr 0.0054370 sec/update 0.76 estimated days left 0.55
+update 677250/740000 epoch 3660.81 loss 0.0833 lr 0.0054331 sec/update 0.76 estimated days left 0.55
+update 677300/740000 epoch 3661.08 loss 0.0505 lr 0.0054292 sec/update 0.76 estimated days left 0.55
+AMP overflow: retry 1/16 on the same batch; scale 65536.0 -> 32768.0
+AMP overflow: retry 2/16 on the same batch; scale 32768.0 -> 16384.0
+update 677350/740000 epoch 3661.35 loss 0.0742 lr 0.0054253 sec/update 0.76 estimated days left 0.55
+update 677400/740000 epoch 3661.62 loss 0.0950 lr 0.0054214 sec/update 0.76 estimated days left 0.55
+update 677450/740000 epoch 3661.89 loss 0.0622 lr 0.0054175 sec/update 0.76 estimated days left 0.55
+update 677500/740000 epoch 3662.16 loss 0.0810 lr 0.0054136 sec/update 0.76 estimated days left 0.55
+update 677550/740000 epoch 3662.43 loss 0.0582 lr 0.0054097 sec/update 0.76 estimated days left 0.55
+update 677600/740000 epoch 3662.70 loss 0.0914 lr 0.0054058 sec/update 0.76 estimated days left 0.55
+update 677650/740000 epoch 3662.97 loss 0.0579 lr 0.0054019 sec/update 0.76 estimated days left 0.55
+update 677700/740000 epoch 3663.24 loss 0.0854 lr 0.0053980 sec/update 0.76 estimated days left 0.55
+update 677750/740000 epoch 3663.51 loss 0.0637 lr 0.0053941 sec/update 0.76 estimated days left 0.55
+update 677800/740000 epoch 3663.78 loss 0.0835 lr 0.0053902 sec/update 0.76 estimated days left 0.55
+update 677850/740000 epoch 3664.05 loss 0.1123 lr 0.0053863 sec/update 0.76 estimated days left 0.55
+update 677900/740000 epoch 3664.32 loss 0.0708 lr 0.0053824 sec/update 0.76 estimated days left 0.55
+update 677950/740000 epoch 3664.59 loss 0.0588 lr 0.0053785 sec/update 0.76 estimated days left 0.54
+update 678000/740000 epoch 3664.86 loss 0.0768 lr 0.0053746 sec/update 0.76 estimated days left 0.54
+update 678050/740000 epoch 3665.14 loss 0.0854 lr 0.0053707 sec/update 0.76 estimated days left 0.54
+update 678100/740000 epoch 3665.41 loss 0.0711 lr 0.0053668 sec/update 0.76 estimated days left 0.54
+update 678150/740000 epoch 3665.68 loss 0.0836 lr 0.0053629 sec/update 0.76 estimated days left 0.54
+update 678200/740000 epoch 3665.95 loss 0.0618 lr 0.0053590 sec/update 0.76 estimated days left 0.54
+update 678250/740000 epoch 3666.22 loss 0.0784 lr 0.0053551 sec/update 0.76 estimated days left 0.54
+update 678300/740000 epoch 3666.49 loss 0.0869 lr 0.0053512 sec/update 0.76 estimated days left 0.54
+update 678350/740000 epoch 3666.76 loss 0.0731 lr 0.0053473 sec/update 0.76 estimated days left 0.54
+update 678400/740000 epoch 3667.03 loss 0.0651 lr 0.0053434 sec/update 0.76 estimated days left 0.54
+update 678450/740000 epoch 3667.30 loss 0.0766 lr 0.0053395 sec/update 0.76 estimated days left 0.54
+update 678500/740000 epoch 3667.57 loss 0.0603 lr 0.0053356 sec/update 0.76 estimated days left 0.54
+update 678550/740000 epoch 3667.84 loss 0.0881 lr 0.0053317 sec/update 0.76 estimated days left 0.54
+update 678600/740000 epoch 3668.11 loss 0.0493 lr 0.0053278 sec/update 0.76 estimated days left 0.54
+update 678650/740000 epoch 3668.38 loss 0.0647 lr 0.0053239 sec/update 0.76 estimated days left 0.54
+update 678700/740000 epoch 3668.65 loss 0.0567 lr 0.0053200 sec/update 0.76 estimated days left 0.54
+update 678750/740000 epoch 3668.92 loss 0.0645 lr 0.0053161 sec/update 0.76 estimated days left 0.54
+update 678800/740000 epoch 3669.19 loss 0.0829 lr 0.0053122 sec/update 0.76 estimated days left 0.54
+update 678850/740000 epoch 3669.46 loss 0.0614 lr 0.0053083 sec/update 0.76 estimated days left 0.54
+update 678900/740000 epoch 3669.73 loss 0.0876 lr 0.0053044 sec/update 0.76 estimated days left 0.54
+update 678950/740000 epoch 3670.00 loss 0.0715 lr 0.0053005 sec/update 0.76 estimated days left 0.54
+update 679000/740000 epoch 3670.27 loss 0.0904 lr 0.0052966 sec/update 0.76 estimated days left 0.54
+update 679050/740000 epoch 3670.54 loss 0.0692 lr 0.0052926 sec/update 0.76 estimated days left 0.53
+update 679100/740000 epoch 3670.81 loss 0.0722 lr 0.0052887 sec/update 0.76 estimated days left 0.53
+update 679150/740000 epoch 3671.08 loss 0.0755 lr 0.0052848 sec/update 0.76 estimated days left 0.53
+update 679200/740000 epoch 3671.35 loss 0.0705 lr 0.0052809 sec/update 0.76 estimated days left 0.53
+update 679250/740000 epoch 3671.62 loss 0.0719 lr 0.0052770 sec/update 0.76 estimated days left 0.53
+update 679300/740000 epoch 3671.89 loss 0.0931 lr 0.0052731 sec/update 0.76 estimated days left 0.53
+update 679350/740000 epoch 3672.16 loss 0.1080 lr 0.0052692 sec/update 0.76 estimated days left 0.53
+update 679400/740000 epoch 3672.43 loss 0.0541 lr 0.0052653 sec/update 0.76 estimated days left 0.53
+update 679450/740000 epoch 3672.70 loss 0.0812 lr 0.0052614 sec/update 0.76 estimated days left 0.53
+update 679500/740000 epoch 3672.97 loss 0.0970 lr 0.0052575 sec/update 0.76 estimated days left 0.53
+update 679550/740000 epoch 3673.24 loss 0.0830 lr 0.0052536 sec/update 0.76 estimated days left 0.53
+update 679600/740000 epoch 3673.51 loss 0.0831 lr 0.0052496 sec/update 0.76 estimated days left 0.53
+update 679650/740000 epoch 3673.78 loss 0.0852 lr 0.0052457 sec/update 0.76 estimated days left 0.53
+update 679700/740000 epoch 3674.05 loss 0.0808 lr 0.0052418 sec/update 0.76 estimated days left 0.53
+update 679750/740000 epoch 3674.32 loss 0.0558 lr 0.0052379 sec/update 0.76 estimated days left 0.53
+update 679800/740000 epoch 3674.59 loss 0.0680 lr 0.0052340 sec/update 0.76 estimated days left 0.53
+update 679850/740000 epoch 3674.86 loss 0.0671 lr 0.0052301 sec/update 0.76 estimated days left 0.53
+update 679900/740000 epoch 3675.14 loss 0.0580 lr 0.0052262 sec/update 0.76 estimated days left 0.53
+update 679950/740000 epoch 3675.41 loss 0.2665 lr 0.0052223 sec/update 0.76 estimated days left 0.53
+update 680000/740000 epoch 3675.68 loss 0.0836 lr 0.0052183 sec/update 0.76 estimated days left 0.53
+Validation 50/500
+Validation 100/500
+Validation 150/500
+Validation 200/500
+Validation 250/500
+Validation 300/500
+Validation 350/500
+Validation 400/500
+Validation 450/500
+Validation 500/500
+Validation update 680000: mIoU 72.510% (500 images)
+update 680050/740000 epoch 3675.95 loss 0.0844 lr 0.0052144 sec/update 0.76 estimated days left 0.53
+update 680100/740000 epoch 3676.22 loss 0.0713 lr 0.0052105 sec/update 0.76 estimated days left 0.53
+update 680150/740000 epoch 3676.49 loss 0.0710 lr 0.0052066 sec/update 0.76 estimated days left 0.53
+update 680200/740000 epoch 3676.76 loss 0.0784 lr 0.0052027 sec/update 0.76 estimated days left 0.53
+update 680250/740000 epoch 3677.03 loss 0.0639 lr 0.0051988 sec/update 0.76 estimated days left 0.53
+update 680300/740000 epoch 3677.30 loss 0.0676 lr 0.0051949 sec/update 0.76 estimated days left 0.52
+update 680350/740000 epoch 3677.57 loss 0.0813 lr 0.0051909 sec/update 0.76 estimated days left 0.52
+update 680400/740000 epoch 3677.84 loss 0.0787 lr 0.0051870 sec/update 0.76 estimated days left 0.52
+update 680450/740000 epoch 3678.11 loss 0.0575 lr 0.0051831 sec/update 0.76 estimated days left 0.52
+update 680500/740000 epoch 3678.38 loss 0.0655 lr 0.0051792 sec/update 0.76 estimated days left 0.52
+update 680550/740000 epoch 3678.65 loss 0.0905 lr 0.0051753 sec/update 0.76 estimated days left 0.52
+update 680600/740000 epoch 3678.92 loss 0.1008 lr 0.0051714 sec/update 0.76 estimated days left 0.52
+update 680650/740000 epoch 3679.19 loss 0.0868 lr 0.0051674 sec/update 0.76 estimated days left 0.52
+update 680700/740000 epoch 3679.46 loss 0.0851 lr 0.0051635 sec/update 0.76 estimated days left 0.52
+update 680750/740000 epoch 3679.73 loss 0.0529 lr 0.0051596 sec/update 0.76 estimated days left 0.52
+update 680800/740000 epoch 3680.00 loss 0.0831 lr 0.0051557 sec/update 0.76 estimated days left 0.52
+update 680850/740000 epoch 3680.27 loss 0.0985 lr 0.0051518 sec/update 0.76 estimated days left 0.52
+update 680900/740000 epoch 3680.54 loss 0.1034 lr 0.0051478 sec/update 0.76 estimated days left 0.52
+update 680950/740000 epoch 3680.81 loss 0.0549 lr 0.0051439 sec/update 0.76 estimated days left 0.52
+update 681000/740000 epoch 3681.08 loss 0.0644 lr 0.0051400 sec/update 0.76 estimated days left 0.52
+update 681050/740000 epoch 3681.35 loss 0.0820 lr 0.0051361 sec/update 0.76 estimated days left 0.52
+update 681100/740000 epoch 3681.62 loss 0.0848 lr 0.0051322 sec/update 0.76 estimated days left 0.52
+update 681150/740000 epoch 3681.89 loss 0.0676 lr 0.0051282 sec/update 0.76 estimated days left 0.52
+update 681200/740000 epoch 3682.16 loss 0.0635 lr 0.0051243 sec/update 0.76 estimated days left 0.52
+update 681250/740000 epoch 3682.43 loss 0.0643 lr 0.0051204 sec/update 0.76 estimated days left 0.52
+update 681300/740000 epoch 3682.70 loss 0.0687 lr 0.0051165 sec/update 0.76 estimated days left 0.52
+update 681350/740000 epoch 3682.97 loss 0.0965 lr 0.0051126 sec/update 0.76 estimated days left 0.51
+update 681400/740000 epoch 3683.24 loss 0.0647 lr 0.0051086 sec/update 0.76 estimated days left 0.51
+update 681450/740000 epoch 3683.51 loss 0.0578 lr 0.0051047 sec/update 0.76 estimated days left 0.51
+update 681500/740000 epoch 3683.78 loss 0.0618 lr 0.0051008 sec/update 0.76 estimated days left 0.51
+update 681550/740000 epoch 3684.05 loss 0.0648 lr 0.0050969 sec/update 0.76 estimated days left 0.51
+update 681600/740000 epoch 3684.32 loss 0.0850 lr 0.0050929 sec/update 0.76 estimated days left 0.51
+update 681650/740000 epoch 3684.59 loss 0.0820 lr 0.0050890 sec/update 0.76 estimated days left 0.51
+update 681700/740000 epoch 3684.86 loss 0.0843 lr 0.0050851 sec/update 0.76 estimated days left 0.51
+update 681750/740000 epoch 3685.14 loss 0.0657 lr 0.0050812 sec/update 0.76 estimated days left 0.51
+update 681800/740000 epoch 3685.41 loss 0.0905 lr 0.0050772 sec/update 0.76 estimated days left 0.51
+update 681850/740000 epoch 3685.68 loss 0.0717 lr 0.0050733 sec/update 0.76 estimated days left 0.51
+update 681900/740000 epoch 3685.95 loss 0.0801 lr 0.0050694 sec/update 0.76 estimated days left 0.51
+update 681950/740000 epoch 3686.22 loss 0.0756 lr 0.0050655 sec/update 0.76 estimated days left 0.51
+update 682000/740000 epoch 3686.49 loss 0.0769 lr 0.0050615 sec/update 0.76 estimated days left 0.51
+update 682050/740000 epoch 3686.76 loss 0.0938 lr 0.0050576 sec/update 0.76 estimated days left 0.51
+update 682100/740000 epoch 3687.03 loss 0.0944 lr 0.0050537 sec/update 0.76 estimated days left 0.51
+update 682150/740000 epoch 3687.30 loss 0.0598 lr 0.0050497 sec/update 0.76 estimated days left 0.51
+update 682200/740000 epoch 3687.57 loss 0.1008 lr 0.0050458 sec/update 0.76 estimated days left 0.51
+update 682250/740000 epoch 3687.84 loss 0.0720 lr 0.0050419 sec/update 0.76 estimated days left 0.51
+update 682300/740000 epoch 3688.11 loss 0.0691 lr 0.0050380 sec/update 0.76 estimated days left 0.51
+update 682350/740000 epoch 3688.38 loss 0.0647 lr 0.0050340 sec/update 0.76 estimated days left 0.51
+update 682400/740000 epoch 3688.65 loss 0.0945 lr 0.0050301 sec/update 0.76 estimated days left 0.51
+update 682450/740000 epoch 3688.92 loss 0.0533 lr 0.0050262 sec/update 0.76 estimated days left 0.51
+update 682500/740000 epoch 3689.19 loss 0.0862 lr 0.0050222 sec/update 0.76 estimated days left 0.50
+update 682550/740000 epoch 3689.46 loss 0.0911 lr 0.0050183 sec/update 0.76 estimated days left 0.50
+update 682600/740000 epoch 3689.73 loss 0.0744 lr 0.0050144 sec/update 0.76 estimated days left 0.50
+update 682650/740000 epoch 3690.00 loss 0.0639 lr 0.0050105 sec/update 0.76 estimated days left 0.50
+update 682700/740000 epoch 3690.27 loss 0.0780 lr 0.0050065 sec/update 0.76 estimated days left 0.50
+update 682750/740000 epoch 3690.54 loss 0.0807 lr 0.0050026 sec/update 0.76 estimated days left 0.50
+update 682800/740000 epoch 3690.81 loss 0.0684 lr 0.0049987 sec/update 0.76 estimated days left 0.50
+update 682850/740000 epoch 3691.08 loss 0.0508 lr 0.0049947 sec/update 0.76 estimated days left 0.50
+update 682900/740000 epoch 3691.35 loss 0.0792 lr 0.0049908 sec/update 0.76 estimated days left 0.50
+update 682950/740000 epoch 3691.62 loss 0.0559 lr 0.0049869 sec/update 0.76 estimated days left 0.50
+update 683000/740000 epoch 3691.89 loss 0.0718 lr 0.0049829 sec/update 0.76 estimated days left 0.50
+update 683050/740000 epoch 3692.16 loss 0.0957 lr 0.0049790 sec/update 0.76 estimated days left 0.50
+update 683100/740000 epoch 3692.43 loss 0.0751 lr 0.0049751 sec/update 0.76 estimated days left 0.50
+update 683150/740000 epoch 3692.70 loss 0.0709 lr 0.0049711 sec/update 0.76 estimated days left 0.50
+update 683200/740000 epoch 3692.97 loss 0.0669 lr 0.0049672 sec/update 0.76 estimated days left 0.50
+update 683250/740000 epoch 3693.24 loss 0.0789 lr 0.0049633 sec/update 0.76 estimated days left 0.50
+update 683300/740000 epoch 3693.51 loss 0.0807 lr 0.0049593 sec/update 0.76 estimated days left 0.50
+update 683350/740000 epoch 3693.78 loss 0.0672 lr 0.0049554 sec/update 0.76 estimated days left 0.50
+update 683400/740000 epoch 3694.05 loss 0.0679 lr 0.0049514 sec/update 0.76 estimated days left 0.50
+update 683450/740000 epoch 3694.32 loss 0.0707 lr 0.0049475 sec/update 0.76 estimated days left 0.50
+update 683500/740000 epoch 3694.59 loss 0.0580 lr 0.0049436 sec/update 0.76 estimated days left 0.50
+update 683550/740000 epoch 3694.86 loss 0.0754 lr 0.0049396 sec/update 0.76 estimated days left 0.50
+update 683600/740000 epoch 3695.14 loss 0.0901 lr 0.0049357 sec/update 0.76 estimated days left 0.49
+update 683650/740000 epoch 3695.41 loss 0.1037 lr 0.0049318 sec/update 0.76 estimated days left 0.49
+update 683700/740000 epoch 3695.68 loss 0.0661 lr 0.0049278 sec/update 0.76 estimated days left 0.49
+update 683750/740000 epoch 3695.95 loss 0.0676 lr 0.0049239 sec/update 0.76 estimated days left 0.49
+update 683800/740000 epoch 3696.22 loss 0.0628 lr 0.0049199 sec/update 0.76 estimated days left 0.49
+update 683850/740000 epoch 3696.49 loss 0.0654 lr 0.0049160 sec/update 0.76 estimated days left 0.49
+update 683900/740000 epoch 3696.76 loss 0.0657 lr 0.0049121 sec/update 0.76 estimated days left 0.49
+update 683950/740000 epoch 3697.03 loss 0.0620 lr 0.0049081 sec/update 0.76 estimated days left 0.49
+update 684000/740000 epoch 3697.30 loss 0.0751 lr 0.0049042 sec/update 0.76 estimated days left 0.49
+update 684050/740000 epoch 3697.57 loss 0.0637 lr 0.0049002 sec/update 0.76 estimated days left 0.49
+update 684100/740000 epoch 3697.84 loss 0.0718 lr 0.0048963 sec/update 0.76 estimated days left 0.49
+update 684150/740000 epoch 3698.11 loss 0.0567 lr 0.0048924 sec/update 0.76 estimated days left 0.49
+update 684200/740000 epoch 3698.38 loss 0.0873 lr 0.0048884 sec/update 0.76 estimated days left 0.49
+update 684250/740000 epoch 3698.65 loss 0.0697 lr 0.0048845 sec/update 0.76 estimated days left 0.49
+update 684300/740000 epoch 3698.92 loss 0.0598 lr 0.0048805 sec/update 0.76 estimated days left 0.49
+update 684350/740000 epoch 3699.19 loss 0.0812 lr 0.0048766 sec/update 0.76 estimated days left 0.49
+update 684400/740000 epoch 3699.46 loss 0.0596 lr 0.0048726 sec/update 0.76 estimated days left 0.49
+update 684450/740000 epoch 3699.73 loss 0.0748 lr 0.0048687 sec/update 0.76 estimated days left 0.49
+AMP overflow: retry 1/16 on the same batch; scale 131072.0 -> 65536.0
+update 684500/740000 epoch 3700.00 loss 0.0672 lr 0.0048648 sec/update 0.76 estimated days left 0.49
+update 684550/740000 epoch 3700.27 loss 0.0792 lr 0.0048608 sec/update 0.76 estimated days left 0.49
+update 684600/740000 epoch 3700.54 loss 0.0624 lr 0.0048569 sec/update 0.76 estimated days left 0.49
+update 684650/740000 epoch 3700.81 loss 0.0763 lr 0.0048529 sec/update 0.76 estimated days left 0.49
+update 684700/740000 epoch 3701.08 loss 0.0955 lr 0.0048490 sec/update 0.76 estimated days left 0.49
+update 684750/740000 epoch 3701.35 loss 0.0726 lr 0.0048450 sec/update 0.76 estimated days left 0.48
+update 684800/740000 epoch 3701.62 loss 0.0648 lr 0.0048411 sec/update 0.76 estimated days left 0.48
+AMP overflow: retry 1/16 on the same batch; scale 65536.0 -> 32768.0
+update 684850/740000 epoch 3701.89 loss 0.0716 lr 0.0048371 sec/update 0.76 estimated days left 0.48
+update 684900/740000 epoch 3702.16 loss 0.0752 lr 0.0048332 sec/update 0.76 estimated days left 0.48
+update 684950/740000 epoch 3702.43 loss 0.0909 lr 0.0048292 sec/update 0.76 estimated days left 0.48
+update 685000/740000 epoch 3702.70 loss 0.0589 lr 0.0048253 sec/update 0.76 estimated days left 0.48
+Validation 50/500
+Validation 100/500
+Validation 150/500
+Validation 200/500
+Validation 250/500
+Validation 300/500
+Validation 350/500
+Validation 400/500
+Validation 450/500
+Validation 500/500
+Validation update 685000: mIoU 71.705% (500 images)
+update 685050/740000 epoch 3702.97 loss 0.0705 lr 0.0048213 sec/update 0.76 estimated days left 0.48
+update 685100/740000 epoch 3703.24 loss 0.1022 lr 0.0048174 sec/update 0.76 estimated days left 0.48
+update 685150/740000 epoch 3703.51 loss 0.0745 lr 0.0048134 sec/update 0.76 estimated days left 0.48
+update 685200/740000 epoch 3703.78 loss 0.0556 lr 0.0048095 sec/update 0.76 estimated days left 0.48
+update 685250/740000 epoch 3704.05 loss 0.0705 lr 0.0048055 sec/update 0.76 estimated days left 0.48
+update 685300/740000 epoch 3704.32 loss 0.0602 lr 0.0048016 sec/update 0.76 estimated days left 0.48
+update 685350/740000 epoch 3704.59 loss 0.0660 lr 0.0047976 sec/update 0.76 estimated days left 0.48
+update 685400/740000 epoch 3704.86 loss 0.0568 lr 0.0047937 sec/update 0.76 estimated days left 0.48
+update 685450/740000 epoch 3705.14 loss 0.0734 lr 0.0047897 sec/update 0.76 estimated days left 0.48
+update 685500/740000 epoch 3705.41 loss 0.0716 lr 0.0047858 sec/update 0.76 estimated days left 0.48
+update 685550/740000 epoch 3705.68 loss 0.0831 lr 0.0047818 sec/update 0.76 estimated days left 0.48
+update 685600/740000 epoch 3705.95 loss 0.0518 lr 0.0047779 sec/update 0.76 estimated days left 0.48
+update 685650/740000 epoch 3706.22 loss 0.0790 lr 0.0047739 sec/update 0.76 estimated days left 0.48
+update 685700/740000 epoch 3706.49 loss 0.0858 lr 0.0047700 sec/update 0.76 estimated days left 0.48
+update 685750/740000 epoch 3706.76 loss 0.0973 lr 0.0047660 sec/update 0.76 estimated days left 0.48
+update 685800/740000 epoch 3707.03 loss 0.0748 lr 0.0047621 sec/update 0.76 estimated days left 0.48
+update 685850/740000 epoch 3707.30 loss 0.0751 lr 0.0047581 sec/update 0.76 estimated days left 0.48
+update 685900/740000 epoch 3707.57 loss 0.1362 lr 0.0047542 sec/update 0.76 estimated days left 0.48
+update 685950/740000 epoch 3707.84 loss 0.0603 lr 0.0047502 sec/update 0.76 estimated days left 0.47
+update 686000/740000 epoch 3708.11 loss 0.0711 lr 0.0047463 sec/update 0.76 estimated days left 0.47
+update 686050/740000 epoch 3708.38 loss 0.0670 lr 0.0047423 sec/update 0.76 estimated days left 0.47
+update 686100/740000 epoch 3708.65 loss 0.0743 lr 0.0047384 sec/update 0.76 estimated days left 0.47
+update 686150/740000 epoch 3708.92 loss 0.0738 lr 0.0047344 sec/update 0.76 estimated days left 0.47
+update 686200/740000 epoch 3709.19 loss 0.0548 lr 0.0047304 sec/update 0.76 estimated days left 0.47
+update 686250/740000 epoch 3709.46 loss 0.0736 lr 0.0047265 sec/update 0.76 estimated days left 0.47
+update 686300/740000 epoch 3709.73 loss 0.0771 lr 0.0047225 sec/update 0.76 estimated days left 0.47
+update 686350/740000 epoch 3710.00 loss 0.0879 lr 0.0047186 sec/update 0.76 estimated days left 0.47
+update 686400/740000 epoch 3710.27 loss 0.0591 lr 0.0047146 sec/update 0.76 estimated days left 0.47
+update 686450/740000 epoch 3710.54 loss 0.0878 lr 0.0047106 sec/update 0.76 estimated days left 0.47
+update 686500/740000 epoch 3710.81 loss 0.0822 lr 0.0047067 sec/update 0.76 estimated days left 0.47
+update 686550/740000 epoch 3711.08 loss 0.0577 lr 0.0047027 sec/update 0.76 estimated days left 0.47
+update 686600/740000 epoch 3711.35 loss 0.0662 lr 0.0046988 sec/update 0.76 estimated days left 0.47
+update 686650/740000 epoch 3711.62 loss 0.0523 lr 0.0046948 sec/update 0.76 estimated days left 0.47
+update 686700/740000 epoch 3711.89 loss 0.0731 lr 0.0046909 sec/update 0.76 estimated days left 0.47
+update 686750/740000 epoch 3712.16 loss 0.0849 lr 0.0046869 sec/update 0.76 estimated days left 0.47
+update 686800/740000 epoch 3712.43 loss 0.0882 lr 0.0046829 sec/update 0.76 estimated days left 0.47
+update 686850/740000 epoch 3712.70 loss 0.0859 lr 0.0046790 sec/update 0.76 estimated days left 0.47
+update 686900/740000 epoch 3712.97 loss 0.0705 lr 0.0046750 sec/update 0.76 estimated days left 0.47
+update 686950/740000 epoch 3713.24 loss 0.0611 lr 0.0046710 sec/update 0.76 estimated days left 0.47
+update 687000/740000 epoch 3713.51 loss 0.0508 lr 0.0046671 sec/update 0.76 estimated days left 0.47
+update 687050/740000 epoch 3713.78 loss 0.0585 lr 0.0046631 sec/update 0.76 estimated days left 0.46
+update 687100/740000 epoch 3714.05 loss 0.0722 lr 0.0046592 sec/update 0.76 estimated days left 0.46
+update 687150/740000 epoch 3714.32 loss 0.0758 lr 0.0046552 sec/update 0.76 estimated days left 0.46
+update 687200/740000 epoch 3714.59 loss 0.0535 lr 0.0046512 sec/update 0.76 estimated days left 0.46
+update 687250/740000 epoch 3714.86 loss 0.0676 lr 0.0046473 sec/update 0.76 estimated days left 0.46
+update 687300/740000 epoch 3715.14 loss 0.0581 lr 0.0046433 sec/update 0.76 estimated days left 0.46
+update 687350/740000 epoch 3715.41 loss 0.0758 lr 0.0046393 sec/update 0.76 estimated days left 0.46
+update 687400/740000 epoch 3715.68 loss 0.0693 lr 0.0046354 sec/update 0.76 estimated days left 0.46
+update 687450/740000 epoch 3715.95 loss 0.0796 lr 0.0046314 sec/update 0.76 estimated days left 0.46
+update 687500/740000 epoch 3716.22 loss 0.0848 lr 0.0046274 sec/update 0.76 estimated days left 0.46
+update 687550/740000 epoch 3716.49 loss 0.0711 lr 0.0046235 sec/update 0.76 estimated days left 0.46
+update 687600/740000 epoch 3716.76 loss 0.0589 lr 0.0046195 sec/update 0.76 estimated days left 0.46
+update 687650/740000 epoch 3717.03 loss 0.0597 lr 0.0046155 sec/update 0.76 estimated days left 0.46
+update 687700/740000 epoch 3717.30 loss 0.0522 lr 0.0046116 sec/update 0.76 estimated days left 0.46
+update 687750/740000 epoch 3717.57 loss 0.0818 lr 0.0046076 sec/update 0.76 estimated days left 0.46
+update 687800/740000 epoch 3717.84 loss 0.0808 lr 0.0046036 sec/update 0.76 estimated days left 0.46
+update 687850/740000 epoch 3718.11 loss 0.0839 lr 0.0045997 sec/update 0.76 estimated days left 0.46
+update 687900/740000 epoch 3718.38 loss 0.0689 lr 0.0045957 sec/update 0.76 estimated days left 0.46
+update 687950/740000 epoch 3718.65 loss 0.0639 lr 0.0045917 sec/update 0.76 estimated days left 0.46
+update 688000/740000 epoch 3718.92 loss 0.0594 lr 0.0045878 sec/update 0.76 estimated days left 0.46
+update 688050/740000 epoch 3719.19 loss 0.0693 lr 0.0045838 sec/update 0.76 estimated days left 0.46
+update 688100/740000 epoch 3719.46 loss 0.0727 lr 0.0045798 sec/update 0.76 estimated days left 0.46
+update 688150/740000 epoch 3719.73 loss 0.0852 lr 0.0045758 sec/update 0.76 estimated days left 0.45
+update 688200/740000 epoch 3720.00 loss 0.0824 lr 0.0045719 sec/update 0.76 estimated days left 0.45
+update 688250/740000 epoch 3720.27 loss 0.0871 lr 0.0045679 sec/update 0.76 estimated days left 0.45
+update 688300/740000 epoch 3720.54 loss 0.0648 lr 0.0045639 sec/update 0.76 estimated days left 0.45
+update 688350/740000 epoch 3720.81 loss 0.0830 lr 0.0045600 sec/update 0.76 estimated days left 0.45
+update 688400/740000 epoch 3721.08 loss 0.0718 lr 0.0045560 sec/update 0.76 estimated days left 0.45
+update 688450/740000 epoch 3721.35 loss 0.0723 lr 0.0045520 sec/update 0.76 estimated days left 0.45
+update 688500/740000 epoch 3721.62 loss 0.0619 lr 0.0045480 sec/update 0.76 estimated days left 0.45
+update 688550/740000 epoch 3721.89 loss 0.0571 lr 0.0045441 sec/update 0.76 estimated days left 0.45
+update 688600/740000 epoch 3722.16 loss 0.0848 lr 0.0045401 sec/update 0.76 estimated days left 0.45
+update 688650/740000 epoch 3722.43 loss 0.0679 lr 0.0045361 sec/update 0.76 estimated days left 0.45
+update 688700/740000 epoch 3722.70 loss 0.0515 lr 0.0045321 sec/update 0.76 estimated days left 0.45
+update 688750/740000 epoch 3722.97 loss 0.0851 lr 0.0045282 sec/update 0.76 estimated days left 0.45
+update 688800/740000 epoch 3723.24 loss 0.0675 lr 0.0045242 sec/update 0.76 estimated days left 0.45
+update 688850/740000 epoch 3723.51 loss 0.0465 lr 0.0045202 sec/update 0.76 estimated days left 0.45
+update 688900/740000 epoch 3723.78 loss 0.0692 lr 0.0045162 sec/update 0.76 estimated days left 0.45
+update 688950/740000 epoch 3724.05 loss 0.0709 lr 0.0045123 sec/update 0.76 estimated days left 0.45
+update 689000/740000 epoch 3724.32 loss 0.0615 lr 0.0045083 sec/update 0.76 estimated days left 0.45
+update 689050/740000 epoch 3724.59 loss 0.0881 lr 0.0045043 sec/update 0.76 estimated days left 0.45
+update 689100/740000 epoch 3724.86 loss 0.0665 lr 0.0045003 sec/update 0.76 estimated days left 0.45
+update 689150/740000 epoch 3725.14 loss 0.0758 lr 0.0044963 sec/update 0.76 estimated days left 0.45
+update 689200/740000 epoch 3725.41 loss 0.0732 lr 0.0044924 sec/update 0.76 estimated days left 0.45
+update 689250/740000 epoch 3725.68 loss 0.0858 lr 0.0044884 sec/update 0.76 estimated days left 0.45
+update 689300/740000 epoch 3725.95 loss 0.0536 lr 0.0044844 sec/update 0.76 estimated days left 0.44
+update 689350/740000 epoch 3726.22 loss 0.0812 lr 0.0044804 sec/update 0.76 estimated days left 0.44
+update 689400/740000 epoch 3726.49 loss 0.0658 lr 0.0044764 sec/update 0.76 estimated days left 0.44
+update 689450/740000 epoch 3726.76 loss 0.0794 lr 0.0044725 sec/update 0.76 estimated days left 0.44
+update 689500/740000 epoch 3727.03 loss 0.0574 lr 0.0044685 sec/update 0.76 estimated days left 0.44
+update 689550/740000 epoch 3727.30 loss 0.0747 lr 0.0044645 sec/update 0.76 estimated days left 0.44
+update 689600/740000 epoch 3727.57 loss 0.0633 lr 0.0044605 sec/update 0.76 estimated days left 0.44
+update 689650/740000 epoch 3727.84 loss 0.0668 lr 0.0044565 sec/update 0.76 estimated days left 0.44
+update 689700/740000 epoch 3728.11 loss 0.0668 lr 0.0044526 sec/update 0.76 estimated days left 0.44
+update 689750/740000 epoch 3728.38 loss 0.0593 lr 0.0044486 sec/update 0.76 estimated days left 0.44
+update 689800/740000 epoch 3728.65 loss 0.0864 lr 0.0044446 sec/update 0.76 estimated days left 0.44
+update 689850/740000 epoch 3728.92 loss 0.0738 lr 0.0044406 sec/update 0.76 estimated days left 0.44
+update 689900/740000 epoch 3729.19 loss 0.0688 lr 0.0044366 sec/update 0.76 estimated days left 0.44
+update 689950/740000 epoch 3729.46 loss 0.0723 lr 0.0044326 sec/update 0.76 estimated days left 0.44
+update 690000/740000 epoch 3729.73 loss 0.0595 lr 0.0044286 sec/update 0.76 estimated days left 0.44
+Validation 50/500
+Validation 100/500
+Validation 150/500
+Validation 200/500
+Validation 250/500
+Validation 300/500
+Validation 350/500
+Validation 400/500
+Validation 450/500
+Validation 500/500
+Validation update 690000: mIoU 74.756% (500 images)
+AMP overflow: retry 1/16 on the same batch; scale 131072.0 -> 65536.0
+update 690050/740000 epoch 3730.00 loss 0.0707 lr 0.0044247 sec/update 0.76 estimated days left 0.44
+update 690100/740000 epoch 3730.27 loss 0.0978 lr 0.0044207 sec/update 0.76 estimated days left 0.44
+update 690150/740000 epoch 3730.54 loss 0.0657 lr 0.0044167 sec/update 0.76 estimated days left 0.44
+update 690200/740000 epoch 3730.81 loss 0.0931 lr 0.0044127 sec/update 0.76 estimated days left 0.44
+update 690250/740000 epoch 3731.08 loss 0.0671 lr 0.0044087 sec/update 0.76 estimated days left 0.44
+update 690300/740000 epoch 3731.35 loss 0.0590 lr 0.0044047 sec/update 0.76 estimated days left 0.44
+update 690350/740000 epoch 3731.62 loss 0.0619 lr 0.0044007 sec/update 0.76 estimated days left 0.44
+update 690400/740000 epoch 3731.89 loss 0.0654 lr 0.0043967 sec/update 0.76 estimated days left 0.44
+update 690450/740000 epoch 3732.16 loss 0.1141 lr 0.0043928 sec/update 0.76 estimated days left 0.44
+update 690500/740000 epoch 3732.43 loss 0.0760 lr 0.0043888 sec/update 0.76 estimated days left 0.43
+update 690550/740000 epoch 3732.70 loss 0.0825 lr 0.0043848 sec/update 0.76 estimated days left 0.43
+update 690600/740000 epoch 3732.97 loss 0.1014 lr 0.0043808 sec/update 0.76 estimated days left 0.43
+update 690650/740000 epoch 3733.24 loss 0.0730 lr 0.0043768 sec/update 0.76 estimated days left 0.43
+update 690700/740000 epoch 3733.51 loss 0.0629 lr 0.0043728 sec/update 0.76 estimated days left 0.43
+update 690750/740000 epoch 3733.78 loss 0.0902 lr 0.0043688 sec/update 0.76 estimated days left 0.43
+update 690800/740000 epoch 3734.05 loss 0.0710 lr 0.0043648 sec/update 0.76 estimated days left 0.43
+update 690850/740000 epoch 3734.32 loss 0.0627 lr 0.0043608 sec/update 0.76 estimated days left 0.43
+update 690900/740000 epoch 3734.59 loss 0.0732 lr 0.0043568 sec/update 0.76 estimated days left 0.43
+update 690950/740000 epoch 3734.86 loss 0.0748 lr 0.0043528 sec/update 0.76 estimated days left 0.43
+update 691000/740000 epoch 3735.14 loss 0.0602 lr 0.0043489 sec/update 0.76 estimated days left 0.43
+update 691050/740000 epoch 3735.41 loss 0.0580 lr 0.0043449 sec/update 0.76 estimated days left 0.43
+update 691100/740000 epoch 3735.68 loss 0.0677 lr 0.0043409 sec/update 0.76 estimated days left 0.43
+update 691150/740000 epoch 3735.95 loss 0.0708 lr 0.0043369 sec/update 0.76 estimated days left 0.43
+update 691200/740000 epoch 3736.22 loss 0.0624 lr 0.0043329 sec/update 0.76 estimated days left 0.43
+update 691250/740000 epoch 3736.49 loss 0.0589 lr 0.0043289 sec/update 0.76 estimated days left 0.43
+update 691300/740000 epoch 3736.76 loss 0.0611 lr 0.0043249 sec/update 0.76 estimated days left 0.43
+update 691350/740000 epoch 3737.03 loss 0.0538 lr 0.0043209 sec/update 0.76 estimated days left 0.43
+update 691400/740000 epoch 3737.30 loss 0.0417 lr 0.0043169 sec/update 0.76 estimated days left 0.43
+update 691450/740000 epoch 3737.57 loss 0.0601 lr 0.0043129 sec/update 0.76 estimated days left 0.43
+update 691500/740000 epoch 3737.84 loss 0.0946 lr 0.0043089 sec/update 0.76 estimated days left 0.43
+update 691550/740000 epoch 3738.11 loss 0.0737 lr 0.0043049 sec/update 0.76 estimated days left 0.43
+update 691600/740000 epoch 3738.38 loss 0.0632 lr 0.0043009 sec/update 0.76 estimated days left 0.42
+update 691650/740000 epoch 3738.65 loss 0.0601 lr 0.0042969 sec/update 0.76 estimated days left 0.42
+update 691700/740000 epoch 3738.92 loss 0.0715 lr 0.0042929 sec/update 0.76 estimated days left 0.42
+update 691750/740000 epoch 3739.19 loss 0.0657 lr 0.0042889 sec/update 0.76 estimated days left 0.42
+update 691800/740000 epoch 3739.46 loss 0.0556 lr 0.0042849 sec/update 0.76 estimated days left 0.42
+update 691850/740000 epoch 3739.73 loss 0.0647 lr 0.0042809 sec/update 0.76 estimated days left 0.42
+update 691900/740000 epoch 3740.00 loss 0.0747 lr 0.0042769 sec/update 0.76 estimated days left 0.42
+update 691950/740000 epoch 3740.27 loss 0.0613 lr 0.0042729 sec/update 0.76 estimated days left 0.42
+update 692000/740000 epoch 3740.54 loss 0.0940 lr 0.0042689 sec/update 0.76 estimated days left 0.42
+update 692050/740000 epoch 3740.81 loss 0.0685 lr 0.0042649 sec/update 0.76 estimated days left 0.42
+update 692100/740000 epoch 3741.08 loss 0.0687 lr 0.0042609 sec/update 0.76 estimated days left 0.42
+update 692150/740000 epoch 3741.35 loss 0.0754 lr 0.0042569 sec/update 0.76 estimated days left 0.42
+update 692200/740000 epoch 3741.62 loss 0.0711 lr 0.0042529 sec/update 0.76 estimated days left 0.42
+update 692250/740000 epoch 3741.89 loss 0.0582 lr 0.0042489 sec/update 0.76 estimated days left 0.42
+update 692300/740000 epoch 3742.16 loss 0.0877 lr 0.0042449 sec/update 0.76 estimated days left 0.42
+update 692350/740000 epoch 3742.43 loss 0.0862 lr 0.0042409 sec/update 0.76 estimated days left 0.42
+update 692400/740000 epoch 3742.70 loss 0.0613 lr 0.0042369 sec/update 0.76 estimated days left 0.42
+update 692450/740000 epoch 3742.97 loss 0.0980 lr 0.0042329 sec/update 0.76 estimated days left 0.42
+update 692500/740000 epoch 3743.24 loss 0.0887 lr 0.0042289 sec/update 0.76 estimated days left 0.42
+update 692550/740000 epoch 3743.51 loss 0.0515 lr 0.0042248 sec/update 0.76 estimated days left 0.42
+update 692600/740000 epoch 3743.78 loss 0.0605 lr 0.0042208 sec/update 0.76 estimated days left 0.42
+update 692650/740000 epoch 3744.05 loss 0.0675 lr 0.0042168 sec/update 0.76 estimated days left 0.42
+update 692700/740000 epoch 3744.32 loss 0.0655 lr 0.0042128 sec/update 0.76 estimated days left 0.42
+update 692750/740000 epoch 3744.59 loss 0.0882 lr 0.0042088 sec/update 0.76 estimated days left 0.41
+update 692800/740000 epoch 3744.86 loss 0.0755 lr 0.0042048 sec/update 0.76 estimated days left 0.41
+update 692850/740000 epoch 3745.14 loss 0.0795 lr 0.0042008 sec/update 0.76 estimated days left 0.41
+update 692900/740000 epoch 3745.41 loss 0.0701 lr 0.0041968 sec/update 0.76 estimated days left 0.41
+update 692950/740000 epoch 3745.68 loss 0.0664 lr 0.0041928 sec/update 0.76 estimated days left 0.41
+update 693000/740000 epoch 3745.95 loss 0.0560 lr 0.0041888 sec/update 0.76 estimated days left 0.41
+update 693050/740000 epoch 3746.22 loss 0.0930 lr 0.0041848 sec/update 0.76 estimated days left 0.41
+update 693100/740000 epoch 3746.49 loss 0.0607 lr 0.0041807 sec/update 0.76 estimated days left 0.41
+update 693150/740000 epoch 3746.76 loss 0.0564 lr 0.0041767 sec/update 0.76 estimated days left 0.41
+update 693200/740000 epoch 3747.03 loss 0.0827 lr 0.0041727 sec/update 0.76 estimated days left 0.41
+update 693250/740000 epoch 3747.30 loss 0.0727 lr 0.0041687 sec/update 0.76 estimated days left 0.41
+update 693300/740000 epoch 3747.57 loss 0.0472 lr 0.0041647 sec/update 0.76 estimated days left 0.41
+update 693350/740000 epoch 3747.84 loss 0.0669 lr 0.0041607 sec/update 0.76 estimated days left 0.41
+update 693400/740000 epoch 3748.11 loss 0.0824 lr 0.0041567 sec/update 0.76 estimated days left 0.41
+AMP overflow: retry 1/16 on the same batch; scale 131072.0 -> 65536.0
+update 693450/740000 epoch 3748.38 loss 0.0812 lr 0.0041527 sec/update 0.76 estimated days left 0.41
+update 693500/740000 epoch 3748.65 loss 0.0848 lr 0.0041486 sec/update 0.76 estimated days left 0.41
+AMP overflow: retry 1/16 on the same batch; scale 65536.0 -> 32768.0
+update 693550/740000 epoch 3748.92 loss 0.0652 lr 0.0041446 sec/update 0.76 estimated days left 0.41
+update 693600/740000 epoch 3749.19 loss 0.0686 lr 0.0041406 sec/update 0.76 estimated days left 0.41
+update 693650/740000 epoch 3749.46 loss 0.0617 lr 0.0041366 sec/update 0.76 estimated days left 0.41
+update 693700/740000 epoch 3749.73 loss 0.0708 lr 0.0041326 sec/update 0.76 estimated days left 0.41
+update 693750/740000 epoch 3750.00 loss 0.0880 lr 0.0041286 sec/update 0.76 estimated days left 0.41
+update 693800/740000 epoch 3750.27 loss 0.0690 lr 0.0041245 sec/update 0.76 estimated days left 0.41
+update 693850/740000 epoch 3750.54 loss 0.0927 lr 0.0041205 sec/update 0.76 estimated days left 0.40
+update 693900/740000 epoch 3750.81 loss 0.0706 lr 0.0041165 sec/update 0.76 estimated days left 0.40
+update 693950/740000 epoch 3751.08 loss 0.0866 lr 0.0041125 sec/update 0.76 estimated days left 0.40
+update 694000/740000 epoch 3751.35 loss 0.0647 lr 0.0041085 sec/update 0.76 estimated days left 0.40
+update 694050/740000 epoch 3751.62 loss 0.0803 lr 0.0041045 sec/update 0.76 estimated days left 0.40
+update 694100/740000 epoch 3751.89 loss 0.0671 lr 0.0041004 sec/update 0.76 estimated days left 0.40
+update 694150/740000 epoch 3752.16 loss 0.0760 lr 0.0040964 sec/update 0.76 estimated days left 0.40
+update 694200/740000 epoch 3752.43 loss 0.1008 lr 0.0040924 sec/update 0.76 estimated days left 0.40
+update 694250/740000 epoch 3752.70 loss 0.0761 lr 0.0040884 sec/update 0.76 estimated days left 0.40
+update 694300/740000 epoch 3752.97 loss 0.0733 lr 0.0040844 sec/update 0.76 estimated days left 0.40
+update 694350/740000 epoch 3753.24 loss 0.0891 lr 0.0040803 sec/update 0.76 estimated days left 0.40
+update 694400/740000 epoch 3753.51 loss 0.0771 lr 0.0040763 sec/update 0.76 estimated days left 0.40
+update 694450/740000 epoch 3753.78 loss 0.0550 lr 0.0040723 sec/update 0.76 estimated days left 0.40
+update 694500/740000 epoch 3754.05 loss 0.0694 lr 0.0040683 sec/update 0.76 estimated days left 0.40
+update 694550/740000 epoch 3754.32 loss 0.0766 lr 0.0040642 sec/update 0.76 estimated days left 0.40
+update 694600/740000 epoch 3754.59 loss 0.0836 lr 0.0040602 sec/update 0.76 estimated days left 0.40
+update 694650/740000 epoch 3754.86 loss 0.0656 lr 0.0040562 sec/update 0.76 estimated days left 0.40
+update 694700/740000 epoch 3755.14 loss 0.0681 lr 0.0040522 sec/update 0.76 estimated days left 0.40
+update 694750/740000 epoch 3755.41 loss 0.0698 lr 0.0040481 sec/update 0.76 estimated days left 0.40
+update 694800/740000 epoch 3755.68 loss 0.0734 lr 0.0040441 sec/update 0.76 estimated days left 0.40
+update 694850/740000 epoch 3755.95 loss 0.0806 lr 0.0040401 sec/update 0.76 estimated days left 0.40
+update 694900/740000 epoch 3756.22 loss 0.0807 lr 0.0040361 sec/update 0.76 estimated days left 0.40
+update 694950/740000 epoch 3756.49 loss 0.0671 lr 0.0040320 sec/update 0.76 estimated days left 0.40
+update 695000/740000 epoch 3756.76 loss 0.0750 lr 0.0040280 sec/update 0.76 estimated days left 0.39
+Validation 50/500
+Validation 100/500
+Validation 150/500
+Validation 200/500
+Validation 250/500
+Validation 300/500
+Validation 350/500
+Validation 400/500
+Validation 450/500
+Validation 500/500
+Validation update 695000: mIoU 73.544% (500 images)
+update 695050/740000 epoch 3757.03 loss 0.0854 lr 0.0040240 sec/update 0.76 estimated days left 0.39
+update 695100/740000 epoch 3757.30 loss 0.0816 lr 0.0040199 sec/update 0.76 estimated days left 0.39
+update 695150/740000 epoch 3757.57 loss 0.0778 lr 0.0040159 sec/update 0.76 estimated days left 0.39
+update 695200/740000 epoch 3757.84 loss 0.0648 lr 0.0040119 sec/update 0.76 estimated days left 0.39
+update 695250/740000 epoch 3758.11 loss 0.0417 lr 0.0040079 sec/update 0.76 estimated days left 0.39
+update 695300/740000 epoch 3758.38 loss 0.0852 lr 0.0040038 sec/update 0.76 estimated days left 0.39
+update 695350/740000 epoch 3758.65 loss 0.0650 lr 0.0039998 sec/update 0.76 estimated days left 0.39
+update 695400/740000 epoch 3758.92 loss 0.0831 lr 0.0039958 sec/update 0.76 estimated days left 0.39
+update 695450/740000 epoch 3759.19 loss 0.0555 lr 0.0039917 sec/update 0.76 estimated days left 0.39
+update 695500/740000 epoch 3759.46 loss 0.0697 lr 0.0039877 sec/update 0.76 estimated days left 0.39
+update 695550/740000 epoch 3759.73 loss 0.0894 lr 0.0039837 sec/update 0.76 estimated days left 0.39
+update 695600/740000 epoch 3760.00 loss 0.0664 lr 0.0039796 sec/update 0.76 estimated days left 0.39
+update 695650/740000 epoch 3760.27 loss 0.0605 lr 0.0039756 sec/update 0.76 estimated days left 0.39
+update 695700/740000 epoch 3760.54 loss 0.0791 lr 0.0039716 sec/update 0.76 estimated days left 0.39
+update 695750/740000 epoch 3760.81 loss 0.0729 lr 0.0039675 sec/update 0.76 estimated days left 0.39
+update 695800/740000 epoch 3761.08 loss 0.0722 lr 0.0039635 sec/update 0.76 estimated days left 0.39
+update 695850/740000 epoch 3761.35 loss 0.0808 lr 0.0039595 sec/update 0.76 estimated days left 0.39
+update 695900/740000 epoch 3761.62 loss 0.0833 lr 0.0039554 sec/update 0.76 estimated days left 0.39
+update 695950/740000 epoch 3761.89 loss 0.0614 lr 0.0039514 sec/update 0.76 estimated days left 0.39
+update 696000/740000 epoch 3762.16 loss 0.1169 lr 0.0039474 sec/update 0.76 estimated days left 0.39
+update 696050/740000 epoch 3762.43 loss 0.0709 lr 0.0039433 sec/update 0.76 estimated days left 0.39
+update 696100/740000 epoch 3762.70 loss 0.0791 lr 0.0039393 sec/update 0.76 estimated days left 0.39
+update 696150/740000 epoch 3762.97 loss 0.0764 lr 0.0039352 sec/update 0.76 estimated days left 0.38
+update 696200/740000 epoch 3763.24 loss 0.0833 lr 0.0039312 sec/update 0.76 estimated days left 0.38
+update 696250/740000 epoch 3763.51 loss 0.0608 lr 0.0039272 sec/update 0.76 estimated days left 0.38
+update 696300/740000 epoch 3763.78 loss 0.0673 lr 0.0039231 sec/update 0.76 estimated days left 0.38
+update 696350/740000 epoch 3764.05 loss 0.0661 lr 0.0039191 sec/update 0.76 estimated days left 0.38
+update 696400/740000 epoch 3764.32 loss 0.0604 lr 0.0039150 sec/update 0.76 estimated days left 0.38
+update 696450/740000 epoch 3764.59 loss 0.0696 lr 0.0039110 sec/update 0.76 estimated days left 0.38
+update 696500/740000 epoch 3764.86 loss 0.0585 lr 0.0039070 sec/update 0.76 estimated days left 0.38
+update 696550/740000 epoch 3765.14 loss 0.0689 lr 0.0039029 sec/update 0.76 estimated days left 0.38
+update 696600/740000 epoch 3765.41 loss 0.0654 lr 0.0038989 sec/update 0.76 estimated days left 0.38
+update 696650/740000 epoch 3765.68 loss 0.0801 lr 0.0038948 sec/update 0.76 estimated days left 0.38
+update 696700/740000 epoch 3765.95 loss 0.0734 lr 0.0038908 sec/update 0.76 estimated days left 0.38
+update 696750/740000 epoch 3766.22 loss 0.0891 lr 0.0038867 sec/update 0.76 estimated days left 0.38
+update 696800/740000 epoch 3766.49 loss 0.0755 lr 0.0038827 sec/update 0.76 estimated days left 0.38
+update 696850/740000 epoch 3766.76 loss 0.0697 lr 0.0038787 sec/update 0.76 estimated days left 0.38
+update 696900/740000 epoch 3767.03 loss 0.0695 lr 0.0038746 sec/update 0.76 estimated days left 0.38
+update 696950/740000 epoch 3767.30 loss 0.0885 lr 0.0038706 sec/update 0.76 estimated days left 0.38
+update 697000/740000 epoch 3767.57 loss 0.0617 lr 0.0038665 sec/update 0.76 estimated days left 0.38
+update 697050/740000 epoch 3767.84 loss 0.0690 lr 0.0038625 sec/update 0.76 estimated days left 0.38
+update 697100/740000 epoch 3768.11 loss 0.0717 lr 0.0038584 sec/update 0.76 estimated days left 0.38
+update 697150/740000 epoch 3768.38 loss 0.0552 lr 0.0038544 sec/update 0.76 estimated days left 0.38
+update 697200/740000 epoch 3768.65 loss 0.0761 lr 0.0038503 sec/update 0.76 estimated days left 0.38
+update 697250/740000 epoch 3768.92 loss 0.0711 lr 0.0038463 sec/update 0.76 estimated days left 0.38
+update 697300/740000 epoch 3769.19 loss 0.0687 lr 0.0038422 sec/update 0.76 estimated days left 0.37
+update 697350/740000 epoch 3769.46 loss 0.0864 lr 0.0038382 sec/update 0.76 estimated days left 0.37
+update 697400/740000 epoch 3769.73 loss 0.0572 lr 0.0038341 sec/update 0.76 estimated days left 0.37
+update 697450/740000 epoch 3770.00 loss 0.0924 lr 0.0038301 sec/update 0.76 estimated days left 0.37
+update 697500/740000 epoch 3770.27 loss 0.0772 lr 0.0038260 sec/update 0.76 estimated days left 0.37
+update 697550/740000 epoch 3770.54 loss 0.0705 lr 0.0038220 sec/update 0.76 estimated days left 0.37
+update 697600/740000 epoch 3770.81 loss 0.0651 lr 0.0038179 sec/update 0.76 estimated days left 0.37
+update 697650/740000 epoch 3771.08 loss 0.0725 lr 0.0038139 sec/update 0.76 estimated days left 0.37
+update 697700/740000 epoch 3771.35 loss 0.0543 lr 0.0038098 sec/update 0.76 estimated days left 0.37
+update 697750/740000 epoch 3771.62 loss 0.0778 lr 0.0038058 sec/update 0.76 estimated days left 0.37
+update 697800/740000 epoch 3771.89 loss 0.0693 lr 0.0038017 sec/update 0.76 estimated days left 0.37
+update 697850/740000 epoch 3772.16 loss 0.0800 lr 0.0037977 sec/update 0.76 estimated days left 0.37
+update 697900/740000 epoch 3772.43 loss 0.0607 lr 0.0037936 sec/update 0.76 estimated days left 0.37
+update 697950/740000 epoch 3772.70 loss 0.0744 lr 0.0037896 sec/update 0.76 estimated days left 0.37
+update 698000/740000 epoch 3772.97 loss 0.0957 lr 0.0037855 sec/update 0.76 estimated days left 0.37
+update 698050/740000 epoch 3773.24 loss 0.0587 lr 0.0037814 sec/update 0.76 estimated days left 0.37
+update 698100/740000 epoch 3773.51 loss 0.0616 lr 0.0037774 sec/update 0.76 estimated days left 0.37
+update 698150/740000 epoch 3773.78 loss 0.0762 lr 0.0037733 sec/update 0.76 estimated days left 0.37
+update 698200/740000 epoch 3774.05 loss 0.0566 lr 0.0037693 sec/update 0.76 estimated days left 0.37
+update 698250/740000 epoch 3774.32 loss 0.0756 lr 0.0037652 sec/update 0.76 estimated days left 0.37
+update 698300/740000 epoch 3774.59 loss 0.0598 lr 0.0037612 sec/update 0.76 estimated days left 0.37
+update 698350/740000 epoch 3774.86 loss 0.0647 lr 0.0037571 sec/update 0.76 estimated days left 0.37
+update 698400/740000 epoch 3775.14 loss 0.0753 lr 0.0037530 sec/update 0.76 estimated days left 0.36
+update 698450/740000 epoch 3775.41 loss 0.0782 lr 0.0037490 sec/update 0.76 estimated days left 0.36
+update 698500/740000 epoch 3775.68 loss 0.0592 lr 0.0037449 sec/update 0.76 estimated days left 0.36
+update 698550/740000 epoch 3775.95 loss 0.0695 lr 0.0037409 sec/update 0.76 estimated days left 0.36
+update 698600/740000 epoch 3776.22 loss 0.0691 lr 0.0037368 sec/update 0.76 estimated days left 0.36
+update 698650/740000 epoch 3776.49 loss 0.0939 lr 0.0037327 sec/update 0.76 estimated days left 0.36
+update 698700/740000 epoch 3776.76 loss 0.0629 lr 0.0037287 sec/update 0.76 estimated days left 0.36
+update 698750/740000 epoch 3777.03 loss 0.0685 lr 0.0037246 sec/update 0.76 estimated days left 0.36
+update 698800/740000 epoch 3777.30 loss 0.0754 lr 0.0037205 sec/update 0.76 estimated days left 0.36
+update 698850/740000 epoch 3777.57 loss 0.0685 lr 0.0037165 sec/update 0.76 estimated days left 0.36
+update 698900/740000 epoch 3777.84 loss 0.0608 lr 0.0037124 sec/update 0.76 estimated days left 0.36
+update 698950/740000 epoch 3778.11 loss 0.0538 lr 0.0037084 sec/update 0.76 estimated days left 0.36
+update 699000/740000 epoch 3778.38 loss 0.0578 lr 0.0037043 sec/update 0.76 estimated days left 0.36
+update 699050/740000 epoch 3778.65 loss 0.0536 lr 0.0037002 sec/update 0.76 estimated days left 0.36
+update 699100/740000 epoch 3778.92 loss 0.0543 lr 0.0036962 sec/update 0.76 estimated days left 0.36
+update 699150/740000 epoch 3779.19 loss 0.0661 lr 0.0036921 sec/update 0.76 estimated days left 0.36
+update 699200/740000 epoch 3779.46 loss 0.0560 lr 0.0036880 sec/update 0.76 estimated days left 0.36
+update 699250/740000 epoch 3779.73 loss 0.0822 lr 0.0036840 sec/update 0.76 estimated days left 0.36
+update 699300/740000 epoch 3780.00 loss 0.0715 lr 0.0036799 sec/update 0.76 estimated days left 0.36
+update 699350/740000 epoch 3780.27 loss 0.0538 lr 0.0036758 sec/update 0.76 estimated days left 0.36
+update 699400/740000 epoch 3780.54 loss 0.0787 lr 0.0036717 sec/update 0.76 estimated days left 0.36
+update 699450/740000 epoch 3780.81 loss 0.0649 lr 0.0036677 sec/update 0.76 estimated days left 0.36
+update 699500/740000 epoch 3781.08 loss 0.0673 lr 0.0036636 sec/update 0.76 estimated days left 0.36
+update 699550/740000 epoch 3781.35 loss 0.0684 lr 0.0036595 sec/update 0.76 estimated days left 0.35
+update 699600/740000 epoch 3781.62 loss 0.0676 lr 0.0036555 sec/update 0.76 estimated days left 0.35
+update 699650/740000 epoch 3781.89 loss 0.0602 lr 0.0036514 sec/update 0.76 estimated days left 0.35
+AMP overflow: retry 1/16 on the same batch; scale 262144.0 -> 131072.0
+update 699700/740000 epoch 3782.16 loss 0.0671 lr 0.0036473 sec/update 0.76 estimated days left 0.35
+update 699750/740000 epoch 3782.43 loss 0.0748 lr 0.0036433 sec/update 0.76 estimated days left 0.35
+update 699800/740000 epoch 3782.70 loss 0.0606 lr 0.0036392 sec/update 0.76 estimated days left 0.35
+update 699850/740000 epoch 3782.97 loss 0.0740 lr 0.0036351 sec/update 0.76 estimated days left 0.35
+update 699900/740000 epoch 3783.24 loss 0.0790 lr 0.0036310 sec/update 0.76 estimated days left 0.35
+update 699950/740000 epoch 3783.51 loss 0.0755 lr 0.0036270 sec/update 0.76 estimated days left 0.35
+update 700000/740000 epoch 3783.78 loss 0.0626 lr 0.0036229 sec/update 0.76 estimated days left 0.35
+Validation 50/500
+Validation 100/500
+Validation 150/500
+Validation 200/500
+Validation 250/500
+Validation 300/500
+Validation 350/500
+Validation 400/500
+Validation 450/500
+Validation 500/500
+Validation update 700000: mIoU 73.835% (500 images)
+update 700050/740000 epoch 3784.05 loss 0.0608 lr 0.0036188 sec/update 0.76 estimated days left 0.35
+update 700100/740000 epoch 3784.32 loss 0.0591 lr 0.0036147 sec/update 0.76 estimated days left 0.35
+update 700150/740000 epoch 3784.59 loss 0.0587 lr 0.0036106 sec/update 0.76 estimated days left 0.35
+update 700200/740000 epoch 3784.86 loss 0.0819 lr 0.0036066 sec/update 0.76 estimated days left 0.35
+update 700250/740000 epoch 3785.14 loss 0.0659 lr 0.0036025 sec/update 0.76 estimated days left 0.35
+update 700300/740000 epoch 3785.41 loss 0.0698 lr 0.0035984 sec/update 0.76 estimated days left 0.35
+update 700350/740000 epoch 3785.68 loss 0.0831 lr 0.0035943 sec/update 0.76 estimated days left 0.35
+update 700400/740000 epoch 3785.95 loss 0.0753 lr 0.0035903 sec/update 0.76 estimated days left 0.35
+update 700450/740000 epoch 3786.22 loss 0.0570 lr 0.0035862 sec/update 0.76 estimated days left 0.35
+update 700500/740000 epoch 3786.49 loss 0.0629 lr 0.0035821 sec/update 0.76 estimated days left 0.35
+update 700550/740000 epoch 3786.76 loss 0.0741 lr 0.0035780 sec/update 0.76 estimated days left 0.35
+update 700600/740000 epoch 3787.03 loss 0.0719 lr 0.0035739 sec/update 0.76 estimated days left 0.35
+update 700650/740000 epoch 3787.30 loss 0.0715 lr 0.0035699 sec/update 0.76 estimated days left 0.35
+update 700700/740000 epoch 3787.57 loss 0.0740 lr 0.0035658 sec/update 0.76 estimated days left 0.34
+update 700750/740000 epoch 3787.84 loss 0.0452 lr 0.0035617 sec/update 0.76 estimated days left 0.34
+update 700800/740000 epoch 3788.11 loss 0.0638 lr 0.0035576 sec/update 0.76 estimated days left 0.34
+update 700850/740000 epoch 3788.38 loss 0.0656 lr 0.0035535 sec/update 0.76 estimated days left 0.34
+update 700900/740000 epoch 3788.65 loss 0.1081 lr 0.0035494 sec/update 0.76 estimated days left 0.34
+update 700950/740000 epoch 3788.92 loss 0.0613 lr 0.0035453 sec/update 0.76 estimated days left 0.34
+update 701000/740000 epoch 3789.19 loss 0.0532 lr 0.0035413 sec/update 0.76 estimated days left 0.34
+update 701050/740000 epoch 3789.46 loss 0.0685 lr 0.0035372 sec/update 0.76 estimated days left 0.34
+update 701100/740000 epoch 3789.73 loss 0.0822 lr 0.0035331 sec/update 0.76 estimated days left 0.34
+update 701150/740000 epoch 3790.00 loss 0.0747 lr 0.0035290 sec/update 0.76 estimated days left 0.34
+update 701200/740000 epoch 3790.27 loss 0.0693 lr 0.0035249 sec/update 0.76 estimated days left 0.34
+update 701250/740000 epoch 3790.54 loss 0.0582 lr 0.0035208 sec/update 0.76 estimated days left 0.34
+update 701300/740000 epoch 3790.81 loss 0.0702 lr 0.0035167 sec/update 0.76 estimated days left 0.34
+update 701350/740000 epoch 3791.08 loss 0.0549 lr 0.0035126 sec/update 0.76 estimated days left 0.34
+update 701400/740000 epoch 3791.35 loss 0.0622 lr 0.0035086 sec/update 0.76 estimated days left 0.34
+update 701450/740000 epoch 3791.62 loss 0.0878 lr 0.0035045 sec/update 0.76 estimated days left 0.34
+update 701500/740000 epoch 3791.89 loss 0.0510 lr 0.0035004 sec/update 0.76 estimated days left 0.34
+update 701550/740000 epoch 3792.16 loss 0.0543 lr 0.0034963 sec/update 0.76 estimated days left 0.34
+update 701600/740000 epoch 3792.43 loss 0.0858 lr 0.0034922 sec/update 0.76 estimated days left 0.34
+update 701650/740000 epoch 3792.70 loss 0.0627 lr 0.0034881 sec/update 0.76 estimated days left 0.34
+update 701700/740000 epoch 3792.97 loss 0.0700 lr 0.0034840 sec/update 0.76 estimated days left 0.34
+update 701750/740000 epoch 3793.24 loss 0.0596 lr 0.0034799 sec/update 0.76 estimated days left 0.34
+update 701800/740000 epoch 3793.51 loss 0.0696 lr 0.0034758 sec/update 0.76 estimated days left 0.34
+update 701850/740000 epoch 3793.78 loss 0.0787 lr 0.0034717 sec/update 0.76 estimated days left 0.33
+AMP overflow: retry 1/16 on the same batch; scale 262144.0 -> 131072.0
+AMP overflow: retry 2/16 on the same batch; scale 131072.0 -> 65536.0
+update 701900/740000 epoch 3794.05 loss 0.0709 lr 0.0034676 sec/update 0.76 estimated days left 0.33
+update 701950/740000 epoch 3794.32 loss 0.0634 lr 0.0034635 sec/update 0.76 estimated days left 0.33
+update 702000/740000 epoch 3794.59 loss 0.0749 lr 0.0034594 sec/update 0.76 estimated days left 0.33
+update 702050/740000 epoch 3794.86 loss 0.0991 lr 0.0034553 sec/update 0.76 estimated days left 0.33
+update 702100/740000 epoch 3795.14 loss 0.0642 lr 0.0034512 sec/update 0.76 estimated days left 0.33
+update 702150/740000 epoch 3795.41 loss 0.0633 lr 0.0034471 sec/update 0.76 estimated days left 0.33
+update 702200/740000 epoch 3795.68 loss 0.0682 lr 0.0034430 sec/update 0.76 estimated days left 0.33
+update 702250/740000 epoch 3795.95 loss 0.0718 lr 0.0034389 sec/update 0.76 estimated days left 0.33
+update 702300/740000 epoch 3796.22 loss 0.0810 lr 0.0034348 sec/update 0.76 estimated days left 0.33
+update 702350/740000 epoch 3796.49 loss 0.0766 lr 0.0034307 sec/update 0.76 estimated days left 0.33
+AMP overflow: retry 1/16 on the same batch; scale 65536.0 -> 32768.0
+update 702400/740000 epoch 3796.76 loss 0.0746 lr 0.0034266 sec/update 0.76 estimated days left 0.33
+update 702450/740000 epoch 3797.03 loss 0.0674 lr 0.0034225 sec/update 0.76 estimated days left 0.33
+update 702500/740000 epoch 3797.30 loss 0.0619 lr 0.0034184 sec/update 0.76 estimated days left 0.33
+update 702550/740000 epoch 3797.57 loss 0.0568 lr 0.0034143 sec/update 0.76 estimated days left 0.33
+update 702600/740000 epoch 3797.84 loss 0.0813 lr 0.0034102 sec/update 0.76 estimated days left 0.33
+update 702650/740000 epoch 3798.11 loss 0.0677 lr 0.0034061 sec/update 0.76 estimated days left 0.33
+update 702700/740000 epoch 3798.38 loss 0.0738 lr 0.0034020 sec/update 0.76 estimated days left 0.33
+update 702750/740000 epoch 3798.65 loss 0.0702 lr 0.0033979 sec/update 0.76 estimated days left 0.33
+update 702800/740000 epoch 3798.92 loss 0.0679 lr 0.0033938 sec/update 0.76 estimated days left 0.33
+update 702850/740000 epoch 3799.19 loss 0.0605 lr 0.0033897 sec/update 0.76 estimated days left 0.33
+update 702900/740000 epoch 3799.46 loss 0.0714 lr 0.0033856 sec/update 0.76 estimated days left 0.33
+update 702950/740000 epoch 3799.73 loss 0.0735 lr 0.0033815 sec/update 0.76 estimated days left 0.32
+update 703000/740000 epoch 3800.00 loss 0.0709 lr 0.0033774 sec/update 0.76 estimated days left 0.32
+update 703050/740000 epoch 3800.27 loss 0.0649 lr 0.0033733 sec/update 0.76 estimated days left 0.32
+update 703100/740000 epoch 3800.54 loss 0.0707 lr 0.0033692 sec/update 0.76 estimated days left 0.32
+update 703150/740000 epoch 3800.81 loss 0.0716 lr 0.0033651 sec/update 0.76 estimated days left 0.32
+update 703200/740000 epoch 3801.08 loss 0.0649 lr 0.0033610 sec/update 0.76 estimated days left 0.32
+update 703250/740000 epoch 3801.35 loss 0.0640 lr 0.0033569 sec/update 0.76 estimated days left 0.32
+update 703300/740000 epoch 3801.62 loss 0.0598 lr 0.0033527 sec/update 0.76 estimated days left 0.32
+update 703350/740000 epoch 3801.89 loss 0.0753 lr 0.0033486 sec/update 0.76 estimated days left 0.32
+update 703400/740000 epoch 3802.16 loss 0.0671 lr 0.0033445 sec/update 0.76 estimated days left 0.32
+update 703450/740000 epoch 3802.43 loss 0.0656 lr 0.0033404 sec/update 0.76 estimated days left 0.32
+update 703500/740000 epoch 3802.70 loss 0.0537 lr 0.0033363 sec/update 0.76 estimated days left 0.32
+update 703550/740000 epoch 3802.97 loss 0.0507 lr 0.0033322 sec/update 0.76 estimated days left 0.32
+update 703600/740000 epoch 3803.24 loss 0.0710 lr 0.0033281 sec/update 0.76 estimated days left 0.32
+update 703650/740000 epoch 3803.51 loss 0.0617 lr 0.0033240 sec/update 0.76 estimated days left 0.32
+update 703700/740000 epoch 3803.78 loss 0.0685 lr 0.0033198 sec/update 0.76 estimated days left 0.32
+update 703750/740000 epoch 3804.05 loss 0.0737 lr 0.0033157 sec/update 0.76 estimated days left 0.32
+update 703800/740000 epoch 3804.32 loss 0.0758 lr 0.0033116 sec/update 0.76 estimated days left 0.32
+update 703850/740000 epoch 3804.59 loss 0.0654 lr 0.0033075 sec/update 0.76 estimated days left 0.32
+update 703900/740000 epoch 3804.86 loss 0.1049 lr 0.0033034 sec/update 0.76 estimated days left 0.32
+update 703950/740000 epoch 3805.14 loss 0.0694 lr 0.0032993 sec/update 0.76 estimated days left 0.32
+update 704000/740000 epoch 3805.41 loss 0.0573 lr 0.0032951 sec/update 0.76 estimated days left 0.32
+update 704050/740000 epoch 3805.68 loss 0.0856 lr 0.0032910 sec/update 0.76 estimated days left 0.32
+update 704100/740000 epoch 3805.95 loss 0.0803 lr 0.0032869 sec/update 0.76 estimated days left 0.31
+update 704150/740000 epoch 3806.22 loss 0.0775 lr 0.0032828 sec/update 0.76 estimated days left 0.31
+update 704200/740000 epoch 3806.49 loss 0.0679 lr 0.0032787 sec/update 0.76 estimated days left 0.31
+update 704250/740000 epoch 3806.76 loss 0.0596 lr 0.0032745 sec/update 0.76 estimated days left 0.31
+update 704300/740000 epoch 3807.03 loss 0.0955 lr 0.0032704 sec/update 0.76 estimated days left 0.31
+update 704350/740000 epoch 3807.30 loss 0.0825 lr 0.0032663 sec/update 0.76 estimated days left 0.31
+update 704400/740000 epoch 3807.57 loss 0.0804 lr 0.0032622 sec/update 0.76 estimated days left 0.31
+update 704450/740000 epoch 3807.84 loss 0.0797 lr 0.0032580 sec/update 0.76 estimated days left 0.31
+update 704500/740000 epoch 3808.11 loss 0.0547 lr 0.0032539 sec/update 0.76 estimated days left 0.31
+update 704550/740000 epoch 3808.38 loss 0.0976 lr 0.0032498 sec/update 0.76 estimated days left 0.31
+update 704600/740000 epoch 3808.65 loss 0.0796 lr 0.0032457 sec/update 0.76 estimated days left 0.31
+update 704650/740000 epoch 3808.92 loss 0.0789 lr 0.0032415 sec/update 0.76 estimated days left 0.31
+update 704700/740000 epoch 3809.19 loss 0.0593 lr 0.0032374 sec/update 0.76 estimated days left 0.31
+update 704750/740000 epoch 3809.46 loss 0.0674 lr 0.0032333 sec/update 0.76 estimated days left 0.31
+update 704800/740000 epoch 3809.73 loss 0.0694 lr 0.0032292 sec/update 0.76 estimated days left 0.31
+update 704850/740000 epoch 3810.00 loss 0.0674 lr 0.0032250 sec/update 0.76 estimated days left 0.31
+update 704900/740000 epoch 3810.27 loss 0.0727 lr 0.0032209 sec/update 0.76 estimated days left 0.31
+update 704950/740000 epoch 3810.54 loss 0.0623 lr 0.0032168 sec/update 0.76 estimated days left 0.31
+update 705000/740000 epoch 3810.81 loss 0.0621 lr 0.0032126 sec/update 0.76 estimated days left 0.31
+Validation 50/500
+Validation 100/500
+Validation 150/500
+Validation 200/500
+Validation 250/500
+Validation 300/500
+Validation 350/500
+Validation 400/500
+Validation 450/500
+Validation 500/500
+Validation update 705000: mIoU 73.295% (500 images)
+update 705050/740000 epoch 3811.08 loss 0.0664 lr 0.0032085 sec/update 0.76 estimated days left 0.31
+update 705100/740000 epoch 3811.35 loss 0.0613 lr 0.0032044 sec/update 0.76 estimated days left 0.31
+update 705150/740000 epoch 3811.62 loss 0.0796 lr 0.0032002 sec/update 0.76 estimated days left 0.31
+update 705200/740000 epoch 3811.89 loss 0.0793 lr 0.0031961 sec/update 0.76 estimated days left 0.31
+update 705250/740000 epoch 3812.16 loss 0.0749 lr 0.0031920 sec/update 0.76 estimated days left 0.30
+update 705300/740000 epoch 3812.43 loss 0.0734 lr 0.0031878 sec/update 0.76 estimated days left 0.30
+update 705350/740000 epoch 3812.70 loss 0.0754 lr 0.0031837 sec/update 0.76 estimated days left 0.30
+update 705400/740000 epoch 3812.97 loss 0.0644 lr 0.0031796 sec/update 0.76 estimated days left 0.30
+update 705450/740000 epoch 3813.24 loss 0.0706 lr 0.0031754 sec/update 0.76 estimated days left 0.30
+update 705500/740000 epoch 3813.51 loss 0.0726 lr 0.0031713 sec/update 0.76 estimated days left 0.30
+update 705550/740000 epoch 3813.78 loss 0.0777 lr 0.0031672 sec/update 0.76 estimated days left 0.30
+update 705600/740000 epoch 3814.05 loss 0.0383 lr 0.0031630 sec/update 0.76 estimated days left 0.30
+AMP overflow: retry 1/16 on the same batch; scale 65536.0 -> 32768.0
+update 705650/740000 epoch 3814.32 loss 0.0658 lr 0.0031589 sec/update 0.76 estimated days left 0.30
+update 705700/740000 epoch 3814.59 loss 0.0664 lr 0.0031548 sec/update 0.76 estimated days left 0.30
+update 705750/740000 epoch 3814.86 loss 0.0639 lr 0.0031506 sec/update 0.76 estimated days left 0.30
+update 705800/740000 epoch 3815.14 loss 0.0774 lr 0.0031465 sec/update 0.76 estimated days left 0.30
+update 705850/740000 epoch 3815.41 loss 0.0844 lr 0.0031423 sec/update 0.76 estimated days left 0.30
+update 705900/740000 epoch 3815.68 loss 0.0563 lr 0.0031382 sec/update 0.76 estimated days left 0.30
+update 705950/740000 epoch 3815.95 loss 0.0622 lr 0.0031341 sec/update 0.76 estimated days left 0.30
+update 706000/740000 epoch 3816.22 loss 0.0518 lr 0.0031299 sec/update 0.76 estimated days left 0.30
+update 706050/740000 epoch 3816.49 loss 0.0698 lr 0.0031258 sec/update 0.76 estimated days left 0.30
+update 706100/740000 epoch 3816.76 loss 0.0763 lr 0.0031216 sec/update 0.76 estimated days left 0.30
+update 706150/740000 epoch 3817.03 loss 0.0613 lr 0.0031175 sec/update 0.76 estimated days left 0.30
+update 706200/740000 epoch 3817.30 loss 0.0641 lr 0.0031133 sec/update 0.76 estimated days left 0.30
+update 706250/740000 epoch 3817.57 loss 0.0749 lr 0.0031092 sec/update 0.76 estimated days left 0.30
+update 706300/740000 epoch 3817.84 loss 0.0623 lr 0.0031050 sec/update 0.76 estimated days left 0.30
+update 706350/740000 epoch 3818.11 loss 0.0809 lr 0.0031009 sec/update 0.76 estimated days left 0.30
+update 706400/740000 epoch 3818.38 loss 0.0694 lr 0.0030968 sec/update 0.76 estimated days left 0.29
+update 706450/740000 epoch 3818.65 loss 0.0533 lr 0.0030926 sec/update 0.76 estimated days left 0.29
+update 706500/740000 epoch 3818.92 loss 0.0797 lr 0.0030885 sec/update 0.76 estimated days left 0.29
+update 706550/740000 epoch 3819.19 loss 0.0857 lr 0.0030843 sec/update 0.76 estimated days left 0.29
+update 706600/740000 epoch 3819.46 loss 0.0614 lr 0.0030802 sec/update 0.76 estimated days left 0.29
+update 706650/740000 epoch 3819.73 loss 0.0730 lr 0.0030760 sec/update 0.76 estimated days left 0.29
+update 706700/740000 epoch 3820.00 loss 0.0649 lr 0.0030719 sec/update 0.76 estimated days left 0.29
+update 706750/740000 epoch 3820.27 loss 0.0683 lr 0.0030677 sec/update 0.76 estimated days left 0.29
+update 706800/740000 epoch 3820.54 loss 0.0517 lr 0.0030636 sec/update 0.76 estimated days left 0.29
+update 706850/740000 epoch 3820.81 loss 0.0721 lr 0.0030594 sec/update 0.76 estimated days left 0.29
+update 706900/740000 epoch 3821.08 loss 0.0697 lr 0.0030553 sec/update 0.76 estimated days left 0.29
+update 706950/740000 epoch 3821.35 loss 0.0687 lr 0.0030511 sec/update 0.76 estimated days left 0.29
+update 707000/740000 epoch 3821.62 loss 0.0850 lr 0.0030469 sec/update 0.76 estimated days left 0.29
+update 707050/740000 epoch 3821.89 loss 0.0632 lr 0.0030428 sec/update 0.76 estimated days left 0.29
+update 707100/740000 epoch 3822.16 loss 0.0685 lr 0.0030386 sec/update 0.76 estimated days left 0.29
+update 707150/740000 epoch 3822.43 loss 0.0927 lr 0.0030345 sec/update 0.76 estimated days left 0.29
+update 707200/740000 epoch 3822.70 loss 0.0728 lr 0.0030303 sec/update 0.76 estimated days left 0.29
+update 707250/740000 epoch 3822.97 loss 0.0686 lr 0.0030262 sec/update 0.76 estimated days left 0.29
+update 707300/740000 epoch 3823.24 loss 0.0654 lr 0.0030220 sec/update 0.76 estimated days left 0.29
+update 707350/740000 epoch 3823.51 loss 0.0675 lr 0.0030178 sec/update 0.76 estimated days left 0.29
+update 707400/740000 epoch 3823.78 loss 0.0663 lr 0.0030137 sec/update 0.76 estimated days left 0.29
+update 707450/740000 epoch 3824.05 loss 0.0827 lr 0.0030095 sec/update 0.76 estimated days left 0.29
+update 707500/740000 epoch 3824.32 loss 0.0627 lr 0.0030054 sec/update 0.76 estimated days left 0.29
+update 707550/740000 epoch 3824.59 loss 0.0826 lr 0.0030012 sec/update 0.76 estimated days left 0.28
+update 707600/740000 epoch 3824.86 loss 0.0627 lr 0.0029970 sec/update 0.76 estimated days left 0.28
+update 707650/740000 epoch 3825.14 loss 0.0639 lr 0.0029929 sec/update 0.76 estimated days left 0.28
+update 707700/740000 epoch 3825.41 loss 0.0780 lr 0.0029887 sec/update 0.76 estimated days left 0.28
+update 707750/740000 epoch 3825.68 loss 0.0521 lr 0.0029846 sec/update 0.76 estimated days left 0.28
+update 707800/740000 epoch 3825.95 loss 0.0720 lr 0.0029804 sec/update 0.76 estimated days left 0.28
+update 707850/740000 epoch 3826.22 loss 0.0665 lr 0.0029762 sec/update 0.76 estimated days left 0.28
+update 707900/740000 epoch 3826.49 loss 0.0762 lr 0.0029721 sec/update 0.76 estimated days left 0.28
+update 707950/740000 epoch 3826.76 loss 0.0567 lr 0.0029679 sec/update 0.76 estimated days left 0.28
+update 708000/740000 epoch 3827.03 loss 0.0705 lr 0.0029637 sec/update 0.76 estimated days left 0.28
+update 708050/740000 epoch 3827.30 loss 0.0739 lr 0.0029596 sec/update 0.76 estimated days left 0.28
+update 708100/740000 epoch 3827.57 loss 0.0900 lr 0.0029554 sec/update 0.76 estimated days left 0.28
+update 708150/740000 epoch 3827.84 loss 0.0587 lr 0.0029512 sec/update 0.76 estimated days left 0.28
+update 708200/740000 epoch 3828.11 loss 0.0589 lr 0.0029470 sec/update 0.76 estimated days left 0.28
+update 708250/740000 epoch 3828.38 loss 0.0624 lr 0.0029429 sec/update 0.76 estimated days left 0.28
+update 708300/740000 epoch 3828.65 loss 0.0680 lr 0.0029387 sec/update 0.76 estimated days left 0.28
+update 708350/740000 epoch 3828.92 loss 0.0726 lr 0.0029345 sec/update 0.76 estimated days left 0.28
+update 708400/740000 epoch 3829.19 loss 0.0621 lr 0.0029304 sec/update 0.76 estimated days left 0.28
+update 708450/740000 epoch 3829.46 loss 0.0737 lr 0.0029262 sec/update 0.76 estimated days left 0.28
+update 708500/740000 epoch 3829.73 loss 0.0496 lr 0.0029220 sec/update 0.76 estimated days left 0.28
+update 708550/740000 epoch 3830.00 loss 0.0644 lr 0.0029178 sec/update 0.76 estimated days left 0.28
+update 708600/740000 epoch 3830.27 loss 0.0553 lr 0.0029137 sec/update 0.76 estimated days left 0.28
+update 708650/740000 epoch 3830.54 loss 0.0560 lr 0.0029095 sec/update 0.76 estimated days left 0.27
+update 708700/740000 epoch 3830.81 loss 0.0623 lr 0.0029053 sec/update 0.76 estimated days left 0.27
+update 708750/740000 epoch 3831.08 loss 0.0601 lr 0.0029011 sec/update 0.76 estimated days left 0.27
+update 708800/740000 epoch 3831.35 loss 0.0701 lr 0.0028970 sec/update 0.76 estimated days left 0.27
+update 708850/740000 epoch 3831.62 loss 0.0665 lr 0.0028928 sec/update 0.76 estimated days left 0.27
+update 708900/740000 epoch 3831.89 loss 0.0505 lr 0.0028886 sec/update 0.76 estimated days left 0.27
+update 708950/740000 epoch 3832.16 loss 0.0638 lr 0.0028844 sec/update 0.76 estimated days left 0.27
+update 709000/740000 epoch 3832.43 loss 0.0772 lr 0.0028802 sec/update 0.76 estimated days left 0.27
+update 709050/740000 epoch 3832.70 loss 0.0712 lr 0.0028761 sec/update 0.76 estimated days left 0.27
+update 709100/740000 epoch 3832.97 loss 0.0725 lr 0.0028719 sec/update 0.76 estimated days left 0.27
+update 709150/740000 epoch 3833.24 loss 0.0614 lr 0.0028677 sec/update 0.76 estimated days left 0.27
+update 709200/740000 epoch 3833.51 loss 0.0597 lr 0.0028635 sec/update 0.76 estimated days left 0.27
+update 709250/740000 epoch 3833.78 loss 0.0893 lr 0.0028593 sec/update 0.76 estimated days left 0.27
+update 709300/740000 epoch 3834.05 loss 0.0572 lr 0.0028551 sec/update 0.76 estimated days left 0.27
+update 709350/740000 epoch 3834.32 loss 0.0699 lr 0.0028510 sec/update 0.76 estimated days left 0.27
+update 709400/740000 epoch 3834.59 loss 0.0588 lr 0.0028468 sec/update 0.76 estimated days left 0.27
+update 709450/740000 epoch 3834.86 loss 0.0805 lr 0.0028426 sec/update 0.76 estimated days left 0.27
+update 709500/740000 epoch 3835.14 loss 0.0696 lr 0.0028384 sec/update 0.76 estimated days left 0.27
+update 709550/740000 epoch 3835.41 loss 0.0763 lr 0.0028342 sec/update 0.76 estimated days left 0.27
+update 709600/740000 epoch 3835.68 loss 0.0944 lr 0.0028300 sec/update 0.76 estimated days left 0.27
+update 709650/740000 epoch 3835.95 loss 0.0644 lr 0.0028258 sec/update 0.76 estimated days left 0.27
+update 709700/740000 epoch 3836.22 loss 0.0667 lr 0.0028216 sec/update 0.76 estimated days left 0.27
+update 709750/740000 epoch 3836.49 loss 0.0641 lr 0.0028174 sec/update 0.76 estimated days left 0.27
+update 709800/740000 epoch 3836.76 loss 0.0559 lr 0.0028133 sec/update 0.76 estimated days left 0.26
+update 709850/740000 epoch 3837.03 loss 0.0633 lr 0.0028091 sec/update 0.76 estimated days left 0.26
+update 709900/740000 epoch 3837.30 loss 0.0574 lr 0.0028049 sec/update 0.76 estimated days left 0.26
+update 709950/740000 epoch 3837.57 loss 0.0764 lr 0.0028007 sec/update 0.76 estimated days left 0.26
+update 710000/740000 epoch 3837.84 loss 0.0635 lr 0.0027965 sec/update 0.76 estimated days left 0.26
+Validation 50/500
+Validation 100/500
+Validation 150/500
+Validation 200/500
+Validation 250/500
+Validation 300/500
+Validation 350/500
+Validation 400/500
+Validation 450/500
+Validation 500/500
+Validation update 710000: mIoU 74.249% (500 images)
+update 710050/740000 epoch 3838.11 loss 0.0750 lr 0.0027923 sec/update 0.76 estimated days left 0.26
+update 710100/740000 epoch 3838.38 loss 0.0596 lr 0.0027881 sec/update 0.76 estimated days left 0.26
+update 710150/740000 epoch 3838.65 loss 0.1547 lr 0.0027839 sec/update 0.76 estimated days left 0.26
+update 710200/740000 epoch 3838.92 loss 0.0493 lr 0.0027797 sec/update 0.76 estimated days left 0.26
+update 710250/740000 epoch 3839.19 loss 0.0552 lr 0.0027755 sec/update 0.76 estimated days left 0.26
+update 710300/740000 epoch 3839.46 loss 0.0654 lr 0.0027713 sec/update 0.76 estimated days left 0.26
+update 710350/740000 epoch 3839.73 loss 0.0863 lr 0.0027671 sec/update 0.76 estimated days left 0.26
+update 710400/740000 epoch 3840.00 loss 0.0651 lr 0.0027629 sec/update 0.76 estimated days left 0.26
+update 710450/740000 epoch 3840.27 loss 0.0767 lr 0.0027587 sec/update 0.76 estimated days left 0.26
+update 710500/740000 epoch 3840.54 loss 0.0664 lr 0.0027545 sec/update 0.76 estimated days left 0.26
+update 710550/740000 epoch 3840.81 loss 0.0578 lr 0.0027503 sec/update 0.76 estimated days left 0.26
+update 710600/740000 epoch 3841.08 loss 0.0994 lr 0.0027461 sec/update 0.76 estimated days left 0.26
+update 710650/740000 epoch 3841.35 loss 0.0593 lr 0.0027419 sec/update 0.76 estimated days left 0.26
+update 710700/740000 epoch 3841.62 loss 0.0592 lr 0.0027377 sec/update 0.76 estimated days left 0.26
+update 710750/740000 epoch 3841.89 loss 0.0644 lr 0.0027335 sec/update 0.76 estimated days left 0.26
+update 710800/740000 epoch 3842.16 loss 0.0653 lr 0.0027293 sec/update 0.76 estimated days left 0.26
+update 710850/740000 epoch 3842.43 loss 0.0631 lr 0.0027251 sec/update 0.76 estimated days left 0.26
+update 710900/740000 epoch 3842.70 loss 0.0729 lr 0.0027209 sec/update 0.76 estimated days left 0.26
+update 710950/740000 epoch 3842.97 loss 0.0699 lr 0.0027167 sec/update 0.76 estimated days left 0.25
+update 711000/740000 epoch 3843.24 loss 0.0834 lr 0.0027124 sec/update 0.76 estimated days left 0.25
+update 711050/740000 epoch 3843.51 loss 0.0753 lr 0.0027082 sec/update 0.76 estimated days left 0.25
+update 711100/740000 epoch 3843.78 loss 0.0643 lr 0.0027040 sec/update 0.76 estimated days left 0.25
+update 711150/740000 epoch 3844.05 loss 0.0592 lr 0.0026998 sec/update 0.76 estimated days left 0.25
+update 711200/740000 epoch 3844.32 loss 0.0635 lr 0.0026956 sec/update 0.76 estimated days left 0.25
+update 711250/740000 epoch 3844.59 loss 0.0740 lr 0.0026914 sec/update 0.76 estimated days left 0.25
+update 711300/740000 epoch 3844.86 loss 0.0833 lr 0.0026872 sec/update 0.76 estimated days left 0.25
+update 711350/740000 epoch 3845.14 loss 0.0707 lr 0.0026830 sec/update 0.76 estimated days left 0.25
+update 711400/740000 epoch 3845.41 loss 0.0592 lr 0.0026788 sec/update 0.76 estimated days left 0.25
+update 711450/740000 epoch 3845.68 loss 0.0745 lr 0.0026745 sec/update 0.76 estimated days left 0.25
+update 711500/740000 epoch 3845.95 loss 0.0737 lr 0.0026703 sec/update 0.76 estimated days left 0.25
+update 711550/740000 epoch 3846.22 loss 0.0790 lr 0.0026661 sec/update 0.76 estimated days left 0.25
+update 711600/740000 epoch 3846.49 loss 0.1153 lr 0.0026619 sec/update 0.76 estimated days left 0.25
+update 711650/740000 epoch 3846.76 loss 0.0669 lr 0.0026577 sec/update 0.76 estimated days left 0.25
+update 711700/740000 epoch 3847.03 loss 0.0713 lr 0.0026535 sec/update 0.76 estimated days left 0.25
+update 711750/740000 epoch 3847.30 loss 0.0752 lr 0.0026492 sec/update 0.76 estimated days left 0.25
+update 711800/740000 epoch 3847.57 loss 0.1257 lr 0.0026450 sec/update 0.76 estimated days left 0.25
+update 711850/740000 epoch 3847.84 loss 0.0643 lr 0.0026408 sec/update 0.76 estimated days left 0.25
+update 711900/740000 epoch 3848.11 loss 0.0552 lr 0.0026366 sec/update 0.76 estimated days left 0.25
+update 711950/740000 epoch 3848.38 loss 0.0719 lr 0.0026323 sec/update 0.76 estimated days left 0.25
+update 712000/740000 epoch 3848.65 loss 0.0769 lr 0.0026281 sec/update 0.76 estimated days left 0.25
+update 712050/740000 epoch 3848.92 loss 0.0710 lr 0.0026239 sec/update 0.76 estimated days left 0.25
+AMP overflow: retry 1/16 on the same batch; scale 262144.0 -> 131072.0
+update 712100/740000 epoch 3849.19 loss 0.0807 lr 0.0026197 sec/update 0.76 estimated days left 0.24
+update 712150/740000 epoch 3849.46 loss 0.0717 lr 0.0026155 sec/update 0.76 estimated days left 0.24
+update 712200/740000 epoch 3849.73 loss 0.0819 lr 0.0026112 sec/update 0.76 estimated days left 0.24
+update 712250/740000 epoch 3850.00 loss 0.0656 lr 0.0026070 sec/update 0.76 estimated days left 0.24
+update 712300/740000 epoch 3850.27 loss 0.0797 lr 0.0026028 sec/update 0.76 estimated days left 0.24
+update 712350/740000 epoch 3850.54 loss 0.0764 lr 0.0025985 sec/update 0.76 estimated days left 0.24
+update 712400/740000 epoch 3850.81 loss 0.0560 lr 0.0025943 sec/update 0.76 estimated days left 0.24
+update 712450/740000 epoch 3851.08 loss 0.0662 lr 0.0025901 sec/update 0.76 estimated days left 0.24
+update 712500/740000 epoch 3851.35 loss 0.0579 lr 0.0025859 sec/update 0.76 estimated days left 0.24
+update 712550/740000 epoch 3851.62 loss 0.0721 lr 0.0025816 sec/update 0.76 estimated days left 0.24
+update 712600/740000 epoch 3851.89 loss 0.0741 lr 0.0025774 sec/update 0.76 estimated days left 0.24
+update 712650/740000 epoch 3852.16 loss 0.0861 lr 0.0025732 sec/update 0.76 estimated days left 0.24
+update 712700/740000 epoch 3852.43 loss 0.0552 lr 0.0025689 sec/update 0.76 estimated days left 0.24
+update 712750/740000 epoch 3852.70 loss 0.0610 lr 0.0025647 sec/update 0.76 estimated days left 0.24
+update 712800/740000 epoch 3852.97 loss 0.0739 lr 0.0025605 sec/update 0.76 estimated days left 0.24
+update 712850/740000 epoch 3853.24 loss 0.0796 lr 0.0025562 sec/update 0.76 estimated days left 0.24
+update 712900/740000 epoch 3853.51 loss 0.0662 lr 0.0025520 sec/update 0.76 estimated days left 0.24
+update 712950/740000 epoch 3853.78 loss 0.0664 lr 0.0025477 sec/update 0.76 estimated days left 0.24
+update 713000/740000 epoch 3854.05 loss 0.0980 lr 0.0025435 sec/update 0.76 estimated days left 0.24
+update 713050/740000 epoch 3854.32 loss 0.0595 lr 0.0025393 sec/update 0.76 estimated days left 0.24
+update 713100/740000 epoch 3854.59 loss 0.0601 lr 0.0025350 sec/update 0.76 estimated days left 0.24
+update 713150/740000 epoch 3854.86 loss 0.0698 lr 0.0025308 sec/update 0.76 estimated days left 0.24
+update 713200/740000 epoch 3855.14 loss 0.0799 lr 0.0025265 sec/update 0.76 estimated days left 0.24
+update 713250/740000 epoch 3855.41 loss 0.0631 lr 0.0025223 sec/update 0.76 estimated days left 0.23
+update 713300/740000 epoch 3855.68 loss 0.0633 lr 0.0025181 sec/update 0.76 estimated days left 0.23
+update 713350/740000 epoch 3855.95 loss 0.0749 lr 0.0025138 sec/update 0.76 estimated days left 0.23
+update 713400/740000 epoch 3856.22 loss 0.0598 lr 0.0025096 sec/update 0.76 estimated days left 0.23
+update 713450/740000 epoch 3856.49 loss 0.0659 lr 0.0025053 sec/update 0.76 estimated days left 0.23
+update 713500/740000 epoch 3856.76 loss 0.0572 lr 0.0025011 sec/update 0.76 estimated days left 0.23
+update 713550/740000 epoch 3857.03 loss 0.0690 lr 0.0024968 sec/update 0.76 estimated days left 0.23
+update 713600/740000 epoch 3857.30 loss 0.0615 lr 0.0024926 sec/update 0.76 estimated days left 0.23
+update 713650/740000 epoch 3857.57 loss 0.0621 lr 0.0024883 sec/update 0.76 estimated days left 0.23
+update 713700/740000 epoch 3857.84 loss 0.0620 lr 0.0024841 sec/update 0.76 estimated days left 0.23
+update 713750/740000 epoch 3858.11 loss 0.0565 lr 0.0024798 sec/update 0.76 estimated days left 0.23
+update 713800/740000 epoch 3858.38 loss 0.0668 lr 0.0024756 sec/update 0.76 estimated days left 0.23
+update 713850/740000 epoch 3858.65 loss 0.0815 lr 0.0024713 sec/update 0.76 estimated days left 0.23
+update 713900/740000 epoch 3858.92 loss 0.0600 lr 0.0024671 sec/update 0.76 estimated days left 0.23
+update 713950/740000 epoch 3859.19 loss 0.0778 lr 0.0024628 sec/update 0.76 estimated days left 0.23
+AMP overflow: retry 1/16 on the same batch; scale 131072.0 -> 65536.0
+update 714000/740000 epoch 3859.46 loss 0.0738 lr 0.0024586 sec/update 0.76 estimated days left 0.23
+update 714050/740000 epoch 3859.73 loss 0.0738 lr 0.0024543 sec/update 0.76 estimated days left 0.23
+update 714100/740000 epoch 3860.00 loss 0.0586 lr 0.0024500 sec/update 0.76 estimated days left 0.23
+update 714150/740000 epoch 3860.27 loss 0.0530 lr 0.0024458 sec/update 0.76 estimated days left 0.23
+update 714200/740000 epoch 3860.54 loss 0.0601 lr 0.0024415 sec/update 0.76 estimated days left 0.23
+update 714250/740000 epoch 3860.81 loss 0.0567 lr 0.0024373 sec/update 0.76 estimated days left 0.23
+update 714300/740000 epoch 3861.08 loss 0.0649 lr 0.0024330 sec/update 0.76 estimated days left 0.23
+update 714350/740000 epoch 3861.35 loss 0.0751 lr 0.0024288 sec/update 0.76 estimated days left 0.22
+update 714400/740000 epoch 3861.62 loss 0.0728 lr 0.0024245 sec/update 0.76 estimated days left 0.22
+update 714450/740000 epoch 3861.89 loss 0.0843 lr 0.0024202 sec/update 0.76 estimated days left 0.22
+update 714500/740000 epoch 3862.16 loss 0.0705 lr 0.0024160 sec/update 0.76 estimated days left 0.22
+update 714550/740000 epoch 3862.43 loss 0.0643 lr 0.0024117 sec/update 0.76 estimated days left 0.22
+update 714600/740000 epoch 3862.70 loss 0.0678 lr 0.0024074 sec/update 0.76 estimated days left 0.22
+update 714650/740000 epoch 3862.97 loss 0.0600 lr 0.0024032 sec/update 0.76 estimated days left 0.22
+update 714700/740000 epoch 3863.24 loss 0.0677 lr 0.0023989 sec/update 0.76 estimated days left 0.22
+update 714750/740000 epoch 3863.51 loss 0.0935 lr 0.0023946 sec/update 0.76 estimated days left 0.22
+update 714800/740000 epoch 3863.78 loss 0.0585 lr 0.0023904 sec/update 0.76 estimated days left 0.22
+update 714850/740000 epoch 3864.05 loss 0.0970 lr 0.0023861 sec/update 0.76 estimated days left 0.22
+update 714900/740000 epoch 3864.32 loss 0.0837 lr 0.0023818 sec/update 0.76 estimated days left 0.22
+update 714950/740000 epoch 3864.59 loss 0.0979 lr 0.0023776 sec/update 0.76 estimated days left 0.22
+update 715000/740000 epoch 3864.86 loss 0.0849 lr 0.0023733 sec/update 0.76 estimated days left 0.22
+Validation 50/500
+Validation 100/500
+Validation 150/500
+Validation 200/500
+Validation 250/500
+Validation 300/500
+Validation 350/500
+Validation 400/500
+Validation 450/500
+Validation 500/500
+Validation update 715000: mIoU 73.753% (500 images)
+update 715050/740000 epoch 3865.14 loss 0.0580 lr 0.0023690 sec/update 0.76 estimated days left 0.22
+update 715100/740000 epoch 3865.41 loss 0.0711 lr 0.0023647 sec/update 0.76 estimated days left 0.22
+update 715150/740000 epoch 3865.68 loss 0.0625 lr 0.0023605 sec/update 0.76 estimated days left 0.22
+update 715200/740000 epoch 3865.95 loss 0.0941 lr 0.0023562 sec/update 0.76 estimated days left 0.22
+update 715250/740000 epoch 3866.22 loss 0.0623 lr 0.0023519 sec/update 0.76 estimated days left 0.22
+update 715300/740000 epoch 3866.49 loss 0.0579 lr 0.0023476 sec/update 0.76 estimated days left 0.22
+update 715350/740000 epoch 3866.76 loss 0.0749 lr 0.0023434 sec/update 0.76 estimated days left 0.22
+update 715400/740000 epoch 3867.03 loss 0.0568 lr 0.0023391 sec/update 0.76 estimated days left 0.22
+update 715450/740000 epoch 3867.30 loss 0.0672 lr 0.0023348 sec/update 0.76 estimated days left 0.22
+update 715500/740000 epoch 3867.57 loss 0.0763 lr 0.0023305 sec/update 0.76 estimated days left 0.21
+update 715550/740000 epoch 3867.84 loss 0.0818 lr 0.0023263 sec/update 0.76 estimated days left 0.21
+update 715600/740000 epoch 3868.11 loss 0.0600 lr 0.0023220 sec/update 0.76 estimated days left 0.21
+update 715650/740000 epoch 3868.38 loss 0.0663 lr 0.0023177 sec/update 0.76 estimated days left 0.21
+update 715700/740000 epoch 3868.65 loss 0.0893 lr 0.0023134 sec/update 0.76 estimated days left 0.21
+update 715750/740000 epoch 3868.92 loss 0.0525 lr 0.0023091 sec/update 0.76 estimated days left 0.21
+update 715800/740000 epoch 3869.19 loss 0.0877 lr 0.0023048 sec/update 0.76 estimated days left 0.21
+update 715850/740000 epoch 3869.46 loss 0.0481 lr 0.0023005 sec/update 0.76 estimated days left 0.21
+update 715900/740000 epoch 3869.73 loss 0.0526 lr 0.0022963 sec/update 0.76 estimated days left 0.21
+update 715950/740000 epoch 3870.00 loss 0.0594 lr 0.0022920 sec/update 0.76 estimated days left 0.21
+update 716000/740000 epoch 3870.27 loss 0.0751 lr 0.0022877 sec/update 0.76 estimated days left 0.21
+update 716050/740000 epoch 3870.54 loss 0.0710 lr 0.0022834 sec/update 0.76 estimated days left 0.21
+update 716100/740000 epoch 3870.81 loss 0.0664 lr 0.0022791 sec/update 0.76 estimated days left 0.21
+update 716150/740000 epoch 3871.08 loss 0.0764 lr 0.0022748 sec/update 0.76 estimated days left 0.21
+update 716200/740000 epoch 3871.35 loss 0.0779 lr 0.0022705 sec/update 0.76 estimated days left 0.21
+update 716250/740000 epoch 3871.62 loss 0.0519 lr 0.0022662 sec/update 0.76 estimated days left 0.21
+update 716300/740000 epoch 3871.89 loss 0.0512 lr 0.0022619 sec/update 0.76 estimated days left 0.21
+update 716350/740000 epoch 3872.16 loss 0.0532 lr 0.0022576 sec/update 0.76 estimated days left 0.21
+AMP overflow: retry 1/16 on the same batch; scale 131072.0 -> 65536.0
+update 716400/740000 epoch 3872.43 loss 0.0591 lr 0.0022533 sec/update 0.76 estimated days left 0.21
+update 716450/740000 epoch 3872.70 loss 0.0552 lr 0.0022490 sec/update 0.76 estimated days left 0.21
+update 716500/740000 epoch 3872.97 loss 0.0735 lr 0.0022447 sec/update 0.76 estimated days left 0.21
+update 716550/740000 epoch 3873.24 loss 0.0477 lr 0.0022404 sec/update 0.76 estimated days left 0.21
+update 716600/740000 epoch 3873.51 loss 0.0588 lr 0.0022362 sec/update 0.76 estimated days left 0.21
+update 716650/740000 epoch 3873.78 loss 0.0549 lr 0.0022318 sec/update 0.76 estimated days left 0.20
+update 716700/740000 epoch 3874.05 loss 0.0580 lr 0.0022275 sec/update 0.76 estimated days left 0.20
+update 716750/740000 epoch 3874.32 loss 0.0710 lr 0.0022232 sec/update 0.76 estimated days left 0.20
+update 716800/740000 epoch 3874.59 loss 0.0545 lr 0.0022189 sec/update 0.76 estimated days left 0.20
+update 716850/740000 epoch 3874.86 loss 0.0652 lr 0.0022146 sec/update 0.76 estimated days left 0.20
+update 716900/740000 epoch 3875.14 loss 0.0555 lr 0.0022103 sec/update 0.76 estimated days left 0.20
+update 716950/740000 epoch 3875.41 loss 0.0607 lr 0.0022060 sec/update 0.76 estimated days left 0.20
+update 717000/740000 epoch 3875.68 loss 0.0692 lr 0.0022017 sec/update 0.76 estimated days left 0.20
+update 717050/740000 epoch 3875.95 loss 0.0546 lr 0.0021974 sec/update 0.76 estimated days left 0.20
+update 717100/740000 epoch 3876.22 loss 0.0707 lr 0.0021931 sec/update 0.76 estimated days left 0.20
+update 717150/740000 epoch 3876.49 loss 0.0735 lr 0.0021888 sec/update 0.76 estimated days left 0.20
+update 717200/740000 epoch 3876.76 loss 0.0490 lr 0.0021845 sec/update 0.76 estimated days left 0.20
+update 717250/740000 epoch 3877.03 loss 0.0737 lr 0.0021802 sec/update 0.76 estimated days left 0.20
+update 717300/740000 epoch 3877.30 loss 0.0676 lr 0.0021759 sec/update 0.76 estimated days left 0.20
+update 717350/740000 epoch 3877.57 loss 0.0877 lr 0.0021715 sec/update 0.76 estimated days left 0.20
+update 717400/740000 epoch 3877.84 loss 0.0621 lr 0.0021672 sec/update 0.76 estimated days left 0.20
+update 717450/740000 epoch 3878.11 loss 0.0632 lr 0.0021629 sec/update 0.76 estimated days left 0.20
+update 717500/740000 epoch 3878.38 loss 0.0535 lr 0.0021586 sec/update 0.76 estimated days left 0.20
+update 717550/740000 epoch 3878.65 loss 0.0835 lr 0.0021543 sec/update 0.76 estimated days left 0.20
+update 717600/740000 epoch 3878.92 loss 0.0624 lr 0.0021500 sec/update 0.76 estimated days left 0.20
+update 717650/740000 epoch 3879.19 loss 0.0585 lr 0.0021456 sec/update 0.76 estimated days left 0.20
+update 717700/740000 epoch 3879.46 loss 0.0568 lr 0.0021413 sec/update 0.76 estimated days left 0.20
+update 717750/740000 epoch 3879.73 loss 0.0653 lr 0.0021370 sec/update 0.76 estimated days left 0.20
+update 717800/740000 epoch 3880.00 loss 0.0644 lr 0.0021327 sec/update 0.76 estimated days left 0.19
+update 717850/740000 epoch 3880.27 loss 0.0512 lr 0.0021284 sec/update 0.76 estimated days left 0.19
+update 717900/740000 epoch 3880.54 loss 0.0830 lr 0.0021240 sec/update 0.76 estimated days left 0.19
+update 717950/740000 epoch 3880.81 loss 0.0620 lr 0.0021197 sec/update 0.76 estimated days left 0.19
+update 718000/740000 epoch 3881.08 loss 0.0662 lr 0.0021154 sec/update 0.76 estimated days left 0.19
+update 718050/740000 epoch 3881.35 loss 0.0715 lr 0.0021111 sec/update 0.76 estimated days left 0.19
+update 718100/740000 epoch 3881.62 loss 0.0659 lr 0.0021067 sec/update 0.76 estimated days left 0.19
+update 718150/740000 epoch 3881.89 loss 0.0671 lr 0.0021024 sec/update 0.76 estimated days left 0.19
+update 718200/740000 epoch 3882.16 loss 0.0786 lr 0.0020981 sec/update 0.76 estimated days left 0.19
+update 718250/740000 epoch 3882.43 loss 0.0753 lr 0.0020937 sec/update 0.76 estimated days left 0.19
+update 718300/740000 epoch 3882.70 loss 0.0518 lr 0.0020894 sec/update 0.76 estimated days left 0.19
+update 718350/740000 epoch 3882.97 loss 0.0681 lr 0.0020851 sec/update 0.76 estimated days left 0.19
+update 718400/740000 epoch 3883.24 loss 0.0603 lr 0.0020807 sec/update 0.76 estimated days left 0.19
+update 718450/740000 epoch 3883.51 loss 0.0491 lr 0.0020764 sec/update 0.76 estimated days left 0.19
+update 718500/740000 epoch 3883.78 loss 0.0789 lr 0.0020721 sec/update 0.76 estimated days left 0.19
+update 718550/740000 epoch 3884.05 loss 0.0838 lr 0.0020677 sec/update 0.76 estimated days left 0.19
+update 718600/740000 epoch 3884.32 loss 0.0798 lr 0.0020634 sec/update 0.76 estimated days left 0.19
+update 718650/740000 epoch 3884.59 loss 0.0543 lr 0.0020590 sec/update 0.76 estimated days left 0.19
+update 718700/740000 epoch 3884.86 loss 0.0919 lr 0.0020547 sec/update 0.76 estimated days left 0.19
+update 718750/740000 epoch 3885.14 loss 0.0496 lr 0.0020504 sec/update 0.76 estimated days left 0.19
+update 718800/740000 epoch 3885.41 loss 0.0739 lr 0.0020460 sec/update 0.76 estimated days left 0.19
+update 718850/740000 epoch 3885.68 loss 0.0591 lr 0.0020417 sec/update 0.76 estimated days left 0.19
+update 718900/740000 epoch 3885.95 loss 0.0595 lr 0.0020373 sec/update 0.76 estimated days left 0.19
+update 718950/740000 epoch 3886.22 loss 0.0612 lr 0.0020330 sec/update 0.76 estimated days left 0.18
+update 719000/740000 epoch 3886.49 loss 0.0546 lr 0.0020286 sec/update 0.76 estimated days left 0.18
+update 719050/740000 epoch 3886.76 loss 0.0577 lr 0.0020243 sec/update 0.76 estimated days left 0.18
+update 719100/740000 epoch 3887.03 loss 0.0603 lr 0.0020199 sec/update 0.76 estimated days left 0.18
+update 719150/740000 epoch 3887.30 loss 0.0695 lr 0.0020156 sec/update 0.76 estimated days left 0.18
+update 719200/740000 epoch 3887.57 loss 0.0661 lr 0.0020112 sec/update 0.76 estimated days left 0.18
+update 719250/740000 epoch 3887.84 loss 0.0745 lr 0.0020069 sec/update 0.76 estimated days left 0.18
+update 719300/740000 epoch 3888.11 loss 0.0575 lr 0.0020025 sec/update 0.76 estimated days left 0.18
+update 719350/740000 epoch 3888.38 loss 0.0611 lr 0.0019982 sec/update 0.76 estimated days left 0.18
+update 719400/740000 epoch 3888.65 loss 0.0666 lr 0.0019938 sec/update 0.76 estimated days left 0.18
+update 719450/740000 epoch 3888.92 loss 0.0457 lr 0.0019895 sec/update 0.76 estimated days left 0.18
+update 719500/740000 epoch 3889.19 loss 0.0711 lr 0.0019851 sec/update 0.76 estimated days left 0.18
+AMP overflow: retry 1/16 on the same batch; scale 131072.0 -> 65536.0
+AMP overflow: retry 2/16 on the same batch; scale 65536.0 -> 32768.0
+AMP overflow: retry 3/16 on the same batch; scale 32768.0 -> 16384.0
+update 719550/740000 epoch 3889.46 loss 0.0613 lr 0.0019808 sec/update 0.76 estimated days left 0.18
+update 719600/740000 epoch 3889.73 loss 0.0713 lr 0.0019764 sec/update 0.76 estimated days left 0.18
+update 719650/740000 epoch 3890.00 loss 0.0697 lr 0.0019720 sec/update 0.76 estimated days left 0.18
+update 719700/740000 epoch 3890.27 loss 0.0631 lr 0.0019677 sec/update 0.76 estimated days left 0.18
+update 719750/740000 epoch 3890.54 loss 0.0672 lr 0.0019633 sec/update 0.76 estimated days left 0.18
+update 719800/740000 epoch 3890.81 loss 0.0830 lr 0.0019590 sec/update 0.76 estimated days left 0.18
+update 719850/740000 epoch 3891.08 loss 0.0587 lr 0.0019546 sec/update 0.76 estimated days left 0.18
+update 719900/740000 epoch 3891.35 loss 0.0704 lr 0.0019502 sec/update 0.76 estimated days left 0.18
+update 719950/740000 epoch 3891.62 loss 0.0798 lr 0.0019459 sec/update 0.76 estimated days left 0.18
+update 720000/740000 epoch 3891.89 loss 0.0625 lr 0.0019415 sec/update 0.76 estimated days left 0.18
+Validation 50/500
+Validation 100/500
+Validation 150/500
+Validation 200/500
+Validation 250/500
+Validation 300/500
+Validation 350/500
+Validation 400/500
+Validation 450/500
+Validation 500/500
+Validation update 720000: mIoU 73.843% (500 images)
+update 720050/740000 epoch 3892.16 loss 0.0776 lr 0.0019371 sec/update 0.76 estimated days left 0.18
+update 720100/740000 epoch 3892.43 loss 0.0682 lr 0.0019328 sec/update 0.76 estimated days left 0.17
+update 720150/740000 epoch 3892.70 loss 0.0744 lr 0.0019284 sec/update 0.76 estimated days left 0.17
+update 720200/740000 epoch 3892.97 loss 0.0498 lr 0.0019240 sec/update 0.76 estimated days left 0.17
+update 720250/740000 epoch 3893.24 loss 0.0675 lr 0.0019196 sec/update 0.76 estimated days left 0.17
+update 720300/740000 epoch 3893.51 loss 0.0849 lr 0.0019153 sec/update 0.76 estimated days left 0.17
+update 720350/740000 epoch 3893.78 loss 0.0771 lr 0.0019109 sec/update 0.76 estimated days left 0.17
+update 720400/740000 epoch 3894.05 loss 0.0549 lr 0.0019065 sec/update 0.76 estimated days left 0.17
+update 720450/740000 epoch 3894.32 loss 0.0756 lr 0.0019021 sec/update 0.76 estimated days left 0.17
+update 720500/740000 epoch 3894.59 loss 0.0656 lr 0.0018978 sec/update 0.76 estimated days left 0.17
+update 720550/740000 epoch 3894.86 loss 0.0558 lr 0.0018934 sec/update 0.76 estimated days left 0.17
+update 720600/740000 epoch 3895.14 loss 0.0629 lr 0.0018890 sec/update 0.76 estimated days left 0.17
+update 720650/740000 epoch 3895.41 loss 0.0711 lr 0.0018846 sec/update 0.76 estimated days left 0.17
+update 720700/740000 epoch 3895.68 loss 0.0766 lr 0.0018802 sec/update 0.76 estimated days left 0.17
+update 720750/740000 epoch 3895.95 loss 0.0715 lr 0.0018758 sec/update 0.76 estimated days left 0.17
+update 720800/740000 epoch 3896.22 loss 0.0581 lr 0.0018715 sec/update 0.76 estimated days left 0.17
+update 720850/740000 epoch 3896.49 loss 0.0741 lr 0.0018671 sec/update 0.76 estimated days left 0.17
+update 720900/740000 epoch 3896.76 loss 0.0652 lr 0.0018627 sec/update 0.76 estimated days left 0.17
+update 720950/740000 epoch 3897.03 loss 0.0564 lr 0.0018583 sec/update 0.76 estimated days left 0.17
+update 721000/740000 epoch 3897.30 loss 0.0715 lr 0.0018539 sec/update 0.76 estimated days left 0.17
+update 721050/740000 epoch 3897.57 loss 0.0799 lr 0.0018495 sec/update 0.76 estimated days left 0.17
+update 721100/740000 epoch 3897.84 loss 0.0530 lr 0.0018451 sec/update 0.76 estimated days left 0.17
+update 721150/740000 epoch 3898.11 loss 0.0584 lr 0.0018407 sec/update 0.76 estimated days left 0.17
+update 721200/740000 epoch 3898.38 loss 0.0508 lr 0.0018363 sec/update 0.76 estimated days left 0.16
+update 721250/740000 epoch 3898.65 loss 0.0774 lr 0.0018319 sec/update 0.76 estimated days left 0.16
+update 721300/740000 epoch 3898.92 loss 0.0480 lr 0.0018275 sec/update 0.76 estimated days left 0.16
+update 721350/740000 epoch 3899.19 loss 0.0539 lr 0.0018231 sec/update 0.76 estimated days left 0.16
+update 721400/740000 epoch 3899.46 loss 0.0749 lr 0.0018187 sec/update 0.76 estimated days left 0.16
+update 721450/740000 epoch 3899.73 loss 0.0724 lr 0.0018143 sec/update 0.76 estimated days left 0.16
+update 721500/740000 epoch 3900.00 loss 0.0545 lr 0.0018099 sec/update 0.76 estimated days left 0.16
+update 721550/740000 epoch 3900.27 loss 0.0962 lr 0.0018055 sec/update 0.76 estimated days left 0.16
+update 721600/740000 epoch 3900.54 loss 0.0524 lr 0.0018011 sec/update 0.76 estimated days left 0.16
+update 721650/740000 epoch 3900.81 loss 0.0758 lr 0.0017967 sec/update 0.76 estimated days left 0.16
+update 721700/740000 epoch 3901.08 loss 0.0710 lr 0.0017923 sec/update 0.76 estimated days left 0.16
+update 721750/740000 epoch 3901.35 loss 0.0512 lr 0.0017879 sec/update 0.76 estimated days left 0.16
+update 721800/740000 epoch 3901.62 loss 0.0602 lr 0.0017835 sec/update 0.76 estimated days left 0.16
+update 721850/740000 epoch 3901.89 loss 0.0657 lr 0.0017791 sec/update 0.76 estimated days left 0.16
+update 721900/740000 epoch 3902.16 loss 0.0612 lr 0.0017747 sec/update 0.76 estimated days left 0.16
+update 721950/740000 epoch 3902.43 loss 0.0595 lr 0.0017703 sec/update 0.76 estimated days left 0.16
+update 722000/740000 epoch 3902.70 loss 0.0807 lr 0.0017659 sec/update 0.76 estimated days left 0.16
+update 722050/740000 epoch 3902.97 loss 0.0540 lr 0.0017614 sec/update 0.76 estimated days left 0.16
+update 722100/740000 epoch 3903.24 loss 0.0671 lr 0.0017570 sec/update 0.76 estimated days left 0.16
+update 722150/740000 epoch 3903.51 loss 0.0622 lr 0.0017526 sec/update 0.76 estimated days left 0.16
+update 722200/740000 epoch 3903.78 loss 0.0593 lr 0.0017482 sec/update 0.76 estimated days left 0.16
+update 722250/740000 epoch 3904.05 loss 0.0690 lr 0.0017438 sec/update 0.76 estimated days left 0.16
+update 722300/740000 epoch 3904.32 loss 0.0689 lr 0.0017394 sec/update 0.76 estimated days left 0.16
+update 722350/740000 epoch 3904.59 loss 0.0526 lr 0.0017349 sec/update 0.76 estimated days left 0.15
+update 722400/740000 epoch 3904.86 loss 0.0631 lr 0.0017305 sec/update 0.76 estimated days left 0.15
+update 722450/740000 epoch 3905.14 loss 0.1057 lr 0.0017261 sec/update 0.76 estimated days left 0.15
+update 722500/740000 epoch 3905.41 loss 0.0565 lr 0.0017217 sec/update 0.76 estimated days left 0.15
+update 722550/740000 epoch 3905.68 loss 0.0618 lr 0.0017172 sec/update 0.76 estimated days left 0.15
+update 722600/740000 epoch 3905.95 loss 0.0608 lr 0.0017128 sec/update 0.76 estimated days left 0.15
+update 722650/740000 epoch 3906.22 loss 0.0450 lr 0.0017084 sec/update 0.76 estimated days left 0.15
+update 722700/740000 epoch 3906.49 loss 0.0508 lr 0.0017039 sec/update 0.76 estimated days left 0.15
+update 722750/740000 epoch 3906.76 loss 0.0689 lr 0.0016995 sec/update 0.76 estimated days left 0.15
+update 722800/740000 epoch 3907.03 loss 0.1021 lr 0.0016951 sec/update 0.76 estimated days left 0.15
+update 722850/740000 epoch 3907.30 loss 0.0646 lr 0.0016906 sec/update 0.76 estimated days left 0.15
+update 722900/740000 epoch 3907.57 loss 0.0525 lr 0.0016862 sec/update 0.76 estimated days left 0.15
+update 722950/740000 epoch 3907.84 loss 0.0615 lr 0.0016818 sec/update 0.76 estimated days left 0.15
+update 723000/740000 epoch 3908.11 loss 0.0698 lr 0.0016773 sec/update 0.76 estimated days left 0.15
+update 723050/740000 epoch 3908.38 loss 0.0576 lr 0.0016729 sec/update 0.76 estimated days left 0.15
+update 723100/740000 epoch 3908.65 loss 0.0703 lr 0.0016684 sec/update 0.76 estimated days left 0.15
+update 723150/740000 epoch 3908.92 loss 0.0753 lr 0.0016640 sec/update 0.76 estimated days left 0.15
+update 723200/740000 epoch 3909.19 loss 0.0676 lr 0.0016596 sec/update 0.76 estimated days left 0.15
+update 723250/740000 epoch 3909.46 loss 0.0634 lr 0.0016551 sec/update 0.76 estimated days left 0.15
+update 723300/740000 epoch 3909.73 loss 0.0735 lr 0.0016507 sec/update 0.76 estimated days left 0.15
+update 723350/740000 epoch 3910.00 loss 0.0645 lr 0.0016462 sec/update 0.76 estimated days left 0.15
+update 723400/740000 epoch 3910.27 loss 0.0689 lr 0.0016418 sec/update 0.76 estimated days left 0.15
+update 723450/740000 epoch 3910.54 loss 0.0574 lr 0.0016373 sec/update 0.76 estimated days left 0.15
+update 723500/740000 epoch 3910.81 loss 0.0685 lr 0.0016329 sec/update 0.76 estimated days left 0.14
+update 723550/740000 epoch 3911.08 loss 0.0774 lr 0.0016284 sec/update 0.76 estimated days left 0.14
+update 723600/740000 epoch 3911.35 loss 0.0646 lr 0.0016240 sec/update 0.76 estimated days left 0.14
+update 723650/740000 epoch 3911.62 loss 0.0683 lr 0.0016195 sec/update 0.76 estimated days left 0.14
+update 723700/740000 epoch 3911.89 loss 0.0749 lr 0.0016150 sec/update 0.76 estimated days left 0.14
+update 723750/740000 epoch 3912.16 loss 0.0539 lr 0.0016106 sec/update 0.76 estimated days left 0.14
+update 723800/740000 epoch 3912.43 loss 0.0574 lr 0.0016061 sec/update 0.76 estimated days left 0.14
+update 723850/740000 epoch 3912.70 loss 0.0556 lr 0.0016017 sec/update 0.76 estimated days left 0.14
+update 723900/740000 epoch 3912.97 loss 0.0669 lr 0.0015972 sec/update 0.76 estimated days left 0.14
+update 723950/740000 epoch 3913.24 loss 0.0732 lr 0.0015927 sec/update 0.76 estimated days left 0.14
+update 724000/740000 epoch 3913.51 loss 0.0721 lr 0.0015883 sec/update 0.76 estimated days left 0.14
+update 724050/740000 epoch 3913.78 loss 0.0898 lr 0.0015838 sec/update 0.76 estimated days left 0.14
+update 724100/740000 epoch 3914.05 loss 0.0639 lr 0.0015793 sec/update 0.76 estimated days left 0.14
+update 724150/740000 epoch 3914.32 loss 0.0633 lr 0.0015749 sec/update 0.76 estimated days left 0.14
+update 724200/740000 epoch 3914.59 loss 0.0593 lr 0.0015704 sec/update 0.76 estimated days left 0.14
+update 724250/740000 epoch 3914.86 loss 0.0598 lr 0.0015659 sec/update 0.76 estimated days left 0.14
+update 724300/740000 epoch 3915.14 loss 0.0734 lr 0.0015614 sec/update 0.76 estimated days left 0.14
+update 724350/740000 epoch 3915.41 loss 0.0917 lr 0.0015570 sec/update 0.76 estimated days left 0.14
+update 724400/740000 epoch 3915.68 loss 0.0783 lr 0.0015525 sec/update 0.76 estimated days left 0.14
+update 724450/740000 epoch 3915.95 loss 0.0691 lr 0.0015480 sec/update 0.76 estimated days left 0.14
+update 724500/740000 epoch 3916.22 loss 0.0643 lr 0.0015435 sec/update 0.76 estimated days left 0.14
+update 724550/740000 epoch 3916.49 loss 0.0673 lr 0.0015390 sec/update 0.76 estimated days left 0.14
+update 724600/740000 epoch 3916.76 loss 0.0543 lr 0.0015346 sec/update 0.76 estimated days left 0.14
+update 724650/740000 epoch 3917.03 loss 0.0759 lr 0.0015301 sec/update 0.76 estimated days left 0.13
+update 724700/740000 epoch 3917.30 loss 0.0671 lr 0.0015256 sec/update 0.76 estimated days left 0.13
+update 724750/740000 epoch 3917.57 loss 0.0590 lr 0.0015211 sec/update 0.76 estimated days left 0.13
+update 724800/740000 epoch 3917.84 loss 0.0614 lr 0.0015166 sec/update 0.76 estimated days left 0.13
+update 724850/740000 epoch 3918.11 loss 0.0545 lr 0.0015121 sec/update 0.76 estimated days left 0.13
+update 724900/740000 epoch 3918.38 loss 0.0577 lr 0.0015076 sec/update 0.76 estimated days left 0.13
+update 724950/740000 epoch 3918.65 loss 0.0660 lr 0.0015031 sec/update 0.76 estimated days left 0.13
+update 725000/740000 epoch 3918.92 loss 0.0565 lr 0.0014986 sec/update 0.76 estimated days left 0.13
+Validation 50/500
+Validation 100/500
+Validation 150/500
+Validation 200/500
+Validation 250/500
+Validation 300/500
+Validation 350/500
+Validation 400/500
+Validation 450/500
+Validation 500/500
+Validation update 725000: mIoU 74.648% (500 images)
+update 725050/740000 epoch 3919.19 loss 0.0604 lr 0.0014941 sec/update 0.76 estimated days left 0.13
+update 725100/740000 epoch 3919.46 loss 0.0591 lr 0.0014896 sec/update 0.76 estimated days left 0.13
+update 725150/740000 epoch 3919.73 loss 0.0717 lr 0.0014851 sec/update 0.76 estimated days left 0.13
+update 725200/740000 epoch 3920.00 loss 0.0616 lr 0.0014806 sec/update 0.76 estimated days left 0.13
+update 725250/740000 epoch 3920.27 loss 0.0753 lr 0.0014761 sec/update 0.76 estimated days left 0.13
+update 725300/740000 epoch 3920.54 loss 0.0575 lr 0.0014716 sec/update 0.76 estimated days left 0.13
+update 725350/740000 epoch 3920.81 loss 0.0602 lr 0.0014671 sec/update 0.76 estimated days left 0.13
+update 725400/740000 epoch 3921.08 loss 0.0822 lr 0.0014626 sec/update 0.76 estimated days left 0.13
+update 725450/740000 epoch 3921.35 loss 0.0694 lr 0.0014581 sec/update 0.76 estimated days left 0.13
+update 725500/740000 epoch 3921.62 loss 0.0597 lr 0.0014536 sec/update 0.76 estimated days left 0.13
+update 725550/740000 epoch 3921.89 loss 0.0904 lr 0.0014491 sec/update 0.76 estimated days left 0.13
+update 725600/740000 epoch 3922.16 loss 0.0647 lr 0.0014446 sec/update 0.76 estimated days left 0.13
+update 725650/740000 epoch 3922.43 loss 0.0571 lr 0.0014401 sec/update 0.76 estimated days left 0.13
+update 725700/740000 epoch 3922.70 loss 0.0655 lr 0.0014356 sec/update 0.76 estimated days left 0.13
+update 725750/740000 epoch 3922.97 loss 0.0776 lr 0.0014310 sec/update 0.76 estimated days left 0.12
+update 725800/740000 epoch 3923.24 loss 0.0583 lr 0.0014265 sec/update 0.76 estimated days left 0.12
+update 725850/740000 epoch 3923.51 loss 0.0586 lr 0.0014220 sec/update 0.76 estimated days left 0.12
+update 725900/740000 epoch 3923.78 loss 0.0696 lr 0.0014175 sec/update 0.76 estimated days left 0.12
+update 725950/740000 epoch 3924.05 loss 0.0557 lr 0.0014129 sec/update 0.76 estimated days left 0.12
+update 726000/740000 epoch 3924.32 loss 0.0648 lr 0.0014084 sec/update 0.76 estimated days left 0.12
+update 726050/740000 epoch 3924.59 loss 0.0885 lr 0.0014039 sec/update 0.76 estimated days left 0.12
+AMP overflow: retry 1/16 on the same batch; scale 131072.0 -> 65536.0
+update 726100/740000 epoch 3924.86 loss 0.0622 lr 0.0013994 sec/update 0.76 estimated days left 0.12
+update 726150/740000 epoch 3925.14 loss 0.0556 lr 0.0013948 sec/update 0.76 estimated days left 0.12
+update 726200/740000 epoch 3925.41 loss 0.0554 lr 0.0013903 sec/update 0.76 estimated days left 0.12
+update 726250/740000 epoch 3925.68 loss 0.0806 lr 0.0013858 sec/update 0.76 estimated days left 0.12
+update 726300/740000 epoch 3925.95 loss 0.0704 lr 0.0013812 sec/update 0.76 estimated days left 0.12
+update 726350/740000 epoch 3926.22 loss 0.0621 lr 0.0013767 sec/update 0.76 estimated days left 0.12
+update 726400/740000 epoch 3926.49 loss 0.0618 lr 0.0013722 sec/update 0.76 estimated days left 0.12
+update 726450/740000 epoch 3926.76 loss 0.0508 lr 0.0013676 sec/update 0.76 estimated days left 0.12
+update 726500/740000 epoch 3927.03 loss 0.0680 lr 0.0013631 sec/update 0.76 estimated days left 0.12
+update 726550/740000 epoch 3927.30 loss 0.0590 lr 0.0013585 sec/update 0.76 estimated days left 0.12
+update 726600/740000 epoch 3927.57 loss 0.0711 lr 0.0013540 sec/update 0.76 estimated days left 0.12
+update 726650/740000 epoch 3927.84 loss 0.0625 lr 0.0013494 sec/update 0.76 estimated days left 0.12
+update 726700/740000 epoch 3928.11 loss 0.0696 lr 0.0013449 sec/update 0.76 estimated days left 0.12
+update 726750/740000 epoch 3928.38 loss 0.0537 lr 0.0013403 sec/update 0.76 estimated days left 0.12
+update 726800/740000 epoch 3928.65 loss 0.0779 lr 0.0013358 sec/update 0.76 estimated days left 0.12
+update 726850/740000 epoch 3928.92 loss 0.0632 lr 0.0013312 sec/update 0.76 estimated days left 0.12
+update 726900/740000 epoch 3929.19 loss 0.0527 lr 0.0013267 sec/update 0.76 estimated days left 0.11
+update 726950/740000 epoch 3929.46 loss 0.0562 lr 0.0013221 sec/update 0.76 estimated days left 0.11
+update 727000/740000 epoch 3929.73 loss 0.0832 lr 0.0013176 sec/update 0.76 estimated days left 0.11
+update 727050/740000 epoch 3930.00 loss 0.0747 lr 0.0013130 sec/update 0.76 estimated days left 0.11
+update 727100/740000 epoch 3930.27 loss 0.0651 lr 0.0013084 sec/update 0.76 estimated days left 0.11
+update 727150/740000 epoch 3930.54 loss 0.0545 lr 0.0013039 sec/update 0.76 estimated days left 0.11
+update 727200/740000 epoch 3930.81 loss 0.0697 lr 0.0012993 sec/update 0.76 estimated days left 0.11
+update 727250/740000 epoch 3931.08 loss 0.0680 lr 0.0012947 sec/update 0.76 estimated days left 0.11
+update 727300/740000 epoch 3931.35 loss 0.0690 lr 0.0012902 sec/update 0.76 estimated days left 0.11
+update 727350/740000 epoch 3931.62 loss 0.0841 lr 0.0012856 sec/update 0.76 estimated days left 0.11
+update 727400/740000 epoch 3931.89 loss 0.0659 lr 0.0012810 sec/update 0.76 estimated days left 0.11
+update 727450/740000 epoch 3932.16 loss 0.0955 lr 0.0012764 sec/update 0.76 estimated days left 0.11
+update 727500/740000 epoch 3932.43 loss 0.0577 lr 0.0012719 sec/update 0.76 estimated days left 0.11
+update 727550/740000 epoch 3932.70 loss 0.0729 lr 0.0012673 sec/update 0.76 estimated days left 0.11
+update 727600/740000 epoch 3932.97 loss 0.0506 lr 0.0012627 sec/update 0.76 estimated days left 0.11
+update 727650/740000 epoch 3933.24 loss 0.0669 lr 0.0012581 sec/update 0.76 estimated days left 0.11
+update 727700/740000 epoch 3933.51 loss 0.0589 lr 0.0012535 sec/update 0.76 estimated days left 0.11
+update 727750/740000 epoch 3933.78 loss 0.0473 lr 0.0012489 sec/update 0.76 estimated days left 0.11
+update 727800/740000 epoch 3934.05 loss 0.0707 lr 0.0012444 sec/update 0.76 estimated days left 0.11
+update 727850/740000 epoch 3934.32 loss 0.0632 lr 0.0012398 sec/update 0.76 estimated days left 0.11
+update 727900/740000 epoch 3934.59 loss 0.0514 lr 0.0012352 sec/update 0.76 estimated days left 0.11
+update 727950/740000 epoch 3934.86 loss 0.0842 lr 0.0012306 sec/update 0.76 estimated days left 0.11
+update 728000/740000 epoch 3935.14 loss 0.0735 lr 0.0012260 sec/update 0.76 estimated days left 0.11
+update 728050/740000 epoch 3935.41 loss 0.0909 lr 0.0012214 sec/update 0.76 estimated days left 0.10
+update 728100/740000 epoch 3935.68 loss 0.0697 lr 0.0012168 sec/update 0.76 estimated days left 0.10
+update 728150/740000 epoch 3935.95 loss 0.0591 lr 0.0012122 sec/update 0.76 estimated days left 0.10
+update 728200/740000 epoch 3936.22 loss 0.0663 lr 0.0012076 sec/update 0.76 estimated days left 0.10
+update 728250/740000 epoch 3936.49 loss 0.0831 lr 0.0012030 sec/update 0.76 estimated days left 0.10
+update 728300/740000 epoch 3936.76 loss 0.0556 lr 0.0011984 sec/update 0.76 estimated days left 0.10
+update 728350/740000 epoch 3937.03 loss 0.0697 lr 0.0011938 sec/update 0.76 estimated days left 0.10
+update 728400/740000 epoch 3937.30 loss 0.0574 lr 0.0011891 sec/update 0.76 estimated days left 0.10
+update 728450/740000 epoch 3937.57 loss 0.0764 lr 0.0011845 sec/update 0.76 estimated days left 0.10
+update 728500/740000 epoch 3937.84 loss 0.0634 lr 0.0011799 sec/update 0.76 estimated days left 0.10
+update 728550/740000 epoch 3938.11 loss 0.0682 lr 0.0011753 sec/update 0.76 estimated days left 0.10
+update 728600/740000 epoch 3938.38 loss 0.0546 lr 0.0011707 sec/update 0.76 estimated days left 0.10
+update 728650/740000 epoch 3938.65 loss 0.0461 lr 0.0011661 sec/update 0.76 estimated days left 0.10
+update 728700/740000 epoch 3938.92 loss 0.0741 lr 0.0011614 sec/update 0.76 estimated days left 0.10
+update 728750/740000 epoch 3939.19 loss 0.0657 lr 0.0011568 sec/update 0.76 estimated days left 0.10
+update 728800/740000 epoch 3939.46 loss 0.0769 lr 0.0011522 sec/update 0.76 estimated days left 0.10
+update 728850/740000 epoch 3939.73 loss 0.0585 lr 0.0011476 sec/update 0.76 estimated days left 0.10
+update 728900/740000 epoch 3940.00 loss 0.0738 lr 0.0011429 sec/update 0.76 estimated days left 0.10
+update 728950/740000 epoch 3940.27 loss 0.0646 lr 0.0011383 sec/update 0.76 estimated days left 0.10
+update 729000/740000 epoch 3940.54 loss 0.0614 lr 0.0011336 sec/update 0.76 estimated days left 0.10
+update 729050/740000 epoch 3940.81 loss 0.0497 lr 0.0011290 sec/update 0.76 estimated days left 0.10
+update 729100/740000 epoch 3941.08 loss 0.0519 lr 0.0011244 sec/update 0.76 estimated days left 0.10
+update 729150/740000 epoch 3941.35 loss 0.0726 lr 0.0011197 sec/update 0.76 estimated days left 0.10
+update 729200/740000 epoch 3941.62 loss 0.0496 lr 0.0011151 sec/update 0.76 estimated days left 0.09
+update 729250/740000 epoch 3941.89 loss 0.0649 lr 0.0011104 sec/update 0.76 estimated days left 0.09
+update 729300/740000 epoch 3942.16 loss 0.0695 lr 0.0011058 sec/update 0.76 estimated days left 0.09
+update 729350/740000 epoch 3942.43 loss 0.0697 lr 0.0011011 sec/update 0.76 estimated days left 0.09
+AMP overflow: retry 1/16 on the same batch; scale 131072.0 -> 65536.0
+update 729400/740000 epoch 3942.70 loss 0.0711 lr 0.0010965 sec/update 0.76 estimated days left 0.09
+update 729450/740000 epoch 3942.97 loss 0.0703 lr 0.0010918 sec/update 0.76 estimated days left 0.09
+update 729500/740000 epoch 3943.24 loss 0.0623 lr 0.0010872 sec/update 0.76 estimated days left 0.09
+update 729550/740000 epoch 3943.51 loss 0.0765 lr 0.0010825 sec/update 0.76 estimated days left 0.09
+update 729600/740000 epoch 3943.78 loss 0.0597 lr 0.0010778 sec/update 0.76 estimated days left 0.09
+update 729650/740000 epoch 3944.05 loss 0.0694 lr 0.0010732 sec/update 0.76 estimated days left 0.09
+update 729700/740000 epoch 3944.32 loss 0.0490 lr 0.0010685 sec/update 0.76 estimated days left 0.09
+update 729750/740000 epoch 3944.59 loss 0.0616 lr 0.0010638 sec/update 0.76 estimated days left 0.09
+update 729800/740000 epoch 3944.86 loss 0.0744 lr 0.0010592 sec/update 0.76 estimated days left 0.09
+update 729850/740000 epoch 3945.14 loss 0.0761 lr 0.0010545 sec/update 0.76 estimated days left 0.09
+update 729900/740000 epoch 3945.41 loss 0.0603 lr 0.0010498 sec/update 0.76 estimated days left 0.09
+update 729950/740000 epoch 3945.68 loss 0.0570 lr 0.0010451 sec/update 0.76 estimated days left 0.09
+update 730000/740000 epoch 3945.95 loss 0.0634 lr 0.0010405 sec/update 0.76 estimated days left 0.09
+Validation 50/500
+Validation 100/500
+Validation 150/500
+Validation 200/500
+Validation 250/500
+Validation 300/500
+Validation 350/500
+Validation 400/500
+Validation 450/500
+Validation 500/500
+Validation update 730000: mIoU 74.510% (500 images)
+update 730050/740000 epoch 3946.22 loss 0.0597 lr 0.0010358 sec/update 0.76 estimated days left 0.09
+update 730100/740000 epoch 3946.49 loss 0.0566 lr 0.0010311 sec/update 0.76 estimated days left 0.09
+update 730150/740000 epoch 3946.76 loss 0.0848 lr 0.0010264 sec/update 0.76 estimated days left 0.09
+update 730200/740000 epoch 3947.03 loss 0.0460 lr 0.0010217 sec/update 0.76 estimated days left 0.09
+update 730250/740000 epoch 3947.30 loss 0.0613 lr 0.0010170 sec/update 0.76 estimated days left 0.09
+update 730300/740000 epoch 3947.57 loss 0.0736 lr 0.0010123 sec/update 0.76 estimated days left 0.09
+update 730350/740000 epoch 3947.84 loss 0.0715 lr 0.0010076 sec/update 0.76 estimated days left 0.08
+update 730400/740000 epoch 3948.11 loss 0.0709 lr 0.0010029 sec/update 0.76 estimated days left 0.08
+update 730450/740000 epoch 3948.38 loss 0.0560 lr 0.0009982 sec/update 0.76 estimated days left 0.08
+update 730500/740000 epoch 3948.65 loss 0.0651 lr 0.0009935 sec/update 0.76 estimated days left 0.08
+update 730550/740000 epoch 3948.92 loss 0.0736 lr 0.0009888 sec/update 0.76 estimated days left 0.08
+update 730600/740000 epoch 3949.19 loss 0.0492 lr 0.0009841 sec/update 0.76 estimated days left 0.08
+update 730650/740000 epoch 3949.46 loss 0.0774 lr 0.0009794 sec/update 0.76 estimated days left 0.08
+update 730700/740000 epoch 3949.73 loss 0.0690 lr 0.0009747 sec/update 0.76 estimated days left 0.08
+update 730750/740000 epoch 3950.00 loss 0.0635 lr 0.0009700 sec/update 0.76 estimated days left 0.08
+update 730800/740000 epoch 3950.27 loss 0.0392 lr 0.0009653 sec/update 0.76 estimated days left 0.08
+update 730850/740000 epoch 3950.54 loss 0.0659 lr 0.0009605 sec/update 0.76 estimated days left 0.08
+update 730900/740000 epoch 3950.81 loss 0.0644 lr 0.0009558 sec/update 0.76 estimated days left 0.08
+update 730950/740000 epoch 3951.08 loss 0.0700 lr 0.0009511 sec/update 0.76 estimated days left 0.08
+update 731000/740000 epoch 3951.35 loss 0.0723 lr 0.0009463 sec/update 0.76 estimated days left 0.08
+update 731050/740000 epoch 3951.62 loss 0.0631 lr 0.0009416 sec/update 0.76 estimated days left 0.08
+update 731100/740000 epoch 3951.89 loss 0.0589 lr 0.0009369 sec/update 0.76 estimated days left 0.08
+update 731150/740000 epoch 3952.16 loss 0.0693 lr 0.0009321 sec/update 0.76 estimated days left 0.08
+update 731200/740000 epoch 3952.43 loss 0.0623 lr 0.0009274 sec/update 0.76 estimated days left 0.08
+update 731250/740000 epoch 3952.70 loss 0.0703 lr 0.0009227 sec/update 0.76 estimated days left 0.08
+update 731300/740000 epoch 3952.97 loss 0.0660 lr 0.0009179 sec/update 0.76 estimated days left 0.08
+update 731350/740000 epoch 3953.24 loss 0.0555 lr 0.0009132 sec/update 0.76 estimated days left 0.08
+update 731400/740000 epoch 3953.51 loss 0.0563 lr 0.0009084 sec/update 0.76 estimated days left 0.08
+update 731450/740000 epoch 3953.78 loss 0.0531 lr 0.0009037 sec/update 0.76 estimated days left 0.07
+update 731500/740000 epoch 3954.05 loss 0.0699 lr 0.0008989 sec/update 0.76 estimated days left 0.07
+AMP overflow: retry 1/16 on the same batch; scale 131072.0 -> 65536.0
+AMP overflow: retry 2/16 on the same batch; scale 65536.0 -> 32768.0
+update 731550/740000 epoch 3954.32 loss 0.0752 lr 0.0008941 sec/update 0.76 estimated days left 0.07
+update 731600/740000 epoch 3954.59 loss 0.0627 lr 0.0008894 sec/update 0.76 estimated days left 0.07
+update 731650/740000 epoch 3954.86 loss 0.0678 lr 0.0008846 sec/update 0.76 estimated days left 0.07
+update 731700/740000 epoch 3955.14 loss 0.0692 lr 0.0008798 sec/update 0.76 estimated days left 0.07
+update 731750/740000 epoch 3955.41 loss 0.0540 lr 0.0008751 sec/update 0.76 estimated days left 0.07
+update 731800/740000 epoch 3955.68 loss 0.0581 lr 0.0008703 sec/update 0.76 estimated days left 0.07
+update 731850/740000 epoch 3955.95 loss 0.0638 lr 0.0008655 sec/update 0.76 estimated days left 0.07
+update 731900/740000 epoch 3956.22 loss 0.0522 lr 0.0008607 sec/update 0.76 estimated days left 0.07
+update 731950/740000 epoch 3956.49 loss 0.0588 lr 0.0008560 sec/update 0.76 estimated days left 0.07
+update 732000/740000 epoch 3956.76 loss 0.0486 lr 0.0008512 sec/update 0.76 estimated days left 0.07
+update 732050/740000 epoch 3957.03 loss 0.0560 lr 0.0008464 sec/update 0.76 estimated days left 0.07
+update 732100/740000 epoch 3957.30 loss 0.0578 lr 0.0008416 sec/update 0.76 estimated days left 0.07
+update 732150/740000 epoch 3957.57 loss 0.0667 lr 0.0008368 sec/update 0.76 estimated days left 0.07
+update 732200/740000 epoch 3957.84 loss 0.0645 lr 0.0008320 sec/update 0.76 estimated days left 0.07
+update 732250/740000 epoch 3958.11 loss 0.0673 lr 0.0008272 sec/update 0.76 estimated days left 0.07
+update 732300/740000 epoch 3958.38 loss 0.0621 lr 0.0008224 sec/update 0.76 estimated days left 0.07
+update 732350/740000 epoch 3958.65 loss 0.0438 lr 0.0008176 sec/update 0.76 estimated days left 0.07
+update 732400/740000 epoch 3958.92 loss 0.0690 lr 0.0008128 sec/update 0.76 estimated days left 0.07
+update 732450/740000 epoch 3959.19 loss 0.0673 lr 0.0008080 sec/update 0.76 estimated days left 0.07
+update 732500/740000 epoch 3959.46 loss 0.0551 lr 0.0008032 sec/update 0.76 estimated days left 0.07
+update 732550/740000 epoch 3959.73 loss 0.0733 lr 0.0007983 sec/update 0.76 estimated days left 0.07
+update 732600/740000 epoch 3960.00 loss 0.0540 lr 0.0007935 sec/update 0.76 estimated days left 0.06
+update 732650/740000 epoch 3960.27 loss 0.0734 lr 0.0007887 sec/update 0.76 estimated days left 0.06
+update 732700/740000 epoch 3960.54 loss 0.0623 lr 0.0007839 sec/update 0.76 estimated days left 0.06
+update 732750/740000 epoch 3960.81 loss 0.0459 lr 0.0007790 sec/update 0.76 estimated days left 0.06
+update 732800/740000 epoch 3961.08 loss 0.0536 lr 0.0007742 sec/update 0.76 estimated days left 0.06
+update 732850/740000 epoch 3961.35 loss 0.0550 lr 0.0007693 sec/update 0.76 estimated days left 0.06
+update 732900/740000 epoch 3961.62 loss 0.0688 lr 0.0007645 sec/update 0.76 estimated days left 0.06
+update 732950/740000 epoch 3961.89 loss 0.0765 lr 0.0007597 sec/update 0.76 estimated days left 0.06
+update 733000/740000 epoch 3962.16 loss 0.0661 lr 0.0007548 sec/update 0.76 estimated days left 0.06
+update 733050/740000 epoch 3962.43 loss 0.0818 lr 0.0007500 sec/update 0.76 estimated days left 0.06
+update 733100/740000 epoch 3962.70 loss 0.0740 lr 0.0007451 sec/update 0.76 estimated days left 0.06
+update 733150/740000 epoch 3962.97 loss 0.0552 lr 0.0007402 sec/update 0.76 estimated days left 0.06
+update 733200/740000 epoch 3963.24 loss 0.0836 lr 0.0007354 sec/update 0.76 estimated days left 0.06
+update 733250/740000 epoch 3963.51 loss 0.0684 lr 0.0007305 sec/update 0.76 estimated days left 0.06
+update 733300/740000 epoch 3963.78 loss 0.0520 lr 0.0007256 sec/update 0.76 estimated days left 0.06
+update 733350/740000 epoch 3964.05 loss 0.0480 lr 0.0007208 sec/update 0.76 estimated days left 0.06
+update 733400/740000 epoch 3964.32 loss 0.0702 lr 0.0007159 sec/update 0.76 estimated days left 0.06
+update 733450/740000 epoch 3964.59 loss 0.0680 lr 0.0007110 sec/update 0.76 estimated days left 0.06
+update 733500/740000 epoch 3964.86 loss 0.0528 lr 0.0007061 sec/update 0.76 estimated days left 0.06
+update 733550/740000 epoch 3965.14 loss 0.0672 lr 0.0007012 sec/update 0.76 estimated days left 0.06
+update 733600/740000 epoch 3965.41 loss 0.0712 lr 0.0006963 sec/update 0.76 estimated days left 0.06
+update 733650/740000 epoch 3965.68 loss 0.0463 lr 0.0006914 sec/update 0.76 estimated days left 0.06
+update 733700/740000 epoch 3965.95 loss 0.0461 lr 0.0006865 sec/update 0.76 estimated days left 0.06
+update 733750/740000 epoch 3966.22 loss 0.0534 lr 0.0006816 sec/update 0.76 estimated days left 0.05
+update 733800/740000 epoch 3966.49 loss 0.0504 lr 0.0006767 sec/update 0.76 estimated days left 0.05
+update 733850/740000 epoch 3966.76 loss 0.0717 lr 0.0006718 sec/update 0.76 estimated days left 0.05
+update 733900/740000 epoch 3967.03 loss 0.0850 lr 0.0006669 sec/update 0.76 estimated days left 0.05
+update 733950/740000 epoch 3967.30 loss 0.0677 lr 0.0006620 sec/update 0.76 estimated days left 0.05
+update 734000/740000 epoch 3967.57 loss 0.0823 lr 0.0006570 sec/update 0.76 estimated days left 0.05
+update 734050/740000 epoch 3967.84 loss 0.0594 lr 0.0006521 sec/update 0.76 estimated days left 0.05
+update 734100/740000 epoch 3968.11 loss 0.0569 lr 0.0006472 sec/update 0.76 estimated days left 0.05
+update 734150/740000 epoch 3968.38 loss 0.0502 lr 0.0006422 sec/update 0.76 estimated days left 0.05
+update 734200/740000 epoch 3968.65 loss 0.0878 lr 0.0006373 sec/update 0.76 estimated days left 0.05
+update 734250/740000 epoch 3968.92 loss 0.0535 lr 0.0006324 sec/update 0.76 estimated days left 0.05
+update 734300/740000 epoch 3969.19 loss 0.0506 lr 0.0006274 sec/update 0.76 estimated days left 0.05
+update 734350/740000 epoch 3969.46 loss 0.0749 lr 0.0006224 sec/update 0.76 estimated days left 0.05
+update 734400/740000 epoch 3969.73 loss 0.0667 lr 0.0006175 sec/update 0.76 estimated days left 0.05
+update 734450/740000 epoch 3970.00 loss 0.0730 lr 0.0006125 sec/update 0.76 estimated days left 0.05
+update 734500/740000 epoch 3970.27 loss 0.0741 lr 0.0006076 sec/update 0.76 estimated days left 0.05
+update 734550/740000 epoch 3970.54 loss 0.0545 lr 0.0006026 sec/update 0.76 estimated days left 0.05
+update 734600/740000 epoch 3970.81 loss 0.0481 lr 0.0005976 sec/update 0.76 estimated days left 0.05
+update 734650/740000 epoch 3971.08 loss 0.0670 lr 0.0005926 sec/update 0.76 estimated days left 0.05
+update 734700/740000 epoch 3971.35 loss 0.0695 lr 0.0005876 sec/update 0.76 estimated days left 0.05
+update 734750/740000 epoch 3971.62 loss 0.0709 lr 0.0005827 sec/update 0.76 estimated days left 0.05
+update 734800/740000 epoch 3971.89 loss 0.0632 lr 0.0005777 sec/update 0.76 estimated days left 0.05
+update 734850/740000 epoch 3972.16 loss 0.0629 lr 0.0005727 sec/update 0.76 estimated days left 0.05
+update 734900/740000 epoch 3972.43 loss 0.0487 lr 0.0005676 sec/update 0.76 estimated days left 0.04
+update 734950/740000 epoch 3972.70 loss 0.0612 lr 0.0005626 sec/update 0.76 estimated days left 0.04
+update 735000/740000 epoch 3972.97 loss 0.0615 lr 0.0005576 sec/update 0.76 estimated days left 0.04
+Validation 50/500
+Validation 100/500
+Validation 150/500
+Validation 200/500
+Validation 250/500
+Validation 300/500
+Validation 350/500
+Validation 400/500
+Validation 450/500
+Validation 500/500
+Validation update 735000: mIoU 75.024% (500 images)
+update 735050/740000 epoch 3973.24 loss 0.0556 lr 0.0005526 sec/update 0.76 estimated days left 0.04
+update 735100/740000 epoch 3973.51 loss 0.0726 lr 0.0005476 sec/update 0.76 estimated days left 0.04
+update 735150/740000 epoch 3973.78 loss 0.0599 lr 0.0005425 sec/update 0.76 estimated days left 0.04
+update 735200/740000 epoch 3974.05 loss 0.0625 lr 0.0005375 sec/update 0.76 estimated days left 0.04
+update 735250/740000 epoch 3974.32 loss 0.0656 lr 0.0005325 sec/update 0.76 estimated days left 0.04
+update 735300/740000 epoch 3974.59 loss 0.0542 lr 0.0005274 sec/update 0.76 estimated days left 0.04
+update 735350/740000 epoch 3974.86 loss 0.0604 lr 0.0005224 sec/update 0.76 estimated days left 0.04
+update 735400/740000 epoch 3975.14 loss 0.0575 lr 0.0005173 sec/update 0.76 estimated days left 0.04
+update 735450/740000 epoch 3975.41 loss 0.0600 lr 0.0005123 sec/update 0.76 estimated days left 0.04
+update 735500/740000 epoch 3975.68 loss 0.0460 lr 0.0005072 sec/update 0.76 estimated days left 0.04
+update 735550/740000 epoch 3975.95 loss 0.0509 lr 0.0005021 sec/update 0.76 estimated days left 0.04
+update 735600/740000 epoch 3976.22 loss 0.0506 lr 0.0004970 sec/update 0.76 estimated days left 0.04
+update 735650/740000 epoch 3976.49 loss 0.0649 lr 0.0004919 sec/update 0.76 estimated days left 0.04
+update 735700/740000 epoch 3976.76 loss 0.0842 lr 0.0004869 sec/update 0.76 estimated days left 0.04
+update 735750/740000 epoch 3977.03 loss 0.0787 lr 0.0004818 sec/update 0.76 estimated days left 0.04
+update 735800/740000 epoch 3977.30 loss 0.0618 lr 0.0004767 sec/update 0.76 estimated days left 0.04
+update 735850/740000 epoch 3977.57 loss 0.0504 lr 0.0004715 sec/update 0.76 estimated days left 0.04
+update 735900/740000 epoch 3977.84 loss 0.0752 lr 0.0004664 sec/update 0.76 estimated days left 0.04
+update 735950/740000 epoch 3978.11 loss 0.0857 lr 0.0004613 sec/update 0.76 estimated days left 0.04
+update 736000/740000 epoch 3978.38 loss 0.0689 lr 0.0004562 sec/update 0.76 estimated days left 0.04
+update 736050/740000 epoch 3978.65 loss 0.0577 lr 0.0004511 sec/update 0.76 estimated days left 0.03
+update 736100/740000 epoch 3978.92 loss 0.0541 lr 0.0004459 sec/update 0.76 estimated days left 0.03
+update 736150/740000 epoch 3979.19 loss 0.0752 lr 0.0004408 sec/update 0.76 estimated days left 0.03
+update 736200/740000 epoch 3979.46 loss 0.0623 lr 0.0004356 sec/update 0.76 estimated days left 0.03
+update 736250/740000 epoch 3979.73 loss 0.0751 lr 0.0004304 sec/update 0.76 estimated days left 0.03
+update 736300/740000 epoch 3980.00 loss 0.0670 lr 0.0004253 sec/update 0.76 estimated days left 0.03
+update 736350/740000 epoch 3980.27 loss 0.0573 lr 0.0004201 sec/update 0.76 estimated days left 0.03
+update 736400/740000 epoch 3980.54 loss 0.0630 lr 0.0004149 sec/update 0.76 estimated days left 0.03
+update 736450/740000 epoch 3980.81 loss 0.0607 lr 0.0004097 sec/update 0.76 estimated days left 0.03
+update 736500/740000 epoch 3981.08 loss 0.0677 lr 0.0004045 sec/update 0.76 estimated days left 0.03
+update 736550/740000 epoch 3981.35 loss 0.0592 lr 0.0003993 sec/update 0.76 estimated days left 0.03
+update 736600/740000 epoch 3981.62 loss 0.0725 lr 0.0003941 sec/update 0.76 estimated days left 0.03
+update 736650/740000 epoch 3981.89 loss 0.0649 lr 0.0003889 sec/update 0.76 estimated days left 0.03
+update 736700/740000 epoch 3982.16 loss 0.0634 lr 0.0003837 sec/update 0.76 estimated days left 0.03
+AMP overflow: retry 1/16 on the same batch; scale 131072.0 -> 65536.0
+update 736750/740000 epoch 3982.43 loss 0.0535 lr 0.0003784 sec/update 0.76 estimated days left 0.03
+update 736800/740000 epoch 3982.70 loss 0.0685 lr 0.0003732 sec/update 0.76 estimated days left 0.03
+update 736850/740000 epoch 3982.97 loss 0.0583 lr 0.0003680 sec/update 0.76 estimated days left 0.03
+update 736900/740000 epoch 3983.24 loss 0.0577 lr 0.0003627 sec/update 0.76 estimated days left 0.03
+update 736950/740000 epoch 3983.51 loss 0.0852 lr 0.0003574 sec/update 0.76 estimated days left 0.03
+update 737000/740000 epoch 3983.78 loss 0.0540 lr 0.0003522 sec/update 0.76 estimated days left 0.03
+update 737050/740000 epoch 3984.05 loss 0.0667 lr 0.0003469 sec/update 0.76 estimated days left 0.03
+update 737100/740000 epoch 3984.32 loss 0.0663 lr 0.0003416 sec/update 0.76 estimated days left 0.03
+update 737150/740000 epoch 3984.59 loss 0.0478 lr 0.0003363 sec/update 0.76 estimated days left 0.02
+update 737200/740000 epoch 3984.86 loss 0.0482 lr 0.0003310 sec/update 0.76 estimated days left 0.02
+update 737250/740000 epoch 3985.14 loss 0.0754 lr 0.0003256 sec/update 0.76 estimated days left 0.02
+update 737300/740000 epoch 3985.41 loss 0.0505 lr 0.0003203 sec/update 0.76 estimated days left 0.02
+update 737350/740000 epoch 3985.68 loss 0.0870 lr 0.0003150 sec/update 0.76 estimated days left 0.02
+update 737400/740000 epoch 3985.95 loss 0.0640 lr 0.0003096 sec/update 0.76 estimated days left 0.02
+update 737450/740000 epoch 3986.22 loss 0.1054 lr 0.0003042 sec/update 0.76 estimated days left 0.02
+update 737500/740000 epoch 3986.49 loss 0.0542 lr 0.0002989 sec/update 0.76 estimated days left 0.02
+update 737550/740000 epoch 3986.76 loss 0.0625 lr 0.0002935 sec/update 0.76 estimated days left 0.02
+update 737600/740000 epoch 3987.03 loss 0.0538 lr 0.0002881 sec/update 0.76 estimated days left 0.02
+update 737650/740000 epoch 3987.30 loss 0.0584 lr 0.0002827 sec/update 0.76 estimated days left 0.02
+update 737700/740000 epoch 3987.57 loss 0.0559 lr 0.0002773 sec/update 0.76 estimated days left 0.02
+update 737750/740000 epoch 3987.84 loss 0.0618 lr 0.0002718 sec/update 0.76 estimated days left 0.02
+update 737800/740000 epoch 3988.11 loss 0.0451 lr 0.0002664 sec/update 0.76 estimated days left 0.02
+update 737850/740000 epoch 3988.38 loss 0.0719 lr 0.0002610 sec/update 0.76 estimated days left 0.02
+update 737900/740000 epoch 3988.65 loss 0.0600 lr 0.0002555 sec/update 0.76 estimated days left 0.02
+update 737950/740000 epoch 3988.92 loss 0.0569 lr 0.0002500 sec/update 0.76 estimated days left 0.02
+update 738000/740000 epoch 3989.19 loss 0.0737 lr 0.0002445 sec/update 0.76 estimated days left 0.02
+update 738050/740000 epoch 3989.46 loss 0.0622 lr 0.0002390 sec/update 0.76 estimated days left 0.02
+update 738100/740000 epoch 3989.73 loss 0.0542 lr 0.0002335 sec/update 0.76 estimated days left 0.02
+update 738150/740000 epoch 3990.00 loss 0.0664 lr 0.0002280 sec/update 0.76 estimated days left 0.02
+update 738200/740000 epoch 3990.27 loss 0.0809 lr 0.0002224 sec/update 0.76 estimated days left 0.02
+update 738250/740000 epoch 3990.54 loss 0.0851 lr 0.0002168 sec/update 0.76 estimated days left 0.02
+update 738300/740000 epoch 3990.81 loss 0.0579 lr 0.0002113 sec/update 0.76 estimated days left 0.01
+update 738350/740000 epoch 3991.08 loss 0.0536 lr 0.0002057 sec/update 0.76 estimated days left 0.01
+update 738400/740000 epoch 3991.35 loss 0.0668 lr 0.0002001 sec/update 0.76 estimated days left 0.01
+update 738450/740000 epoch 3991.62 loss 0.0694 lr 0.0001944 sec/update 0.76 estimated days left 0.01
+update 738500/740000 epoch 3991.89 loss 0.0613 lr 0.0001888 sec/update 0.76 estimated days left 0.01
+update 738550/740000 epoch 3992.16 loss 0.0672 lr 0.0001831 sec/update 0.76 estimated days left 0.01
+update 738600/740000 epoch 3992.43 loss 0.0554 lr 0.0001774 sec/update 0.76 estimated days left 0.01
+update 738650/740000 epoch 3992.70 loss 0.0638 lr 0.0001717 sec/update 0.76 estimated days left 0.01
+update 738700/740000 epoch 3992.97 loss 0.0601 lr 0.0001660 sec/update 0.76 estimated days left 0.01
+update 738750/740000 epoch 3993.24 loss 0.0514 lr 0.0001602 sec/update 0.76 estimated days left 0.01
+update 738800/740000 epoch 3993.51 loss 0.0628 lr 0.0001544 sec/update 0.76 estimated days left 0.01
+update 738850/740000 epoch 3993.78 loss 0.0732 lr 0.0001486 sec/update 0.76 estimated days left 0.01
+update 738900/740000 epoch 3994.05 loss 0.0605 lr 0.0001428 sec/update 0.76 estimated days left 0.01
+update 738950/740000 epoch 3994.32 loss 0.0818 lr 0.0001370 sec/update 0.76 estimated days left 0.01
+update 739000/740000 epoch 3994.59 loss 0.0636 lr 0.0001311 sec/update 0.76 estimated days left 0.01
+update 739050/740000 epoch 3994.86 loss 0.0545 lr 0.0001252 sec/update 0.76 estimated days left 0.01
+update 739100/740000 epoch 3995.14 loss 0.0722 lr 0.0001192 sec/update 0.76 estimated days left 0.01
+update 739150/740000 epoch 3995.41 loss 0.0658 lr 0.0001133 sec/update 0.76 estimated days left 0.01
+update 739200/740000 epoch 3995.68 loss 0.0789 lr 0.0001073 sec/update 0.76 estimated days left 0.01
+update 739250/740000 epoch 3995.95 loss 0.0579 lr 0.0001012 sec/update 0.76 estimated days left 0.01
+update 739300/740000 epoch 3996.22 loss 0.0625 lr 0.0000951 sec/update 0.76 estimated days left 0.01
+update 739350/740000 epoch 3996.49 loss 0.0587 lr 0.0000890 sec/update 0.76 estimated days left 0.01
+update 739400/740000 epoch 3996.76 loss 0.0657 lr 0.0000828 sec/update 0.76 estimated days left 0.01
+update 739450/740000 epoch 3997.03 loss 0.0638 lr 0.0000766 sec/update 0.76 estimated days left 0.00
+update 739500/740000 epoch 3997.30 loss 0.0492 lr 0.0000703 sec/update 0.76 estimated days left 0.00
+update 739550/740000 epoch 3997.57 loss 0.0806 lr 0.0000640 sec/update 0.76 estimated days left 0.00
+update 739600/740000 epoch 3997.84 loss 0.0620 lr 0.0000575 sec/update 0.76 estimated days left 0.00
+update 739650/740000 epoch 3998.11 loss 0.0698 lr 0.0000510 sec/update 0.76 estimated days left 0.00
+update 739700/740000 epoch 3998.38 loss 0.0694 lr 0.0000445 sec/update 0.76 estimated days left 0.00
+update 739750/740000 epoch 3998.65 loss 0.0555 lr 0.0000377 sec/update 0.76 estimated days left 0.00
+update 739800/740000 epoch 3998.92 loss 0.0717 lr 0.0000309 sec/update 0.76 estimated days left 0.00
+update 739850/740000 epoch 3999.19 loss 0.0495 lr 0.0000239 sec/update 0.76 estimated days left 0.00
+update 739900/740000 epoch 3999.46 loss 0.0754 lr 0.0000166 sec/update 0.76 estimated days left 0.00
+update 739950/740000 epoch 3999.73 loss 0.0556 lr 0.0000090 sec/update 0.76 estimated days left 0.00
+update 740000/740000 epoch 4000.00 loss 0.0678 lr 0.0000003 sec/update 0.76 estimated days left 0.00
+Validation 50/500
+Validation 100/500
+Validation 150/500
+Validation 200/500
+Validation 250/500
+Validation 300/500
+Validation 350/500
+Validation 400/500
+Validation 450/500
+Validation 500/500
+Validation update 740000: mIoU 75.079% (500 images)
+Training complete. Best single-scale validation mIoU: 75.079%

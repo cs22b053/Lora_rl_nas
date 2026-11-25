@@ -1,0 +1,45 @@
+Evaluation only: candidate4_best, mode=tta, checkpoint=retrain_candidate4_f20_500k_seed0_nosdp/best.pth
+{
+  "host": "dgx1",
+  "python": "/scratch/ajin/Autodeeplab/modified/.venvs/retrain_cu118/bin/python",
+  "torch_version": "2.3.1+cu118",
+  "torch_path": "/scratch/ajin/Autodeeplab/modified/.venvs/retrain_cu118/lib/python3.11/site-packages/torch/__init__.py",
+  "cuda_build": "11.8",
+  "cuda_visible_devices": "0"
+}
+NVIDIA A100-SXM4-40GB, 470.161.03
+NVIDIA A100-SXM4-40GB, 470.161.03
+NVIDIA A100-SXM4-40GB, 470.161.03
+CUDA check passed on NVIDIA A100-SXM4-40GB. Training can now load its checkpoint.
+Validation 50/500
+Validation 100/500
+Validation 150/500
+Validation 200/500
+Validation 250/500
+Validation 300/500
+Validation 350/500
+Validation 400/500
+Validation 450/500
+Validation 500/500
+road: 97.67
+sidewalk: 82.61
+building: 91.71
+wall: 60.27
+fence: 59.14
+pole: 59.16
+traffic light: 66.82
+traffic sign: 77.28
+vegetation: 92.27
+terrain: 65.19
+sky: 94.94
+person: 80.10
+rider: 58.56
+car: 94.12
+truck: 81.87
+bus: 85.20
+train: 71.33
+motorcycle: 57.54
+bicycle: 74.35
+Update 490000: Mean IoU 76.323% (500 validation images)
+Worst 20.0% image IoU mean (CVaR): 56.037%
+Results: /scratch/ajin/Autodeeplab/modified/posteval_candidate4_500k/tta/candidate4_best/scales_0.5_0.75_1_1.25_1.5_flip_1_amp_1_cvar_0.2/best_step_490000.json

@@ -1,0 +1,91 @@
+{
+  "dataset": "cityscapes",
+  "dataset_root": "/scratch/ajin/Autodeeplab/autodeeplab/cityscapes/",
+  "data_dir": "pilot_selected_seed0_20k",
+  "max_steps": 20000,
+  "batch_size": 16,
+  "accumulation_steps": 1,
+  "crop_size": 769,
+  "filter_multiplier": 32,
+  "architecture_json": "architecture_seed0_halfres_reranked.json",
+  "base_lr": 0.05,
+  "weight_decay": 0.0001,
+  "warmup_steps": 1000,
+  "power": 0.9,
+  "drop_path_prob": 0.1,
+  "workers": 8,
+  "seed": 0,
+  "resume": "latest",
+  "val_every": 5000,
+  "save_every": 1000,
+  "snapshot_every": 50000,
+  "log_every": 50,
+  "no_amp": false,
+  "stop_after_steps": null,
+  "model_version": "autodeeplab_reference_v1",
+  "model_config": {
+    "filter_multiplier": 32,
+    "num_classes": 19,
+    "drop_path_prob": 0.1,
+    "cell": [
+      [
+        0,
+        "dil3"
+      ],
+      [
+        1,
+        "skip"
+      ],
+      [
+        0,
+        "max3"
+      ],
+      [
+        1,
+        "max3"
+      ],
+      [
+        0,
+        "skip"
+      ],
+      [
+        2,
+        "sep3"
+      ],
+      [
+        2,
+        "sep5"
+      ],
+      [
+        3,
+        "dil5"
+      ],
+      [
+        2,
+        "max3"
+      ],
+      [
+        1,
+        "dil5"
+      ]
+    ],
+    "backbone": [
+      0,
+      0,
+      0,
+      1,
+      2,
+      1,
+      2,
+      2,
+      3,
+      3,
+      2,
+      1
+    ]
+  },
+  "parameters": 19481587,
+  "train_images": 2975,
+  "validation_images": 500,
+  "effective_batch": 16
+}

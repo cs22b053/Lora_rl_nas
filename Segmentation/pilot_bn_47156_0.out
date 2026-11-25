@@ -1,0 +1,29 @@
+Stored BN statistics: full validation in FP32
+Validation 50/500
+Validation 100/500
+Validation 150/500
+Validation 200/500
+Validation 250/500
+Validation 300/500
+Validation 350/500
+Validation 400/500
+Validation 450/500
+Validation 500/500
+Stored BN mIoU: 22.911%
+Recalibrating BN using training images only; all weights frozen
+BN calibration 32/128
+BN calibration 64/128
+BN calibration 96/128
+BN calibration 128/128
+Validation 50/500
+Validation 100/500
+Validation 150/500
+Validation 200/500
+Validation 250/500
+Validation 300/500
+Validation 350/500
+Validation 400/500
+Validation 450/500
+Validation 500/500
+Calibrated BN mIoU: 59.763%; change +36.852 percentage points
+Report: pilot_reference_seed0_20k/bn_diagnostic.json. Original checkpoint unchanged.

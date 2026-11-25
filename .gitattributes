@@ -1,0 +1,9 @@
+# Keep Unix line endings: these scripts run on a Linux SLURM cluster.
+* text=auto eol=lf
+
+# Never touch binary files
+*.png binary
+*.jpg binary
+*.pdf binary
+*.pth binary
+*.pt binary

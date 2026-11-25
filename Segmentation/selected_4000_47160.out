@@ -1,0 +1,211 @@
+{
+  "dataset": "cityscapes",
+  "dataset_root": "/scratch/ajin/Autodeeplab/autodeeplab/cityscapes/",
+  "data_dir": "retrain_selected_seed0_4000_bn001",
+  "max_steps": 740000,
+  "epochs": 4000,
+  "batch_size": 16,
+  "accumulation_steps": 1,
+  "crop_size": 769,
+  "filter_multiplier": 32,
+  "architecture_json": "architecture_seed0_halfres_reranked.json",
+  "base_lr": 0.05,
+  "weight_decay": 0.0001,
+  "warmup_steps": 1000,
+  "power": 0.9,
+  "drop_path_prob": 0.1,
+  "bn_momentum": 0.01,
+  "workers": 8,
+  "seed": 0,
+  "resume": "latest",
+  "val_every": 5000,
+  "save_every": 1000,
+  "snapshot_every": 50000,
+  "log_every": 50,
+  "no_amp": false,
+  "stop_after_steps": 5000,
+  "model_version": "autodeeplab_reference_v1",
+  "model_config": {
+    "filter_multiplier": 32,
+    "num_classes": 19,
+    "drop_path_prob": 0.1,
+    "bn_momentum": 0.01,
+    "cell": [
+      [
+        0,
+        "dil3"
+      ],
+      [
+        1,
+        "skip"
+      ],
+      [
+        0,
+        "max3"
+      ],
+      [
+        1,
+        "max3"
+      ],
+      [
+        0,
+        "skip"
+      ],
+      [
+        2,
+        "sep3"
+      ],
+      [
+        2,
+        "sep5"
+      ],
+      [
+        3,
+        "dil5"
+      ],
+      [
+        2,
+        "max3"
+      ],
+      [
+        1,
+        "dil5"
+      ]
+    ],
+    "backbone": [
+      0,
+      0,
+      0,
+      1,
+      2,
+      1,
+      2,
+      2,
+      3,
+      3,
+      2,
+      1
+    ]
+  },
+  "parameters": 19481587,
+  "train_images": 2975,
+  "validation_images": 500,
+  "effective_batch": 16,
+  "batches_per_epoch": 185,
+  "scheduled_data_epochs": 4000.0
+}
+Optimizer group 0: 19450944 parameters, weight_decay=0.0001
+Optimizer group 1: 30643 parameters, weight_decay=0.0
+update 1/740000 epoch 0.01 loss 3.9961 lr 0.0000500 sec/update 14.56 estimated days left 124.70
+update 50/740000 epoch 0.27 loss 1.2937 lr 0.0025000 sec/update 1.00 estimated days left 8.58
+update 100/740000 epoch 0.54 loss 0.7488 lr 0.0050000 sec/update 0.86 estimated days left 7.39
+update 150/740000 epoch 0.81 loss 0.8810 lr 0.0075000 sec/update 0.82 estimated days left 6.99
+update 200/740000 epoch 1.08 loss 0.9975 lr 0.0100000 sec/update 0.81 estimated days left 6.90
+update 250/740000 epoch 1.35 loss 0.7293 lr 0.0125000 sec/update 0.79 estimated days left 6.76
+update 300/740000 epoch 1.62 loss 0.6121 lr 0.0150000 sec/update 0.78 estimated days left 6.67
+update 350/740000 epoch 1.89 loss 0.6300 lr 0.0175000 sec/update 0.77 estimated days left 6.60
+update 400/740000 epoch 2.16 loss 0.6699 lr 0.0200000 sec/update 0.77 estimated days left 6.61
+update 450/740000 epoch 2.43 loss 0.5935 lr 0.0225000 sec/update 0.77 estimated days left 6.56
+update 500/740000 epoch 2.70 loss 0.6570 lr 0.0250000 sec/update 0.76 estimated days left 6.53
+update 550/740000 epoch 2.97 loss 0.7472 lr 0.0275000 sec/update 0.76 estimated days left 6.50
+update 600/740000 epoch 3.24 loss 0.7767 lr 0.0300000 sec/update 0.76 estimated days left 6.51
+update 650/740000 epoch 3.51 loss 0.5498 lr 0.0325000 sec/update 0.76 estimated days left 6.48
+update 700/740000 epoch 3.78 loss 0.5695 lr 0.0350000 sec/update 0.75 estimated days left 6.46
+update 750/740000 epoch 4.05 loss 0.6604 lr 0.0375000 sec/update 0.76 estimated days left 6.47
+update 800/740000 epoch 4.32 loss 0.9121 lr 0.0400000 sec/update 0.75 estimated days left 6.45
+update 850/740000 epoch 4.59 loss 0.3855 lr 0.0425000 sec/update 0.75 estimated days left 6.44
+update 900/740000 epoch 4.86 loss 0.4593 lr 0.0450000 sec/update 0.75 estimated days left 6.42
+update 950/740000 epoch 5.14 loss 0.9089 lr 0.0475000 sec/update 0.75 estimated days left 6.44
+update 1000/740000 epoch 5.41 loss 0.4068 lr 0.0500000 sec/update 0.75 estimated days left 6.42
+update 1050/740000 epoch 5.68 loss 1.1970 lr 0.0499970 sec/update 0.75 estimated days left 6.41
+update 1100/740000 epoch 5.95 loss 0.4949 lr 0.0499940 sec/update 0.75 estimated days left 6.40
+update 1150/740000 epoch 6.22 loss 0.8677 lr 0.0499909 sec/update 0.75 estimated days left 6.41
+update 1200/740000 epoch 6.49 loss 0.4837 lr 0.0499879 sec/update 0.75 estimated days left 6.40
+update 1250/740000 epoch 6.76 loss 0.4961 lr 0.0499848 sec/update 0.75 estimated days left 6.40
+update 1300/740000 epoch 7.03 loss 0.4611 lr 0.0499818 sec/update 0.75 estimated days left 6.40
+update 1350/740000 epoch 7.30 loss 0.5199 lr 0.0499787 sec/update 0.75 estimated days left 6.40
+update 1400/740000 epoch 7.57 loss 0.5316 lr 0.0499757 sec/update 0.75 estimated days left 6.39
+update 1450/740000 epoch 7.84 loss 0.3987 lr 0.0499727 sec/update 0.75 estimated days left 6.38
+update 1500/740000 epoch 8.11 loss 0.5758 lr 0.0499696 sec/update 0.75 estimated days left 6.39
+update 1550/740000 epoch 8.38 loss 0.5450 lr 0.0499666 sec/update 0.75 estimated days left 6.38
+update 1600/740000 epoch 8.65 loss 0.4576 lr 0.0499635 sec/update 0.75 estimated days left 6.37
+update 1650/740000 epoch 8.92 loss 0.3444 lr 0.0499605 sec/update 0.75 estimated days left 6.37
+update 1700/740000 epoch 9.19 loss 0.4263 lr 0.0499574 sec/update 0.75 estimated days left 6.38
+update 1750/740000 epoch 9.46 loss 0.3468 lr 0.0499544 sec/update 0.75 estimated days left 6.37
+update 1800/740000 epoch 9.73 loss 0.6285 lr 0.0499513 sec/update 0.74 estimated days left 6.36
+update 1850/740000 epoch 10.00 loss 0.4188 lr 0.0499483 sec/update 0.74 estimated days left 6.36
+update 1900/740000 epoch 10.27 loss 0.3855 lr 0.0499453 sec/update 0.74 estimated days left 6.36
+update 1950/740000 epoch 10.54 loss 0.2925 lr 0.0499422 sec/update 0.74 estimated days left 6.36
+update 2000/740000 epoch 10.81 loss 0.4609 lr 0.0499392 sec/update 0.74 estimated days left 6.35
+update 2050/740000 epoch 11.08 loss 0.4935 lr 0.0499361 sec/update 0.74 estimated days left 6.36
+update 2100/740000 epoch 11.35 loss 0.4217 lr 0.0499331 sec/update 0.74 estimated days left 6.36
+update 2150/740000 epoch 11.62 loss 0.6154 lr 0.0499300 sec/update 0.74 estimated days left 6.35
+update 2200/740000 epoch 11.89 loss 0.4771 lr 0.0499270 sec/update 0.74 estimated days left 6.35
+update 2250/740000 epoch 12.16 loss 0.4692 lr 0.0499239 sec/update 0.74 estimated days left 6.36
+update 2300/740000 epoch 12.43 loss 0.3914 lr 0.0499209 sec/update 0.74 estimated days left 6.35
+update 2350/740000 epoch 12.70 loss 0.3194 lr 0.0499178 sec/update 0.74 estimated days left 6.35
+update 2400/740000 epoch 12.97 loss 0.4825 lr 0.0499148 sec/update 0.74 estimated days left 6.34
+update 2450/740000 epoch 13.24 loss 0.3882 lr 0.0499118 sec/update 0.74 estimated days left 6.35
+update 2500/740000 epoch 13.51 loss 0.3413 lr 0.0499087 sec/update 0.74 estimated days left 6.35
+update 2550/740000 epoch 13.78 loss 0.2704 lr 0.0499057 sec/update 0.74 estimated days left 6.34
+update 2600/740000 epoch 14.05 loss 0.3260 lr 0.0499026 sec/update 0.74 estimated days left 6.35
+update 2650/740000 epoch 14.32 loss 0.4834 lr 0.0498996 sec/update 0.74 estimated days left 6.34
+update 2700/740000 epoch 14.59 loss 0.4632 lr 0.0498965 sec/update 0.74 estimated days left 6.34
+update 2750/740000 epoch 14.86 loss 0.5489 lr 0.0498935 sec/update 0.74 estimated days left 6.34
+update 2800/740000 epoch 15.14 loss 0.5300 lr 0.0498904 sec/update 0.74 estimated days left 6.34
+update 2850/740000 epoch 15.41 loss 0.3278 lr 0.0498874 sec/update 0.74 estimated days left 6.34
+update 2900/740000 epoch 15.68 loss 0.3726 lr 0.0498843 sec/update 0.74 estimated days left 6.33
+update 2950/740000 epoch 15.95 loss 0.4511 lr 0.0498813 sec/update 0.74 estimated days left 6.33
+update 3000/740000 epoch 16.22 loss 0.2752 lr 0.0498783 sec/update 0.74 estimated days left 6.34
+update 3050/740000 epoch 16.49 loss 0.2448 lr 0.0498752 sec/update 0.74 estimated days left 6.33
+update 3100/740000 epoch 16.76 loss 0.3326 lr 0.0498722 sec/update 0.74 estimated days left 6.33
+update 3150/740000 epoch 17.03 loss 0.4302 lr 0.0498691 sec/update 0.74 estimated days left 6.33
+update 3200/740000 epoch 17.30 loss 0.3799 lr 0.0498661 sec/update 0.74 estimated days left 6.33
+update 3250/740000 epoch 17.57 loss 0.3620 lr 0.0498630 sec/update 0.74 estimated days left 6.33
+update 3300/740000 epoch 17.84 loss 0.3999 lr 0.0498600 sec/update 0.74 estimated days left 6.33
+update 3350/740000 epoch 18.11 loss 0.3559 lr 0.0498569 sec/update 0.74 estimated days left 6.33
+update 3400/740000 epoch 18.38 loss 0.2587 lr 0.0498539 sec/update 0.74 estimated days left 6.33
+update 3450/740000 epoch 18.65 loss 0.4238 lr 0.0498508 sec/update 0.74 estimated days left 6.32
+update 3500/740000 epoch 18.92 loss 0.2969 lr 0.0498478 sec/update 0.74 estimated days left 6.32
+update 3550/740000 epoch 19.19 loss 0.2574 lr 0.0498448 sec/update 0.74 estimated days left 6.33
+update 3600/740000 epoch 19.46 loss 0.3358 lr 0.0498417 sec/update 0.74 estimated days left 6.32
+update 3650/740000 epoch 19.73 loss 0.3354 lr 0.0498387 sec/update 0.74 estimated days left 6.32
+update 3700/740000 epoch 20.00 loss 0.2991 lr 0.0498356 sec/update 0.74 estimated days left 6.32
+update 3750/740000 epoch 20.27 loss 0.2591 lr 0.0498326 sec/update 0.74 estimated days left 6.32
+update 3800/740000 epoch 20.54 loss 0.3464 lr 0.0498295 sec/update 0.74 estimated days left 6.32
+update 3850/740000 epoch 20.81 loss 0.2878 lr 0.0498265 sec/update 0.74 estimated days left 6.32
+update 3900/740000 epoch 21.08 loss 0.5207 lr 0.0498234 sec/update 0.74 estimated days left 6.32
+update 3950/740000 epoch 21.35 loss 0.2329 lr 0.0498204 sec/update 0.74 estimated days left 6.32
+update 4000/740000 epoch 21.62 loss 0.4372 lr 0.0498173 sec/update 0.74 estimated days left 6.32
+update 4050/740000 epoch 21.89 loss 0.2509 lr 0.0498143 sec/update 0.74 estimated days left 6.32
+update 4100/740000 epoch 22.16 loss 0.3379 lr 0.0498113 sec/update 0.74 estimated days left 6.32
+update 4150/740000 epoch 22.43 loss 0.2265 lr 0.0498082 sec/update 0.74 estimated days left 6.32
+update 4200/740000 epoch 22.70 loss 0.3066 lr 0.0498052 sec/update 0.74 estimated days left 6.32
+update 4250/740000 epoch 22.97 loss 0.2941 lr 0.0498021 sec/update 0.74 estimated days left 6.31
+update 4300/740000 epoch 23.24 loss 0.2505 lr 0.0497991 sec/update 0.74 estimated days left 6.32
+update 4350/740000 epoch 23.51 loss 0.5152 lr 0.0497960 sec/update 0.74 estimated days left 6.31
+update 4400/740000 epoch 23.78 loss 0.3236 lr 0.0497930 sec/update 0.74 estimated days left 6.31
+update 4450/740000 epoch 24.05 loss 0.5565 lr 0.0497899 sec/update 0.74 estimated days left 6.31
+update 4500/740000 epoch 24.32 loss 0.2502 lr 0.0497869 sec/update 0.74 estimated days left 6.31
+update 4550/740000 epoch 24.59 loss 0.3444 lr 0.0497838 sec/update 0.74 estimated days left 6.31
+update 4600/740000 epoch 24.86 loss 0.3049 lr 0.0497808 sec/update 0.74 estimated days left 6.31
+update 4650/740000 epoch 25.14 loss 0.2999 lr 0.0497777 sec/update 0.74 estimated days left 6.31
+update 4700/740000 epoch 25.41 loss 0.3759 lr 0.0497747 sec/update 0.74 estimated days left 6.31
+update 4750/740000 epoch 25.68 loss 0.3756 lr 0.0497717 sec/update 0.74 estimated days left 6.31
+update 4800/740000 epoch 25.95 loss 0.4102 lr 0.0497686 sec/update 0.74 estimated days left 6.31
+update 4850/740000 epoch 26.22 loss 0.2889 lr 0.0497656 sec/update 0.74 estimated days left 6.31
+update 4900/740000 epoch 26.49 loss 0.2380 lr 0.0497625 sec/update 0.74 estimated days left 6.31
+update 4950/740000 epoch 26.76 loss 0.5263 lr 0.0497595 sec/update 0.74 estimated days left 6.31
+update 5000/740000 epoch 27.03 loss 0.3516 lr 0.0497564 sec/update 0.74 estimated days left 6.31
+Validation 50/500
+Validation 100/500
+Validation 150/500
+Validation 200/500
+Validation 250/500
+Validation 300/500
+Validation 350/500
+Validation 400/500
+Validation 450/500
+Validation 500/500
+Validation update 5000: mIoU 32.769% (500 images)
+Requested short run complete; resume with the same schedule.

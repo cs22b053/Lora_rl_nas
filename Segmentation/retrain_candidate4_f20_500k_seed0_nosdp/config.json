@@ -1,0 +1,107 @@
+{
+  "dataset": "cityscapes",
+  "dataset_root": "/scratch/ajin/Autodeeplab/autodeeplab/cityscapes/",
+  "data_dir": "retrain_candidate4_f20_500k_seed0_nosdp",
+  "max_steps": 500000,
+  "epochs": null,
+  "batch_size": 16,
+  "accumulation_steps": 1,
+  "crop_size": 769,
+  "filter_multiplier": 20,
+  "architecture_json": "local_candidates_v1_seed0/candidate_4.json",
+  "base_lr": 0.05,
+  "weight_decay": 0.0001,
+  "warmup_steps": 1000,
+  "power": 0.9,
+  "drop_path_prob": 0.0,
+  "bn_momentum": 0.01,
+  "workers": 8,
+  "seed": 0,
+  "resume": "latest",
+  "val_every": 5000,
+  "save_every": 1000,
+  "snapshot_every": 50000,
+  "log_every": 50,
+  "no_amp": false,
+  "stop_after_steps": null,
+  "stop_at_step": null,
+  "selection_split_json": null,
+  "selection_calibration_batches": 0,
+  "model_version": "autodeeplab_reference_v1",
+  "model_config": {
+    "filter_multiplier": 20,
+    "num_classes": 19,
+    "drop_path_prob": 0.0,
+    "bn_momentum": 0.01,
+    "cell": [
+      [
+        1,
+        "dil5"
+      ],
+      [
+        0,
+        "sep3"
+      ],
+      [
+        1,
+        "sep3"
+      ],
+      [
+        0,
+        "dil3"
+      ],
+      [
+        3,
+        "sep3"
+      ],
+      [
+        1,
+        "sep3"
+      ],
+      [
+        4,
+        "sep5"
+      ],
+      [
+        1,
+        "sep3"
+      ],
+      [
+        3,
+        "sep5"
+      ],
+      [
+        5,
+        "dil5"
+      ]
+    ],
+    "backbone": [
+      0,
+      0,
+      0,
+      1,
+      2,
+      1,
+      2,
+      2,
+      3,
+      3,
+      2,
+      1
+    ]
+  },
+  "data_protocol": null,
+  "evaluation_split": "val",
+  "parameters": 10121187,
+  "train_images": 2975,
+  "validation_images": 500,
+  "effective_batch": 16,
+  "batches_per_epoch": 185,
+  "scheduled_data_epochs": 2702.7027027027025,
+  "runtime": {
+    "torch_version": "2.3.1+cu118",
+    "cuda_build": "11.8",
+    "cudnn_version": 8700
+  },
+  "resume_events": []
+}

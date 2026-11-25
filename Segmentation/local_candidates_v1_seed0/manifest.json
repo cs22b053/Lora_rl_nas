@@ -1,0 +1,285 @@
+{
+  "format": "adl_local_finalists_v1",
+  "search_version": "adl_reference_local_v1",
+  "source_search": "/scratch/ajin/Autodeeplab/modified/search_local_v1_seed0",
+  "dataset_root": "/scratch/ajin/Autodeeplab/autodeeplab/cityscapes/",
+  "split": "probe_split.json",
+  "split_id": "72bdc4156d30c4eb863b4d8d99f470c98fe610e3c06772f5d393c05f08fa12f9",
+  "fingerprint": "38cd548d26d1de532e64ab391056eee3a810f677a7031b0c87b6f9f7683752fd",
+  "candidates": [
+    {
+      "id": 0,
+      "architecture": "candidate_0.json",
+      "cell": [
+        [
+          1,
+          "dil5"
+        ],
+        [
+          0,
+          "sep3"
+        ],
+        [
+          1,
+          "sep3"
+        ],
+        [
+          0,
+          "dil3"
+        ],
+        [
+          3,
+          "sep3"
+        ],
+        [
+          1,
+          "sep3"
+        ],
+        [
+          4,
+          "sep5"
+        ],
+        [
+          2,
+          "sep5"
+        ],
+        [
+          3,
+          "sep5"
+        ],
+        [
+          5,
+          "dil5"
+        ]
+      ],
+      "parameters": 10147427,
+      "proxy": {
+        "miou": 0.445187509059906,
+        "image_cvar": 0.3344804048538208,
+        "reward": 0.4230460822582245
+      }
+    },
+    {
+      "id": 1,
+      "architecture": "candidate_1.json",
+      "cell": [
+        [
+          1,
+          "dil5"
+        ],
+        [
+          0,
+          "sep3"
+        ],
+        [
+          1,
+          "sep3"
+        ],
+        [
+          0,
+          "dil3"
+        ],
+        [
+          3,
+          "sep3"
+        ],
+        [
+          1,
+          "sep3"
+        ],
+        [
+          4,
+          "sep5"
+        ],
+        [
+          2,
+          "sep5"
+        ],
+        [
+          1,
+          "sep5"
+        ],
+        [
+          5,
+          "dil5"
+        ]
+      ],
+      "parameters": 10147427,
+      "proxy": {
+        "miou": 0.4476018249988556,
+        "image_cvar": 0.336687833070755,
+        "reward": 0.42541903257369995
+      }
+    },
+    {
+      "id": 2,
+      "architecture": "candidate_2.json",
+      "cell": [
+        [
+          1,
+          "dil5"
+        ],
+        [
+          0,
+          "sep3"
+        ],
+        [
+          1,
+          "sep3"
+        ],
+        [
+          0,
+          "dil3"
+        ],
+        [
+          3,
+          "sep3"
+        ],
+        [
+          1,
+          "sep3"
+        ],
+        [
+          4,
+          "sep5"
+        ],
+        [
+          2,
+          "sep5"
+        ],
+        [
+          3,
+          "sep3"
+        ],
+        [
+          5,
+          "dil5"
+        ]
+      ],
+      "parameters": 10121187,
+      "proxy": {
+        "miou": 0.4470263123512268,
+        "image_cvar": 0.3347775340080261,
+        "reward": 0.4245765507221222
+      }
+    },
+    {
+      "id": 3,
+      "architecture": "candidate_3.json",
+      "cell": [
+        [
+          1,
+          "dil5"
+        ],
+        [
+          0,
+          "sep3"
+        ],
+        [
+          1,
+          "sep3"
+        ],
+        [
+          0,
+          "dil3"
+        ],
+        [
+          3,
+          "sep3"
+        ],
+        [
+          1,
+          "sep3"
+        ],
+        [
+          4,
+          "sep5"
+        ],
+        [
+          2,
+          "sep5"
+        ],
+        [
+          3,
+          "sep5"
+        ],
+        [
+          2,
+          "dil3"
+        ]
+      ],
+      "parameters": 8822627,
+      "proxy": {
+        "miou": 0.4464878439903259,
+        "image_cvar": 0.3338189721107483,
+        "reward": 0.4239540696144104
+      }
+    },
+    {
+      "id": 4,
+      "architecture": "candidate_4.json",
+      "cell": [
+        [
+          1,
+          "dil5"
+        ],
+        [
+          0,
+          "sep3"
+        ],
+        [
+          1,
+          "sep3"
+        ],
+        [
+          0,
+          "dil3"
+        ],
+        [
+          3,
+          "sep3"
+        ],
+        [
+          1,
+          "sep3"
+        ],
+        [
+          4,
+          "sep5"
+        ],
+        [
+          1,
+          "sep3"
+        ],
+        [
+          3,
+          "sep5"
+        ],
+        [
+          5,
+          "dil5"
+        ]
+      ],
+      "parameters": 10121187,
+      "proxy": {
+        "miou": 0.4448009431362152,
+        "image_cvar": 0.3358030617237091,
+        "reward": 0.42300137877464294
+      }
+    }
+  ],
+  "recipe": {
+    "filter_multiplier": 20,
+    "max_steps": 500000,
+    "batch_size": 16,
+    "crop_size": 769,
+    "base_lr": 0.05,
+    "weight_decay": 0.0001,
+    "warmup_steps": 1000,
+    "power": 0.9,
+    "drop_path_prob": 0.0,
+    "bn_momentum": 0.01,
+    "val_every": 10000,
+    "selection_calibration_batches": 32
+  }
+}

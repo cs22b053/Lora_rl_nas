@@ -1,0 +1,54 @@
+Wed Jun 10 17:53:59 2026       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 470.161.03   Driver Version: 470.161.03   CUDA Version: 11.4     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  NVIDIA A100-SXM...  On   | 00000000:4E:00.0 Off |                    0 |
+| N/A   33C    P0    53W / 400W |      0MiB / 40536MiB |      0%      Default |
+|                               |                      |             Disabled |
++-------------------------------+----------------------+----------------------+
+|   1  NVIDIA A100-SXM...  On   | 00000000:B7:00.0 Off |                   On |
+| N/A   36C    P0    43W / 400W |     20MiB / 40536MiB |     N/A      Default |
+|                               |                      |              Enabled |
++-------------------------------+----------------------+----------------------+
+|   2  NVIDIA A100-SXM...  On   | 00000000:BD:00.0 Off |                   On |
+| N/A   35C    P0    45W / 400W |     24MiB / 40536MiB |     N/A      Default |
+|                               |                      |              Enabled |
++-------------------------------+----------------------+----------------------+
+
++-----------------------------------------------------------------------------+
+| MIG devices:                                                                |
++------------------+----------------------+-----------+-----------------------+
+| GPU  GI  CI  MIG |         Memory-Usage |        Vol|         Shared        |
+|      ID  ID  Dev |           BAR1-Usage | SM     Unc| CE  ENC  DEC  OFA  JPG|
+|                  |                      |        ECC|                       |
+|==================+======================+===========+=======================|
+|  No MIG devices found                                                       |
++-----------------------------------------------------------------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+=============================================
+Training architecture: 0 1 0 4 2 3 1 8 1 8 3 3 0 8 2 8 2 1 1 8 0 4 0 3 0 7 0 0 2 8 1 3 1 8 0 1 2 0 0 2
+Output dir: exp_v2/NAONet_V2_test_v0
+Seed: 0
+=============================================
+06/10 05:54:01 PM Args = Namespace(arch='0 1 0 4 2 3 1 8 1 8 3 3 0 8 2 8 2 1 1 8 0 4 0 3 0 7 0 0 2 8 1 3 1 8 0 1 2 0 0 2', autoaugment=True, batch_size=96, channels=192, cutout_size=16, data='data', dataset='cifar10', drop_path_keep_prob=0.8, epochs=1000, eval_batch_size=500, grad_bound=5.0, keep_prob=0.6, l2_reg=0.0005, label_smooth=0.1, layers=8, lr_max=0.03, lr_min=0.0, mode='train', nodes=5, output_dir='exp_v2/NAONet_V2_test_v0', search_space='middle', seed=0, steps=521000, swa=True, swa_lr=0.001, swa_start_frac=0.75, use_aux_head=True)
+Files already downloaded and verified
+Files already downloaded and verified
+06/10 05:54:05 PM param size = 86.944714MB
+06/10 05:54:06 PM Using label smoothing with epsilon=0.10
+06/10 05:54:06 PM SWA enabled, will start averaging at epoch 750
+06/10 05:54:06 PM Updating SWA batch normalization statistics...
+06/10 05:56:49 PM SWA valid_acc 97.799995 (vs best non-SWA 98.000000)
+Archi: 0 1 0 4 2 3 1 8 1 8 3 3 0 8 2 8 2 1 1 8 0 4 0 3 0 7 0 0 2 8 1 3 1 8 0 1 2 0 0 2
+Written in ajin_3 in codex and modified by codex
+Training complete. Results in exp_v2/NAONet_V2_test_v0

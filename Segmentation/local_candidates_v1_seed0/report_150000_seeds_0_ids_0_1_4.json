@@ -1,0 +1,73 @@
+{
+  "format": "adl_probe_report_v1",
+  "manifest_id": "311399cb537f33af84b760ac70e9648a9bb1cf643d3dc61284986239497f56a2",
+  "stage_step": 150000,
+  "seeds": [
+    0
+  ],
+  "candidate_ids": [
+    0,
+    1,
+    4
+  ],
+  "margin_points": 0.5,
+  "ranking": [
+    {
+      "id": 4,
+      "per_seed": [
+        {
+          "seed": 0,
+          "miou": 66.61047544520481,
+          "image_cvar": 52.05859444872394
+        }
+      ],
+      "miou": 66.61047544520481,
+      "image_cvar": 52.05859444872394,
+      "delta_miou": 0.6079240770854426,
+      "per_seed_delta": [
+        0.6079240770854426
+      ]
+    },
+    {
+      "id": 0,
+      "per_seed": [
+        {
+          "seed": 0,
+          "miou": 66.00255136811937,
+          "image_cvar": 52.008714809634036
+        }
+      ],
+      "miou": 66.00255136811937,
+      "image_cvar": 52.008714809634036,
+      "delta_miou": 0.0,
+      "per_seed_delta": [
+        0.0
+      ]
+    },
+    {
+      "id": 1,
+      "per_seed": [
+        {
+          "seed": 0,
+          "miou": 64.95995561017979,
+          "image_cvar": 50.357928828423816
+        }
+      ],
+      "miou": 64.95995561017979,
+      "image_cvar": 50.357928828423816,
+      "delta_miou": -1.04259575793958,
+      "per_seed_delta": [
+        -1.04259575793958
+      ]
+    }
+  ],
+  "suggested_next_ids": [
+    0,
+    4,
+    1
+  ],
+  "export_ready": false,
+  "winner_id": 4,
+  "challenger_qualified": true,
+  "interpretation": "Screening evidence on held-out TRAIN, not final validation or statistical significance"
+}

@@ -1,0 +1,107 @@
+{
+  "format": "adl_probe_report_v1",
+  "manifest_id": "311399cb537f33af84b760ac70e9648a9bb1cf643d3dc61284986239497f56a2",
+  "stage_step": 50000,
+  "seeds": [
+    0
+  ],
+  "candidate_ids": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "margin_points": 0.5,
+  "ranking": [
+    {
+      "id": 1,
+      "per_seed": [
+        {
+          "seed": 0,
+          "miou": 61.483178055838316,
+          "image_cvar": 47.257758905340815
+        }
+      ],
+      "miou": 61.483178055838316,
+      "image_cvar": 47.257758905340815,
+      "delta_miou": 0.8794145284505177,
+      "per_seed_delta": [
+        0.8794145284505177
+      ]
+    },
+    {
+      "id": 4,
+      "per_seed": [
+        {
+          "seed": 0,
+          "miou": 60.75496707531653,
+          "image_cvar": 47.63825036445555
+        }
+      ],
+      "miou": 60.75496707531653,
+      "image_cvar": 47.63825036445555,
+      "delta_miou": 0.1512035479287306,
+      "per_seed_delta": [
+        0.1512035479287306
+      ]
+    },
+    {
+      "id": 0,
+      "per_seed": [
+        {
+          "seed": 0,
+          "miou": 60.6037635273878,
+          "image_cvar": 48.20119385940495
+        }
+      ],
+      "miou": 60.6037635273878,
+      "image_cvar": 48.20119385940495,
+      "delta_miou": 0.0,
+      "per_seed_delta": [
+        0.0
+      ]
+    },
+    {
+      "id": 2,
+      "per_seed": [
+        {
+          "seed": 0,
+          "miou": 59.85405668195673,
+          "image_cvar": 47.1830785738336
+        }
+      ],
+      "miou": 59.85405668195673,
+      "image_cvar": 47.1830785738336,
+      "delta_miou": -0.7497068454310707,
+      "per_seed_delta": [
+        -0.7497068454310707
+      ]
+    },
+    {
+      "id": 3,
+      "per_seed": [
+        {
+          "seed": 0,
+          "miou": 58.22756775994659,
+          "image_cvar": 46.0869000879941
+        }
+      ],
+      "miou": 58.22756775994659,
+      "image_cvar": 46.0869000879941,
+      "delta_miou": -2.37619576744121,
+      "per_seed_delta": [
+        -2.37619576744121
+      ]
+    }
+  ],
+  "suggested_next_ids": [
+    0,
+    1,
+    4
+  ],
+  "export_ready": false,
+  "winner_id": 1,
+  "challenger_qualified": true,
+  "interpretation": "Screening evidence on held-out TRAIN, not final validation or statistical significance"
+}

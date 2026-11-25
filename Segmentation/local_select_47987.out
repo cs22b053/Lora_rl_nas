@@ -1,0 +1,143 @@
+{
+  "host": "dgx1",
+  "python": "/scratch/ajin/Autodeeplab/modified/.venvs/retrain_cu118/bin/python",
+  "torch_version": "2.3.1+cu118",
+  "torch_path": "/scratch/ajin/Autodeeplab/modified/.venvs/retrain_cu118/lib/python3.11/site-packages/torch/__init__.py",
+  "cuda_build": "11.8",
+  "cuda_visible_devices": "0"
+}
+NVIDIA A100-SXM4-40GB, 470.161.03
+NVIDIA A100-SXM4-40GB, 470.161.03
+NVIDIA A100-SXM4-40GB, 470.161.03
+CUDA check passed on NVIDIA A100-SXM4-40GB. Training can now load its checkpoint.
+Re-ranking 128 unique cells across 1 supernet(s), using 595 held-out images and 192 calibration images.
+search_local_v1_seed0 candidate 1/128 proxy mean 44.519%
+search_local_v1_seed0 candidate 2/128 proxy mean 44.445%
+search_local_v1_seed0 candidate 3/128 proxy mean 44.278%
+search_local_v1_seed0 candidate 4/128 proxy mean 44.653%
+search_local_v1_seed0 candidate 5/128 proxy mean 44.037%
+search_local_v1_seed0 candidate 6/128 proxy mean 43.536%
+search_local_v1_seed0 candidate 7/128 proxy mean 44.215%
+search_local_v1_seed0 candidate 8/128 proxy mean 44.591%
+search_local_v1_seed0 candidate 9/128 proxy mean 44.390%
+search_local_v1_seed0 candidate 10/128 proxy mean 44.238%
+search_local_v1_seed0 candidate 11/128 proxy mean 44.217%
+search_local_v1_seed0 candidate 12/128 proxy mean 44.283%
+search_local_v1_seed0 candidate 13/128 proxy mean 44.455%
+search_local_v1_seed0 candidate 14/128 proxy mean 42.461%
+search_local_v1_seed0 candidate 15/128 proxy mean 43.645%
+search_local_v1_seed0 candidate 16/128 proxy mean 44.281%
+search_local_v1_seed0 candidate 17/128 proxy mean 44.044%
+search_local_v1_seed0 candidate 18/128 proxy mean 44.464%
+search_local_v1_seed0 candidate 19/128 proxy mean 43.429%
+search_local_v1_seed0 candidate 20/128 proxy mean 43.864%
+search_local_v1_seed0 candidate 21/128 proxy mean 44.289%
+search_local_v1_seed0 candidate 22/128 proxy mean 44.098%
+search_local_v1_seed0 candidate 23/128 proxy mean 44.567%
+search_local_v1_seed0 candidate 24/128 proxy mean 44.703%
+search_local_v1_seed0 candidate 25/128 proxy mean 44.616%
+search_local_v1_seed0 candidate 26/128 proxy mean 42.188%
+search_local_v1_seed0 candidate 27/128 proxy mean 44.674%
+search_local_v1_seed0 candidate 28/128 proxy mean 44.425%
+search_local_v1_seed0 candidate 29/128 proxy mean 44.222%
+search_local_v1_seed0 candidate 30/128 proxy mean 44.336%
+search_local_v1_seed0 candidate 31/128 proxy mean 43.495%
+search_local_v1_seed0 candidate 32/128 proxy mean 44.353%
+search_local_v1_seed0 candidate 33/128 proxy mean 44.487%
+search_local_v1_seed0 candidate 34/128 proxy mean 44.260%
+search_local_v1_seed0 candidate 35/128 proxy mean 43.885%
+search_local_v1_seed0 candidate 36/128 proxy mean 44.551%
+search_local_v1_seed0 candidate 37/128 proxy mean 43.219%
+search_local_v1_seed0 candidate 38/128 proxy mean 44.649%
+search_local_v1_seed0 candidate 39/128 proxy mean 43.442%
+search_local_v1_seed0 candidate 40/128 proxy mean 44.506%
+search_local_v1_seed0 candidate 41/128 proxy mean 44.293%
+search_local_v1_seed0 candidate 42/128 proxy mean 44.010%
+search_local_v1_seed0 candidate 43/128 proxy mean 41.791%
+search_local_v1_seed0 candidate 44/128 proxy mean 43.667%
+search_local_v1_seed0 candidate 45/128 proxy mean 44.760%
+search_local_v1_seed0 candidate 46/128 proxy mean 43.933%
+search_local_v1_seed0 candidate 47/128 proxy mean 44.067%
+search_local_v1_seed0 candidate 48/128 proxy mean 43.162%
+search_local_v1_seed0 candidate 49/128 proxy mean 44.480%
+search_local_v1_seed0 candidate 50/128 proxy mean 41.846%
+search_local_v1_seed0 candidate 51/128 proxy mean 44.429%
+search_local_v1_seed0 candidate 52/128 proxy mean 44.021%
+search_local_v1_seed0 candidate 53/128 proxy mean 44.210%
+search_local_v1_seed0 candidate 54/128 proxy mean 44.109%
+search_local_v1_seed0 candidate 55/128 proxy mean 44.035%
+search_local_v1_seed0 candidate 56/128 proxy mean 44.351%
+search_local_v1_seed0 candidate 57/128 proxy mean 43.292%
+search_local_v1_seed0 candidate 58/128 proxy mean 41.392%
+search_local_v1_seed0 candidate 59/128 proxy mean 41.876%
+search_local_v1_seed0 candidate 60/128 proxy mean 44.196%
+search_local_v1_seed0 candidate 61/128 proxy mean 43.355%
+search_local_v1_seed0 candidate 62/128 proxy mean 43.311%
+search_local_v1_seed0 candidate 63/128 proxy mean 38.152%
+search_local_v1_seed0 candidate 64/128 proxy mean 40.136%
+search_local_v1_seed0 candidate 65/128 proxy mean 42.324%
+search_local_v1_seed0 candidate 66/128 proxy mean 38.606%
+search_local_v1_seed0 candidate 67/128 proxy mean 42.189%
+search_local_v1_seed0 candidate 68/128 proxy mean 43.717%
+search_local_v1_seed0 candidate 69/128 proxy mean 44.210%
+search_local_v1_seed0 candidate 70/128 proxy mean 42.711%
+search_local_v1_seed0 candidate 71/128 proxy mean 41.744%
+search_local_v1_seed0 candidate 72/128 proxy mean 43.512%
+search_local_v1_seed0 candidate 73/128 proxy mean 38.909%
+search_local_v1_seed0 candidate 74/128 proxy mean 44.148%
+search_local_v1_seed0 candidate 75/128 proxy mean 39.879%
+search_local_v1_seed0 candidate 76/128 proxy mean 41.019%
+search_local_v1_seed0 candidate 77/128 proxy mean 39.563%
+search_local_v1_seed0 candidate 78/128 proxy mean 43.546%
+search_local_v1_seed0 candidate 79/128 proxy mean 39.748%
+search_local_v1_seed0 candidate 80/128 proxy mean 42.765%
+search_local_v1_seed0 candidate 81/128 proxy mean 41.719%
+search_local_v1_seed0 candidate 82/128 proxy mean 42.020%
+search_local_v1_seed0 candidate 83/128 proxy mean 39.038%
+search_local_v1_seed0 candidate 84/128 proxy mean 44.011%
+search_local_v1_seed0 candidate 85/128 proxy mean 43.726%
+search_local_v1_seed0 candidate 86/128 proxy mean 44.219%
+search_local_v1_seed0 candidate 87/128 proxy mean 43.616%
+search_local_v1_seed0 candidate 88/128 proxy mean 42.940%
+search_local_v1_seed0 candidate 89/128 proxy mean 43.244%
+search_local_v1_seed0 candidate 90/128 proxy mean 43.669%
+search_local_v1_seed0 candidate 91/128 proxy mean 42.575%
+search_local_v1_seed0 candidate 92/128 proxy mean 40.246%
+search_local_v1_seed0 candidate 93/128 proxy mean 42.926%
+search_local_v1_seed0 candidate 94/128 proxy mean 42.466%
+search_local_v1_seed0 candidate 95/128 proxy mean 43.430%
+search_local_v1_seed0 candidate 96/128 proxy mean 44.274%
+search_local_v1_seed0 candidate 97/128 proxy mean 41.591%
+search_local_v1_seed0 candidate 98/128 proxy mean 44.449%
+search_local_v1_seed0 candidate 99/128 proxy mean 42.843%
+search_local_v1_seed0 candidate 100/128 proxy mean 44.348%
+search_local_v1_seed0 candidate 101/128 proxy mean 43.875%
+search_local_v1_seed0 candidate 102/128 proxy mean 40.311%
+search_local_v1_seed0 candidate 103/128 proxy mean 42.347%
+search_local_v1_seed0 candidate 104/128 proxy mean 42.720%
+search_local_v1_seed0 candidate 105/128 proxy mean 42.468%
+search_local_v1_seed0 candidate 106/128 proxy mean 43.101%
+search_local_v1_seed0 candidate 107/128 proxy mean 43.245%
+search_local_v1_seed0 candidate 108/128 proxy mean 44.233%
+search_local_v1_seed0 candidate 109/128 proxy mean 43.293%
+search_local_v1_seed0 candidate 110/128 proxy mean 42.716%
+search_local_v1_seed0 candidate 111/128 proxy mean 43.901%
+search_local_v1_seed0 candidate 112/128 proxy mean 41.007%
+search_local_v1_seed0 candidate 113/128 proxy mean 40.412%
+search_local_v1_seed0 candidate 114/128 proxy mean 41.872%
+search_local_v1_seed0 candidate 115/128 proxy mean 42.817%
+search_local_v1_seed0 candidate 116/128 proxy mean 41.904%
+search_local_v1_seed0 candidate 117/128 proxy mean 43.647%
+search_local_v1_seed0 candidate 118/128 proxy mean 41.543%
+search_local_v1_seed0 candidate 119/128 proxy mean 43.234%
+search_local_v1_seed0 candidate 120/128 proxy mean 42.783%
+search_local_v1_seed0 candidate 121/128 proxy mean 40.302%
+search_local_v1_seed0 candidate 122/128 proxy mean 43.383%
+search_local_v1_seed0 candidate 123/128 proxy mean 44.524%
+search_local_v1_seed0 candidate 124/128 proxy mean 43.470%
+search_local_v1_seed0 candidate 125/128 proxy mean 43.635%
+search_local_v1_seed0 candidate 126/128 proxy mean 44.242%
+search_local_v1_seed0 candidate 127/128 proxy mean 44.469%
+search_local_v1_seed0 candidate 128/128 proxy mean 41.538%
+Consensus architecture: local_candidates_v1_seed0/proxy_ranking.json; reference selected=False. Proxy ranking only; full retraining remains necessary.
+Prepared reference + 4 challengers: local_candidates_v1_seed0/manifest.json

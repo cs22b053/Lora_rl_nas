@@ -1,0 +1,2174 @@
+{
+  "host": "dgx1",
+  "python": "/scratch/ajin/Autodeeplab/modified/.venvs/retrain_cu118/bin/python",
+  "torch_version": "2.3.1+cu118",
+  "torch_path": "/scratch/ajin/Autodeeplab/modified/.venvs/retrain_cu118/lib/python3.11/site-packages/torch/__init__.py",
+  "cuda_build": "11.8",
+  "cuda_visible_devices": "0"
+}
+NVIDIA A100-SXM4-40GB, 470.161.03
+NVIDIA A100-SXM4-40GB, 470.161.03
+NVIDIA A100-SXM4-40GB, 470.161.03
+CUDA check passed on NVIDIA A100-SXM4-40GB. Training can now load its checkpoint.
+Search config: {"dataset_root": "/scratch/ajin/Autodeeplab/autodeeplab/cityscapes/", "output_dir": "search_local_v1_seed0", "seed": 0, "split_seed": 0, "epochs": 100, "warmup_epochs": 50, "batch_size": 6, "crop_size": 321, "train_short_side": 512, "filter_multiplier": 8, "lora_rank": 4, "lora_lr_multiplier": 2.0, "lr": 0.025, "min_lr": 0.001, "weight_decay": 0.0003, "policy_lr": 0.0003, "max_skips": 2, "risk_weight": 0.2, "cvar_alpha": 0.2, "rollout_size": 16, "ppo_epochs": 4, "reward_images": 64, "rank_images": 128, "calibration_batches": 8, "final_candidates": 16, "max_final_params": 10147427, "target_filters": 20, "search_space": "reference-local", "local_candidates": 128, "candidate_seed": 0, "workers": 8, "save_every": 100, "resume": "latest", "no_amp": false, "random_search": false, "steps_per_epoch": null, "stop_after_steps": null, "smoke_test": false}
+Disjoint TRAIN splits: {'weights': 1785, 'controller': 595, 'selection': 595}; official validation is unused.
+Supernet parameters: 8173299; LoRA parameters: 1684480
+epoch 1/100 batch 1/297 updates 1 CE 3.2643 base LR 0.025000 LoRA LR 0.050000 AMP scale 1024.0
+epoch 1/100 batch 25/297 updates 25 CE 2.3904 base LR 0.025000 LoRA LR 0.050000 AMP scale 1024.0
+epoch 1/100 batch 50/297 updates 50 CE 1.4180 base LR 0.025000 LoRA LR 0.050000 AMP scale 1024.0
+epoch 1/100 batch 75/297 updates 75 CE 1.1368 base LR 0.025000 LoRA LR 0.049999 AMP scale 1024.0
+epoch 1/100 batch 100/297 updates 100 CE 1.3256 base LR 0.024999 LoRA LR 0.049999 AMP scale 1024.0
+epoch 1/100 batch 125/297 updates 125 CE 1.5759 base LR 0.024999 LoRA LR 0.049998 AMP scale 1024.0
+epoch 1/100 batch 150/297 updates 150 CE 1.4053 base LR 0.024999 LoRA LR 0.049997 AMP scale 1024.0
+epoch 1/100 batch 175/297 updates 175 CE 1.2285 base LR 0.024998 LoRA LR 0.049996 AMP scale 1024.0
+epoch 1/100 batch 200/297 updates 200 CE 1.2187 base LR 0.024997 LoRA LR 0.049995 AMP scale 1024.0
+epoch 1/100 batch 225/297 updates 225 CE 1.5413 base LR 0.024997 LoRA LR 0.049993 AMP scale 1024.0
+epoch 1/100 batch 250/297 updates 250 CE 1.1599 base LR 0.024996 LoRA LR 0.049992 AMP scale 1024.0
+epoch 1/100 batch 275/297 updates 275 CE 1.2391 base LR 0.024995 LoRA LR 0.049990 AMP scale 1024.0
+epoch 1/100 batch 297/297 updates 297 CE 1.1161 base LR 0.024994 LoRA LR 0.049988 AMP scale 1024.0
+epoch 2/100 batch 1/297 updates 298 CE 0.9351 base LR 0.024994 LoRA LR 0.049988 AMP scale 1024.0
+epoch 2/100 batch 25/297 updates 322 CE 1.4056 base LR 0.024993 LoRA LR 0.049986 AMP scale 1024.0
+epoch 2/100 batch 50/297 updates 347 CE 1.2069 base LR 0.024992 LoRA LR 0.049984 AMP scale 1024.0
+epoch 2/100 batch 75/297 updates 372 CE 1.6525 base LR 0.024991 LoRA LR 0.049982 AMP scale 1024.0
+epoch 2/100 batch 100/297 updates 397 CE 0.7962 base LR 0.024989 LoRA LR 0.049979 AMP scale 1024.0
+epoch 2/100 batch 125/297 updates 422 CE 0.9687 base LR 0.024988 LoRA LR 0.049976 AMP scale 1024.0
+epoch 2/100 batch 150/297 updates 447 CE 1.1719 base LR 0.024987 LoRA LR 0.049973 AMP scale 1024.0
+epoch 2/100 batch 175/297 updates 472 CE 1.3845 base LR 0.024985 LoRA LR 0.049970 AMP scale 1024.0
+epoch 2/100 batch 200/297 updates 497 CE 1.0857 base LR 0.024983 LoRA LR 0.049967 AMP scale 1024.0
+epoch 2/100 batch 225/297 updates 522 CE 0.9679 base LR 0.024982 LoRA LR 0.049964 AMP scale 1024.0
+epoch 2/100 batch 250/297 updates 547 CE 1.0976 base LR 0.024980 LoRA LR 0.049960 AMP scale 1024.0
+epoch 2/100 batch 275/297 updates 572 CE 1.3010 base LR 0.024978 LoRA LR 0.049956 AMP scale 1024.0
+epoch 2/100 batch 297/297 updates 594 CE 1.1984 base LR 0.024976 LoRA LR 0.049953 AMP scale 1024.0
+epoch 3/100 batch 1/297 updates 595 CE 0.8730 base LR 0.024976 LoRA LR 0.049953 AMP scale 1024.0
+epoch 3/100 batch 25/297 updates 619 CE 0.8766 base LR 0.024974 LoRA LR 0.049949 AMP scale 1024.0
+epoch 3/100 batch 50/297 updates 644 CE 0.8908 base LR 0.024972 LoRA LR 0.049945 AMP scale 1024.0
+epoch 3/100 batch 75/297 updates 669 CE 0.9712 base LR 0.024970 LoRA LR 0.049940 AMP scale 1024.0
+epoch 3/100 batch 100/297 updates 694 CE 1.4794 base LR 0.024968 LoRA LR 0.049936 AMP scale 1024.0
+epoch 3/100 batch 125/297 updates 719 CE 1.0350 base LR 0.024965 LoRA LR 0.049931 AMP scale 1024.0
+epoch 3/100 batch 150/297 updates 744 CE 0.7769 base LR 0.024963 LoRA LR 0.049926 AMP scale 1024.0
+epoch 3/100 batch 175/297 updates 769 CE 0.9152 base LR 0.024960 LoRA LR 0.049921 AMP scale 1024.0
+epoch 3/100 batch 200/297 updates 794 CE 0.8546 base LR 0.024958 LoRA LR 0.049916 AMP scale 1024.0
+epoch 3/100 batch 225/297 updates 819 CE 0.8480 base LR 0.024955 LoRA LR 0.049910 AMP scale 1024.0
+epoch 3/100 batch 250/297 updates 844 CE 1.0966 base LR 0.024952 LoRA LR 0.049905 AMP scale 1024.0
+epoch 3/100 batch 275/297 updates 869 CE 0.7109 base LR 0.024949 LoRA LR 0.049899 AMP scale 1024.0
+epoch 3/100 batch 297/297 updates 891 CE 1.0976 base LR 0.024947 LoRA LR 0.049894 AMP scale 1024.0
+epoch 4/100 batch 1/297 updates 892 CE 1.0825 base LR 0.024947 LoRA LR 0.049893 AMP scale 1024.0
+epoch 4/100 batch 25/297 updates 916 CE 0.6841 base LR 0.024944 LoRA LR 0.049888 AMP scale 1024.0
+epoch 4/100 batch 50/297 updates 941 CE 1.2411 base LR 0.024941 LoRA LR 0.049881 AMP scale 1024.0
+epoch 4/100 batch 75/297 updates 966 CE 0.8737 base LR 0.024938 LoRA LR 0.049875 AMP scale 1024.0
+epoch 4/100 batch 100/297 updates 991 CE 0.9058 base LR 0.024934 LoRA LR 0.049869 AMP scale 1024.0
+epoch 4/100 batch 125/297 updates 1016 CE 0.7079 base LR 0.024931 LoRA LR 0.049862 AMP scale 1024.0
+epoch 4/100 batch 150/297 updates 1041 CE 1.4569 base LR 0.024927 LoRA LR 0.049855 AMP scale 1024.0
+epoch 4/100 batch 175/297 updates 1066 CE 1.6305 base LR 0.024924 LoRA LR 0.049848 AMP scale 1024.0
+epoch 4/100 batch 200/297 updates 1091 CE 1.2205 base LR 0.024920 LoRA LR 0.049841 AMP scale 1024.0
+epoch 4/100 batch 225/297 updates 1116 CE 1.1669 base LR 0.024917 LoRA LR 0.049833 AMP scale 1024.0
+epoch 4/100 batch 250/297 updates 1141 CE 0.7491 base LR 0.024913 LoRA LR 0.049826 AMP scale 1024.0
+epoch 4/100 batch 275/297 updates 1166 CE 0.7872 base LR 0.024909 LoRA LR 0.049818 AMP scale 1024.0
+epoch 4/100 batch 297/297 updates 1188 CE 1.0520 base LR 0.024906 LoRA LR 0.049811 AMP scale 1024.0
+epoch 5/100 batch 1/297 updates 1189 CE 0.9620 base LR 0.024905 LoRA LR 0.049811 AMP scale 1024.0
+epoch 5/100 batch 25/297 updates 1213 CE 0.7169 base LR 0.024902 LoRA LR 0.049803 AMP scale 1024.0
+epoch 5/100 batch 50/297 updates 1238 CE 1.0498 base LR 0.024897 LoRA LR 0.049795 AMP scale 1024.0
+epoch 5/100 batch 75/297 updates 1263 CE 1.0034 base LR 0.024893 LoRA LR 0.049786 AMP scale 1024.0
+epoch 5/100 batch 100/297 updates 1288 CE 0.7740 base LR 0.024889 LoRA LR 0.049778 AMP scale 1024.0
+epoch 5/100 batch 125/297 updates 1313 CE 1.3830 base LR 0.024885 LoRA LR 0.049769 AMP scale 1024.0
+epoch 5/100 batch 150/297 updates 1338 CE 1.6120 base LR 0.024880 LoRA LR 0.049760 AMP scale 1024.0
+epoch 5/100 batch 175/297 updates 1363 CE 1.0635 base LR 0.024876 LoRA LR 0.049751 AMP scale 1024.0
+epoch 5/100 batch 200/297 updates 1388 CE 0.6911 base LR 0.024871 LoRA LR 0.049742 AMP scale 1024.0
+epoch 5/100 batch 225/297 updates 1413 CE 0.5905 base LR 0.024866 LoRA LR 0.049733 AMP scale 1024.0
+epoch 5/100 batch 250/297 updates 1438 CE 1.1308 base LR 0.024862 LoRA LR 0.049723 AMP scale 1024.0
+epoch 5/100 batch 275/297 updates 1463 CE 0.6588 base LR 0.024857 LoRA LR 0.049714 AMP scale 1024.0
+epoch 5/100 batch 297/297 updates 1485 CE 1.0515 base LR 0.024852 LoRA LR 0.049705 AMP scale 1024.0
+epoch 6/100 batch 1/297 updates 1486 CE 0.8496 base LR 0.024852 LoRA LR 0.049705 AMP scale 1024.0
+epoch 6/100 batch 25/297 updates 1510 CE 0.8618 base LR 0.024847 LoRA LR 0.049695 AMP scale 1024.0
+epoch 6/100 batch 50/297 updates 1535 CE 0.8692 base LR 0.024842 LoRA LR 0.049685 AMP scale 1024.0
+epoch 6/100 batch 75/297 updates 1560 CE 1.1597 base LR 0.024837 LoRA LR 0.049674 AMP scale 1024.0
+epoch 6/100 batch 100/297 updates 1585 CE 0.9520 base LR 0.024832 LoRA LR 0.049664 AMP scale 1024.0
+epoch 6/100 batch 125/297 updates 1610 CE 0.6048 base LR 0.024827 LoRA LR 0.049653 AMP scale 1024.0
+epoch 6/100 batch 150/297 updates 1635 CE 0.7560 base LR 0.024821 LoRA LR 0.049642 AMP scale 1024.0
+epoch 6/100 batch 175/297 updates 1660 CE 0.8324 base LR 0.024816 LoRA LR 0.049631 AMP scale 1024.0
+epoch 6/100 batch 200/297 updates 1685 CE 0.6978 base LR 0.024810 LoRA LR 0.049620 AMP scale 1024.0
+epoch 6/100 batch 225/297 updates 1710 CE 0.7009 base LR 0.024804 LoRA LR 0.049609 AMP scale 1024.0
+epoch 6/100 batch 250/297 updates 1735 CE 1.3967 base LR 0.024799 LoRA LR 0.049597 AMP scale 1024.0
+epoch 6/100 batch 275/297 updates 1760 CE 0.5124 base LR 0.024793 LoRA LR 0.049586 AMP scale 1024.0
+epoch 6/100 batch 297/297 updates 1782 CE 0.6564 base LR 0.024788 LoRA LR 0.049575 AMP scale 1024.0
+epoch 7/100 batch 1/297 updates 1783 CE 0.8416 base LR 0.024787 LoRA LR 0.049575 AMP scale 1024.0
+epoch 7/100 batch 25/297 updates 1807 CE 0.8233 base LR 0.024782 LoRA LR 0.049563 AMP scale 1024.0
+epoch 7/100 batch 50/297 updates 1832 CE 0.8193 base LR 0.024776 LoRA LR 0.049551 AMP scale 1024.0
+epoch 7/100 batch 75/297 updates 1857 CE 0.8892 base LR 0.024769 LoRA LR 0.049539 AMP scale 1024.0
+epoch 7/100 batch 100/297 updates 1882 CE 0.8593 base LR 0.024763 LoRA LR 0.049527 AMP scale 1024.0
+epoch 7/100 batch 125/297 updates 1907 CE 1.4009 base LR 0.024757 LoRA LR 0.049514 AMP scale 1024.0
+epoch 7/100 batch 150/297 updates 1932 CE 0.6108 base LR 0.024751 LoRA LR 0.049501 AMP scale 1024.0
+epoch 7/100 batch 175/297 updates 1957 CE 1.1179 base LR 0.024744 LoRA LR 0.049488 AMP scale 1024.0
+epoch 7/100 batch 200/297 updates 1982 CE 0.7183 base LR 0.024738 LoRA LR 0.049475 AMP scale 1024.0
+epoch 7/100 batch 225/297 updates 2007 CE 0.9662 base LR 0.024731 LoRA LR 0.049462 AMP scale 2048.0
+epoch 7/100 batch 250/297 updates 2032 CE 0.6637 base LR 0.024724 LoRA LR 0.049448 AMP scale 2048.0
+epoch 7/100 batch 275/297 updates 2057 CE 1.2617 base LR 0.024717 LoRA LR 0.049435 AMP scale 2048.0
+epoch 7/100 batch 297/297 updates 2079 CE 0.6040 base LR 0.024711 LoRA LR 0.049423 AMP scale 2048.0
+epoch 8/100 batch 1/297 updates 2080 CE 0.9266 base LR 0.024711 LoRA LR 0.049422 AMP scale 2048.0
+epoch 8/100 batch 25/297 updates 2104 CE 1.1084 base LR 0.024704 LoRA LR 0.049409 AMP scale 2048.0
+epoch 8/100 batch 50/297 updates 2129 CE 0.7711 base LR 0.024697 LoRA LR 0.049395 AMP scale 2048.0
+epoch 8/100 batch 75/297 updates 2154 CE 0.7152 base LR 0.024690 LoRA LR 0.049380 AMP scale 2048.0
+epoch 8/100 batch 100/297 updates 2179 CE 0.8518 base LR 0.024683 LoRA LR 0.049366 AMP scale 2048.0
+epoch 8/100 batch 125/297 updates 2204 CE 0.8634 base LR 0.024676 LoRA LR 0.049351 AMP scale 2048.0
+epoch 8/100 batch 150/297 updates 2229 CE 0.8491 base LR 0.024668 LoRA LR 0.049337 AMP scale 2048.0
+epoch 8/100 batch 175/297 updates 2254 CE 0.6839 base LR 0.024661 LoRA LR 0.049322 AMP scale 2048.0
+epoch 8/100 batch 200/297 updates 2279 CE 0.8326 base LR 0.024653 LoRA LR 0.049307 AMP scale 2048.0
+epoch 8/100 batch 225/297 updates 2304 CE 1.1083 base LR 0.024646 LoRA LR 0.049291 AMP scale 2048.0
+epoch 8/100 batch 250/297 updates 2329 CE 1.0233 base LR 0.024638 LoRA LR 0.049276 AMP scale 2048.0
+epoch 8/100 batch 275/297 updates 2354 CE 0.6229 base LR 0.024630 LoRA LR 0.049260 AMP scale 2048.0
+epoch 8/100 batch 297/297 updates 2376 CE 0.5130 base LR 0.024623 LoRA LR 0.049247 AMP scale 2048.0
+epoch 9/100 batch 1/297 updates 2377 CE 0.9354 base LR 0.024623 LoRA LR 0.049246 AMP scale 2048.0
+epoch 9/100 batch 25/297 updates 2401 CE 0.6034 base LR 0.024615 LoRA LR 0.049231 AMP scale 2048.0
+epoch 9/100 batch 50/297 updates 2426 CE 0.8654 base LR 0.024607 LoRA LR 0.049215 AMP scale 2048.0
+epoch 9/100 batch 75/297 updates 2451 CE 0.6015 base LR 0.024599 LoRA LR 0.049199 AMP scale 2048.0
+epoch 9/100 batch 100/297 updates 2476 CE 0.8258 base LR 0.024591 LoRA LR 0.049182 AMP scale 2048.0
+epoch 9/100 batch 125/297 updates 2501 CE 0.8750 base LR 0.024583 LoRA LR 0.049166 AMP scale 2048.0
+epoch 9/100 batch 150/297 updates 2526 CE 0.9813 base LR 0.024575 LoRA LR 0.049149 AMP scale 2048.0
+epoch 9/100 batch 175/297 updates 2551 CE 1.2294 base LR 0.024566 LoRA LR 0.049132 AMP scale 2048.0
+epoch 9/100 batch 200/297 updates 2576 CE 0.6727 base LR 0.024558 LoRA LR 0.049115 AMP scale 2048.0
+epoch 9/100 batch 225/297 updates 2601 CE 0.7263 base LR 0.024549 LoRA LR 0.049098 AMP scale 2048.0
+epoch 9/100 batch 250/297 updates 2626 CE 0.6840 base LR 0.024540 LoRA LR 0.049081 AMP scale 2048.0
+epoch 9/100 batch 275/297 updates 2651 CE 0.7638 base LR 0.024532 LoRA LR 0.049063 AMP scale 2048.0
+epoch 9/100 batch 297/297 updates 2673 CE 0.8036 base LR 0.024524 LoRA LR 0.049048 AMP scale 2048.0
+epoch 10/100 batch 1/297 updates 2674 CE 0.5401 base LR 0.024524 LoRA LR 0.049047 AMP scale 2048.0
+epoch 10/100 batch 25/297 updates 2698 CE 1.0969 base LR 0.024515 LoRA LR 0.049030 AMP scale 2048.0
+epoch 10/100 batch 50/297 updates 2723 CE 0.8151 base LR 0.024506 LoRA LR 0.049012 AMP scale 2048.0
+epoch 10/100 batch 75/297 updates 2748 CE 1.0658 base LR 0.024497 LoRA LR 0.048994 AMP scale 2048.0
+epoch 10/100 batch 100/297 updates 2773 CE 0.8318 base LR 0.024488 LoRA LR 0.048976 AMP scale 2048.0
+epoch 10/100 batch 125/297 updates 2798 CE 1.4237 base LR 0.024479 LoRA LR 0.048957 AMP scale 2048.0
+epoch 10/100 batch 150/297 updates 2823 CE 0.9052 base LR 0.024469 LoRA LR 0.048939 AMP scale 2048.0
+epoch 10/100 batch 175/297 updates 2848 CE 0.7806 base LR 0.024460 LoRA LR 0.048920 AMP scale 2048.0
+epoch 10/100 batch 200/297 updates 2873 CE 0.6939 base LR 0.024451 LoRA LR 0.048901 AMP scale 2048.0
+epoch 10/100 batch 225/297 updates 2898 CE 0.8622 base LR 0.024441 LoRA LR 0.048882 AMP scale 2048.0
+epoch 10/100 batch 250/297 updates 2923 CE 0.7389 base LR 0.024431 LoRA LR 0.048863 AMP scale 2048.0
+epoch 10/100 batch 275/297 updates 2948 CE 0.7658 base LR 0.024422 LoRA LR 0.048843 AMP scale 2048.0
+epoch 10/100 batch 297/297 updates 2970 CE 0.6502 base LR 0.024413 LoRA LR 0.048826 AMP scale 2048.0
+epoch 11/100 batch 1/297 updates 2971 CE 0.5760 base LR 0.024413 LoRA LR 0.048825 AMP scale 2048.0
+epoch 11/100 batch 25/297 updates 2995 CE 0.8431 base LR 0.024403 LoRA LR 0.048806 AMP scale 2048.0
+epoch 11/100 batch 50/297 updates 3020 CE 0.7106 base LR 0.024393 LoRA LR 0.048787 AMP scale 2048.0
+epoch 11/100 batch 75/297 updates 3045 CE 0.6832 base LR 0.024383 LoRA LR 0.048767 AMP scale 2048.0
+epoch 11/100 batch 100/297 updates 3070 CE 0.8390 base LR 0.024373 LoRA LR 0.048746 AMP scale 2048.0
+epoch 11/100 batch 125/297 updates 3095 CE 0.6396 base LR 0.024363 LoRA LR 0.048726 AMP scale 2048.0
+epoch 11/100 batch 150/297 updates 3120 CE 0.6097 base LR 0.024353 LoRA LR 0.048706 AMP scale 2048.0
+epoch 11/100 batch 175/297 updates 3145 CE 0.5491 base LR 0.024342 LoRA LR 0.048685 AMP scale 2048.0
+epoch 11/100 batch 200/297 updates 3170 CE 0.7231 base LR 0.024332 LoRA LR 0.048664 AMP scale 2048.0
+epoch 11/100 batch 225/297 updates 3195 CE 0.7260 base LR 0.024322 LoRA LR 0.048643 AMP scale 2048.0
+epoch 11/100 batch 250/297 updates 3220 CE 1.0834 base LR 0.024311 LoRA LR 0.048622 AMP scale 2048.0
+epoch 11/100 batch 275/297 updates 3245 CE 0.6775 base LR 0.024300 LoRA LR 0.048601 AMP scale 2048.0
+epoch 11/100 batch 297/297 updates 3267 CE 1.1106 base LR 0.024291 LoRA LR 0.048582 AMP scale 2048.0
+epoch 12/100 batch 1/297 updates 3268 CE 0.6269 base LR 0.024291 LoRA LR 0.048581 AMP scale 2048.0
+epoch 12/100 batch 25/297 updates 3292 CE 0.5924 base LR 0.024280 LoRA LR 0.048560 AMP scale 2048.0
+epoch 12/100 batch 50/297 updates 3317 CE 0.8336 base LR 0.024269 LoRA LR 0.048539 AMP scale 2048.0
+epoch 12/100 batch 75/297 updates 3342 CE 0.8844 base LR 0.024258 LoRA LR 0.048517 AMP scale 2048.0
+epoch 12/100 batch 100/297 updates 3367 CE 0.7083 base LR 0.024247 LoRA LR 0.048495 AMP scale 2048.0
+epoch 12/100 batch 125/297 updates 3392 CE 0.6097 base LR 0.024236 LoRA LR 0.048473 AMP scale 2048.0
+epoch 12/100 batch 150/297 updates 3417 CE 0.4961 base LR 0.024225 LoRA LR 0.048450 AMP scale 2048.0
+epoch 12/100 batch 175/297 updates 3442 CE 1.1370 base LR 0.024214 LoRA LR 0.048428 AMP scale 2048.0
+epoch 12/100 batch 200/297 updates 3467 CE 0.6423 base LR 0.024203 LoRA LR 0.048405 AMP scale 2048.0
+epoch 12/100 batch 225/297 updates 3492 CE 0.7249 base LR 0.024191 LoRA LR 0.048382 AMP scale 2048.0
+epoch 12/100 batch 250/297 updates 3517 CE 0.7305 base LR 0.024180 LoRA LR 0.048359 AMP scale 2048.0
+epoch 12/100 batch 275/297 updates 3542 CE 0.5916 base LR 0.024168 LoRA LR 0.048336 AMP scale 2048.0
+epoch 12/100 batch 297/297 updates 3564 CE 0.3698 base LR 0.024158 LoRA LR 0.048316 AMP scale 2048.0
+epoch 13/100 batch 1/297 updates 3565 CE 0.6157 base LR 0.024157 LoRA LR 0.048315 AMP scale 2048.0
+epoch 13/100 batch 25/297 updates 3589 CE 0.5705 base LR 0.024146 LoRA LR 0.048292 AMP scale 2048.0
+epoch 13/100 batch 50/297 updates 3614 CE 0.4786 base LR 0.024134 LoRA LR 0.048269 AMP scale 2048.0
+epoch 13/100 batch 75/297 updates 3639 CE 0.5035 base LR 0.024122 LoRA LR 0.048245 AMP scale 2048.0
+epoch 13/100 batch 100/297 updates 3664 CE 0.6875 base LR 0.024110 LoRA LR 0.048221 AMP scale 2048.0
+epoch 13/100 batch 125/297 updates 3689 CE 0.7086 base LR 0.024098 LoRA LR 0.048197 AMP scale 2048.0
+epoch 13/100 batch 150/297 updates 3714 CE 0.9372 base LR 0.024086 LoRA LR 0.048173 AMP scale 2048.0
+epoch 13/100 batch 175/297 updates 3739 CE 0.6575 base LR 0.024074 LoRA LR 0.048148 AMP scale 2048.0
+epoch 13/100 batch 200/297 updates 3764 CE 0.6094 base LR 0.024062 LoRA LR 0.048124 AMP scale 2048.0
+epoch 13/100 batch 225/297 updates 3789 CE 0.6966 base LR 0.024050 LoRA LR 0.048099 AMP scale 2048.0
+epoch 13/100 batch 250/297 updates 3814 CE 0.4887 base LR 0.024037 LoRA LR 0.048074 AMP scale 2048.0
+epoch 13/100 batch 275/297 updates 3839 CE 0.6654 base LR 0.024025 LoRA LR 0.048049 AMP scale 2048.0
+epoch 13/100 batch 297/297 updates 3861 CE 0.8375 base LR 0.024014 LoRA LR 0.048027 AMP scale 2048.0
+epoch 14/100 batch 1/297 updates 3862 CE 0.5981 base LR 0.024013 LoRA LR 0.048026 AMP scale 2048.0
+epoch 14/100 batch 25/297 updates 3886 CE 0.7721 base LR 0.024001 LoRA LR 0.048002 AMP scale 2048.0
+epoch 14/100 batch 50/297 updates 3911 CE 0.7827 base LR 0.023988 LoRA LR 0.047976 AMP scale 2048.0
+epoch 14/100 batch 75/297 updates 3936 CE 0.7868 base LR 0.023975 LoRA LR 0.047951 AMP scale 2048.0
+epoch 14/100 batch 100/297 updates 3961 CE 0.6738 base LR 0.023963 LoRA LR 0.047925 AMP scale 2048.0
+epoch 14/100 batch 125/297 updates 3986 CE 0.9937 base LR 0.023950 LoRA LR 0.047899 AMP scale 2048.0
+epoch 14/100 batch 150/297 updates 4011 CE 0.4323 base LR 0.023937 LoRA LR 0.047873 AMP scale 4096.0
+epoch 14/100 batch 175/297 updates 4036 CE 0.8466 base LR 0.023923 LoRA LR 0.047847 AMP scale 4096.0
+epoch 14/100 batch 200/297 updates 4061 CE 0.8341 base LR 0.023910 LoRA LR 0.047821 AMP scale 4096.0
+epoch 14/100 batch 225/297 updates 4086 CE 0.8817 base LR 0.023897 LoRA LR 0.047794 AMP scale 4096.0
+epoch 14/100 batch 250/297 updates 4111 CE 0.6066 base LR 0.023884 LoRA LR 0.047767 AMP scale 4096.0
+epoch 14/100 batch 275/297 updates 4136 CE 0.6272 base LR 0.023870 LoRA LR 0.047741 AMP scale 4096.0
+epoch 14/100 batch 297/297 updates 4158 CE 0.4836 base LR 0.023858 LoRA LR 0.047717 AMP scale 4096.0
+epoch 15/100 batch 1/297 updates 4159 CE 0.6105 base LR 0.023858 LoRA LR 0.047716 AMP scale 4096.0
+epoch 15/100 batch 25/297 updates 4183 CE 0.5611 base LR 0.023845 LoRA LR 0.047690 AMP scale 4096.0
+epoch 15/100 batch 50/297 updates 4208 CE 0.6327 base LR 0.023831 LoRA LR 0.047663 AMP scale 4096.0
+epoch 15/100 batch 75/297 updates 4233 CE 0.4854 base LR 0.023818 LoRA LR 0.047635 AMP scale 4096.0
+epoch 15/100 batch 100/297 updates 4258 CE 0.7835 base LR 0.023804 LoRA LR 0.047608 AMP scale 4096.0
+epoch 15/100 batch 125/297 updates 4283 CE 0.5854 base LR 0.023790 LoRA LR 0.047580 AMP scale 4096.0
+epoch 15/100 batch 150/297 updates 4308 CE 0.8652 base LR 0.023776 LoRA LR 0.047552 AMP scale 4096.0
+epoch 15/100 batch 175/297 updates 4333 CE 0.7083 base LR 0.023762 LoRA LR 0.047524 AMP scale 4096.0
+epoch 15/100 batch 200/297 updates 4358 CE 0.6609 base LR 0.023748 LoRA LR 0.047496 AMP scale 4096.0
+epoch 15/100 batch 225/297 updates 4383 CE 0.4747 base LR 0.023734 LoRA LR 0.047468 AMP scale 4096.0
+epoch 15/100 batch 250/297 updates 4408 CE 0.8683 base LR 0.023720 LoRA LR 0.047439 AMP scale 4096.0
+epoch 15/100 batch 275/297 updates 4433 CE 0.5220 base LR 0.023705 LoRA LR 0.047411 AMP scale 4096.0
+epoch 15/100 batch 297/297 updates 4455 CE 0.5903 base LR 0.023693 LoRA LR 0.047385 AMP scale 4096.0
+epoch 16/100 batch 1/297 updates 4456 CE 0.7608 base LR 0.023692 LoRA LR 0.047384 AMP scale 4096.0
+epoch 16/100 batch 25/297 updates 4480 CE 0.8037 base LR 0.023678 LoRA LR 0.047356 AMP scale 4096.0
+epoch 16/100 batch 50/297 updates 4505 CE 0.6786 base LR 0.023664 LoRA LR 0.047327 AMP scale 4096.0
+epoch 16/100 batch 75/297 updates 4530 CE 0.5818 base LR 0.023649 LoRA LR 0.047298 AMP scale 4096.0
+epoch 16/100 batch 100/297 updates 4555 CE 0.8692 base LR 0.023634 LoRA LR 0.047269 AMP scale 4096.0
+epoch 16/100 batch 125/297 updates 4580 CE 0.7040 base LR 0.023620 LoRA LR 0.047239 AMP scale 4096.0
+epoch 16/100 batch 150/297 updates 4605 CE 0.9210 base LR 0.023605 LoRA LR 0.047210 AMP scale 4096.0
+epoch 16/100 batch 175/297 updates 4630 CE 0.9184 base LR 0.023590 LoRA LR 0.047180 AMP scale 4096.0
+epoch 16/100 batch 200/297 updates 4655 CE 0.8590 base LR 0.023575 LoRA LR 0.047150 AMP scale 4096.0
+epoch 16/100 batch 225/297 updates 4680 CE 0.8541 base LR 0.023560 LoRA LR 0.047120 AMP scale 4096.0
+epoch 16/100 batch 250/297 updates 4705 CE 0.9222 base LR 0.023545 LoRA LR 0.047090 AMP scale 4096.0
+epoch 16/100 batch 275/297 updates 4730 CE 0.5948 base LR 0.023530 LoRA LR 0.047059 AMP scale 4096.0
+epoch 16/100 batch 297/297 updates 4752 CE 0.5820 base LR 0.023516 LoRA LR 0.047033 AMP scale 4096.0
+epoch 17/100 batch 1/297 updates 4753 CE 0.5759 base LR 0.023516 LoRA LR 0.047031 AMP scale 4096.0
+epoch 17/100 batch 25/297 updates 4777 CE 0.7072 base LR 0.023501 LoRA LR 0.047002 AMP scale 4096.0
+epoch 17/100 batch 50/297 updates 4802 CE 0.7454 base LR 0.023486 LoRA LR 0.046971 AMP scale 4096.0
+epoch 17/100 batch 75/297 updates 4827 CE 0.4809 base LR 0.023470 LoRA LR 0.046940 AMP scale 4096.0
+epoch 17/100 batch 100/297 updates 4852 CE 0.5310 base LR 0.023455 LoRA LR 0.046909 AMP scale 4096.0
+epoch 17/100 batch 125/297 updates 4877 CE 0.5472 base LR 0.023439 LoRA LR 0.046878 AMP scale 4096.0
+epoch 17/100 batch 150/297 updates 4902 CE 0.5076 base LR 0.023423 LoRA LR 0.046847 AMP scale 4096.0
+epoch 17/100 batch 175/297 updates 4927 CE 0.6831 base LR 0.023408 LoRA LR 0.046815 AMP scale 4096.0
+epoch 17/100 batch 200/297 updates 4952 CE 0.6563 base LR 0.023392 LoRA LR 0.046783 AMP scale 4096.0
+epoch 17/100 batch 225/297 updates 4977 CE 0.6234 base LR 0.023376 LoRA LR 0.046752 AMP scale 4096.0
+epoch 17/100 batch 250/297 updates 5002 CE 0.5943 base LR 0.023360 LoRA LR 0.046720 AMP scale 4096.0
+epoch 17/100 batch 275/297 updates 5027 CE 0.7404 base LR 0.023344 LoRA LR 0.046687 AMP scale 4096.0
+epoch 17/100 batch 297/297 updates 5049 CE 0.7357 base LR 0.023330 LoRA LR 0.046659 AMP scale 4096.0
+epoch 18/100 batch 1/297 updates 5050 CE 0.6138 base LR 0.023329 LoRA LR 0.046658 AMP scale 4096.0
+epoch 18/100 batch 25/297 updates 5074 CE 1.2696 base LR 0.023313 LoRA LR 0.046627 AMP scale 4096.0
+epoch 18/100 batch 50/297 updates 5099 CE 0.4165 base LR 0.023297 LoRA LR 0.046594 AMP scale 4096.0
+epoch 18/100 batch 75/297 updates 5124 CE 0.7763 base LR 0.023281 LoRA LR 0.046562 AMP scale 4096.0
+epoch 18/100 batch 100/297 updates 5149 CE 1.0423 base LR 0.023264 LoRA LR 0.046529 AMP scale 4096.0
+epoch 18/100 batch 125/297 updates 5174 CE 1.0554 base LR 0.023248 LoRA LR 0.046496 AMP scale 4096.0
+epoch 18/100 batch 150/297 updates 5199 CE 0.8055 base LR 0.023231 LoRA LR 0.046463 AMP scale 4096.0
+epoch 18/100 batch 175/297 updates 5224 CE 0.6002 base LR 0.023215 LoRA LR 0.046429 AMP scale 4096.0
+epoch 18/100 batch 200/297 updates 5249 CE 0.6959 base LR 0.023198 LoRA LR 0.046396 AMP scale 4096.0
+epoch 18/100 batch 225/297 updates 5274 CE 0.5932 base LR 0.023181 LoRA LR 0.046363 AMP scale 4096.0
+epoch 18/100 batch 250/297 updates 5299 CE 0.4239 base LR 0.023164 LoRA LR 0.046329 AMP scale 4096.0
+epoch 18/100 batch 275/297 updates 5324 CE 0.6481 base LR 0.023148 LoRA LR 0.046295 AMP scale 4096.0
+epoch 18/100 batch 297/297 updates 5346 CE 0.6045 base LR 0.023133 LoRA LR 0.046265 AMP scale 4096.0
+epoch 19/100 batch 1/297 updates 5347 CE 0.6992 base LR 0.023132 LoRA LR 0.046264 AMP scale 4096.0
+epoch 19/100 batch 25/297 updates 5371 CE 0.7009 base LR 0.023116 LoRA LR 0.046231 AMP scale 4096.0
+epoch 19/100 batch 50/297 updates 5396 CE 0.5098 base LR 0.023098 LoRA LR 0.046197 AMP scale 4096.0
+epoch 19/100 batch 75/297 updates 5421 CE 0.5653 base LR 0.023081 LoRA LR 0.046163 AMP scale 4096.0
+epoch 19/100 batch 100/297 updates 5446 CE 0.4731 base LR 0.023064 LoRA LR 0.046128 AMP scale 4096.0
+epoch 19/100 batch 125/297 updates 5471 CE 0.4586 base LR 0.023047 LoRA LR 0.046093 AMP scale 4096.0
+epoch 19/100 batch 150/297 updates 5496 CE 0.4149 base LR 0.023029 LoRA LR 0.046059 AMP scale 4096.0
+epoch 19/100 batch 175/297 updates 5521 CE 0.6039 base LR 0.023012 LoRA LR 0.046024 AMP scale 4096.0
+epoch 19/100 batch 200/297 updates 5546 CE 0.2879 base LR 0.022994 LoRA LR 0.045989 AMP scale 4096.0
+epoch 19/100 batch 225/297 updates 5571 CE 0.4846 base LR 0.022977 LoRA LR 0.045954 AMP scale 4096.0
+epoch 19/100 batch 250/297 updates 5596 CE 0.8367 base LR 0.022959 LoRA LR 0.045918 AMP scale 4096.0
+epoch 19/100 batch 275/297 updates 5621 CE 0.7157 base LR 0.022941 LoRA LR 0.045883 AMP scale 4096.0
+epoch 19/100 batch 297/297 updates 5643 CE 1.4410 base LR 0.022926 LoRA LR 0.045851 AMP scale 4096.0
+epoch 20/100 batch 1/297 updates 5644 CE 0.5391 base LR 0.022925 LoRA LR 0.045850 AMP scale 4096.0
+epoch 20/100 batch 25/297 updates 5668 CE 0.4124 base LR 0.022908 LoRA LR 0.045816 AMP scale 4096.0
+epoch 20/100 batch 50/297 updates 5693 CE 0.8148 base LR 0.022890 LoRA LR 0.045780 AMP scale 4096.0
+epoch 20/100 batch 75/297 updates 5718 CE 0.4442 base LR 0.022872 LoRA LR 0.045744 AMP scale 4096.0
+epoch 20/100 batch 100/297 updates 5743 CE 0.3551 base LR 0.022854 LoRA LR 0.045708 AMP scale 4096.0
+epoch 20/100 batch 125/297 updates 5768 CE 0.5483 base LR 0.022836 LoRA LR 0.045671 AMP scale 4096.0
+epoch 20/100 batch 150/297 updates 5793 CE 0.7008 base LR 0.022817 LoRA LR 0.045635 AMP scale 4096.0
+epoch 20/100 batch 175/297 updates 5818 CE 0.7137 base LR 0.022799 LoRA LR 0.045598 AMP scale 4096.0
+epoch 20/100 batch 200/297 updates 5843 CE 0.6251 base LR 0.022781 LoRA LR 0.045562 AMP scale 4096.0
+epoch 20/100 batch 225/297 updates 5868 CE 0.6333 base LR 0.022762 LoRA LR 0.045525 AMP scale 4096.0
+epoch 20/100 batch 250/297 updates 5893 CE 1.0315 base LR 0.022744 LoRA LR 0.045488 AMP scale 4096.0
+epoch 20/100 batch 275/297 updates 5918 CE 0.5503 base LR 0.022725 LoRA LR 0.045451 AMP scale 4096.0
+epoch 20/100 batch 297/297 updates 5940 CE 0.9427 base LR 0.022709 LoRA LR 0.045418 AMP scale 4096.0
+epoch 21/100 batch 1/297 updates 5941 CE 0.4223 base LR 0.022708 LoRA LR 0.045416 AMP scale 4096.0
+epoch 21/100 batch 25/297 updates 5965 CE 0.5124 base LR 0.022690 LoRA LR 0.045381 AMP scale 4096.0
+epoch 21/100 batch 50/297 updates 5990 CE 0.5941 base LR 0.022672 LoRA LR 0.045343 AMP scale 4096.0
+epoch 21/100 batch 75/297 updates 6015 CE 0.6649 base LR 0.022653 LoRA LR 0.045305 AMP scale 8192.0
+epoch 21/100 batch 100/297 updates 6040 CE 0.4903 base LR 0.022634 LoRA LR 0.045268 AMP scale 8192.0
+epoch 21/100 batch 125/297 updates 6065 CE 0.6029 base LR 0.022615 LoRA LR 0.045230 AMP scale 8192.0
+epoch 21/100 batch 150/297 updates 6090 CE 0.9787 base LR 0.022596 LoRA LR 0.045192 AMP scale 8192.0
+epoch 21/100 batch 175/297 updates 6115 CE 0.4322 base LR 0.022577 LoRA LR 0.045153 AMP scale 8192.0
+epoch 21/100 batch 200/297 updates 6140 CE 0.6827 base LR 0.022558 LoRA LR 0.045115 AMP scale 8192.0
+epoch 21/100 batch 225/297 updates 6165 CE 0.6949 base LR 0.022538 LoRA LR 0.045077 AMP scale 8192.0
+epoch 21/100 batch 250/297 updates 6190 CE 0.5284 base LR 0.022519 LoRA LR 0.045038 AMP scale 8192.0
+epoch 21/100 batch 275/297 updates 6215 CE 0.6583 base LR 0.022500 LoRA LR 0.044999 AMP scale 8192.0
+epoch 21/100 batch 297/297 updates 6237 CE 0.5172 base LR 0.022483 LoRA LR 0.044965 AMP scale 8192.0
+epoch 22/100 batch 1/297 updates 6238 CE 0.7684 base LR 0.022482 LoRA LR 0.044964 AMP scale 8192.0
+epoch 22/100 batch 25/297 updates 6262 CE 0.7379 base LR 0.022463 LoRA LR 0.044926 AMP scale 8192.0
+epoch 22/100 batch 50/297 updates 6287 CE 0.5382 base LR 0.022444 LoRA LR 0.044887 AMP scale 8192.0
+epoch 22/100 batch 75/297 updates 6312 CE 0.6224 base LR 0.022424 LoRA LR 0.044848 AMP scale 8192.0
+epoch 22/100 batch 100/297 updates 6337 CE 1.3434 base LR 0.022404 LoRA LR 0.044809 AMP scale 8192.0
+epoch 22/100 batch 125/297 updates 6362 CE 0.7089 base LR 0.022385 LoRA LR 0.044769 AMP scale 8192.0
+epoch 22/100 batch 150/297 updates 6387 CE 0.6626 base LR 0.022365 LoRA LR 0.044730 AMP scale 8192.0
+epoch 22/100 batch 175/297 updates 6412 CE 0.4252 base LR 0.022345 LoRA LR 0.044690 AMP scale 8192.0
+epoch 22/100 batch 200/297 updates 6437 CE 0.5300 base LR 0.022325 LoRA LR 0.044650 AMP scale 8192.0
+epoch 22/100 batch 225/297 updates 6462 CE 0.4906 base LR 0.022305 LoRA LR 0.044610 AMP scale 8192.0
+epoch 22/100 batch 250/297 updates 6487 CE 0.6019 base LR 0.022285 LoRA LR 0.044570 AMP scale 8192.0
+epoch 22/100 batch 275/297 updates 6512 CE 0.4437 base LR 0.022265 LoRA LR 0.044529 AMP scale 8192.0
+epoch 22/100 batch 297/297 updates 6534 CE 0.8559 base LR 0.022247 LoRA LR 0.044494 AMP scale 8192.0
+epoch 23/100 batch 1/297 updates 6535 CE 0.8091 base LR 0.022246 LoRA LR 0.044492 AMP scale 8192.0
+epoch 23/100 batch 25/297 updates 6559 CE 0.6157 base LR 0.022227 LoRA LR 0.044453 AMP scale 8192.0
+epoch 23/100 batch 50/297 updates 6584 CE 0.7348 base LR 0.022206 LoRA LR 0.044413 AMP scale 8192.0
+epoch 23/100 batch 75/297 updates 6609 CE 0.4506 base LR 0.022186 LoRA LR 0.044372 AMP scale 8192.0
+epoch 23/100 batch 100/297 updates 6634 CE 0.4892 base LR 0.022166 LoRA LR 0.044331 AMP scale 8192.0
+epoch 23/100 batch 125/297 updates 6659 CE 0.5301 base LR 0.022145 LoRA LR 0.044290 AMP scale 8192.0
+epoch 23/100 batch 150/297 updates 6684 CE 0.5823 base LR 0.022124 LoRA LR 0.044249 AMP scale 8192.0
+epoch 23/100 batch 175/297 updates 6709 CE 0.4378 base LR 0.022104 LoRA LR 0.044208 AMP scale 8192.0
+epoch 23/100 batch 200/297 updates 6734 CE 0.9925 base LR 0.022083 LoRA LR 0.044166 AMP scale 8192.0
+epoch 23/100 batch 225/297 updates 6759 CE 0.4221 base LR 0.022062 LoRA LR 0.044125 AMP scale 8192.0
+epoch 23/100 batch 250/297 updates 6784 CE 0.7255 base LR 0.022042 LoRA LR 0.044083 AMP scale 8192.0
+epoch 23/100 batch 275/297 updates 6809 CE 0.5472 base LR 0.022021 LoRA LR 0.044041 AMP scale 8192.0
+epoch 23/100 batch 297/297 updates 6831 CE 0.5805 base LR 0.022002 LoRA LR 0.044004 AMP scale 8192.0
+epoch 24/100 batch 1/297 updates 6832 CE 0.7337 base LR 0.022001 LoRA LR 0.044003 AMP scale 8192.0
+epoch 24/100 batch 25/297 updates 6856 CE 0.9600 base LR 0.021981 LoRA LR 0.043962 AMP scale 8192.0
+epoch 24/100 batch 50/297 updates 6881 CE 0.3762 base LR 0.021960 LoRA LR 0.043920 AMP scale 8192.0
+epoch 24/100 batch 75/297 updates 6906 CE 0.5894 base LR 0.021939 LoRA LR 0.043878 AMP scale 8192.0
+epoch 24/100 batch 100/297 updates 6931 CE 0.3651 base LR 0.021918 LoRA LR 0.043835 AMP scale 8192.0
+epoch 24/100 batch 125/297 updates 6956 CE 0.2683 base LR 0.021896 LoRA LR 0.043793 AMP scale 8192.0
+epoch 24/100 batch 150/297 updates 6981 CE 0.7251 base LR 0.021875 LoRA LR 0.043750 AMP scale 8192.0
+epoch 24/100 batch 175/297 updates 7006 CE 0.4905 base LR 0.021854 LoRA LR 0.043708 AMP scale 8192.0
+epoch 24/100 batch 200/297 updates 7031 CE 0.3357 base LR 0.021832 LoRA LR 0.043665 AMP scale 8192.0
+epoch 24/100 batch 225/297 updates 7056 CE 0.4617 base LR 0.021811 LoRA LR 0.043622 AMP scale 8192.0
+epoch 24/100 batch 250/297 updates 7081 CE 0.5316 base LR 0.021789 LoRA LR 0.043578 AMP scale 8192.0
+epoch 24/100 batch 275/297 updates 7106 CE 0.6178 base LR 0.021768 LoRA LR 0.043535 AMP scale 8192.0
+epoch 24/100 batch 297/297 updates 7128 CE 0.6529 base LR 0.021748 LoRA LR 0.043497 AMP scale 8192.0
+epoch 25/100 batch 1/297 updates 7129 CE 0.3985 base LR 0.021748 LoRA LR 0.043495 AMP scale 8192.0
+epoch 25/100 batch 25/297 updates 7153 CE 0.3970 base LR 0.021727 LoRA LR 0.043453 AMP scale 8192.0
+epoch 25/100 batch 50/297 updates 7178 CE 0.5257 base LR 0.021705 LoRA LR 0.043410 AMP scale 8192.0
+epoch 25/100 batch 75/297 updates 7203 CE 0.5304 base LR 0.021683 LoRA LR 0.043366 AMP scale 8192.0
+epoch 25/100 batch 100/297 updates 7228 CE 0.5502 base LR 0.021661 LoRA LR 0.043322 AMP scale 8192.0
+epoch 25/100 batch 125/297 updates 7253 CE 0.5005 base LR 0.021639 LoRA LR 0.043278 AMP scale 8192.0
+epoch 25/100 batch 150/297 updates 7278 CE 0.4498 base LR 0.021617 LoRA LR 0.043234 AMP scale 8192.0
+epoch 25/100 batch 175/297 updates 7303 CE 0.5538 base LR 0.021595 LoRA LR 0.043190 AMP scale 8192.0
+epoch 25/100 batch 200/297 updates 7328 CE 0.7341 base LR 0.021573 LoRA LR 0.043146 AMP scale 8192.0
+epoch 25/100 batch 225/297 updates 7353 CE 0.6383 base LR 0.021551 LoRA LR 0.043101 AMP scale 8192.0
+epoch 25/100 batch 250/297 updates 7378 CE 0.7198 base LR 0.021528 LoRA LR 0.043057 AMP scale 8192.0
+epoch 25/100 batch 275/297 updates 7403 CE 0.5300 base LR 0.021506 LoRA LR 0.043012 AMP scale 8192.0
+epoch 25/100 batch 297/297 updates 7425 CE 0.5948 base LR 0.021486 LoRA LR 0.042972 AMP scale 8192.0
+epoch 26/100 batch 1/297 updates 7426 CE 0.5727 base LR 0.021485 LoRA LR 0.042971 AMP scale 8192.0
+epoch 26/100 batch 25/297 updates 7450 CE 0.3795 base LR 0.021464 LoRA LR 0.042927 AMP scale 8192.0
+epoch 26/100 batch 50/297 updates 7475 CE 0.3721 base LR 0.021441 LoRA LR 0.042882 AMP scale 8192.0
+epoch 26/100 batch 75/297 updates 7500 CE 0.3829 base LR 0.021419 LoRA LR 0.042837 AMP scale 8192.0
+epoch 26/100 batch 100/297 updates 7525 CE 0.3543 base LR 0.021396 LoRA LR 0.042792 AMP scale 8192.0
+epoch 26/100 batch 125/297 updates 7550 CE 0.6064 base LR 0.021373 LoRA LR 0.042747 AMP scale 8192.0
+epoch 26/100 batch 150/297 updates 7575 CE 0.4804 base LR 0.021350 LoRA LR 0.042701 AMP scale 8192.0
+epoch 26/100 batch 175/297 updates 7600 CE 0.4635 base LR 0.021328 LoRA LR 0.042655 AMP scale 8192.0
+epoch 26/100 batch 200/297 updates 7625 CE 0.8355 base LR 0.021305 LoRA LR 0.042610 AMP scale 8192.0
+epoch 26/100 batch 225/297 updates 7650 CE 0.3568 base LR 0.021282 LoRA LR 0.042564 AMP scale 8192.0
+epoch 26/100 batch 250/297 updates 7675 CE 0.5152 base LR 0.021259 LoRA LR 0.042518 AMP scale 8192.0
+epoch 26/100 batch 275/297 updates 7700 CE 0.4443 base LR 0.021236 LoRA LR 0.042472 AMP scale 8192.0
+epoch 26/100 batch 297/297 updates 7722 CE 1.1405 base LR 0.021215 LoRA LR 0.042431 AMP scale 8192.0
+epoch 27/100 batch 1/297 updates 7723 CE 0.6698 base LR 0.021215 LoRA LR 0.042429 AMP scale 8192.0
+epoch 27/100 batch 25/297 updates 7747 CE 0.4983 base LR 0.021192 LoRA LR 0.042385 AMP scale 8192.0
+epoch 27/100 batch 50/297 updates 7772 CE 0.5465 base LR 0.021169 LoRA LR 0.042338 AMP scale 8192.0
+epoch 27/100 batch 75/297 updates 7797 CE 0.5249 base LR 0.021146 LoRA LR 0.042292 AMP scale 8192.0
+epoch 27/100 batch 100/297 updates 7822 CE 0.6427 base LR 0.021123 LoRA LR 0.042245 AMP scale 8192.0
+epoch 27/100 batch 125/297 updates 7847 CE 0.5480 base LR 0.021099 LoRA LR 0.042198 AMP scale 8192.0
+epoch 27/100 batch 150/297 updates 7872 CE 0.4215 base LR 0.021076 LoRA LR 0.042151 AMP scale 8192.0
+epoch 27/100 batch 175/297 updates 7897 CE 0.5877 base LR 0.021052 LoRA LR 0.042104 AMP scale 8192.0
+epoch 27/100 batch 200/297 updates 7922 CE 0.9939 base LR 0.021029 LoRA LR 0.042057 AMP scale 8192.0
+epoch 27/100 batch 225/297 updates 7947 CE 0.4600 base LR 0.021005 LoRA LR 0.042010 AMP scale 8192.0
+epoch 27/100 batch 250/297 updates 7972 CE 0.8027 base LR 0.020981 LoRA LR 0.041963 AMP scale 8192.0
+epoch 27/100 batch 275/297 updates 7997 CE 0.5572 base LR 0.020958 LoRA LR 0.041915 AMP scale 8192.0
+epoch 27/100 batch 297/297 updates 8019 CE 1.1913 base LR 0.020937 LoRA LR 0.041873 AMP scale 16384.0
+epoch 28/100 batch 1/297 updates 8020 CE 0.4494 base LR 0.020936 LoRA LR 0.041871 AMP scale 16384.0
+epoch 28/100 batch 25/297 updates 8044 CE 0.6562 base LR 0.020913 LoRA LR 0.041826 AMP scale 16384.0
+epoch 28/100 batch 50/297 updates 8069 CE 0.8165 base LR 0.020889 LoRA LR 0.041778 AMP scale 16384.0
+epoch 28/100 batch 75/297 updates 8094 CE 0.2781 base LR 0.020865 LoRA LR 0.041730 AMP scale 16384.0
+epoch 28/100 batch 100/297 updates 8119 CE 0.4017 base LR 0.020841 LoRA LR 0.041682 AMP scale 16384.0
+epoch 28/100 batch 125/297 updates 8144 CE 0.3329 base LR 0.020817 LoRA LR 0.041634 AMP scale 16384.0
+epoch 28/100 batch 150/297 updates 8169 CE 0.5664 base LR 0.020793 LoRA LR 0.041586 AMP scale 16384.0
+epoch 28/100 batch 175/297 updates 8194 CE 0.7307 base LR 0.020769 LoRA LR 0.041537 AMP scale 16384.0
+epoch 28/100 batch 200/297 updates 8219 CE 0.3878 base LR 0.020745 LoRA LR 0.041489 AMP scale 16384.0
+epoch 28/100 batch 225/297 updates 8244 CE 0.5463 base LR 0.020720 LoRA LR 0.041441 AMP scale 16384.0
+epoch 28/100 batch 250/297 updates 8269 CE 0.4399 base LR 0.020696 LoRA LR 0.041392 AMP scale 16384.0
+epoch 28/100 batch 275/297 updates 8294 CE 0.6057 base LR 0.020672 LoRA LR 0.041343 AMP scale 16384.0
+epoch 28/100 batch 297/297 updates 8316 CE 0.8176 base LR 0.020650 LoRA LR 0.041300 AMP scale 16384.0
+epoch 29/100 batch 1/297 updates 8317 CE 0.3706 base LR 0.020649 LoRA LR 0.041298 AMP scale 16384.0
+epoch 29/100 batch 25/297 updates 8341 CE 0.5298 base LR 0.020626 LoRA LR 0.041251 AMP scale 16384.0
+epoch 29/100 batch 50/297 updates 8366 CE 0.5713 base LR 0.020601 LoRA LR 0.041202 AMP scale 16384.0
+epoch 29/100 batch 75/297 updates 8391 CE 0.4013 base LR 0.020576 LoRA LR 0.041153 AMP scale 16384.0
+epoch 29/100 batch 100/297 updates 8416 CE 0.3563 base LR 0.020552 LoRA LR 0.041104 AMP scale 16384.0
+epoch 29/100 batch 125/297 updates 8441 CE 0.5087 base LR 0.020527 LoRA LR 0.041054 AMP scale 16384.0
+epoch 29/100 batch 150/297 updates 8466 CE 0.5441 base LR 0.020502 LoRA LR 0.041005 AMP scale 16384.0
+epoch 29/100 batch 175/297 updates 8491 CE 0.8020 base LR 0.020478 LoRA LR 0.040955 AMP scale 16384.0
+epoch 29/100 batch 200/297 updates 8516 CE 0.5368 base LR 0.020453 LoRA LR 0.040906 AMP scale 16384.0
+epoch 29/100 batch 225/297 updates 8541 CE 0.4934 base LR 0.020428 LoRA LR 0.040856 AMP scale 16384.0
+epoch 29/100 batch 250/297 updates 8566 CE 0.6575 base LR 0.020403 LoRA LR 0.040806 AMP scale 16384.0
+epoch 29/100 batch 275/297 updates 8591 CE 0.4805 base LR 0.020378 LoRA LR 0.040756 AMP scale 16384.0
+epoch 29/100 batch 297/297 updates 8613 CE 0.8073 base LR 0.020356 LoRA LR 0.040712 AMP scale 16384.0
+epoch 30/100 batch 1/297 updates 8614 CE 0.2885 base LR 0.020355 LoRA LR 0.040710 AMP scale 16384.0
+epoch 30/100 batch 25/297 updates 8638 CE 0.4191 base LR 0.020331 LoRA LR 0.040662 AMP scale 16384.0
+epoch 30/100 batch 50/297 updates 8663 CE 0.8523 base LR 0.020306 LoRA LR 0.040611 AMP scale 16384.0
+epoch 30/100 batch 75/297 updates 8688 CE 0.3818 base LR 0.020280 LoRA LR 0.040561 AMP scale 16384.0
+epoch 30/100 batch 100/297 updates 8713 CE 0.3051 base LR 0.020255 LoRA LR 0.040510 AMP scale 16384.0
+epoch 30/100 batch 125/297 updates 8738 CE 0.5200 base LR 0.020230 LoRA LR 0.040460 AMP scale 16384.0
+epoch 30/100 batch 150/297 updates 8763 CE 0.3541 base LR 0.020205 LoRA LR 0.040409 AMP scale 16384.0
+epoch 30/100 batch 175/297 updates 8788 CE 0.5480 base LR 0.020179 LoRA LR 0.040358 AMP scale 16384.0
+epoch 30/100 batch 200/297 updates 8813 CE 0.4873 base LR 0.020154 LoRA LR 0.040307 AMP scale 16384.0
+epoch 30/100 batch 225/297 updates 8838 CE 0.6742 base LR 0.020128 LoRA LR 0.040256 AMP scale 16384.0
+epoch 30/100 batch 250/297 updates 8863 CE 0.5805 base LR 0.020103 LoRA LR 0.040205 AMP scale 16384.0
+epoch 30/100 batch 275/297 updates 8888 CE 0.4383 base LR 0.020077 LoRA LR 0.040154 AMP scale 16384.0
+epoch 30/100 batch 297/297 updates 8910 CE 0.3578 base LR 0.020054 LoRA LR 0.040109 AMP scale 16384.0
+epoch 31/100 batch 1/297 updates 8911 CE 0.6486 base LR 0.020053 LoRA LR 0.040107 AMP scale 16384.0
+epoch 31/100 batch 25/297 updates 8935 CE 0.6588 base LR 0.020029 LoRA LR 0.040058 AMP scale 16384.0
+epoch 31/100 batch 50/297 updates 8960 CE 0.4787 base LR 0.020003 LoRA LR 0.040006 AMP scale 16384.0
+epoch 31/100 batch 75/297 updates 8985 CE 0.3374 base LR 0.019977 LoRA LR 0.039954 AMP scale 16384.0
+epoch 31/100 batch 100/297 updates 9010 CE 0.4928 base LR 0.019951 LoRA LR 0.039903 AMP scale 16384.0
+epoch 31/100 batch 125/297 updates 9035 CE 0.5913 base LR 0.019925 LoRA LR 0.039851 AMP scale 16384.0
+epoch 31/100 batch 150/297 updates 9060 CE 0.7064 base LR 0.019900 LoRA LR 0.039799 AMP scale 16384.0
+epoch 31/100 batch 175/297 updates 9085 CE 0.6294 base LR 0.019874 LoRA LR 0.039747 AMP scale 16384.0
+epoch 31/100 batch 200/297 updates 9110 CE 0.3353 base LR 0.019848 LoRA LR 0.039695 AMP scale 16384.0
+epoch 31/100 batch 225/297 updates 9135 CE 0.4166 base LR 0.019821 LoRA LR 0.039643 AMP scale 16384.0
+epoch 31/100 batch 250/297 updates 9160 CE 0.4528 base LR 0.019795 LoRA LR 0.039591 AMP scale 16384.0
+epoch 31/100 batch 275/297 updates 9185 CE 0.3998 base LR 0.019769 LoRA LR 0.039538 AMP scale 16384.0
+epoch 31/100 batch 297/297 updates 9207 CE 0.6137 base LR 0.019746 LoRA LR 0.039492 AMP scale 16384.0
+epoch 32/100 batch 1/297 updates 9208 CE 0.4010 base LR 0.019745 LoRA LR 0.039490 AMP scale 16384.0
+epoch 32/100 batch 25/297 updates 9232 CE 0.5656 base LR 0.019720 LoRA LR 0.039440 AMP scale 16384.0
+epoch 32/100 batch 50/297 updates 9257 CE 0.5632 base LR 0.019693 LoRA LR 0.039387 AMP scale 16384.0
+epoch 32/100 batch 75/297 updates 9282 CE 0.5276 base LR 0.019667 LoRA LR 0.039334 AMP scale 16384.0
+epoch 32/100 batch 100/297 updates 9307 CE 0.9117 base LR 0.019641 LoRA LR 0.039281 AMP scale 16384.0
+epoch 32/100 batch 125/297 updates 9332 CE 0.7265 base LR 0.019614 LoRA LR 0.039228 AMP scale 16384.0
+epoch 32/100 batch 150/297 updates 9357 CE 0.5078 base LR 0.019588 LoRA LR 0.039175 AMP scale 16384.0
+epoch 32/100 batch 175/297 updates 9382 CE 0.4716 base LR 0.019561 LoRA LR 0.039122 AMP scale 16384.0
+epoch 32/100 batch 200/297 updates 9407 CE 0.3007 base LR 0.019535 LoRA LR 0.039069 AMP scale 16384.0
+epoch 32/100 batch 225/297 updates 9432 CE 0.4938 base LR 0.019508 LoRA LR 0.039016 AMP scale 16384.0
+epoch 32/100 batch 250/297 updates 9457 CE 0.3707 base LR 0.019481 LoRA LR 0.038963 AMP scale 16384.0
+epoch 32/100 batch 275/297 updates 9482 CE 0.4487 base LR 0.019455 LoRA LR 0.038909 AMP scale 16384.0
+epoch 32/100 batch 297/297 updates 9504 CE 0.9316 base LR 0.019431 LoRA LR 0.038862 AMP scale 16384.0
+epoch 33/100 batch 1/297 updates 9505 CE 0.4922 base LR 0.019430 LoRA LR 0.038860 AMP scale 16384.0
+epoch 33/100 batch 25/297 updates 9529 CE 0.3418 base LR 0.019404 LoRA LR 0.038808 AMP scale 16384.0
+epoch 33/100 batch 50/297 updates 9554 CE 0.6094 base LR 0.019377 LoRA LR 0.038755 AMP scale 16384.0
+epoch 33/100 batch 75/297 updates 9579 CE 0.3679 base LR 0.019350 LoRA LR 0.038701 AMP scale 16384.0
+epoch 33/100 batch 100/297 updates 9604 CE 0.5898 base LR 0.019323 LoRA LR 0.038647 AMP scale 16384.0
+epoch 33/100 batch 125/297 updates 9629 CE 0.3621 base LR 0.019296 LoRA LR 0.038593 AMP scale 16384.0
+epoch 33/100 batch 150/297 updates 9654 CE 0.5336 base LR 0.019269 LoRA LR 0.038539 AMP scale 16384.0
+epoch 33/100 batch 175/297 updates 9679 CE 0.3479 base LR 0.019242 LoRA LR 0.038485 AMP scale 16384.0
+epoch 33/100 batch 200/297 updates 9704 CE 0.3522 base LR 0.019215 LoRA LR 0.038430 AMP scale 16384.0
+epoch 33/100 batch 225/297 updates 9729 CE 0.7025 base LR 0.019188 LoRA LR 0.038376 AMP scale 16384.0
+epoch 33/100 batch 250/297 updates 9754 CE 1.1905 base LR 0.019161 LoRA LR 0.038322 AMP scale 16384.0
+epoch 33/100 batch 275/297 updates 9779 CE 0.4793 base LR 0.019134 LoRA LR 0.038267 AMP scale 16384.0
+epoch 33/100 batch 297/297 updates 9801 CE 0.5011 base LR 0.019110 LoRA LR 0.038219 AMP scale 16384.0
+epoch 34/100 batch 1/297 updates 9802 CE 0.6917 base LR 0.019108 LoRA LR 0.038217 AMP scale 16384.0
+epoch 34/100 batch 25/297 updates 9826 CE 0.6666 base LR 0.019082 LoRA LR 0.038165 AMP scale 16384.0
+epoch 34/100 batch 50/297 updates 9851 CE 0.3280 base LR 0.019055 LoRA LR 0.038110 AMP scale 16384.0
+epoch 34/100 batch 75/297 updates 9876 CE 0.3059 base LR 0.019027 LoRA LR 0.038055 AMP scale 16384.0
+epoch 34/100 batch 100/297 updates 9901 CE 0.4986 base LR 0.019000 LoRA LR 0.038000 AMP scale 16384.0
+epoch 34/100 batch 125/297 updates 9926 CE 0.8818 base LR 0.018972 LoRA LR 0.037945 AMP scale 16384.0
+epoch 34/100 batch 150/297 updates 9951 CE 0.3938 base LR 0.018945 LoRA LR 0.037890 AMP scale 16384.0
+epoch 34/100 batch 175/297 updates 9976 CE 0.5347 base LR 0.018917 LoRA LR 0.037835 AMP scale 16384.0
+epoch 34/100 batch 200/297 updates 10001 CE 0.4082 base LR 0.018890 LoRA LR 0.037779 AMP scale 32768.0
+epoch 34/100 batch 225/297 updates 10026 CE 0.4527 base LR 0.018862 LoRA LR 0.037724 AMP scale 32768.0
+epoch 34/100 batch 250/297 updates 10051 CE 0.3064 base LR 0.018834 LoRA LR 0.037669 AMP scale 32768.0
+epoch 34/100 batch 275/297 updates 10076 CE 0.5598 base LR 0.018807 LoRA LR 0.037613 AMP scale 32768.0
+epoch 34/100 batch 297/297 updates 10098 CE 0.3412 base LR 0.018782 LoRA LR 0.037564 AMP scale 32768.0
+epoch 35/100 batch 1/297 updates 10099 CE 0.5225 base LR 0.018781 LoRA LR 0.037562 AMP scale 32768.0
+epoch 35/100 batch 25/297 updates 10123 CE 0.7980 base LR 0.018754 LoRA LR 0.037509 AMP scale 32768.0
+epoch 35/100 batch 50/297 updates 10148 CE 0.7424 base LR 0.018726 LoRA LR 0.037453 AMP scale 32768.0
+epoch 35/100 batch 75/297 updates 10173 CE 0.4656 base LR 0.018699 LoRA LR 0.037397 AMP scale 32768.0
+epoch 35/100 batch 100/297 updates 10198 CE 0.5058 base LR 0.018671 LoRA LR 0.037341 AMP scale 32768.0
+epoch 35/100 batch 125/297 updates 10223 CE 0.4591 base LR 0.018643 LoRA LR 0.037285 AMP scale 32768.0
+epoch 35/100 batch 150/297 updates 10248 CE 0.5915 base LR 0.018615 LoRA LR 0.037229 AMP scale 32768.0
+epoch 35/100 batch 175/297 updates 10273 CE 0.6037 base LR 0.018587 LoRA LR 0.037173 AMP scale 32768.0
+epoch 35/100 batch 200/297 updates 10298 CE 0.3798 base LR 0.018558 LoRA LR 0.037117 AMP scale 32768.0
+epoch 35/100 batch 225/297 updates 10323 CE 0.8609 base LR 0.018530 LoRA LR 0.037061 AMP scale 32768.0
+epoch 35/100 batch 250/297 updates 10348 CE 0.2507 base LR 0.018502 LoRA LR 0.037004 AMP scale 32768.0
+epoch 35/100 batch 275/297 updates 10373 CE 0.2881 base LR 0.018474 LoRA LR 0.036948 AMP scale 32768.0
+epoch 35/100 batch 297/297 updates 10395 CE 0.4856 base LR 0.018449 LoRA LR 0.036898 AMP scale 32768.0
+epoch 36/100 batch 1/297 updates 10396 CE 0.4046 base LR 0.018448 LoRA LR 0.036896 AMP scale 32768.0
+epoch 36/100 batch 25/297 updates 10420 CE 0.5508 base LR 0.018421 LoRA LR 0.036841 AMP scale 32768.0
+epoch 36/100 batch 50/297 updates 10445 CE 0.7017 base LR 0.018392 LoRA LR 0.036785 AMP scale 32768.0
+epoch 36/100 batch 75/297 updates 10470 CE 0.7365 base LR 0.018364 LoRA LR 0.036728 AMP scale 32768.0
+epoch 36/100 batch 100/297 updates 10495 CE 0.6744 base LR 0.018336 LoRA LR 0.036671 AMP scale 32768.0
+epoch 36/100 batch 125/297 updates 10520 CE 0.4081 base LR 0.018307 LoRA LR 0.036614 AMP scale 32768.0
+epoch 36/100 batch 150/297 updates 10545 CE 0.3041 base LR 0.018279 LoRA LR 0.036557 AMP scale 32768.0
+epoch 36/100 batch 175/297 updates 10570 CE 0.4934 base LR 0.018250 LoRA LR 0.036500 AMP scale 32768.0
+epoch 36/100 batch 200/297 updates 10595 CE 0.5448 base LR 0.018222 LoRA LR 0.036443 AMP scale 32768.0
+epoch 36/100 batch 225/297 updates 10620 CE 0.3106 base LR 0.018193 LoRA LR 0.036386 AMP scale 32768.0
+epoch 36/100 batch 250/297 updates 10645 CE 0.4196 base LR 0.018164 LoRA LR 0.036329 AMP scale 32768.0
+epoch 36/100 batch 275/297 updates 10670 CE 0.5518 base LR 0.018136 LoRA LR 0.036272 AMP scale 32768.0
+epoch 36/100 batch 297/297 updates 10692 CE 0.5538 base LR 0.018110 LoRA LR 0.036221 AMP scale 32768.0
+epoch 37/100 batch 1/297 updates 10693 CE 0.5392 base LR 0.018109 LoRA LR 0.036219 AMP scale 32768.0
+epoch 37/100 batch 25/297 updates 10717 CE 0.4532 base LR 0.018082 LoRA LR 0.036164 AMP scale 32768.0
+epoch 37/100 batch 50/297 updates 10742 CE 0.5140 base LR 0.018053 LoRA LR 0.036106 AMP scale 32768.0
+epoch 37/100 batch 75/297 updates 10767 CE 0.6301 base LR 0.018024 LoRA LR 0.036048 AMP scale 32768.0
+epoch 37/100 batch 100/297 updates 10792 CE 0.3326 base LR 0.017995 LoRA LR 0.035991 AMP scale 32768.0
+epoch 37/100 batch 125/297 updates 10817 CE 0.3769 base LR 0.017966 LoRA LR 0.035933 AMP scale 32768.0
+epoch 37/100 batch 150/297 updates 10842 CE 0.3419 base LR 0.017938 LoRA LR 0.035875 AMP scale 32768.0
+epoch 37/100 batch 175/297 updates 10867 CE 1.0170 base LR 0.017909 LoRA LR 0.035817 AMP scale 32768.0
+epoch 37/100 batch 200/297 updates 10892 CE 0.8033 base LR 0.017880 LoRA LR 0.035759 AMP scale 32768.0
+epoch 37/100 batch 225/297 updates 10917 CE 0.5871 base LR 0.017851 LoRA LR 0.035701 AMP scale 32768.0
+epoch 37/100 batch 250/297 updates 10942 CE 0.4091 base LR 0.017822 LoRA LR 0.035643 AMP scale 32768.0
+epoch 37/100 batch 275/297 updates 10967 CE 0.4888 base LR 0.017793 LoRA LR 0.035585 AMP scale 32768.0
+epoch 37/100 batch 297/297 updates 10989 CE 0.4988 base LR 0.017767 LoRA LR 0.035534 AMP scale 32768.0
+epoch 38/100 batch 1/297 updates 10990 CE 0.3267 base LR 0.017766 LoRA LR 0.035532 AMP scale 32768.0
+epoch 38/100 batch 25/297 updates 11014 CE 0.5319 base LR 0.017738 LoRA LR 0.035476 AMP scale 32768.0
+epoch 38/100 batch 50/297 updates 11039 CE 0.6256 base LR 0.017709 LoRA LR 0.035417 AMP scale 32768.0
+epoch 38/100 batch 75/297 updates 11064 CE 0.4707 base LR 0.017679 LoRA LR 0.035359 AMP scale 32768.0
+epoch 38/100 batch 100/297 updates 11089 CE 0.3574 base LR 0.017650 LoRA LR 0.035300 AMP scale 32768.0
+epoch 38/100 batch 125/297 updates 11114 CE 0.4051 base LR 0.017621 LoRA LR 0.035242 AMP scale 32768.0
+epoch 38/100 batch 150/297 updates 11139 CE 0.6862 base LR 0.017592 LoRA LR 0.035183 AMP scale 32768.0
+epoch 38/100 batch 175/297 updates 11164 CE 0.6526 base LR 0.017562 LoRA LR 0.035125 AMP scale 32768.0
+epoch 38/100 batch 200/297 updates 11189 CE 0.4525 base LR 0.017533 LoRA LR 0.035066 AMP scale 32768.0
+epoch 38/100 batch 225/297 updates 11214 CE 0.3492 base LR 0.017504 LoRA LR 0.035007 AMP scale 32768.0
+epoch 38/100 batch 250/297 updates 11239 CE 0.3896 base LR 0.017474 LoRA LR 0.034948 AMP scale 32768.0
+epoch 38/100 batch 275/297 updates 11264 CE 0.3606 base LR 0.017445 LoRA LR 0.034889 AMP scale 32768.0
+epoch 38/100 batch 297/297 updates 11286 CE 0.2742 base LR 0.017419 LoRA LR 0.034837 AMP scale 32768.0
+epoch 39/100 batch 1/297 updates 11287 CE 0.4582 base LR 0.017417 LoRA LR 0.034835 AMP scale 32768.0
+epoch 39/100 batch 25/297 updates 11311 CE 0.3804 base LR 0.017389 LoRA LR 0.034778 AMP scale 32768.0
+epoch 39/100 batch 50/297 updates 11336 CE 0.9117 base LR 0.017360 LoRA LR 0.034719 AMP scale 32768.0
+epoch 39/100 batch 75/297 updates 11361 CE 0.7204 base LR 0.017330 LoRA LR 0.034660 AMP scale 32768.0
+epoch 39/100 batch 100/297 updates 11386 CE 0.5249 base LR 0.017300 LoRA LR 0.034601 AMP scale 32768.0
+epoch 39/100 batch 125/297 updates 11411 CE 0.3343 base LR 0.017271 LoRA LR 0.034542 AMP scale 32768.0
+epoch 39/100 batch 150/297 updates 11436 CE 0.6408 base LR 0.017241 LoRA LR 0.034482 AMP scale 32768.0
+epoch 39/100 batch 175/297 updates 11461 CE 0.4748 base LR 0.017211 LoRA LR 0.034423 AMP scale 32768.0
+epoch 39/100 batch 200/297 updates 11486 CE 0.5315 base LR 0.017182 LoRA LR 0.034363 AMP scale 32768.0
+epoch 39/100 batch 225/297 updates 11511 CE 0.5721 base LR 0.017152 LoRA LR 0.034304 AMP scale 32768.0
+epoch 39/100 batch 250/297 updates 11536 CE 0.4184 base LR 0.017122 LoRA LR 0.034244 AMP scale 32768.0
+epoch 39/100 batch 275/297 updates 11561 CE 0.4327 base LR 0.017092 LoRA LR 0.034185 AMP scale 32768.0
+epoch 39/100 batch 297/297 updates 11583 CE 0.2587 base LR 0.017066 LoRA LR 0.034132 AMP scale 32768.0
+epoch 40/100 batch 1/297 updates 11584 CE 0.3817 base LR 0.017065 LoRA LR 0.034130 AMP scale 32768.0
+epoch 40/100 batch 25/297 updates 11608 CE 0.4161 base LR 0.017036 LoRA LR 0.034072 AMP scale 32768.0
+epoch 40/100 batch 50/297 updates 11633 CE 0.7157 base LR 0.017006 LoRA LR 0.034013 AMP scale 32768.0
+epoch 40/100 batch 75/297 updates 11658 CE 0.3960 base LR 0.016976 LoRA LR 0.033953 AMP scale 32768.0
+epoch 40/100 batch 100/297 updates 11683 CE 0.5033 base LR 0.016946 LoRA LR 0.033893 AMP scale 32768.0
+epoch 40/100 batch 125/297 updates 11708 CE 0.4829 base LR 0.016916 LoRA LR 0.033833 AMP scale 32768.0
+epoch 40/100 batch 150/297 updates 11733 CE 0.6978 base LR 0.016886 LoRA LR 0.033773 AMP scale 32768.0
+epoch 40/100 batch 175/297 updates 11758 CE 0.3770 base LR 0.016856 LoRA LR 0.033713 AMP scale 32768.0
+epoch 40/100 batch 200/297 updates 11783 CE 0.3366 base LR 0.016826 LoRA LR 0.033653 AMP scale 32768.0
+epoch 40/100 batch 225/297 updates 11808 CE 0.5981 base LR 0.016796 LoRA LR 0.033592 AMP scale 32768.0
+epoch 40/100 batch 250/297 updates 11833 CE 0.5971 base LR 0.016766 LoRA LR 0.033532 AMP scale 32768.0
+epoch 40/100 batch 275/297 updates 11858 CE 0.3551 base LR 0.016736 LoRA LR 0.033472 AMP scale 32768.0
+epoch 40/100 batch 297/297 updates 11880 CE 1.0279 base LR 0.016709 LoRA LR 0.033419 AMP scale 32768.0
+epoch 41/100 batch 1/297 updates 11881 CE 0.3550 base LR 0.016708 LoRA LR 0.033416 AMP scale 32768.0
+epoch 41/100 batch 25/297 updates 11905 CE 0.4340 base LR 0.016679 LoRA LR 0.033358 AMP scale 32768.0
+epoch 41/100 batch 50/297 updates 11930 CE 0.4352 base LR 0.016649 LoRA LR 0.033298 AMP scale 32768.0
+epoch 41/100 batch 75/297 updates 11955 CE 0.5170 base LR 0.016619 LoRA LR 0.033238 AMP scale 32768.0
+epoch 41/100 batch 100/297 updates 11980 CE 0.4188 base LR 0.016588 LoRA LR 0.033177 AMP scale 32768.0
+epoch 41/100 batch 125/297 updates 12005 CE 0.4878 base LR 0.016558 LoRA LR 0.033116 AMP scale 65536.0
+epoch 41/100 batch 150/297 updates 12030 CE 0.4509 base LR 0.016528 LoRA LR 0.033056 AMP scale 65536.0
+epoch 41/100 batch 175/297 updates 12055 CE 0.4067 base LR 0.016498 LoRA LR 0.032995 AMP scale 65536.0
+epoch 41/100 batch 200/297 updates 12080 CE 0.5058 base LR 0.016467 LoRA LR 0.032934 AMP scale 65536.0
+epoch 41/100 batch 225/297 updates 12105 CE 0.3531 base LR 0.016437 LoRA LR 0.032874 AMP scale 65536.0
+epoch 41/100 batch 250/297 updates 12130 CE 0.3635 base LR 0.016406 LoRA LR 0.032813 AMP scale 65536.0
+epoch 41/100 batch 275/297 updates 12155 CE 0.3635 base LR 0.016376 LoRA LR 0.032752 AMP scale 65536.0
+epoch 41/100 batch 297/297 updates 12177 CE 0.4349 base LR 0.016349 LoRA LR 0.032698 AMP scale 65536.0
+epoch 42/100 batch 1/297 updates 12178 CE 0.2749 base LR 0.016348 LoRA LR 0.032696 AMP scale 65536.0
+epoch 42/100 batch 25/297 updates 12202 CE 0.5418 base LR 0.016319 LoRA LR 0.032637 AMP scale 65536.0
+epoch 42/100 batch 50/297 updates 12227 CE 0.4781 base LR 0.016288 LoRA LR 0.032576 AMP scale 65536.0
+epoch 42/100 batch 75/297 updates 12252 CE 0.4698 base LR 0.016258 LoRA LR 0.032515 AMP scale 65536.0
+epoch 42/100 batch 100/297 updates 12277 CE 0.6562 base LR 0.016227 LoRA LR 0.032454 AMP scale 65536.0
+epoch 42/100 batch 125/297 updates 12302 CE 0.4158 base LR 0.016196 LoRA LR 0.032393 AMP scale 65536.0
+epoch 42/100 batch 150/297 updates 12327 CE 0.4930 base LR 0.016166 LoRA LR 0.032332 AMP scale 65536.0
+epoch 42/100 batch 175/297 updates 12352 CE 0.5637 base LR 0.016135 LoRA LR 0.032270 AMP scale 65536.0
+epoch 42/100 batch 200/297 updates 12377 CE 0.4396 base LR 0.016105 LoRA LR 0.032209 AMP scale 65536.0
+epoch 42/100 batch 225/297 updates 12402 CE 0.6029 base LR 0.016074 LoRA LR 0.032148 AMP scale 65536.0
+epoch 42/100 batch 250/297 updates 12427 CE 0.7860 base LR 0.016043 LoRA LR 0.032087 AMP scale 65536.0
+epoch 42/100 batch 275/297 updates 12452 CE 0.4301 base LR 0.016013 LoRA LR 0.032025 AMP scale 65536.0
+epoch 42/100 batch 297/297 updates 12474 CE 0.3728 base LR 0.015986 LoRA LR 0.031971 AMP scale 65536.0
+epoch 43/100 batch 1/297 updates 12475 CE 0.3292 base LR 0.015984 LoRA LR 0.031969 AMP scale 65536.0
+epoch 43/100 batch 25/297 updates 12499 CE 0.5068 base LR 0.015955 LoRA LR 0.031910 AMP scale 65536.0
+epoch 43/100 batch 50/297 updates 12524 CE 0.3363 base LR 0.015924 LoRA LR 0.031848 AMP scale 65536.0
+epoch 43/100 batch 75/297 updates 12549 CE 0.6063 base LR 0.015893 LoRA LR 0.031786 AMP scale 65536.0
+epoch 43/100 batch 100/297 updates 12574 CE 0.3171 base LR 0.015862 LoRA LR 0.031725 AMP scale 65536.0
+epoch 43/100 batch 125/297 updates 12599 CE 0.3344 base LR 0.015832 LoRA LR 0.031663 AMP scale 65536.0
+epoch 43/100 batch 150/297 updates 12624 CE 0.3436 base LR 0.015801 LoRA LR 0.031601 AMP scale 65536.0
+epoch 43/100 batch 175/297 updates 12649 CE 0.2422 base LR 0.015770 LoRA LR 0.031540 AMP scale 65536.0
+epoch 43/100 batch 200/297 updates 12674 CE 0.2851 base LR 0.015739 LoRA LR 0.031478 AMP scale 65536.0
+epoch 43/100 batch 225/297 updates 12699 CE 0.4370 base LR 0.015708 LoRA LR 0.031416 AMP scale 65536.0
+epoch 43/100 batch 250/297 updates 12724 CE 0.4022 base LR 0.015677 LoRA LR 0.031354 AMP scale 65536.0
+epoch 43/100 batch 275/297 updates 12749 CE 0.4916 base LR 0.015646 LoRA LR 0.031292 AMP scale 65536.0
+epoch 43/100 batch 297/297 updates 12771 CE 0.3196 base LR 0.015619 LoRA LR 0.031238 AMP scale 65536.0
+epoch 44/100 batch 1/297 updates 12772 CE 0.3969 base LR 0.015618 LoRA LR 0.031235 AMP scale 65536.0
+epoch 44/100 batch 25/297 updates 12796 CE 0.2500 base LR 0.015588 LoRA LR 0.031176 AMP scale 65536.0
+epoch 44/100 batch 50/297 updates 12821 CE 0.3506 base LR 0.015557 LoRA LR 0.031114 AMP scale 65536.0
+epoch 44/100 batch 75/297 updates 12846 CE 0.5253 base LR 0.015526 LoRA LR 0.031052 AMP scale 65536.0
+epoch 44/100 batch 100/297 updates 12871 CE 0.3750 base LR 0.015495 LoRA LR 0.030990 AMP scale 65536.0
+epoch 44/100 batch 125/297 updates 12896 CE 0.3506 base LR 0.015464 LoRA LR 0.030928 AMP scale 65536.0
+epoch 44/100 batch 150/297 updates 12921 CE 0.4077 base LR 0.015433 LoRA LR 0.030866 AMP scale 65536.0
+epoch 44/100 batch 175/297 updates 12946 CE 0.4933 base LR 0.015402 LoRA LR 0.030803 AMP scale 65536.0
+epoch 44/100 batch 200/297 updates 12971 CE 0.3980 base LR 0.015371 LoRA LR 0.030741 AMP scale 65536.0
+epoch 44/100 batch 225/297 updates 12996 CE 0.4194 base LR 0.015340 LoRA LR 0.030679 AMP scale 65536.0
+epoch 44/100 batch 250/297 updates 13021 CE 0.5483 base LR 0.015308 LoRA LR 0.030617 AMP scale 65536.0
+epoch 44/100 batch 275/297 updates 13046 CE 0.6050 base LR 0.015277 LoRA LR 0.030554 AMP scale 65536.0
+epoch 44/100 batch 297/297 updates 13068 CE 0.5114 base LR 0.015250 LoRA LR 0.030500 AMP scale 65536.0
+epoch 45/100 batch 1/297 updates 13069 CE 0.3624 base LR 0.015249 LoRA LR 0.030497 AMP scale 65536.0
+epoch 45/100 batch 25/297 updates 13093 CE 0.4464 base LR 0.015219 LoRA LR 0.030437 AMP scale 65536.0
+epoch 45/100 batch 50/297 updates 13118 CE 0.4157 base LR 0.015187 LoRA LR 0.030375 AMP scale 65536.0
+epoch 45/100 batch 75/297 updates 13143 CE 0.5078 base LR 0.015156 LoRA LR 0.030312 AMP scale 65536.0
+epoch 45/100 batch 100/297 updates 13168 CE 0.6589 base LR 0.015125 LoRA LR 0.030250 AMP scale 65536.0
+epoch 45/100 batch 125/297 updates 13193 CE 0.5155 base LR 0.015094 LoRA LR 0.030188 AMP scale 65536.0
+epoch 45/100 batch 150/297 updates 13218 CE 0.3101 base LR 0.015063 LoRA LR 0.030125 AMP scale 65536.0
+epoch 45/100 batch 175/297 updates 13243 CE 0.6356 base LR 0.015031 LoRA LR 0.030063 AMP scale 65536.0
+epoch 45/100 batch 200/297 updates 13268 CE 0.5718 base LR 0.015000 LoRA LR 0.030000 AMP scale 65536.0
+epoch 45/100 batch 225/297 updates 13293 CE 0.6972 base LR 0.014969 LoRA LR 0.029937 AMP scale 65536.0
+epoch 45/100 batch 250/297 updates 13318 CE 0.2573 base LR 0.014937 LoRA LR 0.029875 AMP scale 65536.0
+epoch 45/100 batch 275/297 updates 13343 CE 1.0298 base LR 0.014906 LoRA LR 0.029812 AMP scale 65536.0
+epoch 45/100 batch 297/297 updates 13365 CE 0.4554 base LR 0.014878 LoRA LR 0.029757 AMP scale 65536.0
+epoch 46/100 batch 1/297 updates 13366 CE 0.3518 base LR 0.014877 LoRA LR 0.029754 AMP scale 65536.0
+epoch 46/100 batch 25/297 updates 13390 CE 0.4741 base LR 0.014847 LoRA LR 0.029694 AMP scale 65536.0
+epoch 46/100 batch 50/297 updates 13415 CE 0.5488 base LR 0.014816 LoRA LR 0.029632 AMP scale 65536.0
+epoch 46/100 batch 75/297 updates 13440 CE 0.3542 base LR 0.014784 LoRA LR 0.029569 AMP scale 65536.0
+epoch 46/100 batch 100/297 updates 13465 CE 0.4880 base LR 0.014753 LoRA LR 0.029506 AMP scale 65536.0
+epoch 46/100 batch 125/297 updates 13490 CE 0.5807 base LR 0.014722 LoRA LR 0.029443 AMP scale 65536.0
+epoch 46/100 batch 150/297 updates 13515 CE 0.5024 base LR 0.014690 LoRA LR 0.029380 AMP scale 65536.0
+epoch 46/100 batch 175/297 updates 13540 CE 0.3441 base LR 0.014659 LoRA LR 0.029318 AMP scale 65536.0
+epoch 46/100 batch 200/297 updates 13565 CE 0.2896 base LR 0.014627 LoRA LR 0.029255 AMP scale 65536.0
+epoch 46/100 batch 225/297 updates 13590 CE 0.4472 base LR 0.014596 LoRA LR 0.029192 AMP scale 65536.0
+epoch 46/100 batch 250/297 updates 13615 CE 0.3110 base LR 0.014564 LoRA LR 0.029129 AMP scale 65536.0
+epoch 46/100 batch 275/297 updates 13640 CE 0.3459 base LR 0.014533 LoRA LR 0.029066 AMP scale 65536.0
+epoch 46/100 batch 297/297 updates 13662 CE 0.3788 base LR 0.014505 LoRA LR 0.029011 AMP scale 65536.0
+epoch 47/100 batch 1/297 updates 13663 CE 0.5116 base LR 0.014504 LoRA LR 0.029008 AMP scale 65536.0
+epoch 47/100 batch 25/297 updates 13687 CE 0.3828 base LR 0.014474 LoRA LR 0.028948 AMP scale 65536.0
+epoch 47/100 batch 50/297 updates 13712 CE 0.2950 base LR 0.014442 LoRA LR 0.028885 AMP scale 65536.0
+epoch 47/100 batch 75/297 updates 13737 CE 0.3920 base LR 0.014411 LoRA LR 0.028822 AMP scale 65536.0
+epoch 47/100 batch 100/297 updates 13762 CE 0.4609 base LR 0.014379 LoRA LR 0.028758 AMP scale 65536.0
+epoch 47/100 batch 125/297 updates 13787 CE 0.3950 base LR 0.014348 LoRA LR 0.028695 AMP scale 65536.0
+epoch 47/100 batch 150/297 updates 13812 CE 0.4718 base LR 0.014316 LoRA LR 0.028632 AMP scale 65536.0
+epoch 47/100 batch 175/297 updates 13837 CE 0.4635 base LR 0.014285 LoRA LR 0.028569 AMP scale 65536.0
+epoch 47/100 batch 200/297 updates 13862 CE 0.4286 base LR 0.014253 LoRA LR 0.028506 AMP scale 65536.0
+epoch 47/100 batch 225/297 updates 13887 CE 0.7102 base LR 0.014222 LoRA LR 0.028443 AMP scale 65536.0
+epoch 47/100 batch 250/297 updates 13912 CE 0.4726 base LR 0.014190 LoRA LR 0.028380 AMP scale 65536.0
+epoch 47/100 batch 275/297 updates 13937 CE 0.5551 base LR 0.014158 LoRA LR 0.028317 AMP scale 65536.0
+epoch 47/100 batch 297/297 updates 13959 CE 0.4336 base LR 0.014131 LoRA LR 0.028261 AMP scale 65536.0
+epoch 48/100 batch 1/297 updates 13960 CE 0.3674 base LR 0.014129 LoRA LR 0.028259 AMP scale 65536.0
+epoch 48/100 batch 25/297 updates 13984 CE 0.3729 base LR 0.014099 LoRA LR 0.028198 AMP scale 65536.0
+epoch 48/100 batch 50/297 updates 14009 CE 0.5750 base LR 0.014067 LoRA LR 0.028135 AMP scale 131072.0
+epoch 48/100 batch 75/297 updates 14034 CE 0.4020 base LR 0.014036 LoRA LR 0.028072 AMP scale 131072.0
+epoch 48/100 batch 100/297 updates 14059 CE 0.3698 base LR 0.014004 LoRA LR 0.028008 AMP scale 131072.0
+epoch 48/100 batch 125/297 updates 14084 CE 0.3405 base LR 0.013973 LoRA LR 0.027945 AMP scale 131072.0
+epoch 48/100 batch 150/297 updates 14109 CE 0.3856 base LR 0.013941 LoRA LR 0.027882 AMP scale 131072.0
+epoch 48/100 batch 175/297 updates 14134 CE 0.3492 base LR 0.013909 LoRA LR 0.027818 AMP scale 131072.0
+epoch 48/100 batch 200/297 updates 14159 CE 0.3205 base LR 0.013878 LoRA LR 0.027755 AMP scale 131072.0
+epoch 48/100 batch 225/297 updates 14184 CE 0.3811 base LR 0.013846 LoRA LR 0.027692 AMP scale 131072.0
+epoch 48/100 batch 250/297 updates 14209 CE 0.4804 base LR 0.013814 LoRA LR 0.027629 AMP scale 131072.0
+epoch 48/100 batch 275/297 updates 14234 CE 0.8193 base LR 0.013783 LoRA LR 0.027565 AMP scale 131072.0
+epoch 48/100 batch 297/297 updates 14256 CE 0.4310 base LR 0.013755 LoRA LR 0.027510 AMP scale 131072.0
+epoch 49/100 batch 1/297 updates 14257 CE 0.4996 base LR 0.013753 LoRA LR 0.027507 AMP scale 131072.0
+epoch 49/100 batch 25/297 updates 14281 CE 0.5258 base LR 0.013723 LoRA LR 0.027446 AMP scale 131072.0
+epoch 49/100 batch 50/297 updates 14306 CE 0.4909 base LR 0.013691 LoRA LR 0.027383 AMP scale 131072.0
+epoch 49/100 batch 75/297 updates 14331 CE 0.4174 base LR 0.013660 LoRA LR 0.027319 AMP scale 131072.0
+epoch 49/100 batch 100/297 updates 14356 CE 0.6609 base LR 0.013628 LoRA LR 0.027256 AMP scale 131072.0
+epoch 49/100 batch 125/297 updates 14381 CE 0.4127 base LR 0.013596 LoRA LR 0.027193 AMP scale 131072.0
+epoch 49/100 batch 150/297 updates 14406 CE 0.3761 base LR 0.013565 LoRA LR 0.027129 AMP scale 131072.0
+epoch 49/100 batch 175/297 updates 14431 CE 0.3548 base LR 0.013533 LoRA LR 0.027066 AMP scale 131072.0
+epoch 49/100 batch 200/297 updates 14456 CE 0.2323 base LR 0.013501 LoRA LR 0.027002 AMP scale 131072.0
+epoch 49/100 batch 225/297 updates 14481 CE 0.2859 base LR 0.013470 LoRA LR 0.026939 AMP scale 131072.0
+epoch 49/100 batch 250/297 updates 14506 CE 0.5039 base LR 0.013438 LoRA LR 0.026876 AMP scale 131072.0
+epoch 49/100 batch 275/297 updates 14531 CE 0.3174 base LR 0.013406 LoRA LR 0.026812 AMP scale 131072.0
+epoch 49/100 batch 297/297 updates 14553 CE 0.7145 base LR 0.013378 LoRA LR 0.026756 AMP scale 131072.0
+epoch 50/100 batch 1/297 updates 14554 CE 0.3783 base LR 0.013377 LoRA LR 0.026754 AMP scale 131072.0
+epoch 50/100 batch 25/297 updates 14578 CE 0.4761 base LR 0.013346 LoRA LR 0.026693 AMP scale 131072.0
+epoch 50/100 batch 50/297 updates 14603 CE 0.5499 base LR 0.013315 LoRA LR 0.026630 AMP scale 131072.0
+epoch 50/100 batch 75/297 updates 14628 CE 0.6034 base LR 0.013283 LoRA LR 0.026566 AMP scale 131072.0
+epoch 50/100 batch 100/297 updates 14653 CE 0.3244 base LR 0.013251 LoRA LR 0.026503 AMP scale 131072.0
+epoch 50/100 batch 125/297 updates 14678 CE 0.6112 base LR 0.013220 LoRA LR 0.026439 AMP scale 131072.0
+epoch 50/100 batch 150/297 updates 14703 CE 0.3505 base LR 0.013188 LoRA LR 0.026376 AMP scale 131072.0
+epoch 50/100 batch 175/297 updates 14728 CE 0.2881 base LR 0.013156 LoRA LR 0.026312 AMP scale 131072.0
+epoch 50/100 batch 200/297 updates 14753 CE 0.3568 base LR 0.013124 LoRA LR 0.026249 AMP scale 131072.0
+epoch 50/100 batch 225/297 updates 14778 CE 0.3566 base LR 0.013093 LoRA LR 0.026185 AMP scale 131072.0
+epoch 50/100 batch 250/297 updates 14803 CE 0.3245 base LR 0.013061 LoRA LR 0.026122 AMP scale 131072.0
+epoch 50/100 batch 275/297 updates 14828 CE 0.7347 base LR 0.013029 LoRA LR 0.026058 AMP scale 131072.0
+epoch 50/100 batch 297/297 updates 14850 CE 0.3979 base LR 0.013001 LoRA LR 0.026003 AMP scale 131072.0
+epoch 51/100 batch 1/297 updates 14851 CE 0.2955 base LR 0.013000 LoRA LR 0.026000 AMP scale 131072.0
+epoch 51/100 batch 25/297 updates 14875 CE 0.3192 base LR 0.012970 LoRA LR 0.025939 AMP scale 131072.0
+epoch 51/100 batch 50/297 updates 14900 CE 0.3827 base LR 0.012938 LoRA LR 0.025876 AMP scale 131072.0
+epoch 51/100 batch 75/297 updates 14925 CE 0.4057 base LR 0.012906 LoRA LR 0.025812 AMP scale 131072.0
+epoch 51/100 batch 100/297 updates 14950 CE 0.2607 base LR 0.012874 LoRA LR 0.025749 AMP scale 131072.0
+AMP overflow: retry 1/16; scale 131072.0 -> 65536.0
+epoch 51/100 batch 125/297 updates 14975 CE 0.5259 base LR 0.012843 LoRA LR 0.025685 AMP scale 65536.0
+epoch 51/100 batch 150/297 updates 15000 CE 0.3715 base LR 0.012811 LoRA LR 0.025622 AMP scale 65536.0
+epoch 51/100 batch 175/297 updates 15025 CE 0.3534 base LR 0.012779 LoRA LR 0.025558 AMP scale 65536.0
+epoch 51/100 batch 200/297 updates 15050 CE 0.6500 base LR 0.012747 LoRA LR 0.025495 AMP scale 65536.0
+epoch 51/100 batch 225/297 updates 15075 CE 0.6038 base LR 0.012716 LoRA LR 0.025431 AMP scale 65536.0
+epoch 51/100 batch 250/297 updates 15100 CE 0.6874 base LR 0.012684 LoRA LR 0.025368 AMP scale 65536.0
+epoch 51/100 batch 275/297 updates 15125 CE 0.6252 base LR 0.012652 LoRA LR 0.025305 AMP scale 65536.0
+epoch 51/100 batch 297/297 updates 15147 CE 0.4843 base LR 0.012624 LoRA LR 0.025249 AMP scale 65536.0
+Controller epoch 51 candidate 1/16 mean 35.433% tail 24.925%
+Controller epoch 51 candidate 2/16 mean 32.468% tail 23.941%
+Controller epoch 51 candidate 3/16 mean 36.797% tail 25.957%
+Controller epoch 51 candidate 4/16 mean 34.657% tail 26.033%
+Controller epoch 51 candidate 5/16 mean 36.759% tail 25.696%
+Controller epoch 51 candidate 6/16 mean 36.470% tail 25.390%
+Controller epoch 51 candidate 7/16 mean 34.102% tail 25.643%
+Controller epoch 51 candidate 8/16 mean 33.241% tail 25.083%
+Controller epoch 51 candidate 9/16 mean 36.905% tail 25.283%
+Controller epoch 51 candidate 10/16 mean 36.759% tail 25.696%
+Controller epoch 51 candidate 11/16 mean 33.852% tail 23.705%
+Controller epoch 51 candidate 12/16 mean 30.919% tail 23.022%
+Controller epoch 51 candidate 13/16 mean 29.123% tail 20.653%
+Controller epoch 51 candidate 14/16 mean 36.967% tail 25.380%
+Controller epoch 51 candidate 15/16 mean 34.731% tail 24.689%
+Controller epoch 51 candidate 16/16 mean 34.731% tail 24.689%
+PPO updates completed: 1
+epoch 52/100 batch 1/297 updates 15148 CE 0.2198 base LR 0.012623 LoRA LR 0.025246 AMP scale 65536.0
+epoch 52/100 batch 25/297 updates 15172 CE 0.3504 base LR 0.012593 LoRA LR 0.025185 AMP scale 65536.0
+epoch 52/100 batch 50/297 updates 15197 CE 0.2866 base LR 0.012561 LoRA LR 0.025122 AMP scale 65536.0
+epoch 52/100 batch 75/297 updates 15222 CE 0.3246 base LR 0.012529 LoRA LR 0.025058 AMP scale 65536.0
+epoch 52/100 batch 100/297 updates 15247 CE 0.3134 base LR 0.012497 LoRA LR 0.024995 AMP scale 65536.0
+epoch 52/100 batch 125/297 updates 15272 CE 0.3171 base LR 0.012466 LoRA LR 0.024932 AMP scale 65536.0
+epoch 52/100 batch 150/297 updates 15297 CE 0.6623 base LR 0.012434 LoRA LR 0.024868 AMP scale 65536.0
+epoch 52/100 batch 175/297 updates 15322 CE 0.3703 base LR 0.012402 LoRA LR 0.024805 AMP scale 65536.0
+epoch 52/100 batch 200/297 updates 15347 CE 0.4409 base LR 0.012371 LoRA LR 0.024741 AMP scale 65536.0
+epoch 52/100 batch 225/297 updates 15372 CE 0.3863 base LR 0.012339 LoRA LR 0.024678 AMP scale 65536.0
+epoch 52/100 batch 250/297 updates 15397 CE 0.5595 base LR 0.012307 LoRA LR 0.024615 AMP scale 65536.0
+epoch 52/100 batch 275/297 updates 15422 CE 0.5295 base LR 0.012276 LoRA LR 0.024551 AMP scale 65536.0
+epoch 52/100 batch 297/297 updates 15444 CE 0.4043 base LR 0.012248 LoRA LR 0.024496 AMP scale 65536.0
+Controller epoch 52 candidate 1/16 mean 31.821% tail 27.551%
+Controller epoch 52 candidate 2/16 mean 31.506% tail 27.260%
+Controller epoch 52 candidate 3/16 mean 31.257% tail 27.892%
+Controller epoch 52 candidate 4/16 mean 31.758% tail 27.907%
+Controller epoch 52 candidate 5/16 mean 28.161% tail 24.348%
+Controller epoch 52 candidate 6/16 mean 30.834% tail 26.472%
+Controller epoch 52 candidate 7/16 mean 32.570% tail 28.850%
+Controller epoch 52 candidate 8/16 mean 31.802% tail 27.794%
+Controller epoch 52 candidate 9/16 mean 32.006% tail 28.004%
+Controller epoch 52 candidate 10/16 mean 32.110% tail 28.064%
+Controller epoch 52 candidate 11/16 mean 32.165% tail 27.385%
+Controller epoch 52 candidate 12/16 mean 31.879% tail 27.873%
+Controller epoch 52 candidate 13/16 mean 31.530% tail 27.355%
+Controller epoch 52 candidate 14/16 mean 30.845% tail 26.980%
+Controller epoch 52 candidate 15/16 mean 31.638% tail 27.923%
+Controller epoch 52 candidate 16/16 mean 32.384% tail 28.924%
+PPO updates completed: 2
+epoch 53/100 batch 1/297 updates 15445 CE 0.4186 base LR 0.012247 LoRA LR 0.024493 AMP scale 65536.0
+epoch 53/100 batch 25/297 updates 15469 CE 0.3246 base LR 0.012216 LoRA LR 0.024432 AMP scale 65536.0
+epoch 53/100 batch 50/297 updates 15494 CE 0.5944 base LR 0.012184 LoRA LR 0.024369 AMP scale 65536.0
+epoch 53/100 batch 75/297 updates 15519 CE 0.3804 base LR 0.012153 LoRA LR 0.024306 AMP scale 65536.0
+epoch 53/100 batch 100/297 updates 15544 CE 0.7910 base LR 0.012121 LoRA LR 0.024242 AMP scale 65536.0
+epoch 53/100 batch 125/297 updates 15569 CE 0.7499 base LR 0.012089 LoRA LR 0.024179 AMP scale 65536.0
+epoch 53/100 batch 150/297 updates 15594 CE 0.5108 base LR 0.012058 LoRA LR 0.024116 AMP scale 65536.0
+epoch 53/100 batch 175/297 updates 15619 CE 0.4451 base LR 0.012026 LoRA LR 0.024052 AMP scale 65536.0
+epoch 53/100 batch 200/297 updates 15644 CE 0.3145 base LR 0.011995 LoRA LR 0.023989 AMP scale 65536.0
+epoch 53/100 batch 225/297 updates 15669 CE 0.3201 base LR 0.011963 LoRA LR 0.023926 AMP scale 65536.0
+epoch 53/100 batch 250/297 updates 15694 CE 0.3760 base LR 0.011931 LoRA LR 0.023863 AMP scale 65536.0
+epoch 53/100 batch 275/297 updates 15719 CE 0.4386 base LR 0.011900 LoRA LR 0.023800 AMP scale 65536.0
+epoch 53/100 batch 297/297 updates 15741 CE 0.4086 base LR 0.011872 LoRA LR 0.023744 AMP scale 65536.0
+Controller epoch 53 candidate 1/16 mean 35.763% tail 31.499%
+Controller epoch 53 candidate 2/16 mean 31.628% tail 27.068%
+Controller epoch 53 candidate 3/16 mean 36.717% tail 31.824%
+Controller epoch 53 candidate 4/16 mean 34.543% tail 29.519%
+Controller epoch 53 candidate 5/16 mean 34.333% tail 30.937%
+Controller epoch 53 candidate 6/16 mean 33.857% tail 30.179%
+Controller epoch 53 candidate 7/16 mean 34.826% tail 30.943%
+Controller epoch 53 candidate 8/16 mean 36.194% tail 31.546%
+Controller epoch 53 candidate 9/16 mean 36.329% tail 31.296%
+Controller epoch 53 candidate 10/16 mean 34.489% tail 30.316%
+Controller epoch 53 candidate 11/16 mean 36.596% tail 31.306%
+Controller epoch 53 candidate 12/16 mean 36.268% tail 31.775%
+Controller epoch 53 candidate 13/16 mean 34.842% tail 30.172%
+Controller epoch 53 candidate 14/16 mean 34.826% tail 30.943%
+Controller epoch 53 candidate 15/16 mean 34.649% tail 30.314%
+Controller epoch 53 candidate 16/16 mean 36.185% tail 31.705%
+PPO updates completed: 3
+epoch 54/100 batch 1/297 updates 15742 CE 0.4458 base LR 0.011871 LoRA LR 0.023741 AMP scale 65536.0
+epoch 54/100 batch 25/297 updates 15766 CE 0.3548 base LR 0.011840 LoRA LR 0.023681 AMP scale 65536.0
+epoch 54/100 batch 50/297 updates 15791 CE 0.2509 base LR 0.011809 LoRA LR 0.023618 AMP scale 65536.0
+epoch 54/100 batch 75/297 updates 15816 CE 0.4209 base LR 0.011777 LoRA LR 0.023554 AMP scale 65536.0
+epoch 54/100 batch 100/297 updates 15841 CE 0.4911 base LR 0.011746 LoRA LR 0.023491 AMP scale 65536.0
+epoch 54/100 batch 125/297 updates 15866 CE 0.3802 base LR 0.011714 LoRA LR 0.023428 AMP scale 65536.0
+epoch 54/100 batch 150/297 updates 15891 CE 0.2811 base LR 0.011683 LoRA LR 0.023365 AMP scale 65536.0
+epoch 54/100 batch 175/297 updates 15916 CE 0.4082 base LR 0.011651 LoRA LR 0.023302 AMP scale 65536.0
+epoch 54/100 batch 200/297 updates 15941 CE 0.3890 base LR 0.011619 LoRA LR 0.023239 AMP scale 65536.0
+epoch 54/100 batch 225/297 updates 15966 CE 0.3255 base LR 0.011588 LoRA LR 0.023176 AMP scale 65536.0
+epoch 54/100 batch 250/297 updates 15991 CE 0.3575 base LR 0.011556 LoRA LR 0.023113 AMP scale 65536.0
+epoch 54/100 batch 275/297 updates 16016 CE 0.2701 base LR 0.011525 LoRA LR 0.023050 AMP scale 65536.0
+epoch 54/100 batch 297/297 updates 16038 CE 0.3880 base LR 0.011497 LoRA LR 0.022995 AMP scale 65536.0
+Controller epoch 54 candidate 1/16 mean 34.912% tail 32.261%
+Controller epoch 54 candidate 2/16 mean 35.071% tail 31.786%
+Controller epoch 54 candidate 3/16 mean 32.569% tail 29.021%
+Controller epoch 54 candidate 4/16 mean 34.716% tail 31.458%
+Controller epoch 54 candidate 5/16 mean 32.607% tail 30.684%
+Controller epoch 54 candidate 6/16 mean 32.607% tail 30.684%
+Controller epoch 54 candidate 7/16 mean 35.009% tail 32.318%
+Controller epoch 54 candidate 8/16 mean 34.974% tail 32.092%
+Controller epoch 54 candidate 9/16 mean 33.938% tail 31.212%
+Controller epoch 54 candidate 10/16 mean 35.121% tail 31.922%
+Controller epoch 54 candidate 11/16 mean 33.736% tail 30.993%
+Controller epoch 54 candidate 12/16 mean 34.974% tail 32.092%
+Controller epoch 54 candidate 13/16 mean 34.696% tail 31.645%
+Controller epoch 54 candidate 14/16 mean 35.018% tail 32.037%
+Controller epoch 54 candidate 15/16 mean 35.009% tail 32.318%
+Controller epoch 54 candidate 16/16 mean 31.421% tail 28.303%
+PPO updates completed: 4
+epoch 55/100 batch 1/297 updates 16039 CE 0.4341 base LR 0.011496 LoRA LR 0.022992 AMP scale 65536.0
+epoch 55/100 batch 25/297 updates 16063 CE 0.5189 base LR 0.011466 LoRA LR 0.022932 AMP scale 65536.0
+epoch 55/100 batch 50/297 updates 16088 CE 0.4004 base LR 0.011434 LoRA LR 0.022869 AMP scale 65536.0
+epoch 55/100 batch 75/297 updates 16113 CE 0.4632 base LR 0.011403 LoRA LR 0.022806 AMP scale 65536.0
+epoch 55/100 batch 100/297 updates 16138 CE 0.4992 base LR 0.011371 LoRA LR 0.022743 AMP scale 65536.0
+epoch 55/100 batch 125/297 updates 16163 CE 0.5317 base LR 0.011340 LoRA LR 0.022680 AMP scale 65536.0
+epoch 55/100 batch 150/297 updates 16188 CE 0.5382 base LR 0.011309 LoRA LR 0.022617 AMP scale 65536.0
+epoch 55/100 batch 175/297 updates 16213 CE 0.3170 base LR 0.011277 LoRA LR 0.022554 AMP scale 65536.0
+epoch 55/100 batch 200/297 updates 16238 CE 0.6212 base LR 0.011246 LoRA LR 0.022491 AMP scale 65536.0
+epoch 55/100 batch 225/297 updates 16263 CE 0.5139 base LR 0.011214 LoRA LR 0.022429 AMP scale 65536.0
+epoch 55/100 batch 250/297 updates 16288 CE 0.3275 base LR 0.011183 LoRA LR 0.022366 AMP scale 65536.0
+epoch 55/100 batch 275/297 updates 16313 CE 0.4438 base LR 0.011152 LoRA LR 0.022303 AMP scale 65536.0
+epoch 55/100 batch 297/297 updates 16335 CE 0.3666 base LR 0.011124 LoRA LR 0.022248 AMP scale 65536.0
+Controller epoch 55 candidate 1/16 mean 32.848% tail 30.340%
+Controller epoch 55 candidate 2/16 mean 32.573% tail 30.327%
+Controller epoch 55 candidate 3/16 mean 31.421% tail 28.638%
+Controller epoch 55 candidate 4/16 mean 32.435% tail 29.781%
+Controller epoch 55 candidate 5/16 mean 30.827% tail 28.145%
+Controller epoch 55 candidate 6/16 mean 32.203% tail 29.132%
+Controller epoch 55 candidate 7/16 mean 32.887% tail 30.524%
+Controller epoch 55 candidate 8/16 mean 32.713% tail 29.783%
+Controller epoch 55 candidate 9/16 mean 33.088% tail 30.262%
+Controller epoch 55 candidate 10/16 mean 32.869% tail 29.973%
+Controller epoch 55 candidate 11/16 mean 32.647% tail 29.945%
+Controller epoch 55 candidate 12/16 mean 32.435% tail 29.781%
+Controller epoch 55 candidate 13/16 mean 32.404% tail 29.429%
+Controller epoch 55 candidate 14/16 mean 32.721% tail 30.033%
+Controller epoch 55 candidate 15/16 mean 33.123% tail 30.435%
+Controller epoch 55 candidate 16/16 mean 31.924% tail 29.619%
+PPO updates completed: 5
+epoch 56/100 batch 1/297 updates 16336 CE 0.6653 base LR 0.011123 LoRA LR 0.022246 AMP scale 65536.0
+epoch 56/100 batch 25/297 updates 16360 CE 0.3145 base LR 0.011093 LoRA LR 0.022185 AMP scale 65536.0
+epoch 56/100 batch 50/297 updates 16385 CE 0.4581 base LR 0.011061 LoRA LR 0.022123 AMP scale 65536.0
+epoch 56/100 batch 75/297 updates 16410 CE 0.3948 base LR 0.011030 LoRA LR 0.022060 AMP scale 65536.0
+epoch 56/100 batch 100/297 updates 16435 CE 0.4479 base LR 0.010999 LoRA LR 0.021998 AMP scale 65536.0
+epoch 56/100 batch 125/297 updates 16460 CE 0.2021 base LR 0.010967 LoRA LR 0.021935 AMP scale 65536.0
+epoch 56/100 batch 150/297 updates 16485 CE 0.4411 base LR 0.010936 LoRA LR 0.021872 AMP scale 65536.0
+epoch 56/100 batch 175/297 updates 16510 CE 0.3078 base LR 0.010905 LoRA LR 0.021810 AMP scale 65536.0
+epoch 56/100 batch 200/297 updates 16535 CE 0.4386 base LR 0.010874 LoRA LR 0.021747 AMP scale 65536.0
+epoch 56/100 batch 225/297 updates 16560 CE 0.7035 base LR 0.010843 LoRA LR 0.021685 AMP scale 65536.0
+epoch 56/100 batch 250/297 updates 16585 CE 0.5590 base LR 0.010811 LoRA LR 0.021623 AMP scale 65536.0
+epoch 56/100 batch 275/297 updates 16610 CE 0.4862 base LR 0.010780 LoRA LR 0.021560 AMP scale 65536.0
+epoch 56/100 batch 297/297 updates 16632 CE 0.3414 base LR 0.010753 LoRA LR 0.021505 AMP scale 65536.0
+Controller epoch 56 candidate 1/16 mean 35.427% tail 29.260%
+Controller epoch 56 candidate 2/16 mean 34.038% tail 27.270%
+Controller epoch 56 candidate 3/16 mean 35.166% tail 29.390%
+Controller epoch 56 candidate 4/16 mean 35.520% tail 29.519%
+Controller epoch 56 candidate 5/16 mean 35.507% tail 28.840%
+Controller epoch 56 candidate 6/16 mean 35.427% tail 29.260%
+Controller epoch 56 candidate 7/16 mean 34.980% tail 29.082%
+Controller epoch 56 candidate 8/16 mean 35.198% tail 28.918%
+Controller epoch 56 candidate 9/16 mean 34.168% tail 28.827%
+Controller epoch 56 candidate 10/16 mean 31.415% tail 25.712%
+Controller epoch 56 candidate 11/16 mean 33.565% tail 27.336%
+Controller epoch 56 candidate 12/16 mean 35.483% tail 29.668%
+Controller epoch 56 candidate 13/16 mean 35.168% tail 28.806%
+Controller epoch 56 candidate 14/16 mean 35.495% tail 29.465%
+Controller epoch 56 candidate 15/16 mean 35.250% tail 28.782%
+Controller epoch 56 candidate 16/16 mean 33.484% tail 27.629%
+PPO updates completed: 6
+epoch 57/100 batch 1/297 updates 16633 CE 0.4193 base LR 0.010751 LoRA LR 0.021503 AMP scale 65536.0
+epoch 57/100 batch 25/297 updates 16657 CE 0.6069 base LR 0.010722 LoRA LR 0.021443 AMP scale 65536.0
+epoch 57/100 batch 50/297 updates 16682 CE 0.5279 base LR 0.010690 LoRA LR 0.021381 AMP scale 65536.0
+epoch 57/100 batch 75/297 updates 16707 CE 0.3013 base LR 0.010659 LoRA LR 0.021318 AMP scale 65536.0
+epoch 57/100 batch 100/297 updates 16732 CE 0.3577 base LR 0.010628 LoRA LR 0.021256 AMP scale 65536.0
+epoch 57/100 batch 125/297 updates 16757 CE 0.4981 base LR 0.010597 LoRA LR 0.021194 AMP scale 65536.0
+epoch 57/100 batch 150/297 updates 16782 CE 0.3403 base LR 0.010566 LoRA LR 0.021132 AMP scale 65536.0
+epoch 57/100 batch 175/297 updates 16807 CE 0.3880 base LR 0.010535 LoRA LR 0.021070 AMP scale 65536.0
+epoch 57/100 batch 200/297 updates 16832 CE 0.5096 base LR 0.010504 LoRA LR 0.021008 AMP scale 65536.0
+epoch 57/100 batch 225/297 updates 16857 CE 0.3655 base LR 0.010473 LoRA LR 0.020946 AMP scale 65536.0
+epoch 57/100 batch 250/297 updates 16882 CE 0.5249 base LR 0.010442 LoRA LR 0.020884 AMP scale 65536.0
+epoch 57/100 batch 275/297 updates 16907 CE 0.3404 base LR 0.010411 LoRA LR 0.020822 AMP scale 65536.0
+epoch 57/100 batch 297/297 updates 16929 CE 0.4326 base LR 0.010384 LoRA LR 0.020767 AMP scale 65536.0
+Controller epoch 57 candidate 1/16 mean 31.950% tail 26.175%
+Controller epoch 57 candidate 2/16 mean 33.486% tail 25.768%
+Controller epoch 57 candidate 3/16 mean 33.612% tail 25.763%
+Controller epoch 57 candidate 4/16 mean 36.748% tail 28.144%
+Controller epoch 57 candidate 5/16 mean 36.956% tail 28.339%
+Controller epoch 57 candidate 6/16 mean 36.585% tail 28.108%
+Controller epoch 57 candidate 7/16 mean 36.444% tail 28.558%
+Controller epoch 57 candidate 8/16 mean 36.748% tail 28.144%
+Controller epoch 57 candidate 9/16 mean 32.217% tail 24.908%
+Controller epoch 57 candidate 10/16 mean 31.266% tail 25.997%
+Controller epoch 57 candidate 11/16 mean 33.139% tail 26.366%
+Controller epoch 57 candidate 12/16 mean 37.556% tail 29.188%
+Controller epoch 57 candidate 13/16 mean 30.399% tail 23.784%
+Controller epoch 57 candidate 14/16 mean 33.104% tail 27.350%
+Controller epoch 57 candidate 15/16 mean 33.656% tail 26.410%
+Controller epoch 57 candidate 16/16 mean 33.254% tail 27.583%
+PPO updates completed: 7
+epoch 58/100 batch 1/297 updates 16930 CE 0.2986 base LR 0.010382 LoRA LR 0.020765 AMP scale 65536.0
+epoch 58/100 batch 25/297 updates 16954 CE 0.2951 base LR 0.010353 LoRA LR 0.020705 AMP scale 65536.0
+epoch 58/100 batch 50/297 updates 16979 CE 0.3558 base LR 0.010322 LoRA LR 0.020643 AMP scale 131072.0
+epoch 58/100 batch 75/297 updates 17004 CE 0.2298 base LR 0.010291 LoRA LR 0.020581 AMP scale 131072.0
+epoch 58/100 batch 100/297 updates 17029 CE 0.2982 base LR 0.010260 LoRA LR 0.020520 AMP scale 131072.0
+epoch 58/100 batch 125/297 updates 17054 CE 0.3756 base LR 0.010229 LoRA LR 0.020458 AMP scale 131072.0
+epoch 58/100 batch 150/297 updates 17079 CE 0.3481 base LR 0.010198 LoRA LR 0.020396 AMP scale 131072.0
+epoch 58/100 batch 175/297 updates 17104 CE 0.7222 base LR 0.010167 LoRA LR 0.020334 AMP scale 131072.0
+epoch 58/100 batch 200/297 updates 17129 CE 0.4462 base LR 0.010136 LoRA LR 0.020273 AMP scale 131072.0
+epoch 58/100 batch 225/297 updates 17154 CE 0.2787 base LR 0.010106 LoRA LR 0.020211 AMP scale 131072.0
+epoch 58/100 batch 250/297 updates 17179 CE 0.5491 base LR 0.010075 LoRA LR 0.020150 AMP scale 131072.0
+epoch 58/100 batch 275/297 updates 17204 CE 0.3443 base LR 0.010044 LoRA LR 0.020088 AMP scale 131072.0
+epoch 58/100 batch 297/297 updates 17226 CE 0.3555 base LR 0.010017 LoRA LR 0.020034 AMP scale 131072.0
+Controller epoch 58 candidate 1/16 mean 37.408% tail 30.888%
+Controller epoch 58 candidate 2/16 mean 37.019% tail 32.172%
+Controller epoch 58 candidate 3/16 mean 31.816% tail 26.744%
+Controller epoch 58 candidate 4/16 mean 37.321% tail 30.979%
+Controller epoch 58 candidate 5/16 mean 36.101% tail 30.570%
+Controller epoch 58 candidate 6/16 mean 37.327% tail 31.008%
+Controller epoch 58 candidate 7/16 mean 37.321% tail 31.227%
+Controller epoch 58 candidate 8/16 mean 36.437% tail 31.781%
+Controller epoch 58 candidate 9/16 mean 37.475% tail 30.980%
+Controller epoch 58 candidate 10/16 mean 36.921% tail 30.705%
+Controller epoch 58 candidate 11/16 mean 34.902% tail 27.016%
+Controller epoch 58 candidate 12/16 mean 37.367% tail 31.259%
+Controller epoch 58 candidate 13/16 mean 35.013% tail 28.616%
+Controller epoch 58 candidate 14/16 mean 36.740% tail 30.839%
+Controller epoch 58 candidate 15/16 mean 37.024% tail 31.010%
+Controller epoch 58 candidate 16/16 mean 37.321% tail 31.227%
+PPO updates completed: 8
+epoch 59/100 batch 1/297 updates 17227 CE 0.4600 base LR 0.010016 LoRA LR 0.020031 AMP scale 131072.0
+epoch 59/100 batch 25/297 updates 17251 CE 0.4115 base LR 0.009986 LoRA LR 0.019972 AMP scale 131072.0
+epoch 59/100 batch 50/297 updates 17276 CE 0.6444 base LR 0.009956 LoRA LR 0.019911 AMP scale 131072.0
+epoch 59/100 batch 75/297 updates 17301 CE 0.3287 base LR 0.009925 LoRA LR 0.019850 AMP scale 131072.0
+epoch 59/100 batch 100/297 updates 17326 CE 0.4685 base LR 0.009894 LoRA LR 0.019788 AMP scale 131072.0
+AMP overflow: retry 1/16; scale 131072.0 -> 65536.0
+epoch 59/100 batch 125/297 updates 17351 CE 0.3951 base LR 0.009864 LoRA LR 0.019727 AMP scale 65536.0
+epoch 59/100 batch 150/297 updates 17376 CE 0.4629 base LR 0.009833 LoRA LR 0.019666 AMP scale 65536.0
+epoch 59/100 batch 175/297 updates 17401 CE 0.5461 base LR 0.009802 LoRA LR 0.019605 AMP scale 65536.0
+epoch 59/100 batch 200/297 updates 17426 CE 0.2451 base LR 0.009772 LoRA LR 0.019543 AMP scale 65536.0
+epoch 59/100 batch 225/297 updates 17451 CE 0.4194 base LR 0.009741 LoRA LR 0.019482 AMP scale 65536.0
+epoch 59/100 batch 250/297 updates 17476 CE 0.3318 base LR 0.009711 LoRA LR 0.019421 AMP scale 65536.0
+epoch 59/100 batch 275/297 updates 17501 CE 0.2903 base LR 0.009680 LoRA LR 0.019360 AMP scale 65536.0
+epoch 59/100 batch 297/297 updates 17523 CE 0.2428 base LR 0.009653 LoRA LR 0.019307 AMP scale 65536.0
+Controller epoch 59 candidate 1/16 mean 34.711% tail 30.280%
+Controller epoch 59 candidate 2/16 mean 33.711% tail 30.422%
+Controller epoch 59 candidate 3/16 mean 34.491% tail 30.013%
+Controller epoch 59 candidate 4/16 mean 35.873% tail 30.976%
+Controller epoch 59 candidate 5/16 mean 34.531% tail 29.153%
+Controller epoch 59 candidate 6/16 mean 31.819% tail 26.080%
+Controller epoch 59 candidate 7/16 mean 35.767% tail 30.182%
+Controller epoch 59 candidate 8/16 mean 35.008% tail 29.136%
+Controller epoch 59 candidate 9/16 mean 36.111% tail 31.086%
+Controller epoch 59 candidate 10/16 mean 36.047% tail 31.315%
+Controller epoch 59 candidate 11/16 mean 33.960% tail 28.862%
+Controller epoch 59 candidate 12/16 mean 33.711% tail 30.422%
+Controller epoch 59 candidate 13/16 mean 33.768% tail 29.447%
+Controller epoch 59 candidate 14/16 mean 33.711% tail 30.422%
+Controller epoch 59 candidate 15/16 mean 34.831% tail 31.278%
+Controller epoch 59 candidate 16/16 mean 32.650% tail 28.754%
+PPO updates completed: 9
+epoch 60/100 batch 1/297 updates 17524 CE 0.4639 base LR 0.009652 LoRA LR 0.019304 AMP scale 65536.0
+epoch 60/100 batch 25/297 updates 17548 CE 0.5978 base LR 0.009623 LoRA LR 0.019246 AMP scale 65536.0
+epoch 60/100 batch 50/297 updates 17573 CE 0.3223 base LR 0.009592 LoRA LR 0.019185 AMP scale 65536.0
+epoch 60/100 batch 75/297 updates 17598 CE 0.3170 base LR 0.009562 LoRA LR 0.019124 AMP scale 65536.0
+epoch 60/100 batch 100/297 updates 17623 CE 0.3250 base LR 0.009532 LoRA LR 0.019063 AMP scale 65536.0
+epoch 60/100 batch 125/297 updates 17648 CE 0.4425 base LR 0.009501 LoRA LR 0.019003 AMP scale 65536.0
+epoch 60/100 batch 150/297 updates 17673 CE 0.2628 base LR 0.009471 LoRA LR 0.018942 AMP scale 65536.0
+epoch 60/100 batch 175/297 updates 17698 CE 0.4843 base LR 0.009441 LoRA LR 0.018881 AMP scale 65536.0
+epoch 60/100 batch 200/297 updates 17723 CE 0.3019 base LR 0.009410 LoRA LR 0.018821 AMP scale 65536.0
+epoch 60/100 batch 225/297 updates 17748 CE 0.3072 base LR 0.009380 LoRA LR 0.018760 AMP scale 65536.0
+epoch 60/100 batch 250/297 updates 17773 CE 0.6994 base LR 0.009350 LoRA LR 0.018700 AMP scale 65536.0
+epoch 60/100 batch 275/297 updates 17798 CE 0.2649 base LR 0.009320 LoRA LR 0.018639 AMP scale 65536.0
+epoch 60/100 batch 297/297 updates 17820 CE 0.2868 base LR 0.009293 LoRA LR 0.018586 AMP scale 65536.0
+Controller epoch 60 candidate 1/16 mean 33.296% tail 29.024%
+Controller epoch 60 candidate 2/16 mean 32.874% tail 29.043%
+Controller epoch 60 candidate 3/16 mean 32.938% tail 29.084%
+Controller epoch 60 candidate 4/16 mean 33.240% tail 28.985%
+Controller epoch 60 candidate 5/16 mean 34.769% tail 29.031%
+Controller epoch 60 candidate 6/16 mean 31.414% tail 27.969%
+Controller epoch 60 candidate 7/16 mean 32.976% tail 29.514%
+Controller epoch 60 candidate 8/16 mean 32.463% tail 28.417%
+Controller epoch 60 candidate 9/16 mean 32.208% tail 27.397%
+Controller epoch 60 candidate 10/16 mean 33.105% tail 29.333%
+Controller epoch 60 candidate 11/16 mean 32.852% tail 29.935%
+Controller epoch 60 candidate 12/16 mean 33.210% tail 29.544%
+Controller epoch 60 candidate 13/16 mean 32.874% tail 29.043%
+Controller epoch 60 candidate 14/16 mean 33.418% tail 29.312%
+Controller epoch 60 candidate 15/16 mean 32.905% tail 29.040%
+Controller epoch 60 candidate 16/16 mean 33.286% tail 29.304%
+PPO updates completed: 10
+epoch 61/100 batch 1/297 updates 17821 CE 0.4477 base LR 0.009292 LoRA LR 0.018584 AMP scale 65536.0
+epoch 61/100 batch 25/297 updates 17845 CE 0.4185 base LR 0.009263 LoRA LR 0.018526 AMP scale 65536.0
+epoch 61/100 batch 50/297 updates 17870 CE 0.3025 base LR 0.009233 LoRA LR 0.018465 AMP scale 65536.0
+epoch 61/100 batch 75/297 updates 17895 CE 0.5270 base LR 0.009203 LoRA LR 0.018405 AMP scale 65536.0
+epoch 61/100 batch 100/297 updates 17920 CE 0.3333 base LR 0.009172 LoRA LR 0.018345 AMP scale 65536.0
+epoch 61/100 batch 125/297 updates 17945 CE 0.2802 base LR 0.009142 LoRA LR 0.018285 AMP scale 65536.0
+epoch 61/100 batch 150/297 updates 17970 CE 0.3575 base LR 0.009112 LoRA LR 0.018225 AMP scale 65536.0
+epoch 61/100 batch 175/297 updates 17995 CE 0.3305 base LR 0.009082 LoRA LR 0.018165 AMP scale 65536.0
+epoch 61/100 batch 200/297 updates 18020 CE 0.4575 base LR 0.009052 LoRA LR 0.018105 AMP scale 65536.0
+epoch 61/100 batch 225/297 updates 18045 CE 0.5038 base LR 0.009022 LoRA LR 0.018045 AMP scale 65536.0
+epoch 61/100 batch 250/297 updates 18070 CE 0.3814 base LR 0.008993 LoRA LR 0.017985 AMP scale 65536.0
+epoch 61/100 batch 275/297 updates 18095 CE 0.3366 base LR 0.008963 LoRA LR 0.017925 AMP scale 65536.0
+epoch 61/100 batch 297/297 updates 18117 CE 0.2989 base LR 0.008936 LoRA LR 0.017873 AMP scale 65536.0
+Controller epoch 61 candidate 1/16 mean 34.945% tail 28.943%
+Controller epoch 61 candidate 2/16 mean 34.165% tail 29.298%
+Controller epoch 61 candidate 3/16 mean 36.332% tail 31.210%
+Controller epoch 61 candidate 4/16 mean 35.985% tail 30.694%
+Controller epoch 61 candidate 5/16 mean 36.485% tail 31.147%
+Controller epoch 61 candidate 6/16 mean 35.715% tail 30.754%
+Controller epoch 61 candidate 7/16 mean 35.496% tail 30.929%
+Controller epoch 61 candidate 8/16 mean 35.957% tail 30.808%
+Controller epoch 61 candidate 9/16 mean 34.478% tail 29.165%
+Controller epoch 61 candidate 10/16 mean 35.909% tail 31.456%
+Controller epoch 61 candidate 11/16 mean 36.483% tail 31.167%
+Controller epoch 61 candidate 12/16 mean 35.474% tail 30.043%
+Controller epoch 61 candidate 13/16 mean 35.474% tail 30.043%
+Controller epoch 61 candidate 14/16 mean 35.843% tail 31.332%
+Controller epoch 61 candidate 15/16 mean 35.945% tail 31.140%
+Controller epoch 61 candidate 16/16 mean 35.077% tail 30.470%
+PPO updates completed: 11
+epoch 62/100 batch 1/297 updates 18118 CE 0.3833 base LR 0.008935 LoRA LR 0.017870 AMP scale 65536.0
+epoch 62/100 batch 25/297 updates 18142 CE 0.5011 base LR 0.008906 LoRA LR 0.017813 AMP scale 65536.0
+epoch 62/100 batch 50/297 updates 18167 CE 0.1989 base LR 0.008877 LoRA LR 0.017753 AMP scale 65536.0
+epoch 62/100 batch 75/297 updates 18192 CE 0.6270 base LR 0.008847 LoRA LR 0.017694 AMP scale 65536.0
+epoch 62/100 batch 100/297 updates 18217 CE 0.4870 base LR 0.008817 LoRA LR 0.017634 AMP scale 65536.0
+epoch 62/100 batch 125/297 updates 18242 CE 0.3220 base LR 0.008787 LoRA LR 0.017575 AMP scale 65536.0
+epoch 62/100 batch 150/297 updates 18267 CE 0.5579 base LR 0.008758 LoRA LR 0.017515 AMP scale 65536.0
+epoch 62/100 batch 175/297 updates 18292 CE 0.5008 base LR 0.008728 LoRA LR 0.017456 AMP scale 65536.0
+epoch 62/100 batch 200/297 updates 18317 CE 0.4548 base LR 0.008698 LoRA LR 0.017397 AMP scale 65536.0
+epoch 62/100 batch 225/297 updates 18342 CE 0.2340 base LR 0.008669 LoRA LR 0.017338 AMP scale 65536.0
+epoch 62/100 batch 250/297 updates 18367 CE 0.3728 base LR 0.008639 LoRA LR 0.017278 AMP scale 65536.0
+epoch 62/100 batch 275/297 updates 18392 CE 0.2607 base LR 0.008610 LoRA LR 0.017219 AMP scale 65536.0
+epoch 62/100 batch 297/297 updates 18414 CE 0.2287 base LR 0.008584 LoRA LR 0.017167 AMP scale 65536.0
+Controller epoch 62 candidate 1/16 mean 37.479% tail 28.132%
+Controller epoch 62 candidate 2/16 mean 37.912% tail 27.868%
+Controller epoch 62 candidate 3/16 mean 35.098% tail 27.240%
+Controller epoch 62 candidate 4/16 mean 34.223% tail 26.222%
+Controller epoch 62 candidate 5/16 mean 36.490% tail 27.476%
+Controller epoch 62 candidate 6/16 mean 37.651% tail 27.933%
+Controller epoch 62 candidate 7/16 mean 33.035% tail 26.407%
+Controller epoch 62 candidate 8/16 mean 35.768% tail 27.303%
+Controller epoch 62 candidate 9/16 mean 36.611% tail 27.864%
+Controller epoch 62 candidate 10/16 mean 35.652% tail 27.874%
+Controller epoch 62 candidate 11/16 mean 37.781% tail 28.838%
+Controller epoch 62 candidate 12/16 mean 36.943% tail 27.060%
+Controller epoch 62 candidate 13/16 mean 37.845% tail 28.418%
+Controller epoch 62 candidate 14/16 mean 37.237% tail 27.780%
+Controller epoch 62 candidate 15/16 mean 36.943% tail 27.060%
+Controller epoch 62 candidate 16/16 mean 37.581% tail 28.182%
+PPO updates completed: 12
+epoch 63/100 batch 1/297 updates 18415 CE 0.4671 base LR 0.008583 LoRA LR 0.017165 AMP scale 65536.0
+epoch 63/100 batch 25/297 updates 18439 CE 0.4048 base LR 0.008554 LoRA LR 0.017108 AMP scale 65536.0
+epoch 63/100 batch 50/297 updates 18464 CE 0.7435 base LR 0.008525 LoRA LR 0.017049 AMP scale 65536.0
+epoch 63/100 batch 75/297 updates 18489 CE 0.3744 base LR 0.008495 LoRA LR 0.016991 AMP scale 65536.0
+epoch 63/100 batch 100/297 updates 18514 CE 0.2389 base LR 0.008466 LoRA LR 0.016932 AMP scale 65536.0
+epoch 63/100 batch 125/297 updates 18539 CE 0.3930 base LR 0.008437 LoRA LR 0.016873 AMP scale 65536.0
+epoch 63/100 batch 150/297 updates 18564 CE 0.2798 base LR 0.008407 LoRA LR 0.016814 AMP scale 65536.0
+epoch 63/100 batch 175/297 updates 18589 CE 0.5330 base LR 0.008378 LoRA LR 0.016756 AMP scale 65536.0
+epoch 63/100 batch 200/297 updates 18614 CE 0.3337 base LR 0.008349 LoRA LR 0.016697 AMP scale 65536.0
+epoch 63/100 batch 225/297 updates 18639 CE 0.3607 base LR 0.008319 LoRA LR 0.016639 AMP scale 65536.0
+epoch 63/100 batch 250/297 updates 18664 CE 0.4523 base LR 0.008290 LoRA LR 0.016580 AMP scale 65536.0
+epoch 63/100 batch 275/297 updates 18689 CE 0.3458 base LR 0.008261 LoRA LR 0.016522 AMP scale 65536.0
+epoch 63/100 batch 297/297 updates 18711 CE 0.2641 base LR 0.008235 LoRA LR 0.016471 AMP scale 65536.0
+Controller epoch 63 candidate 1/16 mean 38.468% tail 31.669%
+Controller epoch 63 candidate 2/16 mean 38.860% tail 32.256%
+Controller epoch 63 candidate 3/16 mean 38.406% tail 32.061%
+Controller epoch 63 candidate 4/16 mean 37.160% tail 29.662%
+Controller epoch 63 candidate 5/16 mean 39.628% tail 33.666%
+Controller epoch 63 candidate 6/16 mean 35.420% tail 28.414%
+Controller epoch 63 candidate 7/16 mean 38.590% tail 31.816%
+Controller epoch 63 candidate 8/16 mean 38.166% tail 32.007%
+Controller epoch 63 candidate 9/16 mean 38.507% tail 31.509%
+Controller epoch 63 candidate 10/16 mean 39.490% tail 33.149%
+Controller epoch 63 candidate 11/16 mean 38.070% tail 31.676%
+Controller epoch 63 candidate 12/16 mean 38.148% tail 32.529%
+Controller epoch 63 candidate 13/16 mean 37.495% tail 30.975%
+Controller epoch 63 candidate 14/16 mean 35.671% tail 30.221%
+Controller epoch 63 candidate 15/16 mean 38.716% tail 32.892%
+Controller epoch 63 candidate 16/16 mean 37.839% tail 30.209%
+PPO updates completed: 13
+epoch 64/100 batch 1/297 updates 18712 CE 0.4330 base LR 0.008234 LoRA LR 0.016468 AMP scale 65536.0
+epoch 64/100 batch 25/297 updates 18736 CE 0.3443 base LR 0.008206 LoRA LR 0.016413 AMP scale 65536.0
+epoch 64/100 batch 50/297 updates 18761 CE 0.2949 base LR 0.008177 LoRA LR 0.016354 AMP scale 65536.0
+epoch 64/100 batch 75/297 updates 18786 CE 0.2349 base LR 0.008148 LoRA LR 0.016296 AMP scale 65536.0
+epoch 64/100 batch 100/297 updates 18811 CE 0.3401 base LR 0.008119 LoRA LR 0.016238 AMP scale 65536.0
+epoch 64/100 batch 125/297 updates 18836 CE 0.3083 base LR 0.008090 LoRA LR 0.016180 AMP scale 65536.0
+epoch 64/100 batch 150/297 updates 18861 CE 0.3501 base LR 0.008061 LoRA LR 0.016122 AMP scale 65536.0
+epoch 64/100 batch 175/297 updates 18886 CE 0.3478 base LR 0.008032 LoRA LR 0.016065 AMP scale 65536.0
+epoch 64/100 batch 200/297 updates 18911 CE 0.3851 base LR 0.008003 LoRA LR 0.016007 AMP scale 65536.0
+epoch 64/100 batch 225/297 updates 18936 CE 0.2881 base LR 0.007975 LoRA LR 0.015949 AMP scale 65536.0
+epoch 64/100 batch 250/297 updates 18961 CE 0.2984 base LR 0.007946 LoRA LR 0.015892 AMP scale 65536.0
+epoch 64/100 batch 275/297 updates 18986 CE 0.2744 base LR 0.007917 LoRA LR 0.015834 AMP scale 65536.0
+epoch 64/100 batch 297/297 updates 19008 CE 0.2697 base LR 0.007892 LoRA LR 0.015784 AMP scale 65536.0
+Controller epoch 64 candidate 1/16 mean 38.078% tail 30.459%
+Controller epoch 64 candidate 2/16 mean 38.499% tail 31.172%
+Controller epoch 64 candidate 3/16 mean 35.404% tail 28.130%
+Controller epoch 64 candidate 4/16 mean 37.875% tail 30.700%
+Controller epoch 64 candidate 5/16 mean 38.088% tail 30.417%
+Controller epoch 64 candidate 6/16 mean 37.190% tail 29.425%
+Controller epoch 64 candidate 7/16 mean 38.503% tail 31.449%
+Controller epoch 64 candidate 8/16 mean 35.581% tail 28.108%
+Controller epoch 64 candidate 9/16 mean 38.255% tail 30.824%
+Controller epoch 64 candidate 10/16 mean 38.169% tail 30.791%
+Controller epoch 64 candidate 11/16 mean 33.602% tail 26.104%
+Controller epoch 64 candidate 12/16 mean 37.366% tail 29.476%
+Controller epoch 64 candidate 13/16 mean 35.581% tail 28.108%
+Controller epoch 64 candidate 14/16 mean 37.162% tail 29.889%
+Controller epoch 64 candidate 15/16 mean 37.964% tail 31.009%
+Controller epoch 64 candidate 16/16 mean 37.940% tail 30.581%
+PPO updates completed: 14
+epoch 65/100 batch 1/297 updates 19009 CE 0.9102 base LR 0.007891 LoRA LR 0.015781 AMP scale 65536.0
+epoch 65/100 batch 25/297 updates 19033 CE 0.2279 base LR 0.007863 LoRA LR 0.015726 AMP scale 65536.0
+epoch 65/100 batch 50/297 updates 19058 CE 0.3852 base LR 0.007834 LoRA LR 0.015669 AMP scale 65536.0
+epoch 65/100 batch 75/297 updates 19083 CE 0.4172 base LR 0.007806 LoRA LR 0.015612 AMP scale 65536.0
+epoch 65/100 batch 100/297 updates 19108 CE 0.3470 base LR 0.007777 LoRA LR 0.015554 AMP scale 65536.0
+epoch 65/100 batch 125/297 updates 19133 CE 0.2259 base LR 0.007749 LoRA LR 0.015497 AMP scale 65536.0
+epoch 65/100 batch 150/297 updates 19158 CE 0.3139 base LR 0.007720 LoRA LR 0.015440 AMP scale 65536.0
+epoch 65/100 batch 175/297 updates 19183 CE 0.3468 base LR 0.007692 LoRA LR 0.015383 AMP scale 65536.0
+epoch 65/100 batch 200/297 updates 19208 CE 0.3509 base LR 0.007663 LoRA LR 0.015326 AMP scale 65536.0
+epoch 65/100 batch 225/297 updates 19233 CE 0.2197 base LR 0.007635 LoRA LR 0.015270 AMP scale 65536.0
+epoch 65/100 batch 250/297 updates 19258 CE 0.4136 base LR 0.007606 LoRA LR 0.015213 AMP scale 65536.0
+epoch 65/100 batch 275/297 updates 19283 CE 0.6679 base LR 0.007578 LoRA LR 0.015156 AMP scale 65536.0
+epoch 65/100 batch 297/297 updates 19305 CE 0.3778 base LR 0.007553 LoRA LR 0.015106 AMP scale 65536.0
+Controller epoch 65 candidate 1/16 mean 33.950% tail 30.958%
+Controller epoch 65 candidate 2/16 mean 31.388% tail 27.813%
+Controller epoch 65 candidate 3/16 mean 33.507% tail 30.740%
+Controller epoch 65 candidate 4/16 mean 31.782% tail 29.831%
+Controller epoch 65 candidate 5/16 mean 33.235% tail 29.647%
+Controller epoch 65 candidate 6/16 mean 33.105% tail 31.978%
+Controller epoch 65 candidate 7/16 mean 33.693% tail 31.240%
+Controller epoch 65 candidate 8/16 mean 33.616% tail 30.969%
+Controller epoch 65 candidate 9/16 mean 34.229% tail 30.760%
+Controller epoch 65 candidate 10/16 mean 33.019% tail 30.111%
+Controller epoch 65 candidate 11/16 mean 33.418% tail 30.364%
+Controller epoch 65 candidate 12/16 mean 33.020% tail 29.109%
+Controller epoch 65 candidate 13/16 mean 33.658% tail 31.000%
+Controller epoch 65 candidate 14/16 mean 33.744% tail 31.436%
+Controller epoch 65 candidate 15/16 mean 33.292% tail 30.792%
+Controller epoch 65 candidate 16/16 mean 34.005% tail 30.918%
+PPO updates completed: 15
+epoch 66/100 batch 1/297 updates 19306 CE 0.3556 base LR 0.007552 LoRA LR 0.015104 AMP scale 65536.0
+epoch 66/100 batch 25/297 updates 19330 CE 0.4942 base LR 0.007525 LoRA LR 0.015050 AMP scale 65536.0
+epoch 66/100 batch 50/297 updates 19355 CE 0.3077 base LR 0.007497 LoRA LR 0.014994 AMP scale 131072.0
+epoch 66/100 batch 75/297 updates 19380 CE 0.2851 base LR 0.007469 LoRA LR 0.014937 AMP scale 131072.0
+epoch 66/100 batch 100/297 updates 19405 CE 0.4022 base LR 0.007440 LoRA LR 0.014881 AMP scale 131072.0
+epoch 66/100 batch 125/297 updates 19430 CE 0.3147 base LR 0.007412 LoRA LR 0.014825 AMP scale 131072.0
+epoch 66/100 batch 150/297 updates 19455 CE 0.2842 base LR 0.007384 LoRA LR 0.014769 AMP scale 131072.0
+epoch 66/100 batch 175/297 updates 19480 CE 0.4618 base LR 0.007356 LoRA LR 0.014713 AMP scale 131072.0
+epoch 66/100 batch 200/297 updates 19505 CE 0.4785 base LR 0.007328 LoRA LR 0.014657 AMP scale 131072.0
+epoch 66/100 batch 225/297 updates 19530 CE 0.3570 base LR 0.007300 LoRA LR 0.014601 AMP scale 131072.0
+epoch 66/100 batch 250/297 updates 19555 CE 0.5816 base LR 0.007272 LoRA LR 0.014545 AMP scale 131072.0
+epoch 66/100 batch 275/297 updates 19580 CE 0.2944 base LR 0.007245 LoRA LR 0.014489 AMP scale 131072.0
+epoch 66/100 batch 297/297 updates 19602 CE 0.2761 base LR 0.007220 LoRA LR 0.014440 AMP scale 131072.0
+Controller epoch 66 candidate 1/16 mean 38.487% tail 31.621%
+Controller epoch 66 candidate 2/16 mean 37.127% tail 29.744%
+Controller epoch 66 candidate 3/16 mean 36.269% tail 29.104%
+Controller epoch 66 candidate 4/16 mean 38.747% tail 31.569%
+Controller epoch 66 candidate 5/16 mean 36.287% tail 29.412%
+Controller epoch 66 candidate 6/16 mean 37.808% tail 31.691%
+Controller epoch 66 candidate 7/16 mean 37.651% tail 31.949%
+Controller epoch 66 candidate 8/16 mean 38.040% tail 31.696%
+Controller epoch 66 candidate 9/16 mean 38.717% tail 31.544%
+Controller epoch 66 candidate 10/16 mean 38.933% tail 32.009%
+Controller epoch 66 candidate 11/16 mean 38.592% tail 32.390%
+Controller epoch 66 candidate 12/16 mean 37.748% tail 31.809%
+Controller epoch 66 candidate 13/16 mean 38.487% tail 31.621%
+Controller epoch 66 candidate 14/16 mean 37.623% tail 31.346%
+Controller epoch 66 candidate 15/16 mean 36.239% tail 29.608%
+Controller epoch 66 candidate 16/16 mean 36.634% tail 29.714%
+PPO updates completed: 16
+epoch 67/100 batch 1/297 updates 19603 CE 0.8813 base LR 0.007219 LoRA LR 0.014438 AMP scale 131072.0
+epoch 67/100 batch 25/297 updates 19627 CE 0.5189 base LR 0.007192 LoRA LR 0.014385 AMP scale 131072.0
+epoch 67/100 batch 50/297 updates 19652 CE 0.3918 base LR 0.007165 LoRA LR 0.014329 AMP scale 131072.0
+epoch 67/100 batch 75/297 updates 19677 CE 0.3390 base LR 0.007137 LoRA LR 0.014274 AMP scale 131072.0
+epoch 67/100 batch 100/297 updates 19702 CE 0.4680 base LR 0.007109 LoRA LR 0.014218 AMP scale 131072.0
+epoch 67/100 batch 125/297 updates 19727 CE 0.3293 base LR 0.007082 LoRA LR 0.014163 AMP scale 131072.0
+epoch 67/100 batch 150/297 updates 19752 CE 0.2750 base LR 0.007054 LoRA LR 0.014108 AMP scale 131072.0
+epoch 67/100 batch 175/297 updates 19777 CE 0.3482 base LR 0.007026 LoRA LR 0.014053 AMP scale 131072.0
+epoch 67/100 batch 200/297 updates 19802 CE 0.6337 base LR 0.006999 LoRA LR 0.013998 AMP scale 131072.0
+epoch 67/100 batch 225/297 updates 19827 CE 0.3339 base LR 0.006971 LoRA LR 0.013943 AMP scale 131072.0
+epoch 67/100 batch 250/297 updates 19852 CE 0.3450 base LR 0.006944 LoRA LR 0.013888 AMP scale 131072.0
+epoch 67/100 batch 275/297 updates 19877 CE 0.3883 base LR 0.006917 LoRA LR 0.013833 AMP scale 131072.0
+epoch 67/100 batch 297/297 updates 19899 CE 0.3573 base LR 0.006893 LoRA LR 0.013785 AMP scale 131072.0
+Controller epoch 67 candidate 1/16 mean 37.190% tail 33.675%
+Controller epoch 67 candidate 2/16 mean 36.910% tail 33.668%
+Controller epoch 67 candidate 3/16 mean 34.343% tail 30.689%
+Controller epoch 67 candidate 4/16 mean 37.207% tail 33.512%
+Controller epoch 67 candidate 5/16 mean 37.151% tail 33.274%
+Controller epoch 67 candidate 6/16 mean 35.837% tail 32.911%
+Controller epoch 67 candidate 7/16 mean 36.457% tail 32.913%
+Controller epoch 67 candidate 8/16 mean 35.766% tail 32.204%
+Controller epoch 67 candidate 9/16 mean 36.604% tail 32.724%
+Controller epoch 67 candidate 10/16 mean 37.113% tail 33.720%
+Controller epoch 67 candidate 11/16 mean 36.199% tail 33.353%
+Controller epoch 67 candidate 12/16 mean 37.251% tail 33.349%
+Controller epoch 67 candidate 13/16 mean 36.983% tail 33.515%
+Controller epoch 67 candidate 14/16 mean 36.487% tail 32.706%
+Controller epoch 67 candidate 15/16 mean 34.766% tail 32.483%
+Controller epoch 67 candidate 16/16 mean 37.397% tail 33.680%
+PPO updates completed: 17
+epoch 68/100 batch 1/297 updates 19900 CE 0.2337 base LR 0.006892 LoRA LR 0.013783 AMP scale 131072.0
+epoch 68/100 batch 25/297 updates 19924 CE 0.4394 base LR 0.006865 LoRA LR 0.013731 AMP scale 131072.0
+epoch 68/100 batch 50/297 updates 19949 CE 0.4118 base LR 0.006838 LoRA LR 0.013676 AMP scale 131072.0
+epoch 68/100 batch 75/297 updates 19974 CE 0.3015 base LR 0.006811 LoRA LR 0.013622 AMP scale 131072.0
+epoch 68/100 batch 100/297 updates 19999 CE 0.2881 base LR 0.006784 LoRA LR 0.013567 AMP scale 131072.0
+epoch 68/100 batch 125/297 updates 20024 CE 0.2282 base LR 0.006757 LoRA LR 0.013513 AMP scale 131072.0
+epoch 68/100 batch 150/297 updates 20049 CE 0.3537 base LR 0.006729 LoRA LR 0.013459 AMP scale 131072.0
+epoch 68/100 batch 175/297 updates 20074 CE 0.2138 base LR 0.006702 LoRA LR 0.013405 AMP scale 131072.0
+epoch 68/100 batch 200/297 updates 20099 CE 0.3504 base LR 0.006675 LoRA LR 0.013351 AMP scale 131072.0
+epoch 68/100 batch 225/297 updates 20124 CE 0.3200 base LR 0.006649 LoRA LR 0.013297 AMP scale 131072.0
+epoch 68/100 batch 250/297 updates 20149 CE 0.3301 base LR 0.006622 LoRA LR 0.013243 AMP scale 131072.0
+epoch 68/100 batch 275/297 updates 20174 CE 0.3636 base LR 0.006595 LoRA LR 0.013189 AMP scale 131072.0
+epoch 68/100 batch 297/297 updates 20196 CE 0.3693 base LR 0.006571 LoRA LR 0.013142 AMP scale 131072.0
+Controller epoch 68 candidate 1/16 mean 40.041% tail 30.785%
+Controller epoch 68 candidate 2/16 mean 39.520% tail 30.875%
+Controller epoch 68 candidate 3/16 mean 39.750% tail 30.230%
+Controller epoch 68 candidate 4/16 mean 40.378% tail 30.609%
+Controller epoch 68 candidate 5/16 mean 37.882% tail 29.251%
+Controller epoch 68 candidate 6/16 mean 39.459% tail 29.675%
+Controller epoch 68 candidate 7/16 mean 38.803% tail 29.700%
+Controller epoch 68 candidate 8/16 mean 38.854% tail 29.057%
+Controller epoch 68 candidate 9/16 mean 36.991% tail 27.043%
+Controller epoch 68 candidate 10/16 mean 39.167% tail 30.074%
+Controller epoch 68 candidate 11/16 mean 37.888% tail 29.971%
+Controller epoch 68 candidate 12/16 mean 40.567% tail 30.989%
+Controller epoch 68 candidate 13/16 mean 38.695% tail 30.111%
+Controller epoch 68 candidate 14/16 mean 40.550% tail 30.889%
+Controller epoch 68 candidate 15/16 mean 40.213% tail 30.558%
+Controller epoch 68 candidate 16/16 mean 38.203% tail 28.346%
+PPO updates completed: 18
+epoch 69/100 batch 1/297 updates 20197 CE 0.2178 base LR 0.006570 LoRA LR 0.013140 AMP scale 131072.0
+epoch 69/100 batch 25/297 updates 20221 CE 0.2374 base LR 0.006544 LoRA LR 0.013089 AMP scale 131072.0
+epoch 69/100 batch 50/297 updates 20246 CE 0.2328 base LR 0.006518 LoRA LR 0.013035 AMP scale 131072.0
+epoch 69/100 batch 75/297 updates 20271 CE 0.4056 base LR 0.006491 LoRA LR 0.012982 AMP scale 131072.0
+epoch 69/100 batch 100/297 updates 20296 CE 0.2694 base LR 0.006464 LoRA LR 0.012929 AMP scale 131072.0
+epoch 69/100 batch 125/297 updates 20321 CE 0.2885 base LR 0.006438 LoRA LR 0.012875 AMP scale 131072.0
+epoch 69/100 batch 150/297 updates 20346 CE 0.4617 base LR 0.006411 LoRA LR 0.012822 AMP scale 131072.0
+epoch 69/100 batch 175/297 updates 20371 CE 0.2968 base LR 0.006385 LoRA LR 0.012769 AMP scale 131072.0
+epoch 69/100 batch 200/297 updates 20396 CE 0.3664 base LR 0.006358 LoRA LR 0.012716 AMP scale 131072.0
+epoch 69/100 batch 225/297 updates 20421 CE 0.2770 base LR 0.006332 LoRA LR 0.012664 AMP scale 131072.0
+epoch 69/100 batch 250/297 updates 20446 CE 0.3288 base LR 0.006305 LoRA LR 0.012611 AMP scale 131072.0
+epoch 69/100 batch 275/297 updates 20471 CE 0.3394 base LR 0.006279 LoRA LR 0.012558 AMP scale 131072.0
+epoch 69/100 batch 297/297 updates 20493 CE 0.3024 base LR 0.006256 LoRA LR 0.012512 AMP scale 131072.0
+Controller epoch 69 candidate 1/16 mean 40.996% tail 32.686%
+Controller epoch 69 candidate 2/16 mean 41.541% tail 32.774%
+Controller epoch 69 candidate 3/16 mean 41.063% tail 32.670%
+Controller epoch 69 candidate 4/16 mean 40.882% tail 31.902%
+Controller epoch 69 candidate 5/16 mean 40.068% tail 31.790%
+Controller epoch 69 candidate 6/16 mean 41.199% tail 32.549%
+Controller epoch 69 candidate 7/16 mean 41.021% tail 32.635%
+Controller epoch 69 candidate 8/16 mean 40.669% tail 32.121%
+Controller epoch 69 candidate 9/16 mean 39.833% tail 31.039%
+Controller epoch 69 candidate 10/16 mean 40.840% tail 32.141%
+Controller epoch 69 candidate 11/16 mean 40.172% tail 31.501%
+Controller epoch 69 candidate 12/16 mean 41.008% tail 32.642%
+Controller epoch 69 candidate 13/16 mean 41.078% tail 32.444%
+Controller epoch 69 candidate 14/16 mean 39.307% tail 30.726%
+Controller epoch 69 candidate 15/16 mean 38.935% tail 30.936%
+Controller epoch 69 candidate 16/16 mean 41.205% tail 32.554%
+PPO updates completed: 19
+epoch 70/100 batch 1/297 updates 20494 CE 0.2561 base LR 0.006255 LoRA LR 0.012510 AMP scale 131072.0
+epoch 70/100 batch 25/297 updates 20518 CE 0.4336 base LR 0.006230 LoRA LR 0.012460 AMP scale 131072.0
+epoch 70/100 batch 50/297 updates 20543 CE 0.3339 base LR 0.006204 LoRA LR 0.012407 AMP scale 131072.0
+epoch 70/100 batch 75/297 updates 20568 CE 0.4135 base LR 0.006178 LoRA LR 0.012355 AMP scale 131072.0
+epoch 70/100 batch 100/297 updates 20593 CE 0.3126 base LR 0.006151 LoRA LR 0.012303 AMP scale 131072.0
+epoch 70/100 batch 125/297 updates 20618 CE 0.3079 base LR 0.006125 LoRA LR 0.012251 AMP scale 131072.0
+epoch 70/100 batch 150/297 updates 20643 CE 0.2739 base LR 0.006099 LoRA LR 0.012199 AMP scale 131072.0
+epoch 70/100 batch 175/297 updates 20668 CE 0.2429 base LR 0.006073 LoRA LR 0.012147 AMP scale 131072.0
+epoch 70/100 batch 200/297 updates 20693 CE 0.2756 base LR 0.006048 LoRA LR 0.012095 AMP scale 131072.0
+epoch 70/100 batch 225/297 updates 20718 CE 0.3495 base LR 0.006022 LoRA LR 0.012044 AMP scale 131072.0
+epoch 70/100 batch 250/297 updates 20743 CE 0.4269 base LR 0.005996 LoRA LR 0.011992 AMP scale 131072.0
+epoch 70/100 batch 275/297 updates 20768 CE 0.3994 base LR 0.005970 LoRA LR 0.011940 AMP scale 131072.0
+epoch 70/100 batch 297/297 updates 20790 CE 0.2815 base LR 0.005948 LoRA LR 0.011895 AMP scale 131072.0
+Controller epoch 70 candidate 1/16 mean 37.129% tail 27.979%
+Controller epoch 70 candidate 2/16 mean 36.682% tail 27.856%
+Controller epoch 70 candidate 3/16 mean 37.100% tail 27.455%
+Controller epoch 70 candidate 4/16 mean 33.512% tail 24.156%
+Controller epoch 70 candidate 5/16 mean 36.775% tail 27.331%
+Controller epoch 70 candidate 6/16 mean 37.664% tail 28.129%
+Controller epoch 70 candidate 7/16 mean 37.278% tail 27.017%
+Controller epoch 70 candidate 8/16 mean 34.842% tail 26.404%
+Controller epoch 70 candidate 9/16 mean 36.820% tail 27.566%
+Controller epoch 70 candidate 10/16 mean 35.956% tail 26.480%
+Controller epoch 70 candidate 11/16 mean 36.890% tail 26.973%
+Controller epoch 70 candidate 12/16 mean 37.238% tail 27.669%
+Controller epoch 70 candidate 13/16 mean 36.439% tail 26.408%
+Controller epoch 70 candidate 14/16 mean 36.147% tail 26.923%
+Controller epoch 70 candidate 15/16 mean 36.445% tail 26.252%
+Controller epoch 70 candidate 16/16 mean 33.835% tail 25.653%
+PPO updates completed: 20
+epoch 71/100 batch 1/297 updates 20791 CE 0.4877 base LR 0.005947 LoRA LR 0.011893 AMP scale 131072.0
+epoch 71/100 batch 25/297 updates 20815 CE 0.4427 base LR 0.005922 LoRA LR 0.011844 AMP scale 131072.0
+epoch 71/100 batch 50/297 updates 20840 CE 0.3017 base LR 0.005896 LoRA LR 0.011793 AMP scale 131072.0
+epoch 71/100 batch 75/297 updates 20865 CE 0.2478 base LR 0.005871 LoRA LR 0.011742 AMP scale 131072.0
+epoch 71/100 batch 100/297 updates 20890 CE 0.2469 base LR 0.005845 LoRA LR 0.011691 AMP scale 131072.0
+epoch 71/100 batch 125/297 updates 20915 CE 0.3164 base LR 0.005820 LoRA LR 0.011640 AMP scale 131072.0
+epoch 71/100 batch 150/297 updates 20940 CE 0.4151 base LR 0.005794 LoRA LR 0.011589 AMP scale 131072.0
+epoch 71/100 batch 175/297 updates 20965 CE 0.4689 base LR 0.005769 LoRA LR 0.011538 AMP scale 131072.0
+epoch 71/100 batch 200/297 updates 20990 CE 0.2624 base LR 0.005744 LoRA LR 0.011488 AMP scale 131072.0
+epoch 71/100 batch 225/297 updates 21015 CE 0.3623 base LR 0.005719 LoRA LR 0.011437 AMP scale 131072.0
+epoch 71/100 batch 250/297 updates 21040 CE 0.5316 base LR 0.005693 LoRA LR 0.011387 AMP scale 131072.0
+epoch 71/100 batch 275/297 updates 21065 CE 0.3983 base LR 0.005668 LoRA LR 0.011336 AMP scale 131072.0
+epoch 71/100 batch 297/297 updates 21087 CE 0.3950 base LR 0.005646 LoRA LR 0.011292 AMP scale 131072.0
+Controller epoch 71 candidate 1/16 mean 39.483% tail 31.509%
+Controller epoch 71 candidate 2/16 mean 39.078% tail 31.819%
+Controller epoch 71 candidate 3/16 mean 39.532% tail 32.418%
+Controller epoch 71 candidate 4/16 mean 39.256% tail 31.267%
+Controller epoch 71 candidate 5/16 mean 38.946% tail 31.454%
+Controller epoch 71 candidate 6/16 mean 38.619% tail 31.551%
+Controller epoch 71 candidate 7/16 mean 34.746% tail 28.600%
+Controller epoch 71 candidate 8/16 mean 39.510% tail 31.714%
+Controller epoch 71 candidate 9/16 mean 37.193% tail 31.255%
+Controller epoch 71 candidate 10/16 mean 39.862% tail 31.813%
+Controller epoch 71 candidate 11/16 mean 39.202% tail 31.838%
+Controller epoch 71 candidate 12/16 mean 37.223% tail 30.280%
+Controller epoch 71 candidate 13/16 mean 38.887% tail 31.951%
+Controller epoch 71 candidate 14/16 mean 38.957% tail 31.386%
+Controller epoch 71 candidate 15/16 mean 38.525% tail 30.930%
+Controller epoch 71 candidate 16/16 mean 39.862% tail 31.813%
+PPO updates completed: 21
+epoch 72/100 batch 1/297 updates 21088 CE 0.2749 base LR 0.005645 LoRA LR 0.011290 AMP scale 131072.0
+epoch 72/100 batch 25/297 updates 21112 CE 0.2975 base LR 0.005621 LoRA LR 0.011242 AMP scale 131072.0
+epoch 72/100 batch 50/297 updates 21137 CE 0.7642 base LR 0.005596 LoRA LR 0.011192 AMP scale 131072.0
+epoch 72/100 batch 75/297 updates 21162 CE 0.2091 base LR 0.005571 LoRA LR 0.011142 AMP scale 131072.0
+epoch 72/100 batch 100/297 updates 21187 CE 0.3412 base LR 0.005546 LoRA LR 0.011092 AMP scale 131072.0
+epoch 72/100 batch 125/297 updates 21212 CE 0.2530 base LR 0.005521 LoRA LR 0.011043 AMP scale 131072.0
+epoch 72/100 batch 150/297 updates 21237 CE 0.3401 base LR 0.005497 LoRA LR 0.010993 AMP scale 131072.0
+epoch 72/100 batch 175/297 updates 21262 CE 0.2861 base LR 0.005472 LoRA LR 0.010944 AMP scale 131072.0
+epoch 72/100 batch 200/297 updates 21287 CE 0.3777 base LR 0.005447 LoRA LR 0.010894 AMP scale 131072.0
+epoch 72/100 batch 225/297 updates 21312 CE 0.4408 base LR 0.005423 LoRA LR 0.010845 AMP scale 131072.0
+epoch 72/100 batch 250/297 updates 21337 CE 0.3856 base LR 0.005398 LoRA LR 0.010796 AMP scale 262144.0
+epoch 72/100 batch 275/297 updates 21362 CE 0.3103 base LR 0.005373 LoRA LR 0.010747 AMP scale 262144.0
+AMP overflow: retry 1/16; scale 262144.0 -> 131072.0
+epoch 72/100 batch 297/297 updates 21384 CE 0.4839 base LR 0.005352 LoRA LR 0.010704 AMP scale 131072.0
+Controller epoch 72 candidate 1/16 mean 37.868% tail 29.940%
+Controller epoch 72 candidate 2/16 mean 37.833% tail 29.739%
+Controller epoch 72 candidate 3/16 mean 38.053% tail 30.266%
+Controller epoch 72 candidate 4/16 mean 37.210% tail 29.685%
+Controller epoch 72 candidate 5/16 mean 37.163% tail 30.140%
+Controller epoch 72 candidate 6/16 mean 37.697% tail 30.429%
+Controller epoch 72 candidate 7/16 mean 35.230% tail 28.019%
+Controller epoch 72 candidate 8/16 mean 37.358% tail 30.167%
+Controller epoch 72 candidate 9/16 mean 37.009% tail 29.628%
+Controller epoch 72 candidate 10/16 mean 37.826% tail 29.582%
+Controller epoch 72 candidate 11/16 mean 36.569% tail 29.045%
+Controller epoch 72 candidate 12/16 mean 38.268% tail 30.295%
+Controller epoch 72 candidate 13/16 mean 38.171% tail 30.774%
+Controller epoch 72 candidate 14/16 mean 36.920% tail 29.231%
+Controller epoch 72 candidate 15/16 mean 37.932% tail 29.579%
+Controller epoch 72 candidate 16/16 mean 37.857% tail 29.226%
+PPO updates completed: 22
+epoch 73/100 batch 1/297 updates 21385 CE 0.2984 base LR 0.005351 LoRA LR 0.010702 AMP scale 131072.0
+epoch 73/100 batch 25/297 updates 21409 CE 0.4110 base LR 0.005327 LoRA LR 0.010655 AMP scale 131072.0
+epoch 73/100 batch 50/297 updates 21434 CE 0.3338 base LR 0.005303 LoRA LR 0.010606 AMP scale 131072.0
+epoch 73/100 batch 75/297 updates 21459 CE 0.2978 base LR 0.005279 LoRA LR 0.010558 AMP scale 131072.0
+epoch 73/100 batch 100/297 updates 21484 CE 0.3121 base LR 0.005255 LoRA LR 0.010509 AMP scale 131072.0
+epoch 73/100 batch 125/297 updates 21509 CE 0.3309 base LR 0.005230 LoRA LR 0.010461 AMP scale 131072.0
+epoch 73/100 batch 150/297 updates 21534 CE 0.2940 base LR 0.005206 LoRA LR 0.010412 AMP scale 131072.0
+epoch 73/100 batch 175/297 updates 21559 CE 0.3596 base LR 0.005182 LoRA LR 0.010364 AMP scale 131072.0
+epoch 73/100 batch 200/297 updates 21584 CE 0.4006 base LR 0.005158 LoRA LR 0.010316 AMP scale 131072.0
+epoch 73/100 batch 225/297 updates 21609 CE 0.3763 base LR 0.005134 LoRA LR 0.010268 AMP scale 131072.0
+epoch 73/100 batch 250/297 updates 21634 CE 0.3962 base LR 0.005110 LoRA LR 0.010220 AMP scale 131072.0
+epoch 73/100 batch 275/297 updates 21659 CE 0.4736 base LR 0.005086 LoRA LR 0.010172 AMP scale 131072.0
+epoch 73/100 batch 297/297 updates 21681 CE 0.3042 base LR 0.005065 LoRA LR 0.010130 AMP scale 131072.0
+Controller epoch 73 candidate 1/16 mean 40.540% tail 33.834%
+Controller epoch 73 candidate 2/16 mean 38.069% tail 33.208%
+Controller epoch 73 candidate 3/16 mean 42.170% tail 33.889%
+Controller epoch 73 candidate 4/16 mean 40.504% tail 34.039%
+Controller epoch 73 candidate 5/16 mean 39.737% tail 34.458%
+Controller epoch 73 candidate 6/16 mean 39.335% tail 33.325%
+Controller epoch 73 candidate 7/16 mean 36.856% tail 31.770%
+Controller epoch 73 candidate 8/16 mean 39.737% tail 34.458%
+Controller epoch 73 candidate 9/16 mean 38.381% tail 31.983%
+Controller epoch 73 candidate 10/16 mean 38.337% tail 33.695%
+Controller epoch 73 candidate 11/16 mean 37.431% tail 30.972%
+Controller epoch 73 candidate 12/16 mean 39.335% tail 33.325%
+Controller epoch 73 candidate 13/16 mean 38.608% tail 33.254%
+Controller epoch 73 candidate 14/16 mean 40.821% tail 34.254%
+Controller epoch 73 candidate 15/16 mean 38.939% tail 33.508%
+Controller epoch 73 candidate 16/16 mean 36.924% tail 32.773%
+PPO updates completed: 23
+epoch 74/100 batch 1/297 updates 21682 CE 0.3281 base LR 0.005064 LoRA LR 0.010129 AMP scale 131072.0
+epoch 74/100 batch 25/297 updates 21706 CE 0.5857 base LR 0.005041 LoRA LR 0.010083 AMP scale 131072.0
+epoch 74/100 batch 50/297 updates 21731 CE 0.4576 base LR 0.005018 LoRA LR 0.010035 AMP scale 131072.0
+epoch 74/100 batch 75/297 updates 21756 CE 1.0052 base LR 0.004994 LoRA LR 0.009988 AMP scale 131072.0
+epoch 74/100 batch 100/297 updates 21781 CE 0.4170 base LR 0.004970 LoRA LR 0.009941 AMP scale 131072.0
+epoch 74/100 batch 125/297 updates 21806 CE 0.5727 base LR 0.004947 LoRA LR 0.009894 AMP scale 131072.0
+epoch 74/100 batch 150/297 updates 21831 CE 0.3202 base LR 0.004923 LoRA LR 0.009847 AMP scale 131072.0
+epoch 74/100 batch 175/297 updates 21856 CE 0.3140 base LR 0.004900 LoRA LR 0.009800 AMP scale 131072.0
+epoch 74/100 batch 200/297 updates 21881 CE 0.2491 base LR 0.004877 LoRA LR 0.009753 AMP scale 131072.0
+epoch 74/100 batch 225/297 updates 21906 CE 0.3032 base LR 0.004853 LoRA LR 0.009706 AMP scale 131072.0
+epoch 74/100 batch 250/297 updates 21931 CE 0.2342 base LR 0.004830 LoRA LR 0.009660 AMP scale 131072.0
+epoch 74/100 batch 275/297 updates 21956 CE 0.3978 base LR 0.004807 LoRA LR 0.009613 AMP scale 131072.0
+epoch 74/100 batch 297/297 updates 21978 CE 0.3986 base LR 0.004786 LoRA LR 0.009573 AMP scale 131072.0
+Controller epoch 74 candidate 1/16 mean 38.028% tail 35.144%
+Controller epoch 74 candidate 2/16 mean 36.486% tail 34.302%
+Controller epoch 74 candidate 3/16 mean 36.912% tail 34.345%
+Controller epoch 74 candidate 4/16 mean 37.619% tail 34.999%
+Controller epoch 74 candidate 5/16 mean 37.120% tail 34.003%
+Controller epoch 74 candidate 6/16 mean 35.684% tail 33.586%
+Controller epoch 74 candidate 7/16 mean 35.154% tail 32.765%
+Controller epoch 74 candidate 8/16 mean 37.681% tail 34.819%
+Controller epoch 74 candidate 9/16 mean 37.424% tail 34.124%
+Controller epoch 74 candidate 10/16 mean 35.920% tail 33.519%
+Controller epoch 74 candidate 11/16 mean 35.333% tail 33.798%
+Controller epoch 74 candidate 12/16 mean 36.906% tail 33.923%
+Controller epoch 74 candidate 13/16 mean 35.130% tail 33.044%
+Controller epoch 74 candidate 14/16 mean 36.480% tail 33.484%
+Controller epoch 74 candidate 15/16 mean 35.930% tail 34.053%
+Controller epoch 74 candidate 16/16 mean 37.770% tail 34.811%
+PPO updates completed: 24
+epoch 75/100 batch 1/297 updates 21979 CE 0.2462 base LR 0.004785 LoRA LR 0.009571 AMP scale 131072.0
+epoch 75/100 batch 25/297 updates 22003 CE 0.3872 base LR 0.004763 LoRA LR 0.009527 AMP scale 131072.0
+epoch 75/100 batch 50/297 updates 22028 CE 0.2770 base LR 0.004740 LoRA LR 0.009480 AMP scale 131072.0
+epoch 75/100 batch 75/297 updates 22053 CE 0.4174 base LR 0.004717 LoRA LR 0.009434 AMP scale 131072.0
+epoch 75/100 batch 100/297 updates 22078 CE 0.3285 base LR 0.004694 LoRA LR 0.009389 AMP scale 131072.0
+epoch 75/100 batch 125/297 updates 22103 CE 0.2570 base LR 0.004671 LoRA LR 0.009343 AMP scale 131072.0
+epoch 75/100 batch 150/297 updates 22128 CE 0.4158 base LR 0.004649 LoRA LR 0.009297 AMP scale 131072.0
+epoch 75/100 batch 175/297 updates 22153 CE 0.3426 base LR 0.004626 LoRA LR 0.009252 AMP scale 131072.0
+epoch 75/100 batch 200/297 updates 22178 CE 0.3961 base LR 0.004603 LoRA LR 0.009206 AMP scale 131072.0
+epoch 75/100 batch 225/297 updates 22203 CE 0.4181 base LR 0.004580 LoRA LR 0.009161 AMP scale 131072.0
+epoch 75/100 batch 250/297 updates 22228 CE 0.2236 base LR 0.004558 LoRA LR 0.009116 AMP scale 131072.0
+epoch 75/100 batch 275/297 updates 22253 CE 0.3133 base LR 0.004535 LoRA LR 0.009071 AMP scale 131072.0
+epoch 75/100 batch 297/297 updates 22275 CE 0.3762 base LR 0.004516 LoRA LR 0.009031 AMP scale 131072.0
+Controller epoch 75 candidate 1/16 mean 37.371% tail 27.067%
+Controller epoch 75 candidate 2/16 mean 37.142% tail 27.312%
+Controller epoch 75 candidate 3/16 mean 34.567% tail 26.304%
+Controller epoch 75 candidate 4/16 mean 37.460% tail 26.850%
+Controller epoch 75 candidate 5/16 mean 37.262% tail 27.558%
+Controller epoch 75 candidate 6/16 mean 38.264% tail 28.104%
+Controller epoch 75 candidate 7/16 mean 36.445% tail 25.190%
+Controller epoch 75 candidate 8/16 mean 36.677% tail 26.410%
+Controller epoch 75 candidate 9/16 mean 37.126% tail 28.452%
+Controller epoch 75 candidate 10/16 mean 37.712% tail 27.681%
+Controller epoch 75 candidate 11/16 mean 37.533% tail 27.919%
+Controller epoch 75 candidate 12/16 mean 36.345% tail 27.721%
+Controller epoch 75 candidate 13/16 mean 36.861% tail 25.734%
+Controller epoch 75 candidate 14/16 mean 37.517% tail 26.142%
+Controller epoch 75 candidate 15/16 mean 36.838% tail 25.053%
+Controller epoch 75 candidate 16/16 mean 36.997% tail 25.818%
+PPO updates completed: 25
+epoch 76/100 batch 1/297 updates 22276 CE 0.3923 base LR 0.004515 LoRA LR 0.009029 AMP scale 131072.0
+epoch 76/100 batch 25/297 updates 22300 CE 0.4262 base LR 0.004493 LoRA LR 0.008986 AMP scale 131072.0
+epoch 76/100 batch 50/297 updates 22325 CE 0.3323 base LR 0.004471 LoRA LR 0.008942 AMP scale 131072.0
+epoch 76/100 batch 75/297 updates 22350 CE 0.3863 base LR 0.004449 LoRA LR 0.008897 AMP scale 131072.0
+epoch 76/100 batch 100/297 updates 22375 CE 0.2586 base LR 0.004426 LoRA LR 0.008853 AMP scale 131072.0
+epoch 76/100 batch 125/297 updates 22400 CE 0.4088 base LR 0.004404 LoRA LR 0.008808 AMP scale 131072.0
+epoch 76/100 batch 150/297 updates 22425 CE 0.3625 base LR 0.004382 LoRA LR 0.008764 AMP scale 131072.0
+epoch 76/100 batch 175/297 updates 22450 CE 0.2639 base LR 0.004360 LoRA LR 0.008720 AMP scale 131072.0
+epoch 76/100 batch 200/297 updates 22475 CE 0.2948 base LR 0.004338 LoRA LR 0.008676 AMP scale 131072.0
+epoch 76/100 batch 225/297 updates 22500 CE 0.5818 base LR 0.004316 LoRA LR 0.008632 AMP scale 131072.0
+epoch 76/100 batch 250/297 updates 22525 CE 0.1966 base LR 0.004294 LoRA LR 0.008588 AMP scale 131072.0
+epoch 76/100 batch 275/297 updates 22550 CE 0.3572 base LR 0.004272 LoRA LR 0.008545 AMP scale 131072.0
+epoch 76/100 batch 297/297 updates 22572 CE 0.1976 base LR 0.004253 LoRA LR 0.008506 AMP scale 131072.0
+Controller epoch 76 candidate 1/16 mean 40.774% tail 33.739%
+Controller epoch 76 candidate 2/16 mean 43.785% tail 35.538%
+Controller epoch 76 candidate 3/16 mean 43.207% tail 35.802%
+Controller epoch 76 candidate 4/16 mean 43.290% tail 35.657%
+Controller epoch 76 candidate 5/16 mean 36.436% tail 32.329%
+Controller epoch 76 candidate 6/16 mean 40.978% tail 35.524%
+Controller epoch 76 candidate 7/16 mean 43.949% tail 35.787%
+Controller epoch 76 candidate 8/16 mean 43.591% tail 35.578%
+Controller epoch 76 candidate 9/16 mean 44.259% tail 35.534%
+Controller epoch 76 candidate 10/16 mean 43.408% tail 35.645%
+Controller epoch 76 candidate 11/16 mean 43.219% tail 35.156%
+Controller epoch 76 candidate 12/16 mean 36.425% tail 30.484%
+Controller epoch 76 candidate 13/16 mean 44.126% tail 35.847%
+Controller epoch 76 candidate 14/16 mean 41.600% tail 34.743%
+Controller epoch 76 candidate 15/16 mean 44.259% tail 35.534%
+Controller epoch 76 candidate 16/16 mean 43.408% tail 35.645%
+PPO updates completed: 26
+epoch 77/100 batch 1/297 updates 22573 CE 0.4917 base LR 0.004252 LoRA LR 0.008505 AMP scale 131072.0
+AMP overflow: retry 1/16; scale 131072.0 -> 65536.0
+epoch 77/100 batch 25/297 updates 22597 CE 0.3164 base LR 0.004232 LoRA LR 0.008463 AMP scale 65536.0
+epoch 77/100 batch 50/297 updates 22622 CE 0.5615 base LR 0.004210 LoRA LR 0.008420 AMP scale 65536.0
+epoch 77/100 batch 75/297 updates 22647 CE 0.3289 base LR 0.004188 LoRA LR 0.008377 AMP scale 65536.0
+epoch 77/100 batch 100/297 updates 22672 CE 0.5274 base LR 0.004167 LoRA LR 0.008334 AMP scale 65536.0
+epoch 77/100 batch 125/297 updates 22697 CE 0.3690 base LR 0.004145 LoRA LR 0.008291 AMP scale 65536.0
+epoch 77/100 batch 150/297 updates 22722 CE 0.3324 base LR 0.004124 LoRA LR 0.008248 AMP scale 65536.0
+epoch 77/100 batch 175/297 updates 22747 CE 0.4608 base LR 0.004103 LoRA LR 0.008205 AMP scale 65536.0
+epoch 77/100 batch 200/297 updates 22772 CE 0.3726 base LR 0.004081 LoRA LR 0.008163 AMP scale 65536.0
+epoch 77/100 batch 225/297 updates 22797 CE 0.3079 base LR 0.004060 LoRA LR 0.008120 AMP scale 65536.0
+epoch 77/100 batch 250/297 updates 22822 CE 0.3900 base LR 0.004039 LoRA LR 0.008078 AMP scale 65536.0
+epoch 77/100 batch 275/297 updates 22847 CE 0.3062 base LR 0.004018 LoRA LR 0.008036 AMP scale 65536.0
+epoch 77/100 batch 297/297 updates 22869 CE 0.4328 base LR 0.004000 LoRA LR 0.007999 AMP scale 65536.0
+Controller epoch 77 candidate 1/16 mean 36.730% tail 29.574%
+Controller epoch 77 candidate 2/16 mean 32.834% tail 27.061%
+Controller epoch 77 candidate 3/16 mean 37.714% tail 29.629%
+Controller epoch 77 candidate 4/16 mean 37.355% tail 29.643%
+Controller epoch 77 candidate 5/16 mean 35.884% tail 30.286%
+Controller epoch 77 candidate 6/16 mean 36.568% tail 29.803%
+Controller epoch 77 candidate 7/16 mean 37.315% tail 30.689%
+Controller epoch 77 candidate 8/16 mean 36.200% tail 29.533%
+Controller epoch 77 candidate 9/16 mean 36.514% tail 29.838%
+Controller epoch 77 candidate 10/16 mean 37.267% tail 29.422%
+Controller epoch 77 candidate 11/16 mean 32.834% tail 27.061%
+Controller epoch 77 candidate 12/16 mean 37.024% tail 30.032%
+Controller epoch 77 candidate 13/16 mean 33.471% tail 24.433%
+Controller epoch 77 candidate 14/16 mean 35.701% tail 27.912%
+Controller epoch 77 candidate 15/16 mean 35.802% tail 30.293%
+Controller epoch 77 candidate 16/16 mean 35.834% tail 29.344%
+PPO updates completed: 27
+epoch 78/100 batch 1/297 updates 22870 CE 0.3233 base LR 0.003999 LoRA LR 0.007997 AMP scale 65536.0
+epoch 78/100 batch 25/297 updates 22894 CE 0.2687 base LR 0.003979 LoRA LR 0.007957 AMP scale 65536.0
+epoch 78/100 batch 50/297 updates 22919 CE 0.2654 base LR 0.003958 LoRA LR 0.007915 AMP scale 65536.0
+epoch 78/100 batch 75/297 updates 22944 CE 0.3227 base LR 0.003937 LoRA LR 0.007874 AMP scale 65536.0
+epoch 78/100 batch 100/297 updates 22969 CE 0.5644 base LR 0.003916 LoRA LR 0.007832 AMP scale 65536.0
+epoch 78/100 batch 125/297 updates 22994 CE 0.2852 base LR 0.003895 LoRA LR 0.007791 AMP scale 65536.0
+epoch 78/100 batch 150/297 updates 23019 CE 0.3047 base LR 0.003875 LoRA LR 0.007749 AMP scale 65536.0
+epoch 78/100 batch 175/297 updates 23044 CE 0.1661 base LR 0.003854 LoRA LR 0.007708 AMP scale 65536.0
+epoch 78/100 batch 200/297 updates 23069 CE 0.3041 base LR 0.003834 LoRA LR 0.007667 AMP scale 65536.0
+epoch 78/100 batch 225/297 updates 23094 CE 0.2413 base LR 0.003813 LoRA LR 0.007626 AMP scale 65536.0
+epoch 78/100 batch 250/297 updates 23119 CE 0.3259 base LR 0.003793 LoRA LR 0.007586 AMP scale 65536.0
+epoch 78/100 batch 275/297 updates 23144 CE 0.3415 base LR 0.003772 LoRA LR 0.007545 AMP scale 65536.0
+epoch 78/100 batch 297/297 updates 23166 CE 0.3319 base LR 0.003755 LoRA LR 0.007509 AMP scale 65536.0
+Controller epoch 78 candidate 1/16 mean 37.398% tail 29.202%
+Controller epoch 78 candidate 2/16 mean 39.536% tail 32.568%
+Controller epoch 78 candidate 3/16 mean 39.347% tail 32.597%
+Controller epoch 78 candidate 4/16 mean 35.226% tail 29.912%
+Controller epoch 78 candidate 5/16 mean 40.265% tail 32.668%
+Controller epoch 78 candidate 6/16 mean 39.895% tail 34.131%
+Controller epoch 78 candidate 7/16 mean 40.132% tail 32.076%
+Controller epoch 78 candidate 8/16 mean 39.363% tail 31.842%
+Controller epoch 78 candidate 9/16 mean 37.440% tail 30.791%
+Controller epoch 78 candidate 10/16 mean 37.818% tail 30.287%
+Controller epoch 78 candidate 11/16 mean 39.050% tail 32.750%
+Controller epoch 78 candidate 12/16 mean 39.178% tail 31.872%
+Controller epoch 78 candidate 13/16 mean 39.881% tail 33.802%
+Controller epoch 78 candidate 14/16 mean 38.096% tail 31.023%
+Controller epoch 78 candidate 15/16 mean 40.457% tail 33.824%
+Controller epoch 78 candidate 16/16 mean 39.234% tail 32.366%
+PPO updates completed: 28
+epoch 79/100 batch 1/297 updates 23167 CE 0.2510 base LR 0.003754 LoRA LR 0.007508 AMP scale 65536.0
+epoch 79/100 batch 25/297 updates 23191 CE 0.4702 base LR 0.003734 LoRA LR 0.007469 AMP scale 65536.0
+epoch 79/100 batch 50/297 updates 23216 CE 0.2641 base LR 0.003714 LoRA LR 0.007429 AMP scale 65536.0
+epoch 79/100 batch 75/297 updates 23241 CE 0.3331 base LR 0.003694 LoRA LR 0.007389 AMP scale 65536.0
+epoch 79/100 batch 100/297 updates 23266 CE 0.2842 base LR 0.003674 LoRA LR 0.007348 AMP scale 65536.0
+epoch 79/100 batch 125/297 updates 23291 CE 0.2940 base LR 0.003654 LoRA LR 0.007309 AMP scale 65536.0
+epoch 79/100 batch 150/297 updates 23316 CE 0.6721 base LR 0.003634 LoRA LR 0.007269 AMP scale 65536.0
+epoch 79/100 batch 175/297 updates 23341 CE 0.3190 base LR 0.003615 LoRA LR 0.007229 AMP scale 65536.0
+epoch 79/100 batch 200/297 updates 23366 CE 0.2930 base LR 0.003595 LoRA LR 0.007190 AMP scale 65536.0
+epoch 79/100 batch 225/297 updates 23391 CE 0.3556 base LR 0.003575 LoRA LR 0.007150 AMP scale 65536.0
+epoch 79/100 batch 250/297 updates 23416 CE 0.4430 base LR 0.003556 LoRA LR 0.007111 AMP scale 65536.0
+epoch 79/100 batch 275/297 updates 23441 CE 0.2631 base LR 0.003536 LoRA LR 0.007072 AMP scale 65536.0
+epoch 79/100 batch 297/297 updates 23463 CE 0.3310 base LR 0.003519 LoRA LR 0.007038 AMP scale 65536.0
+Controller epoch 79 candidate 1/16 mean 36.709% tail 30.750%
+Controller epoch 79 candidate 2/16 mean 32.810% tail 29.669%
+Controller epoch 79 candidate 3/16 mean 37.318% tail 31.678%
+Controller epoch 79 candidate 4/16 mean 37.856% tail 31.000%
+Controller epoch 79 candidate 5/16 mean 34.517% tail 27.849%
+Controller epoch 79 candidate 6/16 mean 37.340% tail 31.016%
+Controller epoch 79 candidate 7/16 mean 37.461% tail 31.532%
+Controller epoch 79 candidate 8/16 mean 35.847% tail 30.485%
+Controller epoch 79 candidate 9/16 mean 37.856% tail 31.000%
+Controller epoch 79 candidate 10/16 mean 36.034% tail 29.718%
+Controller epoch 79 candidate 11/16 mean 35.417% tail 28.747%
+Controller epoch 79 candidate 12/16 mean 37.285% tail 31.373%
+Controller epoch 79 candidate 13/16 mean 35.000% tail 30.203%
+Controller epoch 79 candidate 14/16 mean 36.744% tail 31.167%
+Controller epoch 79 candidate 15/16 mean 37.644% tail 30.883%
+Controller epoch 79 candidate 16/16 mean 37.576% tail 30.974%
+PPO updates completed: 29
+epoch 80/100 batch 1/297 updates 23464 CE 0.3146 base LR 0.003518 LoRA LR 0.007036 AMP scale 65536.0
+epoch 80/100 batch 25/297 updates 23488 CE 0.2824 base LR 0.003499 LoRA LR 0.006999 AMP scale 65536.0
+epoch 80/100 batch 50/297 updates 23513 CE 0.3656 base LR 0.003480 LoRA LR 0.006960 AMP scale 65536.0
+epoch 80/100 batch 75/297 updates 23538 CE 0.4973 base LR 0.003461 LoRA LR 0.006922 AMP scale 65536.0
+epoch 80/100 batch 100/297 updates 23563 CE 0.2357 base LR 0.003442 LoRA LR 0.006883 AMP scale 65536.0
+epoch 80/100 batch 125/297 updates 23588 CE 0.3411 base LR 0.003422 LoRA LR 0.006845 AMP scale 65536.0
+epoch 80/100 batch 150/297 updates 23613 CE 0.3583 base LR 0.003403 LoRA LR 0.006807 AMP scale 65536.0
+epoch 80/100 batch 175/297 updates 23638 CE 0.3647 base LR 0.003384 LoRA LR 0.006769 AMP scale 65536.0
+epoch 80/100 batch 200/297 updates 23663 CE 0.2542 base LR 0.003365 LoRA LR 0.006731 AMP scale 65536.0
+epoch 80/100 batch 225/297 updates 23688 CE 0.3530 base LR 0.003347 LoRA LR 0.006693 AMP scale 65536.0
+epoch 80/100 batch 250/297 updates 23713 CE 0.2613 base LR 0.003328 LoRA LR 0.006655 AMP scale 65536.0
+epoch 80/100 batch 275/297 updates 23738 CE 0.2085 base LR 0.003309 LoRA LR 0.006618 AMP scale 65536.0
+epoch 80/100 batch 297/297 updates 23760 CE 0.2802 base LR 0.003293 LoRA LR 0.006585 AMP scale 65536.0
+Controller epoch 80 candidate 1/16 mean 43.088% tail 35.049%
+Controller epoch 80 candidate 2/16 mean 42.868% tail 34.607%
+Controller epoch 80 candidate 3/16 mean 43.475% tail 34.687%
+Controller epoch 80 candidate 4/16 mean 41.735% tail 34.154%
+Controller epoch 80 candidate 5/16 mean 42.802% tail 34.702%
+Controller epoch 80 candidate 6/16 mean 40.264% tail 33.011%
+Controller epoch 80 candidate 7/16 mean 41.706% tail 33.258%
+Controller epoch 80 candidate 8/16 mean 42.140% tail 35.198%
+Controller epoch 80 candidate 9/16 mean 42.143% tail 34.574%
+Controller epoch 80 candidate 10/16 mean 42.213% tail 34.535%
+Controller epoch 80 candidate 11/16 mean 43.456% tail 34.602%
+Controller epoch 80 candidate 12/16 mean 41.931% tail 34.808%
+Controller epoch 80 candidate 13/16 mean 41.791% tail 33.827%
+Controller epoch 80 candidate 14/16 mean 41.931% tail 34.709%
+Controller epoch 80 candidate 15/16 mean 41.871% tail 34.121%
+Controller epoch 80 candidate 16/16 mean 42.419% tail 34.598%
+PPO updates completed: 30
+epoch 81/100 batch 1/297 updates 23761 CE 0.2550 base LR 0.003292 LoRA LR 0.006584 AMP scale 65536.0
+epoch 81/100 batch 25/297 updates 23785 CE 0.4007 base LR 0.003274 LoRA LR 0.006548 AMP scale 65536.0
+epoch 81/100 batch 50/297 updates 23810 CE 0.3911 base LR 0.003255 LoRA LR 0.006511 AMP scale 65536.0
+epoch 81/100 batch 75/297 updates 23835 CE 0.5253 base LR 0.003237 LoRA LR 0.006474 AMP scale 65536.0
+epoch 81/100 batch 100/297 updates 23860 CE 0.3453 base LR 0.003218 LoRA LR 0.006437 AMP scale 65536.0
+epoch 81/100 batch 125/297 updates 23885 CE 0.4865 base LR 0.003200 LoRA LR 0.006400 AMP scale 65536.0
+epoch 81/100 batch 150/297 updates 23910 CE 0.4029 base LR 0.003182 LoRA LR 0.006364 AMP scale 65536.0
+epoch 81/100 batch 175/297 updates 23935 CE 0.3180 base LR 0.003164 LoRA LR 0.006327 AMP scale 65536.0
+epoch 81/100 batch 200/297 updates 23960 CE 0.2552 base LR 0.003145 LoRA LR 0.006291 AMP scale 65536.0
+epoch 81/100 batch 225/297 updates 23985 CE 0.4515 base LR 0.003127 LoRA LR 0.006255 AMP scale 65536.0
+epoch 81/100 batch 250/297 updates 24010 CE 0.4016 base LR 0.003109 LoRA LR 0.006219 AMP scale 65536.0
+epoch 81/100 batch 275/297 updates 24035 CE 0.2799 base LR 0.003091 LoRA LR 0.006183 AMP scale 65536.0
+epoch 81/100 batch 297/297 updates 24057 CE 0.2718 base LR 0.003076 LoRA LR 0.006151 AMP scale 65536.0
+Controller epoch 81 candidate 1/16 mean 41.914% tail 30.527%
+Controller epoch 81 candidate 2/16 mean 40.404% tail 29.715%
+Controller epoch 81 candidate 3/16 mean 42.499% tail 30.697%
+Controller epoch 81 candidate 4/16 mean 40.420% tail 29.390%
+Controller epoch 81 candidate 5/16 mean 41.646% tail 28.649%
+Controller epoch 81 candidate 6/16 mean 39.728% tail 29.019%
+Controller epoch 81 candidate 7/16 mean 41.087% tail 28.704%
+Controller epoch 81 candidate 8/16 mean 42.499% tail 30.697%
+Controller epoch 81 candidate 9/16 mean 42.304% tail 29.119%
+Controller epoch 81 candidate 10/16 mean 41.986% tail 31.078%
+Controller epoch 81 candidate 11/16 mean 42.590% tail 30.686%
+Controller epoch 81 candidate 12/16 mean 40.964% tail 29.437%
+Controller epoch 81 candidate 13/16 mean 41.562% tail 28.765%
+Controller epoch 81 candidate 14/16 mean 42.261% tail 30.583%
+Controller epoch 81 candidate 15/16 mean 42.889% tail 30.536%
+Controller epoch 81 candidate 16/16 mean 42.590% tail 30.686%
+PPO updates completed: 31
+epoch 82/100 batch 1/297 updates 24058 CE 0.2625 base LR 0.003075 LoRA LR 0.006150 AMP scale 65536.0
+epoch 82/100 batch 25/297 updates 24082 CE 0.4082 base LR 0.003058 LoRA LR 0.006116 AMP scale 65536.0
+epoch 82/100 batch 50/297 updates 24107 CE 0.2514 base LR 0.003040 LoRA LR 0.006080 AMP scale 65536.0
+epoch 82/100 batch 75/297 updates 24132 CE 0.2345 base LR 0.003023 LoRA LR 0.006045 AMP scale 65536.0
+epoch 82/100 batch 100/297 updates 24157 CE 0.2014 base LR 0.003005 LoRA LR 0.006010 AMP scale 65536.0
+epoch 82/100 batch 125/297 updates 24182 CE 0.2637 base LR 0.002987 LoRA LR 0.005975 AMP scale 65536.0
+epoch 82/100 batch 150/297 updates 24207 CE 0.3401 base LR 0.002970 LoRA LR 0.005940 AMP scale 65536.0
+epoch 82/100 batch 175/297 updates 24232 CE 0.3741 base LR 0.002953 LoRA LR 0.005905 AMP scale 65536.0
+epoch 82/100 batch 200/297 updates 24257 CE 0.4011 base LR 0.002935 LoRA LR 0.005871 AMP scale 65536.0
+epoch 82/100 batch 225/297 updates 24282 CE 0.5367 base LR 0.002918 LoRA LR 0.005836 AMP scale 65536.0
+epoch 82/100 batch 250/297 updates 24307 CE 0.2451 base LR 0.002901 LoRA LR 0.005802 AMP scale 65536.0
+epoch 82/100 batch 275/297 updates 24332 CE 0.1968 base LR 0.002884 LoRA LR 0.005767 AMP scale 65536.0
+epoch 82/100 batch 297/297 updates 24354 CE 0.2586 base LR 0.002869 LoRA LR 0.005737 AMP scale 65536.0
+Controller epoch 82 candidate 1/16 mean 35.990% tail 34.151%
+Controller epoch 82 candidate 2/16 mean 38.981% tail 36.675%
+Controller epoch 82 candidate 3/16 mean 38.686% tail 36.723%
+Controller epoch 82 candidate 4/16 mean 37.133% tail 36.063%
+Controller epoch 82 candidate 5/16 mean 38.959% tail 36.454%
+Controller epoch 82 candidate 6/16 mean 35.516% tail 35.181%
+Controller epoch 82 candidate 7/16 mean 37.698% tail 36.584%
+Controller epoch 82 candidate 8/16 mean 37.886% tail 37.469%
+Controller epoch 82 candidate 9/16 mean 36.178% tail 36.598%
+Controller epoch 82 candidate 10/16 mean 38.760% tail 36.938%
+Controller epoch 82 candidate 11/16 mean 34.626% tail 33.505%
+Controller epoch 82 candidate 12/16 mean 37.198% tail 36.032%
+Controller epoch 82 candidate 13/16 mean 37.267% tail 36.738%
+Controller epoch 82 candidate 14/16 mean 34.769% tail 35.167%
+Controller epoch 82 candidate 15/16 mean 37.749% tail 36.127%
+Controller epoch 82 candidate 16/16 mean 37.198% tail 36.032%
+PPO updates completed: 32
+epoch 83/100 batch 1/297 updates 24355 CE 0.5131 base LR 0.002868 LoRA LR 0.005736 AMP scale 65536.0
+epoch 83/100 batch 25/297 updates 24379 CE 0.1896 base LR 0.002852 LoRA LR 0.005704 AMP scale 65536.0
+epoch 83/100 batch 50/297 updates 24404 CE 0.4909 base LR 0.002835 LoRA LR 0.005670 AMP scale 65536.0
+epoch 83/100 batch 75/297 updates 24429 CE 0.4017 base LR 0.002818 LoRA LR 0.005636 AMP scale 65536.0
+epoch 83/100 batch 100/297 updates 24454 CE 0.2807 base LR 0.002801 LoRA LR 0.005603 AMP scale 65536.0
+epoch 83/100 batch 125/297 updates 24479 CE 0.2698 base LR 0.002785 LoRA LR 0.005569 AMP scale 65536.0
+epoch 83/100 batch 150/297 updates 24504 CE 0.3666 base LR 0.002768 LoRA LR 0.005536 AMP scale 65536.0
+epoch 83/100 batch 175/297 updates 24529 CE 0.3839 base LR 0.002751 LoRA LR 0.005503 AMP scale 65536.0
+epoch 83/100 batch 200/297 updates 24554 CE 0.3293 base LR 0.002735 LoRA LR 0.005470 AMP scale 65536.0
+epoch 83/100 batch 225/297 updates 24579 CE 0.3399 base LR 0.002719 LoRA LR 0.005437 AMP scale 65536.0
+epoch 83/100 batch 250/297 updates 24604 CE 0.3195 base LR 0.002702 LoRA LR 0.005404 AMP scale 131072.0
+epoch 83/100 batch 275/297 updates 24629 CE 0.3934 base LR 0.002686 LoRA LR 0.005372 AMP scale 131072.0
+epoch 83/100 batch 297/297 updates 24651 CE 0.3077 base LR 0.002672 LoRA LR 0.005343 AMP scale 131072.0
+Controller epoch 83 candidate 1/16 mean 41.721% tail 34.083%
+Controller epoch 83 candidate 2/16 mean 38.362% tail 33.538%
+Controller epoch 83 candidate 3/16 mean 40.382% tail 33.910%
+Controller epoch 83 candidate 4/16 mean 35.891% tail 32.525%
+Controller epoch 83 candidate 5/16 mean 40.385% tail 33.915%
+Controller epoch 83 candidate 6/16 mean 39.726% tail 33.878%
+Controller epoch 83 candidate 7/16 mean 40.229% tail 33.960%
+Controller epoch 83 candidate 8/16 mean 39.752% tail 33.930%
+Controller epoch 83 candidate 9/16 mean 39.760% tail 33.903%
+Controller epoch 83 candidate 10/16 mean 39.209% tail 33.930%
+Controller epoch 83 candidate 11/16 mean 40.095% tail 33.895%
+Controller epoch 83 candidate 12/16 mean 39.319% tail 33.860%
+Controller epoch 83 candidate 13/16 mean 39.488% tail 33.055%
+Controller epoch 83 candidate 14/16 mean 38.923% tail 33.580%
+Controller epoch 83 candidate 15/16 mean 41.461% tail 33.989%
+Controller epoch 83 candidate 16/16 mean 38.509% tail 33.916%
+PPO updates completed: 33
+epoch 84/100 batch 1/297 updates 24652 CE 0.3177 base LR 0.002671 LoRA LR 0.005342 AMP scale 131072.0
+epoch 84/100 batch 25/297 updates 24676 CE 0.3767 base LR 0.002656 LoRA LR 0.005311 AMP scale 131072.0
+epoch 84/100 batch 50/297 updates 24701 CE 0.1641 base LR 0.002640 LoRA LR 0.005279 AMP scale 131072.0
+epoch 84/100 batch 75/297 updates 24726 CE 0.1894 base LR 0.002624 LoRA LR 0.005247 AMP scale 131072.0
+epoch 84/100 batch 100/297 updates 24751 CE 0.4726 base LR 0.002608 LoRA LR 0.005215 AMP scale 131072.0
+epoch 84/100 batch 125/297 updates 24776 CE 0.3807 base LR 0.002592 LoRA LR 0.005184 AMP scale 131072.0
+epoch 84/100 batch 150/297 updates 24801 CE 0.2941 base LR 0.002576 LoRA LR 0.005152 AMP scale 131072.0
+epoch 84/100 batch 175/297 updates 24826 CE 0.2497 base LR 0.002560 LoRA LR 0.005121 AMP scale 131072.0
+epoch 84/100 batch 200/297 updates 24851 CE 0.2635 base LR 0.002545 LoRA LR 0.005090 AMP scale 131072.0
+epoch 84/100 batch 225/297 updates 24876 CE 0.5070 base LR 0.002529 LoRA LR 0.005059 AMP scale 131072.0
+epoch 84/100 batch 250/297 updates 24901 CE 0.2758 base LR 0.002514 LoRA LR 0.005028 AMP scale 131072.0
+epoch 84/100 batch 275/297 updates 24926 CE 0.3867 base LR 0.002498 LoRA LR 0.004997 AMP scale 131072.0
+epoch 84/100 batch 297/297 updates 24948 CE 0.3282 base LR 0.002485 LoRA LR 0.004970 AMP scale 131072.0
+Controller epoch 84 candidate 1/16 mean 41.092% tail 34.022%
+Controller epoch 84 candidate 2/16 mean 40.754% tail 33.632%
+Controller epoch 84 candidate 3/16 mean 41.308% tail 33.443%
+Controller epoch 84 candidate 4/16 mean 40.969% tail 33.451%
+Controller epoch 84 candidate 5/16 mean 40.325% tail 34.003%
+Controller epoch 84 candidate 6/16 mean 34.833% tail 31.796%
+Controller epoch 84 candidate 7/16 mean 40.802% tail 33.479%
+Controller epoch 84 candidate 8/16 mean 41.195% tail 33.957%
+Controller epoch 84 candidate 9/16 mean 39.089% tail 32.322%
+Controller epoch 84 candidate 10/16 mean 38.087% tail 31.563%
+Controller epoch 84 candidate 11/16 mean 41.070% tail 33.958%
+Controller epoch 84 candidate 12/16 mean 39.643% tail 33.002%
+Controller epoch 84 candidate 13/16 mean 40.961% tail 33.687%
+Controller epoch 84 candidate 14/16 mean 41.046% tail 33.613%
+Controller epoch 84 candidate 15/16 mean 40.026% tail 34.378%
+Controller epoch 84 candidate 16/16 mean 40.692% tail 33.281%
+PPO updates completed: 34
+epoch 85/100 batch 1/297 updates 24949 CE 0.2297 base LR 0.002484 LoRA LR 0.004969 AMP scale 131072.0
+epoch 85/100 batch 25/297 updates 24973 CE 0.2713 base LR 0.002470 LoRA LR 0.004939 AMP scale 131072.0
+epoch 85/100 batch 50/297 updates 24998 CE 0.3386 base LR 0.002454 LoRA LR 0.004909 AMP scale 131072.0
+epoch 85/100 batch 75/297 updates 25023 CE 0.3295 base LR 0.002439 LoRA LR 0.004879 AMP scale 131072.0
+epoch 85/100 batch 100/297 updates 25048 CE 0.2674 base LR 0.002424 LoRA LR 0.004849 AMP scale 131072.0
+epoch 85/100 batch 125/297 updates 25073 CE 0.2049 base LR 0.002409 LoRA LR 0.004819 AMP scale 131072.0
+epoch 85/100 batch 150/297 updates 25098 CE 0.2128 base LR 0.002395 LoRA LR 0.004789 AMP scale 131072.0
+epoch 85/100 batch 175/297 updates 25123 CE 0.3811 base LR 0.002380 LoRA LR 0.004759 AMP scale 131072.0
+epoch 85/100 batch 200/297 updates 25148 CE 0.2481 base LR 0.002365 LoRA LR 0.004730 AMP scale 131072.0
+epoch 85/100 batch 225/297 updates 25173 CE 0.4252 base LR 0.002350 LoRA LR 0.004701 AMP scale 131072.0
+epoch 85/100 batch 250/297 updates 25198 CE 0.4809 base LR 0.002336 LoRA LR 0.004671 AMP scale 131072.0
+epoch 85/100 batch 275/297 updates 25223 CE 0.2580 base LR 0.002321 LoRA LR 0.004642 AMP scale 131072.0
+epoch 85/100 batch 297/297 updates 25245 CE 0.5015 base LR 0.002308 LoRA LR 0.004617 AMP scale 131072.0
+Controller epoch 85 candidate 1/16 mean 38.568% tail 31.521%
+Controller epoch 85 candidate 2/16 mean 38.580% tail 30.583%
+Controller epoch 85 candidate 3/16 mean 38.731% tail 30.552%
+Controller epoch 85 candidate 4/16 mean 38.377% tail 31.209%
+Controller epoch 85 candidate 5/16 mean 38.746% tail 31.733%
+Controller epoch 85 candidate 6/16 mean 38.847% tail 32.513%
+Controller epoch 85 candidate 7/16 mean 37.157% tail 30.666%
+Controller epoch 85 candidate 8/16 mean 38.691% tail 31.995%
+Controller epoch 85 candidate 9/16 mean 37.297% tail 29.077%
+Controller epoch 85 candidate 10/16 mean 38.377% tail 31.209%
+Controller epoch 85 candidate 11/16 mean 38.746% tail 31.733%
+Controller epoch 85 candidate 12/16 mean 34.743% tail 27.861%
+Controller epoch 85 candidate 13/16 mean 38.769% tail 31.787%
+Controller epoch 85 candidate 14/16 mean 38.756% tail 32.145%
+Controller epoch 85 candidate 15/16 mean 38.403% tail 31.658%
+Controller epoch 85 candidate 16/16 mean 39.310% tail 31.138%
+PPO updates completed: 35
+epoch 86/100 batch 1/297 updates 25246 CE 0.4499 base LR 0.002308 LoRA LR 0.004616 AMP scale 131072.0
+epoch 86/100 batch 25/297 updates 25270 CE 0.1928 base LR 0.002294 LoRA LR 0.004588 AMP scale 131072.0
+epoch 86/100 batch 50/297 updates 25295 CE 0.2307 base LR 0.002280 LoRA LR 0.004560 AMP scale 131072.0
+epoch 86/100 batch 75/297 updates 25320 CE 0.2231 base LR 0.002266 LoRA LR 0.004531 AMP scale 131072.0
+epoch 86/100 batch 100/297 updates 25345 CE 0.4800 base LR 0.002251 LoRA LR 0.004503 AMP scale 131072.0
+epoch 86/100 batch 125/297 updates 25370 CE 0.3131 base LR 0.002237 LoRA LR 0.004475 AMP scale 131072.0
+epoch 86/100 batch 150/297 updates 25395 CE 0.3184 base LR 0.002223 LoRA LR 0.004447 AMP scale 131072.0
+epoch 86/100 batch 175/297 updates 25420 CE 0.3192 base LR 0.002209 LoRA LR 0.004419 AMP scale 131072.0
+epoch 86/100 batch 200/297 updates 25445 CE 0.2861 base LR 0.002196 LoRA LR 0.004391 AMP scale 131072.0
+epoch 86/100 batch 225/297 updates 25470 CE 0.3395 base LR 0.002182 LoRA LR 0.004364 AMP scale 131072.0
+epoch 86/100 batch 250/297 updates 25495 CE 0.3127 base LR 0.002168 LoRA LR 0.004336 AMP scale 131072.0
+epoch 86/100 batch 275/297 updates 25520 CE 0.2064 base LR 0.002155 LoRA LR 0.004309 AMP scale 131072.0
+epoch 86/100 batch 297/297 updates 25542 CE 0.3291 base LR 0.002143 LoRA LR 0.004285 AMP scale 131072.0
+Controller epoch 86 candidate 1/16 mean 42.496% tail 32.619%
+Controller epoch 86 candidate 2/16 mean 43.208% tail 32.396%
+Controller epoch 86 candidate 3/16 mean 42.283% tail 33.030%
+Controller epoch 86 candidate 4/16 mean 42.358% tail 32.447%
+Controller epoch 86 candidate 5/16 mean 43.199% tail 32.831%
+Controller epoch 86 candidate 6/16 mean 41.885% tail 32.601%
+Controller epoch 86 candidate 7/16 mean 41.843% tail 32.183%
+Controller epoch 86 candidate 8/16 mean 42.572% tail 32.932%
+Controller epoch 86 candidate 9/16 mean 43.397% tail 32.724%
+Controller epoch 86 candidate 10/16 mean 42.405% tail 32.783%
+Controller epoch 86 candidate 11/16 mean 42.599% tail 32.498%
+Controller epoch 86 candidate 12/16 mean 43.339% tail 32.389%
+Controller epoch 86 candidate 13/16 mean 43.556% tail 32.567%
+Controller epoch 86 candidate 14/16 mean 42.017% tail 32.086%
+Controller epoch 86 candidate 15/16 mean 42.572% tail 32.932%
+Controller epoch 86 candidate 16/16 mean 36.977% tail 30.264%
+PPO updates completed: 36
+epoch 87/100 batch 1/297 updates 25543 CE 0.4461 base LR 0.002142 LoRA LR 0.004284 AMP scale 131072.0
+epoch 87/100 batch 25/297 updates 25567 CE 0.2545 base LR 0.002129 LoRA LR 0.004258 AMP scale 131072.0
+epoch 87/100 batch 50/297 updates 25592 CE 0.5140 base LR 0.002116 LoRA LR 0.004231 AMP scale 131072.0
+epoch 87/100 batch 75/297 updates 25617 CE 0.3755 base LR 0.002102 LoRA LR 0.004205 AMP scale 131072.0
+epoch 87/100 batch 100/297 updates 25642 CE 0.2571 base LR 0.002089 LoRA LR 0.004178 AMP scale 131072.0
+epoch 87/100 batch 125/297 updates 25667 CE 0.3239 base LR 0.002076 LoRA LR 0.004152 AMP scale 131072.0
+epoch 87/100 batch 150/297 updates 25692 CE 0.3826 base LR 0.002063 LoRA LR 0.004126 AMP scale 131072.0
+epoch 87/100 batch 175/297 updates 25717 CE 0.1727 base LR 0.002050 LoRA LR 0.004100 AMP scale 131072.0
+epoch 87/100 batch 200/297 updates 25742 CE 0.2784 base LR 0.002037 LoRA LR 0.004074 AMP scale 131072.0
+epoch 87/100 batch 225/297 updates 25767 CE 0.2736 base LR 0.002024 LoRA LR 0.004048 AMP scale 131072.0
+epoch 87/100 batch 250/297 updates 25792 CE 0.2740 base LR 0.002011 LoRA LR 0.004023 AMP scale 131072.0
+epoch 87/100 batch 275/297 updates 25817 CE 0.1841 base LR 0.001999 LoRA LR 0.003997 AMP scale 131072.0
+epoch 87/100 batch 297/297 updates 25839 CE 0.2160 base LR 0.001987 LoRA LR 0.003975 AMP scale 131072.0
+Controller epoch 87 candidate 1/16 mean 41.694% tail 30.238%
+Controller epoch 87 candidate 2/16 mean 41.511% tail 30.024%
+Controller epoch 87 candidate 3/16 mean 42.067% tail 30.508%
+Controller epoch 87 candidate 4/16 mean 42.874% tail 30.751%
+Controller epoch 87 candidate 5/16 mean 41.400% tail 30.318%
+Controller epoch 87 candidate 6/16 mean 41.240% tail 30.308%
+Controller epoch 87 candidate 7/16 mean 42.874% tail 30.751%
+Controller epoch 87 candidate 8/16 mean 41.333% tail 29.467%
+Controller epoch 87 candidate 9/16 mean 40.511% tail 29.259%
+Controller epoch 87 candidate 10/16 mean 42.445% tail 30.881%
+Controller epoch 87 candidate 11/16 mean 42.344% tail 30.313%
+Controller epoch 87 candidate 12/16 mean 40.166% tail 29.382%
+Controller epoch 87 candidate 13/16 mean 41.074% tail 29.898%
+Controller epoch 87 candidate 14/16 mean 42.104% tail 30.795%
+Controller epoch 87 candidate 15/16 mean 42.096% tail 31.061%
+Controller epoch 87 candidate 16/16 mean 41.900% tail 30.640%
+PPO updates completed: 37
+epoch 88/100 batch 1/297 updates 25840 CE 0.3267 base LR 0.001987 LoRA LR 0.003974 AMP scale 131072.0
+epoch 88/100 batch 25/297 updates 25864 CE 0.3274 base LR 0.001975 LoRA LR 0.003950 AMP scale 131072.0
+epoch 88/100 batch 50/297 updates 25889 CE 0.7585 base LR 0.001962 LoRA LR 0.003925 AMP scale 131072.0
+epoch 88/100 batch 75/297 updates 25914 CE 0.2978 base LR 0.001950 LoRA LR 0.003900 AMP scale 131072.0
+epoch 88/100 batch 100/297 updates 25939 CE 0.2958 base LR 0.001938 LoRA LR 0.003875 AMP scale 131072.0
+epoch 88/100 batch 125/297 updates 25964 CE 0.3860 base LR 0.001925 LoRA LR 0.003851 AMP scale 131072.0
+AMP overflow: retry 1/16; scale 131072.0 -> 65536.0
+epoch 88/100 batch 150/297 updates 25989 CE 0.2422 base LR 0.001913 LoRA LR 0.003826 AMP scale 65536.0
+epoch 88/100 batch 175/297 updates 26014 CE 0.2324 base LR 0.001901 LoRA LR 0.003802 AMP scale 65536.0
+epoch 88/100 batch 200/297 updates 26039 CE 0.2171 base LR 0.001889 LoRA LR 0.003778 AMP scale 65536.0
+epoch 88/100 batch 225/297 updates 26064 CE 0.2650 base LR 0.001877 LoRA LR 0.003754 AMP scale 65536.0
+epoch 88/100 batch 250/297 updates 26089 CE 0.2660 base LR 0.001865 LoRA LR 0.003731 AMP scale 65536.0
+epoch 88/100 batch 275/297 updates 26114 CE 0.5192 base LR 0.001853 LoRA LR 0.003707 AMP scale 65536.0
+epoch 88/100 batch 297/297 updates 26136 CE 0.4759 base LR 0.001843 LoRA LR 0.003686 AMP scale 65536.0
+Controller epoch 88 candidate 1/16 mean 38.348% tail 32.369%
+Controller epoch 88 candidate 2/16 mean 37.885% tail 31.764%
+Controller epoch 88 candidate 3/16 mean 37.995% tail 32.363%
+Controller epoch 88 candidate 4/16 mean 34.153% tail 27.991%
+Controller epoch 88 candidate 5/16 mean 38.049% tail 32.374%
+Controller epoch 88 candidate 6/16 mean 38.380% tail 32.294%
+Controller epoch 88 candidate 7/16 mean 37.959% tail 32.010%
+Controller epoch 88 candidate 8/16 mean 35.660% tail 29.209%
+Controller epoch 88 candidate 9/16 mean 38.253% tail 32.345%
+Controller epoch 88 candidate 10/16 mean 37.808% tail 32.434%
+Controller epoch 88 candidate 11/16 mean 37.295% tail 31.294%
+Controller epoch 88 candidate 12/16 mean 38.253% tail 32.345%
+Controller epoch 88 candidate 13/16 mean 37.730% tail 31.836%
+Controller epoch 88 candidate 14/16 mean 38.084% tail 32.111%
+Controller epoch 88 candidate 15/16 mean 37.730% tail 31.836%
+Controller epoch 88 candidate 16/16 mean 38.472% tail 32.041%
+PPO updates completed: 38
+epoch 89/100 batch 1/297 updates 26137 CE 0.4784 base LR 0.001843 LoRA LR 0.003685 AMP scale 65536.0
+epoch 89/100 batch 25/297 updates 26161 CE 0.2195 base LR 0.001832 LoRA LR 0.003663 AMP scale 65536.0
+epoch 89/100 batch 50/297 updates 26186 CE 0.2042 base LR 0.001820 LoRA LR 0.003640 AMP scale 65536.0
+epoch 89/100 batch 75/297 updates 26211 CE 0.2085 base LR 0.001808 LoRA LR 0.003617 AMP scale 65536.0
+epoch 89/100 batch 100/297 updates 26236 CE 0.3166 base LR 0.001797 LoRA LR 0.003594 AMP scale 65536.0
+epoch 89/100 batch 125/297 updates 26261 CE 0.3057 base LR 0.001786 LoRA LR 0.003571 AMP scale 65536.0
+epoch 89/100 batch 150/297 updates 26286 CE 0.2902 base LR 0.001774 LoRA LR 0.003549 AMP scale 65536.0
+epoch 89/100 batch 175/297 updates 26311 CE 0.3076 base LR 0.001763 LoRA LR 0.003527 AMP scale 65536.0
+epoch 89/100 batch 200/297 updates 26336 CE 0.5693 base LR 0.001752 LoRA LR 0.003504 AMP scale 65536.0
+epoch 89/100 batch 225/297 updates 26361 CE 0.2288 base LR 0.001741 LoRA LR 0.003482 AMP scale 65536.0
+epoch 89/100 batch 250/297 updates 26386 CE 0.2117 base LR 0.001730 LoRA LR 0.003460 AMP scale 65536.0
+epoch 89/100 batch 275/297 updates 26411 CE 0.3134 base LR 0.001719 LoRA LR 0.003439 AMP scale 65536.0
+epoch 89/100 batch 297/297 updates 26433 CE 0.3621 base LR 0.001710 LoRA LR 0.003420 AMP scale 65536.0
+Controller epoch 89 candidate 1/16 mean 41.138% tail 33.741%
+Controller epoch 89 candidate 2/16 mean 41.143% tail 34.235%
+Controller epoch 89 candidate 3/16 mean 40.739% tail 33.287%
+Controller epoch 89 candidate 4/16 mean 42.066% tail 34.569%
+Controller epoch 89 candidate 5/16 mean 41.789% tail 33.187%
+Controller epoch 89 candidate 6/16 mean 40.357% tail 33.276%
+Controller epoch 89 candidate 7/16 mean 39.368% tail 32.121%
+Controller epoch 89 candidate 8/16 mean 41.908% tail 35.020%
+Controller epoch 89 candidate 9/16 mean 42.279% tail 35.016%
+Controller epoch 89 candidate 10/16 mean 41.571% tail 34.071%
+Controller epoch 89 candidate 11/16 mean 42.279% tail 35.016%
+Controller epoch 89 candidate 12/16 mean 39.473% tail 30.808%
+Controller epoch 89 candidate 13/16 mean 41.512% tail 34.194%
+Controller epoch 89 candidate 14/16 mean 41.776% tail 34.210%
+Controller epoch 89 candidate 15/16 mean 42.304% tail 34.446%
+Controller epoch 89 candidate 16/16 mean 39.742% tail 32.325%
+PPO updates completed: 39
+epoch 90/100 batch 1/297 updates 26434 CE 0.4529 base LR 0.001709 LoRA LR 0.003419 AMP scale 65536.0
+epoch 90/100 batch 25/297 updates 26458 CE 0.1934 base LR 0.001699 LoRA LR 0.003398 AMP scale 65536.0
+epoch 90/100 batch 50/297 updates 26483 CE 0.4276 base LR 0.001689 LoRA LR 0.003377 AMP scale 65536.0
+epoch 90/100 batch 75/297 updates 26508 CE 0.2968 base LR 0.001678 LoRA LR 0.003356 AMP scale 65536.0
+epoch 90/100 batch 100/297 updates 26533 CE 0.3411 base LR 0.001667 LoRA LR 0.003335 AMP scale 65536.0
+epoch 90/100 batch 125/297 updates 26558 CE 0.2165 base LR 0.001657 LoRA LR 0.003314 AMP scale 65536.0
+epoch 90/100 batch 150/297 updates 26583 CE 0.4418 base LR 0.001647 LoRA LR 0.003294 AMP scale 65536.0
+epoch 90/100 batch 175/297 updates 26608 CE 0.4729 base LR 0.001637 LoRA LR 0.003273 AMP scale 65536.0
+epoch 90/100 batch 200/297 updates 26633 CE 0.3336 base LR 0.001626 LoRA LR 0.003253 AMP scale 65536.0
+epoch 90/100 batch 225/297 updates 26658 CE 0.2349 base LR 0.001616 LoRA LR 0.003233 AMP scale 65536.0
+epoch 90/100 batch 250/297 updates 26683 CE 0.3116 base LR 0.001606 LoRA LR 0.003213 AMP scale 65536.0
+epoch 90/100 batch 275/297 updates 26708 CE 0.3394 base LR 0.001596 LoRA LR 0.003193 AMP scale 65536.0
+epoch 90/100 batch 297/297 updates 26730 CE 0.3665 base LR 0.001588 LoRA LR 0.003175 AMP scale 65536.0
+Controller epoch 90 candidate 1/16 mean 42.490% tail 34.349%
+Controller epoch 90 candidate 2/16 mean 42.693% tail 34.359%
+Controller epoch 90 candidate 3/16 mean 43.679% tail 33.943%
+Controller epoch 90 candidate 4/16 mean 43.261% tail 33.415%
+Controller epoch 90 candidate 5/16 mean 42.517% tail 35.107%
+Controller epoch 90 candidate 6/16 mean 43.029% tail 34.394%
+Controller epoch 90 candidate 7/16 mean 41.331% tail 33.787%
+Controller epoch 90 candidate 8/16 mean 43.270% tail 33.818%
+Controller epoch 90 candidate 9/16 mean 42.060% tail 33.847%
+Controller epoch 90 candidate 10/16 mean 42.978% tail 34.019%
+Controller epoch 90 candidate 11/16 mean 42.517% tail 35.107%
+Controller epoch 90 candidate 12/16 mean 41.443% tail 34.647%
+Controller epoch 90 candidate 13/16 mean 42.818% tail 34.307%
+Controller epoch 90 candidate 14/16 mean 42.869% tail 34.130%
+Controller epoch 90 candidate 15/16 mean 42.989% tail 34.433%
+Controller epoch 90 candidate 16/16 mean 38.448% tail 31.066%
+PPO updates completed: 40
+epoch 91/100 batch 1/297 updates 26731 CE 0.2370 base LR 0.001587 LoRA LR 0.003175 AMP scale 65536.0
+epoch 91/100 batch 25/297 updates 26755 CE 0.3106 base LR 0.001578 LoRA LR 0.003156 AMP scale 65536.0
+epoch 91/100 batch 50/297 updates 26780 CE 0.3002 base LR 0.001568 LoRA LR 0.003137 AMP scale 65536.0
+epoch 91/100 batch 75/297 updates 26805 CE 0.2491 base LR 0.001559 LoRA LR 0.003117 AMP scale 65536.0
+epoch 91/100 batch 100/297 updates 26830 CE 0.2458 base LR 0.001549 LoRA LR 0.003098 AMP scale 65536.0
+epoch 91/100 batch 125/297 updates 26855 CE 0.3618 base LR 0.001540 LoRA LR 0.003079 AMP scale 65536.0
+epoch 91/100 batch 150/297 updates 26880 CE 0.2596 base LR 0.001530 LoRA LR 0.003061 AMP scale 65536.0
+epoch 91/100 batch 175/297 updates 26905 CE 0.3108 base LR 0.001521 LoRA LR 0.003042 AMP scale 65536.0
+epoch 91/100 batch 200/297 updates 26930 CE 0.2726 base LR 0.001512 LoRA LR 0.003024 AMP scale 65536.0
+epoch 91/100 batch 225/297 updates 26955 CE 0.2331 base LR 0.001503 LoRA LR 0.003005 AMP scale 65536.0
+epoch 91/100 batch 250/297 updates 26980 CE 0.2661 base LR 0.001494 LoRA LR 0.002987 AMP scale 65536.0
+epoch 91/100 batch 275/297 updates 27005 CE 0.2934 base LR 0.001485 LoRA LR 0.002969 AMP scale 65536.0
+epoch 91/100 batch 297/297 updates 27027 CE 0.2491 base LR 0.001477 LoRA LR 0.002954 AMP scale 65536.0
+Controller epoch 91 candidate 1/16 mean 40.336% tail 35.726%
+Controller epoch 91 candidate 2/16 mean 38.937% tail 33.777%
+Controller epoch 91 candidate 3/16 mean 37.133% tail 33.951%
+Controller epoch 91 candidate 4/16 mean 37.982% tail 34.588%
+Controller epoch 91 candidate 5/16 mean 39.513% tail 34.422%
+Controller epoch 91 candidate 6/16 mean 39.010% tail 34.771%
+Controller epoch 91 candidate 7/16 mean 37.729% tail 34.428%
+Controller epoch 91 candidate 8/16 mean 37.275% tail 32.991%
+Controller epoch 91 candidate 9/16 mean 40.471% tail 35.588%
+Controller epoch 91 candidate 10/16 mean 40.008% tail 35.760%
+Controller epoch 91 candidate 11/16 mean 40.008% tail 35.760%
+Controller epoch 91 candidate 12/16 mean 35.143% tail 32.047%
+Controller epoch 91 candidate 13/16 mean 40.859% tail 36.010%
+Controller epoch 91 candidate 14/16 mean 37.429% tail 34.512%
+Controller epoch 91 candidate 15/16 mean 38.749% tail 35.172%
+Controller epoch 91 candidate 16/16 mean 37.359% tail 34.108%
+PPO updates completed: 41
+epoch 92/100 batch 1/297 updates 27028 CE 0.3729 base LR 0.001476 LoRA LR 0.002953 AMP scale 65536.0
+epoch 92/100 batch 25/297 updates 27052 CE 0.3846 base LR 0.001468 LoRA LR 0.002936 AMP scale 65536.0
+epoch 92/100 batch 50/297 updates 27077 CE 0.3221 base LR 0.001459 LoRA LR 0.002919 AMP scale 65536.0
+epoch 92/100 batch 75/297 updates 27102 CE 0.2929 base LR 0.001451 LoRA LR 0.002901 AMP scale 65536.0
+epoch 92/100 batch 100/297 updates 27127 CE 0.3358 base LR 0.001442 LoRA LR 0.002884 AMP scale 65536.0
+epoch 92/100 batch 125/297 updates 27152 CE 0.2784 base LR 0.001434 LoRA LR 0.002867 AMP scale 65536.0
+epoch 92/100 batch 150/297 updates 27177 CE 0.2810 base LR 0.001425 LoRA LR 0.002850 AMP scale 65536.0
+epoch 92/100 batch 175/297 updates 27202 CE 0.3426 base LR 0.001417 LoRA LR 0.002834 AMP scale 65536.0
+epoch 92/100 batch 200/297 updates 27227 CE 0.2130 base LR 0.001409 LoRA LR 0.002817 AMP scale 65536.0
+epoch 92/100 batch 225/297 updates 27252 CE 0.3928 base LR 0.001400 LoRA LR 0.002801 AMP scale 65536.0
+epoch 92/100 batch 250/297 updates 27277 CE 0.4230 base LR 0.001392 LoRA LR 0.002785 AMP scale 65536.0
+epoch 92/100 batch 275/297 updates 27302 CE 0.3735 base LR 0.001384 LoRA LR 0.002769 AMP scale 65536.0
+epoch 92/100 batch 297/297 updates 27324 CE 0.2572 base LR 0.001377 LoRA LR 0.002755 AMP scale 65536.0
+Controller epoch 92 candidate 1/16 mean 40.664% tail 32.580%
+Controller epoch 92 candidate 2/16 mean 41.467% tail 32.568%
+Controller epoch 92 candidate 3/16 mean 41.674% tail 33.578%
+Controller epoch 92 candidate 4/16 mean 39.845% tail 32.361%
+Controller epoch 92 candidate 5/16 mean 41.608% tail 33.350%
+Controller epoch 92 candidate 6/16 mean 40.802% tail 32.415%
+Controller epoch 92 candidate 7/16 mean 39.963% tail 32.052%
+Controller epoch 92 candidate 8/16 mean 41.900% tail 33.477%
+Controller epoch 92 candidate 9/16 mean 42.141% tail 33.238%
+Controller epoch 92 candidate 10/16 mean 42.324% tail 33.753%
+Controller epoch 92 candidate 11/16 mean 42.222% tail 33.780%
+Controller epoch 92 candidate 12/16 mean 38.866% tail 30.515%
+Controller epoch 92 candidate 13/16 mean 41.871% tail 33.196%
+Controller epoch 92 candidate 14/16 mean 41.685% tail 33.171%
+Controller epoch 92 candidate 15/16 mean 42.101% tail 33.579%
+Controller epoch 92 candidate 16/16 mean 41.528% tail 33.527%
+PPO updates completed: 42
+epoch 93/100 batch 1/297 updates 27325 CE 0.2880 base LR 0.001377 LoRA LR 0.002754 AMP scale 65536.0
+epoch 93/100 batch 25/297 updates 27349 CE 0.1807 base LR 0.001369 LoRA LR 0.002739 AMP scale 65536.0
+epoch 93/100 batch 50/297 updates 27374 CE 0.3606 base LR 0.001362 LoRA LR 0.002723 AMP scale 65536.0
+epoch 93/100 batch 75/297 updates 27399 CE 0.3816 base LR 0.001354 LoRA LR 0.002708 AMP scale 65536.0
+epoch 93/100 batch 100/297 updates 27424 CE 0.3508 base LR 0.001346 LoRA LR 0.002693 AMP scale 65536.0
+epoch 93/100 batch 125/297 updates 27449 CE 0.2998 base LR 0.001339 LoRA LR 0.002678 AMP scale 65536.0
+epoch 93/100 batch 150/297 updates 27474 CE 0.5534 base LR 0.001331 LoRA LR 0.002663 AMP scale 65536.0
+epoch 93/100 batch 175/297 updates 27499 CE 0.2876 base LR 0.001324 LoRA LR 0.002648 AMP scale 65536.0
+epoch 93/100 batch 200/297 updates 27524 CE 0.2849 base LR 0.001317 LoRA LR 0.002634 AMP scale 65536.0
+epoch 93/100 batch 225/297 updates 27549 CE 0.3405 base LR 0.001310 LoRA LR 0.002619 AMP scale 65536.0
+epoch 93/100 batch 250/297 updates 27574 CE 0.1658 base LR 0.001302 LoRA LR 0.002605 AMP scale 65536.0
+epoch 93/100 batch 275/297 updates 27599 CE 0.1834 base LR 0.001295 LoRA LR 0.002591 AMP scale 65536.0
+epoch 93/100 batch 297/297 updates 27621 CE 0.4610 base LR 0.001289 LoRA LR 0.002579 AMP scale 65536.0
+Controller epoch 93 candidate 1/16 mean 42.161% tail 35.276%
+Controller epoch 93 candidate 2/16 mean 43.218% tail 35.426%
+Controller epoch 93 candidate 3/16 mean 42.245% tail 35.748%
+Controller epoch 93 candidate 4/16 mean 42.038% tail 35.370%
+Controller epoch 93 candidate 5/16 mean 41.663% tail 35.503%
+Controller epoch 93 candidate 6/16 mean 41.737% tail 35.394%
+Controller epoch 93 candidate 7/16 mean 43.138% tail 35.215%
+Controller epoch 93 candidate 8/16 mean 42.310% tail 35.201%
+Controller epoch 93 candidate 9/16 mean 41.737% tail 35.394%
+Controller epoch 93 candidate 10/16 mean 41.878% tail 35.423%
+Controller epoch 93 candidate 11/16 mean 42.503% tail 35.511%
+Controller epoch 93 candidate 12/16 mean 40.543% tail 33.455%
+Controller epoch 93 candidate 13/16 mean 40.780% tail 34.709%
+Controller epoch 93 candidate 14/16 mean 42.365% tail 35.398%
+Controller epoch 93 candidate 15/16 mean 41.709% tail 35.255%
+Controller epoch 93 candidate 16/16 mean 42.345% tail 35.721%
+PPO updates completed: 43
+epoch 94/100 batch 1/297 updates 27622 CE 0.2138 base LR 0.001289 LoRA LR 0.002578 AMP scale 65536.0
+epoch 94/100 batch 25/297 updates 27646 CE 0.5048 base LR 0.001282 LoRA LR 0.002565 AMP scale 65536.0
+epoch 94/100 batch 50/297 updates 27671 CE 0.2959 base LR 0.001276 LoRA LR 0.002551 AMP scale 65536.0
+epoch 94/100 batch 75/297 updates 27696 CE 0.2484 base LR 0.001269 LoRA LR 0.002538 AMP scale 65536.0
+epoch 94/100 batch 100/297 updates 27721 CE 0.2562 base LR 0.001262 LoRA LR 0.002524 AMP scale 65536.0
+epoch 94/100 batch 125/297 updates 27746 CE 0.2595 base LR 0.001256 LoRA LR 0.002511 AMP scale 65536.0
+epoch 94/100 batch 150/297 updates 27771 CE 0.3375 base LR 0.001249 LoRA LR 0.002498 AMP scale 65536.0
+epoch 94/100 batch 175/297 updates 27796 CE 0.3260 base LR 0.001243 LoRA LR 0.002486 AMP scale 65536.0
+epoch 94/100 batch 200/297 updates 27821 CE 0.5799 base LR 0.001236 LoRA LR 0.002473 AMP scale 65536.0
+epoch 94/100 batch 225/297 updates 27846 CE 0.1877 base LR 0.001230 LoRA LR 0.002461 AMP scale 65536.0
+epoch 94/100 batch 250/297 updates 27871 CE 0.3539 base LR 0.001224 LoRA LR 0.002448 AMP scale 65536.0
+epoch 94/100 batch 275/297 updates 27896 CE 0.2781 base LR 0.001218 LoRA LR 0.002436 AMP scale 65536.0
+epoch 94/100 batch 297/297 updates 27918 CE 0.2882 base LR 0.001213 LoRA LR 0.002426 AMP scale 65536.0
+Controller epoch 94 candidate 1/16 mean 38.886% tail 33.824%
+Controller epoch 94 candidate 2/16 mean 39.853% tail 33.624%
+Controller epoch 94 candidate 3/16 mean 39.585% tail 33.949%
+Controller epoch 94 candidate 4/16 mean 39.162% tail 33.088%
+Controller epoch 94 candidate 5/16 mean 38.183% tail 33.571%
+Controller epoch 94 candidate 6/16 mean 39.641% tail 33.505%
+Controller epoch 94 candidate 7/16 mean 38.381% tail 33.537%
+Controller epoch 94 candidate 8/16 mean 35.777% tail 31.069%
+Controller epoch 94 candidate 9/16 mean 39.630% tail 33.829%
+Controller epoch 94 candidate 10/16 mean 39.208% tail 34.164%
+Controller epoch 94 candidate 11/16 mean 38.128% tail 33.105%
+Controller epoch 94 candidate 12/16 mean 38.569% tail 33.566%
+Controller epoch 94 candidate 13/16 mean 39.131% tail 33.547%
+Controller epoch 94 candidate 14/16 mean 38.183% tail 33.571%
+Controller epoch 94 candidate 15/16 mean 39.663% tail 33.970%
+Controller epoch 94 candidate 16/16 mean 38.489% tail 33.465%
+PPO updates completed: 44
+epoch 95/100 batch 1/297 updates 27919 CE 0.3062 base LR 0.001213 LoRA LR 0.002425 AMP scale 65536.0
+epoch 95/100 batch 25/297 updates 27943 CE 0.3123 base LR 0.001207 LoRA LR 0.002414 AMP scale 65536.0
+epoch 95/100 batch 50/297 updates 27968 CE 0.2495 base LR 0.001201 LoRA LR 0.002402 AMP scale 65536.0
+epoch 95/100 batch 75/297 updates 27993 CE 0.2527 base LR 0.001195 LoRA LR 0.002391 AMP scale 131072.0
+epoch 95/100 batch 100/297 updates 28018 CE 0.2549 base LR 0.001190 LoRA LR 0.002379 AMP scale 131072.0
+epoch 95/100 batch 125/297 updates 28043 CE 0.3584 base LR 0.001184 LoRA LR 0.002368 AMP scale 131072.0
+epoch 95/100 batch 150/297 updates 28068 CE 0.3036 base LR 0.001179 LoRA LR 0.002357 AMP scale 131072.0
+epoch 95/100 batch 175/297 updates 28093 CE 0.4676 base LR 0.001173 LoRA LR 0.002346 AMP scale 131072.0
+AMP overflow: retry 1/16; scale 131072.0 -> 65536.0
+epoch 95/100 batch 200/297 updates 28118 CE 0.2497 base LR 0.001168 LoRA LR 0.002336 AMP scale 65536.0
+epoch 95/100 batch 225/297 updates 28143 CE 0.2824 base LR 0.001163 LoRA LR 0.002325 AMP scale 65536.0
+epoch 95/100 batch 250/297 updates 28168 CE 0.3041 base LR 0.001157 LoRA LR 0.002315 AMP scale 65536.0
+epoch 95/100 batch 275/297 updates 28193 CE 0.2932 base LR 0.001152 LoRA LR 0.002305 AMP scale 65536.0
+epoch 95/100 batch 297/297 updates 28215 CE 0.2365 base LR 0.001148 LoRA LR 0.002296 AMP scale 65536.0
+Controller epoch 95 candidate 1/16 mean 41.236% tail 35.120%
+Controller epoch 95 candidate 2/16 mean 41.358% tail 36.083%
+Controller epoch 95 candidate 3/16 mean 36.629% tail 33.907%
+Controller epoch 95 candidate 4/16 mean 38.938% tail 33.924%
+Controller epoch 95 candidate 5/16 mean 38.334% tail 36.007%
+Controller epoch 95 candidate 6/16 mean 41.003% tail 35.621%
+Controller epoch 95 candidate 7/16 mean 40.471% tail 35.421%
+Controller epoch 95 candidate 8/16 mean 41.358% tail 36.083%
+Controller epoch 95 candidate 9/16 mean 35.279% tail 32.678%
+Controller epoch 95 candidate 10/16 mean 41.211% tail 35.679%
+Controller epoch 95 candidate 11/16 mean 39.106% tail 33.704%
+Controller epoch 95 candidate 12/16 mean 41.036% tail 35.590%
+Controller epoch 95 candidate 13/16 mean 40.947% tail 35.104%
+Controller epoch 95 candidate 14/16 mean 39.205% tail 36.341%
+Controller epoch 95 candidate 15/16 mean 40.662% tail 35.249%
+Controller epoch 95 candidate 16/16 mean 39.996% tail 35.077%
+PPO updates completed: 45
+epoch 96/100 batch 1/297 updates 28216 CE 0.5752 base LR 0.001148 LoRA LR 0.002295 AMP scale 65536.0
+epoch 96/100 batch 25/297 updates 28240 CE 0.2713 base LR 0.001143 LoRA LR 0.002286 AMP scale 65536.0
+epoch 96/100 batch 50/297 updates 28265 CE 0.2398 base LR 0.001138 LoRA LR 0.002276 AMP scale 65536.0
+epoch 96/100 batch 75/297 updates 28290 CE 0.3067 base LR 0.001133 LoRA LR 0.002267 AMP scale 65536.0
+epoch 96/100 batch 100/297 updates 28315 CE 0.3039 base LR 0.001129 LoRA LR 0.002257 AMP scale 65536.0
+epoch 96/100 batch 125/297 updates 28340 CE 0.4844 base LR 0.001124 LoRA LR 0.002248 AMP scale 65536.0
+epoch 96/100 batch 150/297 updates 28365 CE 0.4046 base LR 0.001120 LoRA LR 0.002239 AMP scale 65536.0
+epoch 96/100 batch 175/297 updates 28390 CE 0.4979 base LR 0.001115 LoRA LR 0.002230 AMP scale 65536.0
+epoch 96/100 batch 200/297 updates 28415 CE 0.2818 base LR 0.001111 LoRA LR 0.002222 AMP scale 65536.0
+epoch 96/100 batch 225/297 updates 28440 CE 0.3315 base LR 0.001107 LoRA LR 0.002213 AMP scale 65536.0
+epoch 96/100 batch 250/297 updates 28465 CE 0.1859 base LR 0.001102 LoRA LR 0.002205 AMP scale 65536.0
+epoch 96/100 batch 275/297 updates 28490 CE 0.4876 base LR 0.001098 LoRA LR 0.002197 AMP scale 65536.0
+epoch 96/100 batch 297/297 updates 28512 CE 0.4339 base LR 0.001095 LoRA LR 0.002190 AMP scale 65536.0
+Controller epoch 96 candidate 1/16 mean 41.351% tail 35.710%
+Controller epoch 96 candidate 2/16 mean 40.830% tail 35.948%
+Controller epoch 96 candidate 3/16 mean 41.038% tail 35.649%
+Controller epoch 96 candidate 4/16 mean 41.119% tail 35.664%
+Controller epoch 96 candidate 5/16 mean 39.181% tail 34.376%
+Controller epoch 96 candidate 6/16 mean 40.803% tail 35.484%
+Controller epoch 96 candidate 7/16 mean 41.229% tail 34.863%
+Controller epoch 96 candidate 8/16 mean 40.983% tail 35.625%
+Controller epoch 96 candidate 9/16 mean 41.152% tail 35.888%
+Controller epoch 96 candidate 10/16 mean 40.312% tail 35.104%
+Controller epoch 96 candidate 11/16 mean 40.745% tail 35.570%
+Controller epoch 96 candidate 12/16 mean 41.093% tail 35.738%
+Controller epoch 96 candidate 13/16 mean 38.518% tail 32.953%
+Controller epoch 96 candidate 14/16 mean 41.291% tail 35.652%
+Controller epoch 96 candidate 15/16 mean 40.631% tail 35.704%
+Controller epoch 96 candidate 16/16 mean 40.312% tail 35.104%
+PPO updates completed: 46
+epoch 97/100 batch 1/297 updates 28513 CE 0.2776 base LR 0.001095 LoRA LR 0.002189 AMP scale 65536.0
+epoch 97/100 batch 25/297 updates 28537 CE 0.3575 base LR 0.001091 LoRA LR 0.002182 AMP scale 65536.0
+epoch 97/100 batch 50/297 updates 28562 CE 0.2169 base LR 0.001087 LoRA LR 0.002174 AMP scale 65536.0
+epoch 97/100 batch 75/297 updates 28587 CE 0.2288 base LR 0.001083 LoRA LR 0.002166 AMP scale 65536.0
+epoch 97/100 batch 100/297 updates 28612 CE 0.2149 base LR 0.001080 LoRA LR 0.002159 AMP scale 65536.0
+epoch 97/100 batch 125/297 updates 28637 CE 0.2307 base LR 0.001076 LoRA LR 0.002152 AMP scale 65536.0
+epoch 97/100 batch 150/297 updates 28662 CE 0.4256 base LR 0.001072 LoRA LR 0.002145 AMP scale 65536.0
+epoch 97/100 batch 175/297 updates 28687 CE 0.1748 base LR 0.001069 LoRA LR 0.002138 AMP scale 65536.0
+epoch 97/100 batch 200/297 updates 28712 CE 0.2531 base LR 0.001066 LoRA LR 0.002131 AMP scale 65536.0
+epoch 97/100 batch 225/297 updates 28737 CE 0.2493 base LR 0.001062 LoRA LR 0.002125 AMP scale 65536.0
+epoch 97/100 batch 250/297 updates 28762 CE 0.2426 base LR 0.001059 LoRA LR 0.002118 AMP scale 65536.0
+epoch 97/100 batch 275/297 updates 28787 CE 0.2683 base LR 0.001056 LoRA LR 0.002112 AMP scale 65536.0
+epoch 97/100 batch 297/297 updates 28809 CE 0.3087 base LR 0.001053 LoRA LR 0.002107 AMP scale 65536.0
+Controller epoch 97 candidate 1/16 mean 39.472% tail 32.416%
+Controller epoch 97 candidate 2/16 mean 38.668% tail 30.111%
+Controller epoch 97 candidate 3/16 mean 39.141% tail 32.902%
+Controller epoch 97 candidate 4/16 mean 38.112% tail 29.633%
+Controller epoch 97 candidate 5/16 mean 39.074% tail 31.752%
+Controller epoch 97 candidate 6/16 mean 39.093% tail 29.828%
+Controller epoch 97 candidate 7/16 mean 38.322% tail 30.234%
+Controller epoch 97 candidate 8/16 mean 39.060% tail 31.669%
+Controller epoch 97 candidate 9/16 mean 37.850% tail 29.720%
+Controller epoch 97 candidate 10/16 mean 34.867% tail 28.336%
+Controller epoch 97 candidate 11/16 mean 38.957% tail 31.706%
+Controller epoch 97 candidate 12/16 mean 40.326% tail 33.003%
+Controller epoch 97 candidate 13/16 mean 39.261% tail 32.531%
+Controller epoch 97 candidate 14/16 mean 38.728% tail 31.242%
+Controller epoch 97 candidate 15/16 mean 38.500% tail 31.818%
+Controller epoch 97 candidate 16/16 mean 35.462% tail 30.011%
+PPO updates completed: 47
+epoch 98/100 batch 1/297 updates 28810 CE 0.4282 base LR 0.001053 LoRA LR 0.002107 AMP scale 65536.0
+epoch 98/100 batch 25/297 updates 28834 CE 0.2607 base LR 0.001050 LoRA LR 0.002101 AMP scale 65536.0
+epoch 98/100 batch 50/297 updates 28859 CE 0.4644 base LR 0.001048 LoRA LR 0.002095 AMP scale 65536.0
+epoch 98/100 batch 75/297 updates 28884 CE 0.3965 base LR 0.001045 LoRA LR 0.002090 AMP scale 65536.0
+epoch 98/100 batch 100/297 updates 28909 CE 0.3504 base LR 0.001042 LoRA LR 0.002084 AMP scale 65536.0
+epoch 98/100 batch 125/297 updates 28934 CE 0.3854 base LR 0.001039 LoRA LR 0.002079 AMP scale 65536.0
+epoch 98/100 batch 150/297 updates 28959 CE 0.2920 base LR 0.001037 LoRA LR 0.002074 AMP scale 65536.0
+epoch 98/100 batch 175/297 updates 28984 CE 0.5681 base LR 0.001034 LoRA LR 0.002069 AMP scale 65536.0
+epoch 98/100 batch 200/297 updates 29009 CE 0.2435 base LR 0.001032 LoRA LR 0.002064 AMP scale 65536.0
+epoch 98/100 batch 225/297 updates 29034 CE 0.5248 base LR 0.001030 LoRA LR 0.002060 AMP scale 65536.0
+epoch 98/100 batch 250/297 updates 29059 CE 0.3418 base LR 0.001028 LoRA LR 0.002055 AMP scale 65536.0
+epoch 98/100 batch 275/297 updates 29084 CE 0.2369 base LR 0.001026 LoRA LR 0.002051 AMP scale 65536.0
+epoch 98/100 batch 297/297 updates 29106 CE 0.4258 base LR 0.001024 LoRA LR 0.002048 AMP scale 65536.0
+Controller epoch 98 candidate 1/16 mean 37.358% tail 33.703%
+Controller epoch 98 candidate 2/16 mean 43.232% tail 37.267%
+Controller epoch 98 candidate 3/16 mean 42.359% tail 35.987%
+Controller epoch 98 candidate 4/16 mean 43.281% tail 37.165%
+Controller epoch 98 candidate 5/16 mean 43.232% tail 37.267%
+Controller epoch 98 candidate 6/16 mean 42.979% tail 36.924%
+Controller epoch 98 candidate 7/16 mean 43.641% tail 37.452%
+Controller epoch 98 candidate 8/16 mean 43.905% tail 37.504%
+Controller epoch 98 candidate 9/16 mean 43.699% tail 37.458%
+Controller epoch 98 candidate 10/16 mean 43.728% tail 37.067%
+Controller epoch 98 candidate 11/16 mean 44.204% tail 37.711%
+Controller epoch 98 candidate 12/16 mean 42.283% tail 37.082%
+Controller epoch 98 candidate 13/16 mean 43.641% tail 37.452%
+Controller epoch 98 candidate 14/16 mean 43.496% tail 37.462%
+Controller epoch 98 candidate 15/16 mean 43.188% tail 36.417%
+Controller epoch 98 candidate 16/16 mean 43.986% tail 37.524%
+PPO updates completed: 48
+epoch 99/100 batch 1/297 updates 29107 CE 0.5287 base LR 0.001024 LoRA LR 0.002047 AMP scale 65536.0
+epoch 99/100 batch 25/297 updates 29131 CE 0.3088 base LR 0.001022 LoRA LR 0.002044 AMP scale 65536.0
+epoch 99/100 batch 50/297 updates 29156 CE 0.2278 base LR 0.001020 LoRA LR 0.002040 AMP scale 65536.0
+epoch 99/100 batch 75/297 updates 29181 CE 0.3323 base LR 0.001018 LoRA LR 0.002036 AMP scale 65536.0
+epoch 99/100 batch 100/297 updates 29206 CE 0.2231 base LR 0.001016 LoRA LR 0.002033 AMP scale 65536.0
+epoch 99/100 batch 125/297 updates 29231 CE 0.3743 base LR 0.001015 LoRA LR 0.002030 AMP scale 65536.0
+epoch 99/100 batch 150/297 updates 29256 CE 0.5496 base LR 0.001013 LoRA LR 0.002027 AMP scale 65536.0
+epoch 99/100 batch 175/297 updates 29281 CE 0.2646 base LR 0.001012 LoRA LR 0.002024 AMP scale 65536.0
+epoch 99/100 batch 200/297 updates 29306 CE 0.4316 base LR 0.001010 LoRA LR 0.002021 AMP scale 65536.0
+epoch 99/100 batch 225/297 updates 29331 CE 0.1854 base LR 0.001009 LoRA LR 0.002018 AMP scale 65536.0
+epoch 99/100 batch 250/297 updates 29356 CE 0.3151 base LR 0.001008 LoRA LR 0.002016 AMP scale 65536.0
+epoch 99/100 batch 275/297 updates 29381 CE 0.3782 base LR 0.001007 LoRA LR 0.002014 AMP scale 65536.0
+epoch 99/100 batch 297/297 updates 29403 CE 0.3280 base LR 0.001006 LoRA LR 0.002012 AMP scale 65536.0
+Controller epoch 99 candidate 1/16 mean 40.358% tail 32.554%
+Controller epoch 99 candidate 2/16 mean 40.175% tail 32.197%
+Controller epoch 99 candidate 3/16 mean 40.356% tail 32.595%
+Controller epoch 99 candidate 4/16 mean 39.364% tail 31.501%
+Controller epoch 99 candidate 5/16 mean 38.865% tail 31.010%
+Controller epoch 99 candidate 6/16 mean 40.487% tail 32.841%
+Controller epoch 99 candidate 7/16 mean 39.241% tail 31.362%
+Controller epoch 99 candidate 8/16 mean 40.510% tail 32.254%
+Controller epoch 99 candidate 9/16 mean 40.231% tail 32.890%
+Controller epoch 99 candidate 10/16 mean 40.644% tail 32.371%
+Controller epoch 99 candidate 11/16 mean 40.552% tail 32.577%
+Controller epoch 99 candidate 12/16 mean 38.612% tail 31.375%
+Controller epoch 99 candidate 13/16 mean 40.484% tail 32.301%
+Controller epoch 99 candidate 14/16 mean 40.175% tail 32.197%
+Controller epoch 99 candidate 15/16 mean 39.917% tail 31.796%
+Controller epoch 99 candidate 16/16 mean 40.644% tail 32.371%
+PPO updates completed: 49
+epoch 100/100 batch 1/297 updates 29404 CE 0.2752 base LR 0.001006 LoRA LR 0.002012 AMP scale 65536.0
+epoch 100/100 batch 25/297 updates 29428 CE 0.3324 base LR 0.001005 LoRA LR 0.002010 AMP scale 65536.0
+epoch 100/100 batch 50/297 updates 29453 CE 0.3012 base LR 0.001004 LoRA LR 0.002008 AMP scale 65536.0
+epoch 100/100 batch 75/297 updates 29478 CE 0.3318 base LR 0.001003 LoRA LR 0.002007 AMP scale 65536.0
+epoch 100/100 batch 100/297 updates 29503 CE 0.3415 base LR 0.001003 LoRA LR 0.002005 AMP scale 65536.0
+epoch 100/100 batch 125/297 updates 29528 CE 0.4478 base LR 0.001002 LoRA LR 0.002004 AMP scale 65536.0
+epoch 100/100 batch 150/297 updates 29553 CE 0.3266 base LR 0.001001 LoRA LR 0.002003 AMP scale 65536.0
+epoch 100/100 batch 175/297 updates 29578 CE 0.3156 base LR 0.001001 LoRA LR 0.002002 AMP scale 65536.0
+epoch 100/100 batch 200/297 updates 29603 CE 0.3547 base LR 0.001001 LoRA LR 0.002001 AMP scale 65536.0
+epoch 100/100 batch 225/297 updates 29628 CE 0.2684 base LR 0.001000 LoRA LR 0.002001 AMP scale 65536.0
+epoch 100/100 batch 250/297 updates 29653 CE 0.2045 base LR 0.001000 LoRA LR 0.002000 AMP scale 65536.0
+epoch 100/100 batch 275/297 updates 29678 CE 0.3450 base LR 0.001000 LoRA LR 0.002000 AMP scale 65536.0
+epoch 100/100 batch 297/297 updates 29700 CE 0.3479 base LR 0.001000 LoRA LR 0.002000 AMP scale 65536.0
+Controller epoch 100 candidate 1/16 mean 38.663% tail 33.320%
+Controller epoch 100 candidate 2/16 mean 38.526% tail 33.659%
+Controller epoch 100 candidate 3/16 mean 38.307% tail 33.734%
+Controller epoch 100 candidate 4/16 mean 38.052% tail 32.913%
+Controller epoch 100 candidate 5/16 mean 39.005% tail 33.575%
+Controller epoch 100 candidate 6/16 mean 38.608% tail 33.466%
+Controller epoch 100 candidate 7/16 mean 38.663% tail 33.320%
+Controller epoch 100 candidate 8/16 mean 36.911% tail 31.721%
+Controller epoch 100 candidate 9/16 mean 38.126% tail 33.248%
+Controller epoch 100 candidate 10/16 mean 38.800% tail 33.517%
+Controller epoch 100 candidate 11/16 mean 38.350% tail 33.468%
+Controller epoch 100 candidate 12/16 mean 38.754% tail 34.005%
+Controller epoch 100 candidate 13/16 mean 38.538% tail 33.695%
+Controller epoch 100 candidate 14/16 mean 37.669% tail 33.093%
+Controller epoch 100 candidate 15/16 mean 39.318% tail 33.609%
+Controller epoch 100 candidate 16/16 mean 38.350% tail 33.468%
+PPO updates completed: 50
+Successful weight updates: 29700; PPO updates: 50
+Search complete in 4.01 hours. Export: search_local_v1_seed0/architecture.json. Proxy mean 42.540%, reference selected=False.
+Proxy scores are NOT full-training Cityscapes validation mIoU. Retrain exported architecture from scratch.

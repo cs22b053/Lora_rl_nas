@@ -1,0 +1,64 @@
+{
+  "format": "autodeeplab_cell_v1",
+  "search_version": "adl_reference_local_v1",
+  "cell": [
+    [
+      1,
+      "dil5"
+    ],
+    [
+      0,
+      "sep3"
+    ],
+    [
+      1,
+      "sep3"
+    ],
+    [
+      0,
+      "dil3"
+    ],
+    [
+      3,
+      "sep3"
+    ],
+    [
+      1,
+      "sep3"
+    ],
+    [
+      4,
+      "sep5"
+    ],
+    [
+      2,
+      "sep5"
+    ],
+    [
+      1,
+      "sep5"
+    ],
+    [
+      5,
+      "dil5"
+    ]
+  ],
+  "backbone": [
+    0,
+    0,
+    0,
+    1,
+    2,
+    1,
+    2,
+    2,
+    3,
+    3,
+    2,
+    1
+  ],
+  "smoke_test": false,
+  "is_reference": false,
+  "stage": "independent_probe_candidate",
+  "source_ranking": "/scratch/ajin/Autodeeplab/modified/local_candidates_v1_seed0/proxy_ranking.json"
+}

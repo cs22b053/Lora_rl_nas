@@ -1,0 +1,82 @@
+Found 8 checkpoints:
+
+Checkpoint: epoch=1800
+  Optimizer LRs: [0.02195485907288553]
+  # param groups: 1
+  # state entries (momentum buffers): 398
+  Has momentum buffers: True
+  Keys in checkpoint: ['epoch', 'state_dict', 'optimizer']
+  File size: 108.6 MB
+
+  First param state keys: ['momentum_buffer']
+
+Checkpoint: epoch=2000
+  Optimizer LRs: [0.01863236075992394]
+  # param groups: 1
+  # state entries (momentum buffers): 398
+  Has momentum buffers: True
+  Keys in checkpoint: ['epoch', 'state_dict', 'optimizer']
+  File size: 108.6 MB
+
+  First param state keys: ['momentum_buffer']
+
+Checkpoint: epoch=2400
+  Optimizer LRs: [0.01176536536102962]
+  # param groups: 1
+  # state entries (momentum buffers): 398
+  Has momentum buffers: True
+  Keys in checkpoint: ['epoch', 'state_dict', 'optimizer']
+  File size: 108.6 MB
+
+  First param state keys: ['momentum_buffer']
+
+Checkpoint: epoch=2500
+  Optimizer LRs: [0.009984883478041329]
+  # param groups: 1
+  # state entries (momentum buffers): 398
+  Has momentum buffers: True
+  Keys in checkpoint: ['epoch', 'state_dict', 'optimizer']
+  File size: 108.6 MB
+
+  First param state keys: ['momentum_buffer']
+
+Checkpoint: epoch=2750
+  Optimizer LRs: [0.0053508186300624955]
+  # param groups: 1
+  # state entries (momentum buffers): 398
+  Has momentum buffers: True
+  Keys in checkpoint: ['epoch', 'state_dict', 'optimizer']
+  File size: 108.6 MB
+
+  First param state keys: ['momentum_buffer']
+
+Checkpoint: epoch=2900
+  Optimizer LRs: [0.0023457779459712374]
+  # param groups: 1
+  # state entries (momentum buffers): 398
+  Has momentum buffers: True
+  Keys in checkpoint: ['epoch', 'state_dict', 'optimizer']
+  File size: 108.6 MB
+
+  First param state keys: ['momentum_buffer']
+
+Checkpoint: epoch=2950
+  Optimizer LRs: [0.001257132427095503]
+  # param groups: 1
+  # state entries (momentum buffers): 398
+  Has momentum buffers: True
+  Keys in checkpoint: ['epoch', 'state_dict', 'optimizer']
+  File size: 108.6 MB
+
+  First param state keys: ['momentum_buffer']
+
+Checkpoint: epoch=3000
+  Optimizer LRs: [3.3869689562439864e-07]
+  # param groups: 1
+  # state entries (momentum buffers): 398
+  Has momentum buffers: True
+  Keys in checkpoint: ['epoch', 'state_dict', 'optimizer']
+  File size: 108.6 MB
+
+  First param state keys: ['momentum_buffer']
+

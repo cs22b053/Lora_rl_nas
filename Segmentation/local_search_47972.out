@@ -1,0 +1,28 @@
+{
+  "host": "dgx1",
+  "python": "/scratch/ajin/Autodeeplab/modified/.venvs/retrain_cu118/bin/python",
+  "torch_version": "2.3.1+cu118",
+  "torch_path": "/scratch/ajin/Autodeeplab/modified/.venvs/retrain_cu118/lib/python3.11/site-packages/torch/__init__.py",
+  "cuda_build": "11.8",
+  "cuda_visible_devices": "0"
+}
+NVIDIA A100-SXM4-40GB, 470.161.03
+NVIDIA A100-SXM4-40GB, 470.161.03
+NVIDIA A100-SXM4-40GB, 470.161.03
+CUDA check passed on NVIDIA A100-SXM4-40GB. Training can now load its checkpoint.
+Search config: {"dataset_root": "/scratch/ajin/Autodeeplab/autodeeplab/cityscapes/", "output_dir": "search_local_v1_seed0_smoke", "seed": 0, "split_seed": 0, "epochs": 2, "warmup_epochs": 0, "batch_size": 2, "crop_size": 65, "train_short_side": 512, "filter_multiplier": 2, "lora_rank": 4, "lora_lr_multiplier": 2.0, "lr": 0.025, "min_lr": 0.001, "weight_decay": 0.0003, "policy_lr": 0.0003, "max_skips": 2, "risk_weight": 0.2, "cvar_alpha": 0.2, "rollout_size": 4, "ppo_epochs": 4, "reward_images": 41, "rank_images": 41, "calibration_batches": 2, "final_candidates": 4, "max_final_params": 10147427, "target_filters": 20, "search_space": "reference-local", "local_candidates": 128, "candidate_seed": 0, "workers": 8, "save_every": 100, "resume": "latest", "no_amp": false, "random_search": false, "steps_per_epoch": 2, "stop_after_steps": null, "smoke_test": true}
+Disjoint TRAIN splits: {'weights': 1785, 'controller': 595, 'selection': 595}; official validation is unused.
+Supernet parameters: 2612055; LoRA parameters: 410560
+AMP overflow: retry 1/16; scale 1024.0 -> 512.0
+epoch 1/2 batch 1/2 updates 1 CE 4.3406 base LR 0.025000 LoRA LR 0.050000 AMP scale 512.0
+AMP overflow: retry 1/16; scale 512.0 -> 256.0
+AMP overflow: retry 2/16; scale 256.0 -> 128.0
+epoch 1/2 batch 2/2 updates 2 CE 2.8896 base LR 0.021485 LoRA LR 0.042971 AMP scale 128.0
+Controller epoch 1 candidate 1/4 mean 0.633% tail 0.000%
+Controller epoch 1 candidate 2/4 mean 0.418% tail 0.000%
+Controller epoch 1 candidate 3/4 mean 0.984% tail 0.000%
+Controller epoch 1 candidate 4/4 mean 1.138% tail 0.000%
+PPO updates completed: 1
+epoch 2/2 batch 1/2 updates 3 CE 4.3101 base LR 0.013000 LoRA LR 0.026000 AMP scale 128.0
+epoch 2/2 batch 2/2 updates 4 CE 3.5432 base LR 0.004515 LoRA LR 0.009029 AMP scale 128.0
+Controller epoch 2 candidate 1/4 mean 0.829% tail 0.000%

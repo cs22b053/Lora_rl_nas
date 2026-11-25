@@ -1,0 +1,32 @@
+# ---- Model checkpoints (too large for git; publish best ones as GitHub Release assets) ----
+*.pth
+*.pt
+*.pth.tar
+*.ckpt
+*.bin
+*.safetensors
+*.npy
+*.npz
+
+# ---- Datasets (download them; never commit) ----
+data/
+*.tar.gz
+*.zip
+cityscapes/
+cifar-10-batches-py/
+cifar-100-python/
+
+# ---- Environments / caches ----
+.venv/
+.venvs/
+venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# ---- Editor / OS ----
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+desktop.ini

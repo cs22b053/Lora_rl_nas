@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/scratch/ajin/Autodeeplab/modified/train_autodeeplab.py", line 9, in <module>
+    main()
+  File "/scratch/ajin/Autodeeplab/modified/train_search_corrected.py", line 279, in main
+    result = evaluate(cell, reward_panel)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/ajin/Autodeeplab/modified/train_search_corrected.py", line 216, in evaluate
+    result = score_candidate(model, cell, calibration, data, device, args.cvar_alpha,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/ajin/Autodeeplab/modified/.venvs/retrain_cu118/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/ajin/Autodeeplab/modified/search_scoring.py", line 33, in score_candidate
+    raise FloatingPointError('Non-finite candidate logits; refusing to rank this evaluation')
+FloatingPointError: Non-finite candidate logits; refusing to rank this evaluation
+srun: error: dgx1: task 0: Exited with exit code 1
