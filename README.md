@@ -23,6 +23,7 @@ segmentation experiment extends **Auto-DeepLab** (Liu et al.).
 | CIFAR-10 | [`cifar10_2%_c=196/`](cifar10_2%25_c=196/Nao_v2_lora/) | test error | **2.00%** (best epoch) · 2.22% final · 2.20% SWA (test only) | 86.9M | `nao_train_44453.out` line 2186 |
 | CIFAR-10 (smaller) | [`cifar10_2.2%_c=128/`](cifar10_2.2%25_c=128/Nao_v2_final/) | test error | **2.20%** (best epoch) · 2.14% SWA (test only) | 39.2M | `nao_train_44736.out` (last line) |
 | CIFAR-100 | [`cifar100_14.5/`](cifar100_14.5/) | test error | **14.48%** (best epoch) · 14.66% final | 87.2M | `nao_test_c100_44989.out` |
+| CIFAR-100 (smaller) | [`cifar100_14.5/`](cifar100_14.5/) | test error | **14.75%** (best epoch) · 14.93% final | 39.3M | `nao_test_c100_4471.out` |
 | ImageNet | [`Imagenet_24.3/`](Imagenet_24.3/Nao_test/) | top-1 / top-5 error | **24.29% / 7.85%** (final epoch 300) | 10.4M | `nao_test_imagenet_46117.out` |
 | Penn Treebank | [`ptb_rnn_56.81/`](ptb_rnn_56.81/rnn/) | test perplexity | **56.81** (static) · 52.11 dynamic eval* (test only) | 27.3M | `ptb_train47041.out` |
 | Cityscapes segmentation | [`Segmentation/`](Segmentation/) | val mIoU | **74.29** single-scale · **76.32** multi-scale+flip | 10.1M | `posteval_49242_1.out` |
